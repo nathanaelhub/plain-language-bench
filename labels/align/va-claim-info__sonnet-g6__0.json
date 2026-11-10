@@ -1,0 +1,81 @@
+{
+ "F1": {
+  "status": "kept",
+  "spans": [
+   "We are writing about your claim for benefits from the Department of Veterans Affairs (VA)."
+  ]
+ },
+ "F2": {
+  "status": "kept",
+  "spans": [
+   "We asked you for a certified copy of your marriage license."
+  ]
+ },
+ "F3": {
+  "status": "kept",
+  "spans": [
+   "We sent that request in a letter dated June 3, 2024."
+  ]
+ },
+ "F4": {
+  "status": "kept",
+  "spans": [
+   "We have not received it."
+  ]
+ },
+ "F5": {
+  "status": "kept",
+  "spans": [
+   "Because of this, we have denied your claim for now."
+  ]
+ },
+ "F6": {
+  "status": "kept",
+  "spans": [
+   "You can still send us the paper."
+  ]
+ },
+ "F7": {
+  "status": "kept",
+  "spans": [
+   "You can send it at any time."
+  ]
+ },
+ "F8": {
+  "status": "kept",
+  "spans": [
+   "But please try to send it by June 3, 2025. That is one year after our first letter."
+  ]
+ },
+ "F9": {
+  "status": "kept",
+  "spans": [
+   "If we get it after that date, and you qualify for benefits, we can only pay you from the day we get the paper. We cannot pay you for the time before that."
+  ]
+ },
+ "F10": {
+  "status": "kept",
+  "spans": [
+   "and you qualify for benefits"
+  ]
+ },
+ "F11": {
+  "status": "kept",
+  "spans": [
+   "**If you disagree with our decision,** you may have a right to appeal. You may think the papers we already have are enough to approve your claim."
+  ]
+ },
+ "F12": {
+  "status": "kept",
+  "spans": [
+   "please read the form we included with this letter. It is called VA Form 1-4107, *Notice of Procedural and Appellate Rights*."
+  ]
+ },
+ "F13": {
+  "status": "changed",
+  "spans": [
+   "you may have a right to appeal"
+  ],
+  "note": "'you may have a right' weakens 'you have the right to appeal'"
+ }
+}

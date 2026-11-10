@@ -1,0 +1,228 @@
+{
+ "F1": {
+  "status": "kept",
+  "spans": [
+   "**Maury Regional Hospital**\n1224 Trotwood Avenue, Columbia, TN 38401\nPhone: 931-555-0118"
+  ]
+ },
+ "F2": {
+  "status": "kept",
+  "spans": [
+   "**Maury Regional Hospital**\n1224 Trotwood Avenue, Columbia, TN 38401\nPhone: 931-555-0118"
+  ]
+ },
+ "F3": {
+  "status": "changed",
+  "spans": [
+   "## Your Rights as a Hospital Patient"
+  ],
+  "note": "'hospital patient' for 'hospital inpatient', a status that matters for Medicare"
+ },
+ "F4": {
+  "status": "kept",
+  "spans": [
+   "**Medicare helps pay for your care.**"
+  ]
+ },
+ "F5": {
+  "status": "kept",
+  "spans": [
+   "This includes hospital care that you need for your health."
+  ]
+ },
+ "F6": {
+  "status": "kept",
+  "spans": [
+   "You have the right to know what Medicare covers."
+  ]
+ },
+ "F7": {
+  "status": "kept",
+  "spans": [
+   "The hospital will work with you to make sure it is safe for you to leave. They can also help set up any care you may need after you go home."
+  ]
+ },
+ "F8": {
+  "status": "kept",
+  "spans": [
+   "If you are worried about anything, talk to your doctor or the hospital staff."
+  ]
+ },
+ "F9": {
+  "status": "kept",
+  "spans": [
+   "If you are not happy with the quality of your care, call this group: Midsouth Quality Review at 1-888-555-0142."
+  ]
+ },
+ "F10": {
+  "status": "kept",
+  "spans": [
+   "call this group: Midsouth Quality Review at 1-888-555-0142",
+   "- To appeal, call Midsouth Quality Review at 1-888-555-0142."
+  ]
+ },
+ "F11": {
+  "status": "kept",
+  "spans": [
+   "This group is not part of Medicare. It is separate."
+  ]
+ },
+ "F12": {
+  "status": "kept",
+  "spans": [
+   "- If you think the hospital wants you to leave too soon, you can appeal right away."
+  ]
+ },
+ "F13": {
+  "status": "kept",
+  "spans": [
+   "- If you think the hospital wants you to leave too soon, you can appeal right away."
+  ]
+ },
+ "F14": {
+  "status": "kept",
+  "spans": [
+   "- To appeal, call Midsouth Quality Review at 1-888-555-0142."
+  ]
+ },
+ "F15": {
+  "status": "kept",
+  "spans": [
+   "Call as soon as you can. Be sure to call **before you leave the hospital**."
+  ]
+ },
+ "F16": {
+  "status": "kept",
+  "spans": [
+   "If you appeal before you leave, Medicare will keep paying for your stay while you wait to hear the answer."
+  ]
+ },
+ "F17": {
+  "status": "kept",
+  "spans": [
+   "If you appeal before you leave, Medicare will keep paying for your stay while you wait to hear the answer."
+  ]
+ },
+ "F18": {
+  "status": "kept",
+  "spans": [
+   "- If you appeal, the group will look at your records. They will tell you their answer in about 2 days."
+  ]
+ },
+ "F19": {
+  "status": "kept",
+  "spans": [
+   "- You can still appeal after you leave the hospital."
+  ]
+ },
+ "F20": {
+  "status": "kept",
+  "spans": [
+   "  - If you have Original Medicare, call Midsouth Quality Review."
+  ]
+ },
+ "F21": {
+  "status": "kept",
+  "spans": [
+   "  - If you have Original Medicare, call Midsouth Quality Review."
+  ]
+ },
+ "F22": {
+  "status": "kept",
+  "spans": [
+   "  - If you have a Medicare Advantage plan, call your plan. Your plan is Volunteer Advantage Plan. The phone number is 1-877-555-0175."
+  ]
+ },
+ "F23": {
+  "status": "kept",
+  "spans": [
+   "  - If you have a Medicare Advantage plan, call your plan. Your plan is Volunteer Advantage Plan. The phone number is 1-877-555-0175."
+  ]
+ },
+ "F24": {
+  "status": "kept",
+  "spans": [
+   "You will get another letter called the **Detailed Notice of Discharge**."
+  ]
+ },
+ "F25": {
+  "status": "changed",
+  "spans": [
+   "It tells you why the group thinks you no longer need to stay in the hospital."
+  ],
+  "note": "attributes the reasons to the review group; the notice gives the hospital's (or plan's) reasons"
+ },
+ "F26": {
+  "status": "kept",
+  "spans": [
+   "- If the answer is **yes** (they agree with you), Medicare will keep paying for your hospital care."
+  ]
+ },
+ "F27": {
+  "status": "kept",
+  "spans": [
+   "- If the answer is **yes** (they agree with you), Medicare will keep paying for your hospital care."
+  ]
+ },
+ "F28": {
+  "status": "kept",
+  "spans": [
+   "- If you **do not appeal**, or if the answer is **no**, you may have to pay for any care you get after your discharge date."
+  ]
+ },
+ "F29": {
+  "status": "kept",
+  "spans": [
+   "- If you **do not appeal**, or if the answer is **no**, you may have to pay for any care you get after your discharge date."
+  ]
+ },
+ "F30": {
+  "status": "kept",
+  "spans": [
+   "- If you **do not appeal**, or if the answer is **no**, you may have to pay for any care you get after your discharge date."
+  ]
+ },
+ "F31": {
+  "status": "kept",
+  "spans": [
+   "Sign below to show that you got this letter and understand it."
+  ]
+ },
+ "F32": {
+  "status": "kept",
+  "spans": [
+   "- You can ask for Medicare information in another form. Choices include large print, braille, or audio."
+  ]
+ },
+ "F33": {
+  "status": "kept",
+  "spans": [
+   "- If you feel someone treated you unfairly, you have the right to make a complaint."
+  ]
+ },
+ "F34": {
+  "status": "changed",
+  "spans": [
+   "- If you feel someone treated you unfairly, you have the right to make a complaint."
+  ],
+  "note": "'treated you unfairly' is broader than 'discriminated against'"
+ },
+ "F35": {
+  "status": "kept",
+  "spans": [
+   "go to Medicare.gov/about-us/accessibility-nondiscrimination-notice"
+  ]
+ },
+ "F36": {
+  "status": "kept",
+  "spans": [
+   "You can also call 1-800-MEDICARE (1-800-633-4227)."
+  ]
+ },
+ "F37": {
+  "status": "kept",
+  "spans": [
+   "- If you use a TTY phone, call 1-877-486-2048."
+  ]
+ }
+}

@@ -1,0 +1,191 @@
+{
+ "F1": {
+  "status": "kept",
+  "spans": [
+   "## We changed your 2010 tax return"
+  ]
+ },
+ "F2": {
+  "status": "kept",
+  "spans": [
+   "Your new refund: $812.40",
+   "After the fix, the IRS owes you a refund of $812.40."
+  ]
+ },
+ "F3": {
+  "status": "kept",
+  "spans": [
+   "We found a mistake on your 2010 tax return (Form 1040)."
+  ]
+ },
+ "F4": {
+  "status": "kept",
+  "spans": [
+   "The mistake was in the part about work expenses you paid for yourself (called \"Employee Business Expenses\")."
+  ]
+ },
+ "F5": {
+  "status": "kept",
+  "spans": [
+   "Read this letter. Then check our changes against your tax return."
+  ]
+ },
+ "F6": {
+  "status": "kept",
+  "spans": [
+   "**If you agree with our changes:**\n- You do not need to do anything.\n- You should get your $812.40 refund in 4 to 6 weeks."
+  ]
+ },
+ "F7": {
+  "status": "kept",
+  "spans": [
+   "- You should get your $812.40 refund in 4 to 6 weeks."
+  ]
+ },
+ "F8": {
+  "status": "kept",
+  "spans": [
+   "- The one exception: if you owe other taxes or certain debts, we must use your refund to pay those first."
+  ]
+ },
+ "F9": {
+  "status": "kept",
+  "spans": [
+   "**If you do not agree with our changes:**"
+  ]
+ },
+ "F10": {
+  "status": "kept",
+  "spans": [
+   "- Call us at 1-800-555-0124. We can go over your account with you."
+  ]
+ },
+ "F11": {
+  "status": "kept",
+  "spans": [
+   "Or write to us."
+  ]
+ },
+ "F12": {
+  "status": "kept",
+  "spans": [
+   "Fill out the \"Contact information\" section of this letter, tear it off, and mail it to us. Include any papers that support your side."
+  ]
+ },
+ "F13": {
+  "status": "changed",
+  "spans": [
+   "- Please contact us within 60 days of the date on this letter (February 9, 2011). If you do, we will undo our change."
+  ],
+  "note": "drops 'in writing': a phone call wouldn't get the change reversed"
+ },
+ "F14": {
+  "status": "changed",
+  "spans": [
+   "- Please contact us within 60 days of the date on this letter (February 9, 2011). If you do, we will undo our change."
+  ],
+  "note": "drops 'in writing'"
+ },
+ "F15": {
+  "status": "kept",
+  "spans": [
+   "if you can't show us new facts to support your view, and we still think undoing the change is wrong"
+  ]
+ },
+ "F16": {
+  "status": "kept",
+  "spans": [
+   "we will send your case to our audit team"
+  ]
+ },
+ "F17": {
+  "status": "kept",
+  "spans": [
+   "This gives you the right to appeal. You can even go to court before you have to pay any extra tax."
+  ]
+ },
+ "F18": {
+  "status": "kept",
+  "spans": [
+   "The audit team will contact you in 5 to 6 weeks to explain how an audit works and what your rights are."
+  ]
+ },
+ "F19": {
+  "status": "kept",
+  "spans": [
+   "If you wait longer than 60 days"
+  ]
+ },
+ "F20": {
+  "status": "kept",
+  "spans": [
+   "you lose the right to appeal before you pay"
+  ]
+ },
+ "F21": {
+  "status": "kept",
+  "spans": [
+   "We will not undo the change"
+  ]
+ },
+ "F22": {
+  "status": "kept",
+  "spans": [
+   "you will have to pay the extra tax"
+  ]
+ },
+ "F23": {
+  "status": "kept",
+  "spans": [
+   "After you pay, you can still ask for money back by filing a \"claim for refund.\""
+  ]
+ },
+ "F24": {
+  "status": "kept",
+  "spans": [
+   "You must file the claim within 3 years of the day you filed your tax return, or within 2 years of the day you made your last payment for this tax."
+  ]
+ },
+ "F25": {
+  "status": "kept",
+  "spans": [
+   "- If we do not hear from you, we will think you agree with this letter."
+  ]
+ },
+ "F26": {
+  "status": "kept",
+  "spans": [
+   "- If we do not hear from you, we will think you agree with this letter."
+  ]
+ },
+ "F27": {
+  "status": "kept",
+  "spans": [
+   "**Did you move?** Call 1-800-555-0124 or go to www.irs.gov to update your address."
+  ]
+ },
+ "F28": {
+  "status": "kept",
+  "spans": [
+   "**Did you move?** Call 1-800-555-0124 or go to www.irs.gov to update your address."
+  ]
+ },
+ "F29": {
+  "status": "kept",
+  "spans": [
+   "On page 2 of your return, you claimed an amount for \"other credits.\" We did not allow it. The reason is that Form 3800 (General Business Credit) was not finished, or the papers that back it up were missing or not sent in with your return."
+  ]
+ },
+ "F30": {
+  "status": "kept",
+  "spans": [
+   "- Go to www.irs.gov/cp12."
+  ]
+ },
+ "F31": {
+  "status": "kept",
+  "spans": [
+   "- To get tax forms, instructions, or booklets, go to www.irs.gov or call 1-800-TAX-FORM (1-800-829-3676)."
+  ]
+ }
+}

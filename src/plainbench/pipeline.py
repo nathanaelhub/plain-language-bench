@@ -154,8 +154,13 @@ class Result:
 
 
 async def extract(letter: str, model: str) -> tuple[list[Item], list[dict], float]:
-    r = await llm.call(f"<letter>\n{letter}\n</letter>", EXTRACT, model=model, effort=EFFORT)
-    d = llm.json_block(r.text) if not r.error else None
+    cost, d = 0.0, None
+    for _ in range(2):  # one retry: a reply that isn't usable JSON happens now and then
+        r = await llm.call(f"<letter>\n{letter}\n</letter>", EXTRACT, model=model, effort=EFFORT)
+        cost += r.cost_usd
+        d = llm.json_block(r.text) if not r.error else None
+        if isinstance(d, dict) and d.get("items"):
+            break
     items, dropped = [], []
     for x in (d or {}).get("items", []) if isinstance(d, dict) else []:
         if not isinstance(x, dict):
@@ -166,7 +171,7 @@ async def extract(letter: str, model: str) -> tuple[list[Item], list[dict], floa
             items.append(it)
         else:
             dropped.append(asdict(it))
-    return items, dropped, r.cost_usd
+    return items, dropped, cost
 
 
 async def locate(items: list[Item], rewrite: str, model: str) -> float:

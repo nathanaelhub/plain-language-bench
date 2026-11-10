@@ -1,0 +1,209 @@
+{
+ "F1": {
+  "status": "kept",
+  "spans": [
+   "**Riverbend Home Health**\n220 Hatcher Lane, Columbia, TN 38401\nPhone: 931-555-0163"
+  ]
+ },
+ "F2": {
+  "status": "kept",
+  "spans": [
+   "**Notice: Medicare Will Stop Paying for Your Home Health Care**",
+   "**Medicare will stop paying for your home health care on Friday, March 14, 2025.**"
+  ]
+ },
+ "F3": {
+  "status": "kept",
+  "spans": [
+   "**Medicare will stop paying for your home health care on Friday, March 14, 2025.**"
+  ]
+ },
+ "F4": {
+  "status": "kept",
+  "spans": [
+   "Your care provider or health plan believes Medicare will probably not pay for your home health care after this date."
+  ]
+ },
+ "F5": {
+  "status": "kept",
+  "spans": [
+   "**Medicare will stop paying for your home health care on Friday, March 14, 2025.**\n\nYour care provider or health plan believes Medicare will probably not pay for your home health care after this date."
+  ]
+ },
+ "F6": {
+  "status": "kept",
+  "spans": [
+   "If you keep getting care after this date, you may have to pay for it yourself."
+  ]
+ },
+ "F7": {
+  "status": "kept",
+  "spans": [
+   "**You have the right to appeal**"
+  ]
+ },
+ "F8": {
+  "status": "kept",
+  "spans": [
+   "- An outside doctor or expert will review your case right away. This person does not work for your provider or plan."
+  ]
+ },
+ "F9": {
+  "status": "kept",
+  "spans": [
+   "- Your care will keep going while the review is happening."
+  ]
+ },
+ "F10": {
+  "status": "kept",
+  "spans": [
+   "The reviewer will want to hear what you think."
+  ]
+ },
+ "F11": {
+  "status": "kept",
+  "spans": [
+   "You do not have to write anything down. You can if you want to."
+  ]
+ },
+ "F12": {
+  "status": "kept",
+  "spans": [
+   "- The reviewer will also look at your medical records and other facts about your case."
+  ]
+ },
+ "F13": {
+  "status": "kept",
+  "spans": [
+   "- After you ask for an appeal, you will get a letter. It will explain in detail why your care should end."
+  ]
+ },
+ "F14": {
+  "status": "kept",
+  "spans": [
+   "- If the reviewer agrees that Medicare should stop paying, then Medicare and your plan will not pay for care after March 14, 2025."
+  ]
+ },
+ "F15": {
+  "status": "kept",
+  "spans": [
+   "- If the reviewer agrees that Medicare should stop paying, then Medicare and your plan will not pay for care after March 14, 2025."
+  ]
+ },
+ "F16": {
+  "status": "kept",
+  "spans": [
+   "- If you stop your care by March 14, 2025, you will not owe money for it."
+  ]
+ },
+ "F17": {
+  "status": "kept",
+  "spans": [
+   "- If you stop your care by March 14, 2025, you will not owe money for it."
+  ]
+ },
+ "F18": {
+  "status": "kept",
+  "spans": [
+   "- Ask as soon as you can."
+  ]
+ },
+ "F19": {
+  "status": "kept",
+  "spans": [
+   "- The last time you can ask is **noon on Thursday, March 13, 2025**. That is the day before your coverage ends."
+  ]
+ },
+ "F20": {
+  "status": "kept",
+  "spans": [
+   "To ask, call the Quality Improvement Organization."
+  ]
+ },
+ "F21": {
+  "status": "kept",
+  "spans": [
+   "The QIO is a group that Medicare trusts to review these decisions."
+  ]
+ },
+ "F22": {
+  "status": "kept",
+  "spans": [
+   "If you miss the deadline, you may still be able to appeal."
+  ]
+ },
+ "F23": {
+  "status": "kept",
+  "spans": [
+   "If you miss the deadline, you may still be able to appeal."
+  ]
+ },
+ "F24": {
+  "status": "kept",
+  "spans": [
+   "- Your QIO is **Midsouth Quality Review**. Their phone number is **1-888-555-0142**. You can also call this number if you have questions.",
+   "- To learn more, call Midsouth Quality Review at 1-888-555-0142."
+  ]
+ },
+ "F25": {
+  "status": "kept",
+  "spans": [
+   "- The QIO will tell you its decision as soon as it can. This is usually within two days after March 14, 2025."
+  ]
+ },
+ "F26": {
+  "status": "kept",
+  "spans": [
+   "- If you are in a Medicare health plan, the QIO will usually tell you by March 14, 2025."
+  ]
+ },
+ "F27": {
+  "status": "kept",
+  "spans": [
+   "- If you are in a Medicare health plan, the QIO will usually tell you by March 14, 2025."
+  ]
+ },
+ "F28": {
+  "status": "kept",
+  "spans": [
+   "**Please sign below.**\n\nYour signature means you got this letter and understand it."
+  ]
+ },
+ "F29": {
+  "status": "kept",
+  "spans": [
+   "You can ask for this letter in another form, such as large print, Braille, or audio."
+  ]
+ },
+ "F30": {
+  "status": "kept",
+  "spans": [
+   "If you feel you were treated unfairly, you can file a complaint."
+  ]
+ },
+ "F31": {
+  "status": "changed",
+  "spans": [
+   "If you feel you were treated unfairly, you can file a complaint."
+  ],
+  "note": "'treated unfairly' is broader than 'discriminated against', a specific legal protection"
+ },
+ "F32": {
+  "status": "kept",
+  "spans": [
+   "- Go to Medicare.gov/about-us/accessibility-nondiscrimination-notice"
+  ]
+ },
+ "F33": {
+  "status": "kept",
+  "spans": [
+   "- Or call 1-800-MEDICARE (1-800-633-4227)"
+  ]
+ },
+ "F34": {
+  "status": "kept",
+  "spans": [
+   "- If you use a TTY, call 1-877-486-2048"
+  ]
+ }
+}
