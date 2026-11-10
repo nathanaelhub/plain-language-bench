@@ -1,0 +1,597 @@
+{
+ "notice": "irs-cp12",
+ "drafted_by": "claude-opus-5-5",
+ "reviewed": true,
+ "review_notes": [
+  {
+   "note": "read in full"
+  }
+ ],
+ "facts": [
+  {
+   "id": "F1",
+   "type": "subject",
+   "statement": "The IRS made changes to your 2010 Form 1040.",
+   "question": "What did the IRS do to the reader's tax return, and for which year?",
+   "answer": "It made changes to the reader's 2010 Form 1040.",
+   "quote": "Changes to your 2010 Form 1040",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F2",
+   "type": "amount",
+   "statement": "Because of the changes, your adjusted refund is $812.40.",
+   "question": "How much is the reader's adjusted refund?",
+   "answer": "$812.40",
+   "quote": "Adjusted refund: $812.40",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F3",
+   "type": "subject",
+   "statement": "The IRS believes there is a miscalculation on your 2010 Form 1040.",
+   "question": "What problem does the IRS believe it found on the return?",
+   "answer": "A miscalculation on the 2010 Form 1040.",
+   "quote": "We believe there’s a miscalculation on your 2010 Form 1040",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F4",
+   "type": "subject",
+   "statement": "The miscalculation affects the Employee Business Expenses area of your return.",
+   "question": "Which area of the return does the miscalculation affect?",
+   "answer": "Employee Business Expenses.",
+   "quote": "Employee Business Expenses",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F5",
+   "type": "action",
+   "statement": "Review the notice and compare the IRS's changes with the information on your tax return.",
+   "question": "What does the letter suggest the reader do first with the IRS's changes?",
+   "answer": "Review the notice and compare the changes to the information on their tax return.",
+   "quote": "Review this notice, and compare our changes to the information on your tax return.",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F6",
+   "type": "condition",
+   "statement": "The refund timing applies if you agree with the changes the IRS made.",
+   "question": "In what case should the reader expect the refund without doing anything further?",
+   "answer": "If they agree with the changes the IRS made.",
+   "quote": "If you agree with the changes we made",
+   "critical": true,
+   "depends_on": [
+    "F7"
+   ]
+  },
+  {
+   "id": "F7",
+   "type": "deadline",
+   "statement": "You should receive a refund of $812.40 in 4–6 weeks.",
+   "question": "When should the reader receive the refund, and how much will it be?",
+   "answer": "In 4–6 weeks; $812.40.",
+   "quote": "You should receive a refund for $812.40 in 4–6 weeks",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F8",
+   "type": "condition",
+   "statement": "You get the refund only as long as you don't owe other tax or debts the IRS is required to collect.",
+   "question": "What could stop the reader from receiving the full refund?",
+   "answer": "Owing other tax or debts the IRS is required to collect.",
+   "quote": "as long as you don’t owe other tax or debts we’re required to collect",
+   "critical": true,
+   "depends_on": [
+    "F7"
+   ]
+  },
+  {
+   "id": "F9",
+   "type": "condition",
+   "statement": "The steps for contacting the IRS apply if you don't agree with the changes.",
+   "question": "In what case should the reader call or write to the IRS?",
+   "answer": "If they don't agree with the changes.",
+   "quote": "If you don’t agree with the changes",
+   "critical": true,
+   "depends_on": [
+    "F10",
+    "F11",
+    "F12"
+   ]
+  },
+  {
+   "id": "F10",
+   "type": "contact",
+   "statement": "Call 1-800-555-0124 to review your account.",
+   "question": "What number can the reader call to review their account if they disagree?",
+   "answer": "1-800-555-0124",
+   "quote": "Call 1-800-555-0124 to review your account.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F11",
+   "type": "action",
+   "statement": "You can also contact the IRS by mail.",
+   "question": "Besides calling, how else can the reader contact the IRS if they disagree?",
+   "answer": "By mail.",
+   "quote": "You can also contact us by mail.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F12",
+   "type": "action",
+   "statement": "To respond by mail, fill out the Contact information section, detach it, and send it with any correspondence or documentation.",
+   "question": "What should the reader send when contacting the IRS by mail?",
+   "answer": "The filled-out, detached Contact information section, along with any correspondence or documentation.",
+   "quote": "Fill out the Contact information section, detach, and send it to us with any correspondence or documentation.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F13",
+   "type": "deadline",
+   "statement": "To get the change reversed, you must contact the IRS in writing within 60 days of the date of the notice.",
+   "question": "By when, and how, must the reader contact the IRS to have the change reversed?",
+   "answer": "In writing, within 60 days of the notice date (February 9, 2011).",
+   "quote": "If you contact us in writing within 60 days of the date of this notice",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F14",
+   "type": "consequence",
+   "statement": "If you contact the IRS in writing in time, it will reverse the change it made to your account.",
+   "question": "What will the IRS do if the reader writes within the 60 days?",
+   "answer": "Reverse the change it made to their account.",
+   "quote": "we will reverse the change we made to your account",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F15",
+   "type": "condition",
+   "statement": "The case goes to audit if you can't provide additional information that justifies the reversal and the IRS believes the reversal is in error.",
+   "question": "In what case will the IRS send the case to audit after a reversal?",
+   "answer": "If the reader can't provide additional information justifying the reversal and the IRS believes the reversal is in error.",
+   "quote": "if you are unable to provide us additional information that justifies the reversal and we believe the reversal is in error",
+   "critical": true,
+   "depends_on": [
+    "F16"
+   ]
+  },
+  {
+   "id": "F16",
+   "type": "consequence",
+   "statement": "The IRS will forward your case for audit.",
+   "question": "What will the IRS do if the reversal isn't justified?",
+   "answer": "Forward the case for audit.",
+   "quote": "we will forward your case for audit",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F17",
+   "type": "right",
+   "statement": "Going to audit gives you formal appeal rights, including the right to appeal the decision in court before you have to pay the additional tax.",
+   "question": "What rights does the reader get if the case is forwarded for audit?",
+   "answer": "Formal appeal rights, including the right to appeal in court before paying the additional tax.",
+   "quote": "This step gives you formal appeal rights, including the right to appeal our decision in court before you have to pay the additional tax.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F18",
+   "type": "consequence",
+   "statement": "After the case is forwarded, audit staff will contact you within 5 to 6 weeks to explain the audit process and your rights.",
+   "question": "When will audit staff contact the reader after the case is forwarded, and why?",
+   "answer": "Within 5 to 6 weeks, to explain the audit process and their rights.",
+   "quote": "the audit staff will contact you within 5 to 6 weeks to fully explain the audit process and your rights",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F19",
+   "type": "condition",
+   "statement": "These results apply if you do not contact the IRS within the 60-day period.",
+   "question": "What must the reader fail to do for these results to follow?",
+   "answer": "Contact the IRS within the 60-day period.",
+   "quote": "If you do not contact us within the 60-day period",
+   "critical": true,
+   "depends_on": [
+    "F20",
+    "F21",
+    "F22"
+   ]
+  },
+  {
+   "id": "F20",
+   "type": "consequence",
+   "statement": "You will lose your right to appeal the decision before paying the tax.",
+   "question": "What right does the reader lose by missing the 60-day period?",
+   "answer": "The right to appeal the decision before paying the tax.",
+   "quote": "you will lose your right to appeal our decision before payment of tax",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F21",
+   "type": "consequence",
+   "statement": "The change will not be reversed.",
+   "question": "What happens to the IRS's change if the reader doesn't contact it within 60 days?",
+   "answer": "The change will not be reversed.",
+   "quote": "the change will not be reversed",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F22",
+   "type": "consequence",
+   "statement": "You must pay the additional tax.",
+   "question": "What must the reader do about the tax if they don't contact the IRS within 60 days?",
+   "answer": "Pay the additional tax.",
+   "quote": "you must pay the additional tax",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F23",
+   "type": "right",
+   "statement": "After paying, you may file a claim for refund.",
+   "question": "What can the reader do after paying the additional tax?",
+   "answer": "File a claim for refund.",
+   "quote": "You may then file a claim for refund.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F24",
+   "type": "deadline",
+   "statement": "The refund claim must be filed within 3 years of the date you filed the return, or within 2 years of the date of your last payment for this tax.",
+   "question": "By when must the reader file a claim for refund?",
+   "answer": "Within 3 years of the date they filed the tax return, or within 2 years of the date of their last payment for this tax.",
+   "quote": "You must submit the claim within 3 years of the date you filed the tax return, or within 2 years of the date of your last payment for this tax.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F25",
+   "type": "condition",
+   "statement": "This applies if the IRS doesn't hear from you.",
+   "question": "In what case will the IRS assume the reader agrees?",
+   "answer": "If it doesn't hear from them.",
+   "quote": "If we don’t hear from you",
+   "critical": true,
+   "depends_on": [
+    "F26"
+   ]
+  },
+  {
+   "id": "F26",
+   "type": "consequence",
+   "statement": "The IRS will assume you agree with the information in the notice.",
+   "question": "What will the IRS assume if the reader doesn't respond?",
+   "answer": "That they agree with the information in the notice.",
+   "quote": "we’ll assume you agree with the information in this notice",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F27",
+   "type": "condition",
+   "statement": "Contact the IRS about your address if your address has changed.",
+   "question": "In what case should the reader call or visit the website about their address?",
+   "answer": "If their address has changed.",
+   "quote": "If your address has changed",
+   "critical": true,
+   "depends_on": [
+    "F28"
+   ]
+  },
+  {
+   "id": "F28",
+   "type": "contact",
+   "statement": "To update your address, call 1-800-555-0124 or visit www.irs.gov.",
+   "question": "How can the reader tell the IRS about an address change?",
+   "answer": "Call 1-800-555-0124 or visit www.irs.gov.",
+   "quote": "please call 1-800-555-0124 or visit www.irs.gov",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F29",
+   "type": "subject",
+   "statement": "The IRS changed the return because it didn't allow the other credits claimed on page 2, since Form 3800 (General Business Credit) and/or supporting documentation was incomplete or not attached.",
+   "question": "What reason does the IRS give for changing the return?",
+   "answer": "It didn't allow the other credits claimed on page 2 because Form 3800 and/or supporting documentation was incomplete or not attached.",
+   "quote": "We didn’t allow the amount claimed as other credits on page 2 of your tax return because Form 3800, General Business Credit and/or supporting documentation was incomplete or not attached",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F30",
+   "type": "contact",
+   "statement": "More information is at www.irs.gov/cp12.",
+   "question": "What website has more information about this notice?",
+   "answer": "www.irs.gov/cp12",
+   "quote": "Visit www.irs.gov/cp12.",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F31",
+   "type": "contact",
+   "statement": "For tax forms, instructions and publications, visit www.irs.gov or call 1-800-TAX-FORM (1-800-829-3676).",
+   "question": "Where can the reader get tax forms, instructions and publications?",
+   "answer": "www.irs.gov or 1-800-TAX-FORM (1-800-829-3676)",
+   "quote": "For tax forms, instructions, and publications, visit www.irs.gov or call 1-800-TAX-FORM (1-800-829-3676).",
+   "critical": false,
+   "depends_on": []
+  }
+ ],
+ "sentences": [
+  {
+   "i": 0,
+   "start": 0,
+   "text": "Department of Treasury\nInternal Revenue Service",
+   "facts": [],
+   "none": "agency letterhead",
+   "override": null
+  },
+  {
+   "i": 1,
+   "start": 49,
+   "text": "Notice CP12\nNotice date February 9, 2011",
+   "facts": [],
+   "none": "notice identifier and notice date",
+   "override": "Contains a notice number and date, but these are the notice's own identifier and date, which are not critical under the Nov 10 clarification. The date is cited in F13's answer as the start of the 60-day period."
+  },
+  {
+   "i": 2,
+   "start": 91,
+   "text": "Marcus Lee\n14 Cedar Run\nFranklin, TN 37064",
+   "facts": [],
+   "none": "address block",
+   "override": "The numbers are the recipient's street address and ZIP code, not facts about the case."
+  },
+  {
+   "i": 3,
+   "start": 135,
+   "text": "## Changes to your 2010 Form 1040",
+   "facts": [
+    "F1"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 4,
+   "start": 170,
+   "text": "Adjusted refund: $812.40",
+   "facts": [
+    "F2"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 5,
+   "start": 196,
+   "text": "We believe there’s a miscalculation on your 2010 Form 1040, which affects the following area of your return:",
+   "facts": [
+    "F3"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 6,
+   "start": 306,
+   "text": "- Employee Business Expenses",
+   "facts": [
+    "F4"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 7,
+   "start": 336,
+   "text": "We made changes to your return that correct this error.",
+   "facts": [
+    "F1"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 8,
+   "start": 392,
+   "text": "As a result, you are due a refund of $812.40.",
+   "facts": [
+    "F2"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 9,
+   "start": 439,
+   "text": "## What you need to do",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 10,
+   "start": 463,
+   "text": "Review this notice, and compare our changes to the information on your tax return.",
+   "facts": [
+    "F5"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 11,
+   "start": 547,
+   "text": "If you agree with the changes we made",
+   "facts": [
+    "F6"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 12,
+   "start": 586,
+   "text": "- You should receive a refund for $812.40 in 4–6 weeks as long as you don’t owe other tax or debts we’re required to collect.",
+   "facts": [
+    "F7",
+    "F8"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 13,
+   "start": 713,
+   "text": "If you don’t agree with the changes",
+   "facts": [
+    "F9"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 14,
+   "start": 750,
+   "text": "- Call 1-800-555-0124 to review your account. You can also contact us by mail. Fill out the Contact information section, detach, and send it to us with any correspondence or documentation.",
+   "facts": [
+    "F10",
+    "F11",
+    "F12"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 15,
+   "start": 939,
+   "text": "- If you contact us in writing within 60 days of the date of this notice, we will reverse the change we made to your account. However, if you are unable to provide us additional information that justifies the reversal and we believe the reversal is in error, we will forward your case for audit. This step gives you formal appeal rights, including the right to appeal our decision in court before you have to pay the additional tax. After we forward your case, the audit staff will contact you within 5 to 6 weeks to fully explain the audit process and your rights. If you do not contact us within the 60-day period, you will lose your right to appeal our decision before payment of tax.",
+   "facts": [
+    "F13",
+    "F14",
+    "F15",
+    "F16",
+    "F17",
+    "F18",
+    "F19",
+    "F20"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 16,
+   "start": 1627,
+   "text": "- If you do not contact us within 60 days, the change will not be reversed and you must pay the additional tax. You may then file a claim for refund. You must submit the claim within 3 years of the date you filed the tax return, or within 2 years of the date of your last payment for this tax.",
+   "facts": [
+    "F19",
+    "F21",
+    "F22",
+    "F23",
+    "F24"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 17,
+   "start": 1921,
+   "text": "- If we don’t hear from you, we’ll assume you agree with the information in this notice.",
+   "facts": [
+    "F25",
+    "F26"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 18,
+   "start": 2011,
+   "text": "If your address has changed, please call 1-800-555-0124 or visit www.irs.gov.",
+   "facts": [
+    "F27",
+    "F28"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 19,
+   "start": 2090,
+   "text": "## Changes to your 2010 tax return",
+   "facts": [],
+   "none": "section heading restating F1",
+   "override": "The year 2010 in this heading only repeats the tax year already captured in F1."
+  },
+  {
+   "i": 20,
+   "start": 2126,
+   "text": "Information was changed because of the following:",
+   "facts": [
+    "F29"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 21,
+   "start": 2177,
+   "text": "- We didn’t allow the amount claimed as other credits on page 2 of your tax return because Form 3800, General Business Credit and/or supporting documentation was incomplete or not attached to your tax return.",
+   "facts": [
+    "F29"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 22,
+   "start": 2387,
+   "text": "## Additional information",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 23,
+   "start": 2414,
+   "text": "- Visit www.irs.gov/cp12.",
+   "facts": [
+    "F30"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 24,
+   "start": 2440,
+   "text": "- For tax forms, instructions, and publications, visit www.irs.gov or call 1-800-TAX-FORM (1-800-829-3676).",
+   "facts": [
+    "F31"
+   ],
+   "none": null,
+   "override": null
+  }
+ ],
+ "reviewer": "Claude (in session), November 10, 2026"
+}

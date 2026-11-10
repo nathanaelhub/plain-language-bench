@@ -30,6 +30,13 @@
    "from": true,
    "to": false,
    "why": "signing to acknowledge receipt; not critical under the clarified rule"
+  },
+  {
+   "fact": "F42",
+   "field": "critical",
+   "from": true,
+   "to": false,
+   "why": "contact given only in the accessibility/nondiscrimination paragraph; not critical"
   }
  ],
  "facts": [
@@ -466,7 +473,7 @@
    "question": "What website gives information on accessibility and nondiscrimination?",
    "answer": "Medicare.gov/about-us/accessibility-nondiscrimination-notice",
    "quote": "Visit Medicare.gov/about-us/accessibility-nondiscrimination-notice.",
-   "critical": true,
+   "critical": false,
    "depends_on": []
   }
  ],

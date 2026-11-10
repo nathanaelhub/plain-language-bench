@@ -1,0 +1,394 @@
+{
+ "notice": "va-pension",
+ "drafted_by": "claude-opus-5-5",
+ "reviewed": true,
+ "review_notes": [
+  {
+   "note": "read in full"
+  }
+ ],
+ "facts": [
+  {
+   "id": "F1",
+   "type": "subject",
+   "statement": "VA has received your claim for a pension.",
+   "question": "What claim is this letter about?",
+   "answer": "Your claim for a VA pension.",
+   "quote": "We have your claim for a pension.",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F2",
+   "type": "subject",
+   "statement": "VA is asking you for more information because the law requires it to.",
+   "question": "Why is VA writing to you about your claim?",
+   "answer": "VA needs more information from you; its laws require it to ask.",
+   "quote": "Our laws require us to ask you for more information.",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F3",
+   "type": "subject",
+   "statement": "VA will use the information to decide whether it can pay you a pension.",
+   "question": "What will VA use the information for?",
+   "answer": "To decide whether it can pay you a pension.",
+   "quote": "help us decide whether we can pay you a pension",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F4",
+   "type": "action",
+   "statement": "Send VA a medical report from a doctor or clinic.",
+   "question": "What do you need to send VA?",
+   "answer": "A medical report from a doctor or clinic.",
+   "quote": "Send us a medical report from a doctor or clinic",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F5",
+   "type": "condition",
+   "statement": "The report must come from a doctor or clinic you visited in the past six months.",
+   "question": "Which doctor or clinic can the medical report come from?",
+   "answer": "One you visited in the past six months.",
+   "quote": "that you visited in the past six months",
+   "critical": true,
+   "depends_on": [
+    "F4"
+   ]
+  },
+  {
+   "id": "F6",
+   "type": "condition",
+   "statement": "The medical report should show why you can't work.",
+   "question": "What should the medical report show?",
+   "answer": "Why you can't work.",
+   "quote": "The report should show why you can't work.",
+   "critical": true,
+   "depends_on": [
+    "F4"
+   ]
+  },
+  {
+   "id": "F7",
+   "type": "action",
+   "statement": "Take this letter and the enclosed Doctor's Guide to your doctor.",
+   "question": "What should you take to your doctor?",
+   "answer": "This letter and the enclosed Doctor's Guide.",
+   "quote": "Please take this letter and the enclosed Doctor's Guide to your doctor.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F8",
+   "type": "deadline",
+   "statement": "VA needs the doctor's report by August 15, 2025.",
+   "question": "By what date does VA need the doctor's report?",
+   "answer": "August 15, 2025.",
+   "quote": "We need the doctor's report by August 15, 2025.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F9",
+   "type": "consequence",
+   "statement": "VA will turn down your pension claim.",
+   "question": "What will happen to your claim if VA doesn't get the report in time?",
+   "answer": "VA will turn down (deny) your claim.",
+   "quote": "We'll have to turn down your claim",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F10",
+   "type": "condition",
+   "statement": "The claim is turned down if VA does not get the report by the deadline.",
+   "question": "When will VA turn down your claim?",
+   "answer": "If VA does not get the doctor's report by August 15, 2025.",
+   "quote": "if we don't get the report by that date",
+   "critical": true,
+   "depends_on": [
+    "F9"
+   ]
+  },
+  {
+   "id": "F11",
+   "type": "right",
+   "statement": "The information you give VA is kept private.",
+   "question": "Is the information you give VA kept private?",
+   "answer": "Yes, it is private.",
+   "quote": "The information you give us is private.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F12",
+   "type": "condition",
+   "statement": "VA might have to give out your information in a few special cases.",
+   "question": "Are there exceptions where VA may share your information?",
+   "answer": "Yes, VA might have to give it out in a few special cases.",
+   "quote": "We might have to give out this information in a few special cases.",
+   "critical": true,
+   "depends_on": [
+    "F11",
+    "F13"
+   ]
+  },
+  {
+   "id": "F13",
+   "type": "right",
+   "statement": "VA will not give your information to the general public without your permission.",
+   "question": "Will VA give your information to the general public?",
+   "answer": "Not without your permission.",
+   "quote": "we will not give it out to the general public without your permission",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F14",
+   "type": "right",
+   "statement": "An attached form explains your privacy rights.",
+   "question": "Where can you read about your privacy rights?",
+   "answer": "In the attached form (Your Privacy Rights).",
+   "quote": "We've attached a form which explains your privacy rights.",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F15",
+   "type": "contact",
+   "statement": "For questions, call VA toll-free at 1-800-827-1000.",
+   "question": "What number can you call with questions?",
+   "answer": "1-800-827-1000 (toll-free).",
+   "quote": "call us toll-free by dialing 1-800-827-1000",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F16",
+   "type": "contact",
+   "statement": "VA's TDD number for people who are hearing impaired is 1-800-829-4833.",
+   "question": "What is VA's TDD number for the hearing impaired?",
+   "answer": "1-800-829-4833.",
+   "quote": "Our TDD number for the hearing impaired is 1-800-829-4833.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F17",
+   "type": "action",
+   "statement": "Have this letter with you when you call.",
+   "question": "What should you have with you when you call VA?",
+   "answer": "This letter.",
+   "quote": "If you call, please have this letter with you.",
+   "critical": false,
+   "depends_on": []
+  }
+ ],
+ "sentences": [
+  {
+   "i": 0,
+   "start": 0,
+   "text": "Dear Mr. Whitfield:",
+   "facts": [],
+   "none": "greeting",
+   "override": null
+  },
+  {
+   "i": 1,
+   "start": 21,
+   "text": "We have your claim for a pension.",
+   "facts": [
+    "F1"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 2,
+   "start": 55,
+   "text": "Our laws require us to ask you for more information.",
+   "facts": [
+    "F2"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 3,
+   "start": 108,
+   "text": "The information you give us will help us decide whether we can pay you a pension.",
+   "facts": [
+    "F3"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 4,
+   "start": 191,
+   "text": "### What we need",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 5,
+   "start": 209,
+   "text": "Send us a medical report from a doctor or clinic that you visited in the past six months.",
+   "facts": [
+    "F4",
+    "F5"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 6,
+   "start": 299,
+   "text": "The report should show why you can't work.",
+   "facts": [
+    "F6"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 7,
+   "start": 342,
+   "text": "Please take this letter and the enclosed Doctor's Guide to your doctor.",
+   "facts": [
+    "F7"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 8,
+   "start": 415,
+   "text": "### When we need it",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 9,
+   "start": 436,
+   "text": "We need the doctor's report by August 15, 2025.",
+   "facts": [
+    "F8"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 10,
+   "start": 484,
+   "text": "We'll have to turn down your claim if we don't get the report by that date.",
+   "facts": [
+    "F9",
+    "F10"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 11,
+   "start": 561,
+   "text": "## Your right to privacy",
+   "facts": [],
+   "none": "section heading",
+   "override": "Contains 'right' only as a heading label; the privacy rights themselves are captured as F11-F13 from sentences 12-14."
+  },
+  {
+   "i": 12,
+   "start": 587,
+   "text": "The information you give us is private.",
+   "facts": [
+    "F11"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 13,
+   "start": 627,
+   "text": "We might have to give out this information in a few special cases.",
+   "facts": [
+    "F12"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 14,
+   "start": 694,
+   "text": "But we will not give it out to the general public without your permission.",
+   "facts": [
+    "F13"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 15,
+   "start": 769,
+   "text": "We've attached a form which explains your privacy rights.",
+   "facts": [
+    "F14"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 16,
+   "start": 827,
+   "text": "If you have any questions, call us toll-free by dialing 1-800-827-1000.",
+   "facts": [
+    "F15"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 17,
+   "start": 899,
+   "text": "Our TDD number for the hearing impaired is 1-800-829-4833.",
+   "facts": [
+    "F16"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 18,
+   "start": 958,
+   "text": "If you call, please have this letter with you.",
+   "facts": [
+    "F17"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 19,
+   "start": 1006,
+   "text": "Sincerely",
+   "facts": [],
+   "none": "sign-off",
+   "override": null
+  },
+  {
+   "i": 20,
+   "start": 1017,
+   "text": "Enclosures:\nYour Privacy Rights\nDoctor's Guide",
+   "facts": [],
+   "none": "enclosure list",
+   "override": "'Rights' appears only as the title of an enclosure; the enclosure is captured as F14 (sentence 15), and the Doctor's Guide as F7 (sentence 7)."
+  }
+ ],
+ "reviewer": "Claude (in session), November 10, 2026"
+}

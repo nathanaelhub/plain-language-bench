@@ -1,0 +1,88 @@
+---
+id: irs-cp05
+title: CP05, refund held while the return is reviewed
+agency: Internal Revenue Service
+source: IRS sample notice CP05 (English)
+url: https://www.irs.gov/pub/notices/cp05_english.pdf
+raw: sources/raw/irs-cp05.pdf
+raw_sha256: a668b3c7df241fd4
+retrieved: 2026-11-09
+license: US government work, public domain
+fills:
+  "TAXPAYER NAME / ADDRESS": Denise Holloway, 87 Elm Court, Spring Hill, TN 37174
+  "XXX-XX-NNNN": left as in the sample
+excerpt: pages 1 and 2 through 'If you need assistance'; the Taxpayer Advocate Service and Low Income Taxpayer Clinic boilerplate that follows is left out
+control: false
+already_plain: false
+gsa_after: false
+---
+
+Department of the Treasury
+Internal Revenue Service
+4800 Buford Hwy
+Stop 46B – ATSC
+Chamblee, GA 30341
+
+Notice CP05
+Tax year 2018
+Notice date April 30, 2019
+Social Security number XXX-XX-NNNN
+Phone 800-829-1040
+
+Denise Holloway
+87 Elm Court
+Spring Hill, TN 37174
+
+## Message about your 2018 tax return
+
+We're holding your refund until we finish reviewing your tax return
+
+We’ve received your 2018 tax return. We’re holding your refund until we finish verifying the accuracy of your return.
+
+We selected your return to verify one or more of the following you may have reported:
+
+- Income
+- Income tax withholding
+- Tax credits
+- Business income
+
+## What you need to know
+
+We’ll contact you or your authorized representative if we have questions. We may also contact third parties if we need to verify information while we’re reviewing your return. When we contact third parties, we’re prohibited from disclosing any more information than is necessary to verify what we need.
+
+We’re required to keep a record of third-party contacts we’ve made. You have the right to request a copy of the list of those contacted by calling the number below or writing to the address at the top of this notice.
+
+## What you need to do
+
+If you filed the tax return
+
+You don’t need to do anything at this time. We understand your tax refund is very important to you and we’ll work to complete our review as quickly as possible.
+
+We could take up to 60 days to complete this review. Please don’t contact us prior to 60 days from the date of this notice since we won’t be able to provide you any additional information.
+
+You can check your refund status at www.irs.gov/refunds or the IRS2Go mobile app for smart phones.
+
+Once we finish our review, we may send your refund, ask for additional information, or deny all or part of your refund. If you don’t agree with the denial, you’ll have an opportunity to appeal.
+
+If you haven’t received your refund or heard from us after 60 days, you can call us at the number listed above.
+
+If you didn't file the tax return
+
+Someone may have attempted to use your personal information to obtain a tax refund. You should do the following:
+
+- Send Form 14039, Identity Theft Affidavit, to the address in the Form 14039 instructions, along with a copy of this notice.
+- Notify your financial institutions.
+- Contact the fraud department in one of the three major credit bureaus below. The one you contact will notify the others. Equifax 800-525-6285 www.equifax.com; Experian 888-397-3742 www.experian.com; TransUnion 800-680-7289 www.transunion.com
+- Report fraudulent activity to your local police or sheriff’s department.
+- File a complaint with the Federal Trade Commission on their Website, www.identitytheft.gov, or by calling 877-438-4338.
+- Contact the Social Security Administration’s website, www.ssa.gov/pubs/10064.html, or call them at 800-772-1213 to get information on identity theft involving Social Security numbers.
+- Visit www.irs.gov/ID for additional information.
+
+## Additional information
+
+- Visit www.irs.gov/cp05
+- For tax forms, instructions, and publications, visit www.irs.gov/forms-pubs or call 800-TAX-FORM (800-829-3676).
+- You can contact us by mail at the address at the top of the first page of this notice. Be sure to include your Social Security number and the tax year and form number you are writing about.
+- Keep this notice for your records.
+
+If you need assistance, please don’t hesitate to contact us.

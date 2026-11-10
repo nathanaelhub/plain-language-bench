@@ -44,9 +44,25 @@ EDITS = [
     ("va-enrollment", "F11", "critical", False, "points to an enclosure; " + NOT_CRITICAL),
     ("va-enrollment", "F28", "critical", False, "points to an enclosure; F27 (the right) stays critical"),
 ]
-CHECKED = {  # notices read in full with no other change
+# Second batch (12 notices drafted after the rule was clarified), read in full November 10.
+EDITS += [
+    ("irs-cp14", "F45", "critical", False, "a 'read more' page (payment plans); not critical, as in irs-cp503 F28 and irs-lt11 F24"),
+]
+CHECKED = {  # notices read in full with no other change than the consistency rule below
     "va-claim-info": "read in full; no changes",
+    **{nid: "read in full" for nid in ("cms-denc", "cms-hhccn", "cms-im", "cms-moon", "irs-cp05", "irs-cp12",
+                                        "irs-cp503", "irs-cp59", "irs-cp75", "irs-cp88", "irs-lt11", "va-pension")},
 }
+
+
+def boilerplate_contact(fact: dict, sentences: list[dict]) -> bool:
+    """A phone number or web page that appears only in Medicare's accessibility and
+    nondiscrimination paragraph: general information, so not critical (the rights in that
+    paragraph stay critical)."""
+    if fact["type"] != "contact":
+        return False
+    homes = [s["text"] for s in sentences if fact["id"] in (s.get("facts") or [])]
+    return bool(homes) and all("discriminated" in h or "accessibility-nondiscrimination" in h for h in homes)
 
 
 def main():
@@ -57,12 +73,17 @@ def main():
         path = CORPUS / nid / "facts.json"
         data = json.loads(path.read_text(encoding="utf-8"))
         notes = []
+        for f in data["facts"]:
+            if f.get("critical") and boilerplate_contact(f, data["sentences"]):
+                notes.append({"fact": f["id"], "field": "critical", "from": True, "to": False,
+                              "why": "contact given only in the accessibility/nondiscrimination paragraph; not critical"})
+                f["critical"] = False
         for fid, fld, val, why in by_notice.get(nid, []):
             f = next(x for x in data["facts"] if x["id"] == fid)
             if f.get(fld) != val:
                 notes.append({"fact": fid, "field": fld, "from": f.get(fld), "to": val, "why": why})
                 f[fld] = val
-        if nid in CHECKED:
+        if nid in CHECKED and {"note": CHECKED[nid]} not in data.get("review_notes", []):
             notes.append({"note": CHECKED[nid]})
         data["reviewed"] = True
         data["reviewer"] = REVIEWER

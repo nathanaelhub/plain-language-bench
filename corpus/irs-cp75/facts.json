@@ -1,0 +1,757 @@
+{
+ "notice": "irs-cp75",
+ "drafted_by": "claude-opus-5-5",
+ "reviewed": true,
+ "review_notes": [
+  {
+   "note": "read in full"
+  }
+ ],
+ "facts": [
+  {
+   "id": "F1",
+   "type": "contact",
+   "statement": "The IRS office handling the audit is Examination Operations, Stop 22B, PO Box 47-421, Doraville, GA 30362-0421.",
+   "question": "What is the mailing address of the IRS office that sent this notice?",
+   "answer": "Internal Revenue Service, Examination Operations, Stop 22B, PO Box 47-421, Doraville, GA 30362-0421",
+   "quote": "Examination Operations\nStop 22B\nPO Box 47-421\nDoraville, GA 30362-0421",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F2",
+   "type": "subject",
+   "statement": "The notice is dated January 28, 2019.",
+   "question": "What is the date of this notice?",
+   "answer": "January 28, 2019",
+   "quote": "Notice date January 28, 2019",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F3",
+   "type": "contact",
+   "statement": "The IRS phone number for this notice is 800-829-1040.",
+   "question": "What phone number is listed for contacting the IRS about this notice?",
+   "answer": "800-829-1040",
+   "quote": "Phone 800-829-1040",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F4",
+   "type": "subject",
+   "statement": "The IRS is auditing the reader's 2016 Form 1040 tax return.",
+   "question": "What is the IRS doing with the reader's tax return, and for which year?",
+   "answer": "Auditing the 2016 Form 1040",
+   "quote": "We’re auditing your 2016 Form 1040",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F5",
+   "type": "action",
+   "statement": "The reader must send documentation supporting items claimed on the tax return.",
+   "question": "What does the IRS need the reader to send?",
+   "answer": "Supporting documentation for items claimed on the tax return",
+   "quote": "You need to send supporting documentation",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F6",
+   "type": "consequence",
+   "statement": "The IRS is holding the Earned Income Credit and/or Additional Child Tax Credit portions of the refund until the audit is finished.",
+   "question": "Which parts of the refund is the IRS holding, and until when?",
+   "answer": "The EIC and/or ACTC portions, until the audit results are in",
+   "quote": "We’re holding the Earned Income Credit (EIC), and/or the Additional Child Tax Credit (ACTC) portions of your refund pending the results of the audit.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F7",
+   "type": "condition",
+   "statement": "This applies only if the reader claimed the Premium Tax Credit.",
+   "question": "When might the IRS hold more of the refund because of the Premium Tax Credit?",
+   "answer": "If the reader claimed the Premium Tax Credit (PTC)",
+   "quote": "If you claimed the Premium Tax Credit (PTC)",
+   "critical": true,
+   "depends_on": [
+    "F8"
+   ]
+  },
+  {
+   "id": "F8",
+   "type": "consequence",
+   "statement": "The IRS may also hold all or part of the refund because of a discrepancy with the Premium Tax Credit.",
+   "question": "What else may the IRS hold because of a Premium Tax Credit discrepancy?",
+   "answer": "All or part of the refund",
+   "quote": "we may also hold all or part of your refund due to a discrepancy with your PTC",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F9",
+   "type": "action",
+   "statement": "Complete the Response form and mail or fax it with the documentation.",
+   "question": "What form must the reader complete, and how can it be sent?",
+   "answer": "The Response form, mailed or faxed along with the documentation",
+   "quote": "Complete the Response form and mail or fax it to us along with your documentation",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F10",
+   "type": "deadline",
+   "statement": "The response and documentation are due within 30 days from the notice date.",
+   "question": "By when must the reader respond?",
+   "answer": "Within 30 days from the notice date of January 28, 2019 (by February 27, 2019)",
+   "quote": "within 30 days from the date of this notice",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F11",
+   "type": "action",
+   "statement": "Send copies of the information that supports the audit items.",
+   "question": "Should the reader send originals or copies of supporting information?",
+   "answer": "Copies",
+   "quote": "Send copies of information that support the audit items below.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F12",
+   "type": "contact",
+   "statement": "The reader can call 1-866-555-0188.",
+   "question": "What number should the reader call if they can't get documents ready in time?",
+   "answer": "1-866-555-0188",
+   "quote": "Call us at 1-866-555-0188",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F13",
+   "type": "condition",
+   "statement": "Call that number if you can't get your documentation ready in time.",
+   "question": "When should the reader call 1-866-555-0188?",
+   "answer": "If they can't get their documentation ready in time",
+   "quote": "if you can’t get your documentation ready in time",
+   "critical": true,
+   "depends_on": [
+    "F12"
+   ]
+  },
+  {
+   "id": "F14",
+   "type": "condition",
+   "statement": "The following consequences apply if the reader doesn't respond with documentation within 30 days of the notice date.",
+   "question": "What triggers the IRS disallowing the audited items?",
+   "answer": "Not mailing or faxing the supporting documentation within 30 days from the notice date",
+   "quote": "If you don’t mail or fax your supporting documentation within 30 days from the date of this notice",
+   "critical": true,
+   "depends_on": [
+    "F15",
+    "F16",
+    "F24"
+   ]
+  },
+  {
+   "id": "F15",
+   "type": "consequence",
+   "statement": "The IRS will disallow the items being audited.",
+   "question": "What will the IRS do with the audited items if the reader doesn't respond in time?",
+   "answer": "Disallow them",
+   "quote": "we’ll disallow the items being audited",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F16",
+   "type": "consequence",
+   "statement": "The reader may owe additional tax if they don't respond in time.",
+   "question": "What may the reader owe if they don't respond in time?",
+   "answer": "Additional tax",
+   "quote": "you may owe additional tax",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F17",
+   "type": "action",
+   "statement": "Review each audit item and follow its instructions on what to send.",
+   "question": "What should the reader do with each audit item listed?",
+   "answer": "Review it and follow the instructions on what to send",
+   "quote": "Review each item and follow the instructions on what to send.",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F18",
+   "type": "action",
+   "statement": "To qualify for the Earned Income Credit, submit the requested documentation showing the child met the relationship, age and residency tests.",
+   "question": "What must the reader show to qualify for the Earned Income Credit?",
+   "answer": "That the child met the relationship, age and residency tests",
+   "quote": "Submit the documentation requested to show your child met the relationship, age and residency tests to qualify you for the Earned Income Credit.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F19",
+   "type": "action",
+   "statement": "Review the enclosed Form 886-H-EIC, which lists the documents needed for the Earned Income Credit.",
+   "question": "Which enclosed form lists the documents needed for the Earned Income Credit?",
+   "answer": "Form 886-H-EIC",
+   "quote": "Review the enclosed Form 886-H-EIC",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F20",
+   "type": "action",
+   "statement": "To qualify for the Premium Tax Credit, submit the requested documentation showing entitlement to claim it.",
+   "question": "What must the reader submit for the Premium Tax Credit?",
+   "answer": "The requested documentation showing they are entitled to claim the Premium Tax Credit",
+   "quote": "Submit the documentation requested to show you’re entitled to claim the Premium Tax Credit.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F21",
+   "type": "action",
+   "statement": "Review the enclosed Form 14950, Premium Tax Credit Verification.",
+   "question": "Which enclosed form applies to the Premium Tax Credit?",
+   "answer": "Form 14950, Premium Tax Credit Verification",
+   "quote": "Review the enclosed Form 14950, Premium Tax Credit Verification.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F22",
+   "type": "action",
+   "statement": "To qualify for the filing status, submit the requested documentation showing the reader is head of household.",
+   "question": "What must the reader show to support their filing status?",
+   "answer": "That they are the head of their household",
+   "quote": "Submit the documentation requested to show you’re the head of your household.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F23",
+   "type": "action",
+   "statement": "Review the enclosed Form 886-H-HOH, Supporting Documents to Prove Head of Household Filing Status.",
+   "question": "Which enclosed form lists the documents needed to prove head of household status?",
+   "answer": "Form 886-H-HOH",
+   "quote": "Review the enclosed Form 886-H-HOH, Supporting Documents to Prove Head of Household Filing Status.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F24",
+   "type": "consequence",
+   "statement": "The IRS will send an audit report showing the proposed changes to the tax return.",
+   "question": "What will the IRS send if the reader doesn't respond in time?",
+   "answer": "An audit report showing the proposed changes to the tax return",
+   "quote": "send you an audit report showing the proposed changes to your tax return",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F25",
+   "type": "consequence",
+   "statement": "The IRS will review the information provided, which will take at least 30 days.",
+   "question": "How long should the reader allow for the IRS to review their information?",
+   "answer": "At least 30 days",
+   "quote": "We’ll review the information you provide (please allow us at least 30 days).",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F26",
+   "type": "condition",
+   "statement": "This applies if the information supports the tax return.",
+   "question": "When will the IRS send the refund and close the audit?",
+   "answer": "If the information supports the tax return",
+   "quote": "If the information supports your tax return",
+   "critical": true,
+   "depends_on": [
+    "F27"
+   ]
+  },
+  {
+   "id": "F27",
+   "type": "consequence",
+   "statement": "The IRS will send the refund and a letter saying the audit is closed.",
+   "question": "What will the reader receive if their information supports the return?",
+   "answer": "The refund and a letter saying the audit is closed",
+   "quote": "we’ll send your refund and a letter letting you know your audit is closed",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F28",
+   "type": "condition",
+   "statement": "This applies if the information doesn't fully support the tax return.",
+   "question": "When will the IRS send an audit report proposing changes after reviewing the information?",
+   "answer": "If the information doesn't fully support the tax return",
+   "quote": "If the information doesn’t fully support your tax return",
+   "critical": true,
+   "depends_on": [
+    "F29",
+    "F30"
+   ]
+  },
+  {
+   "id": "F29",
+   "type": "consequence",
+   "statement": "The IRS will send an audit report explaining the proposed changes.",
+   "question": "What will the IRS send if the information doesn't fully support the return?",
+   "answer": "An audit report explaining the proposed changes",
+   "quote": "we’ll send you an audit report that explains the proposed changes",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F30",
+   "type": "consequence",
+   "statement": "The reader may owe additional tax plus penalties and interest.",
+   "question": "Besides additional tax, what else may the reader owe?",
+   "answer": "Penalties and interest",
+   "quote": "including any additional tax you may owe plus any penalties and interest that may apply",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F31",
+   "type": "contact",
+   "statement": "More information is at www.irs.gov/cp75.",
+   "question": "What website has information about this notice?",
+   "answer": "www.irs.gov/cp75",
+   "quote": "Visit www.irs.gov/cp75",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F32",
+   "type": "right",
+   "statement": "The reader has appeal rights, which are described in the enclosed The Examination Process (Publication 3498-A).",
+   "question": "Where are the reader's appeal rights described?",
+   "answer": "In the enclosed The Examination Process (Publication 3498-A)",
+   "quote": "The Examination Process (Publication 3498-A) which describes your appeal rights",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F33",
+   "type": "contact",
+   "statement": "Tax forms, instructions and publications are available at www.irs.gov/forms-pubs or 800-TAX-FORM (800-829-3676).",
+   "question": "Where can the reader get tax forms and publications?",
+   "answer": "www.irs.gov/forms-pubs or 800-TAX-FORM (800-829-3676)",
+   "quote": "visit www.irs.gov/forms-pubs or call 800-TAX-FORM (800-829-3676)",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F34",
+   "type": "right",
+   "statement": "The enclosed Publication 1 explains the reader's rights as a taxpayer.",
+   "question": "Which enclosed publication explains taxpayer rights?",
+   "answer": "Publication 1, Your Rights as a Taxpayer",
+   "quote": "Review the enclosed Publication 1, Your Rights as a Taxpayer.",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F35",
+   "type": "action",
+   "statement": "Keep this notice for your records.",
+   "question": "What should the reader do with this notice?",
+   "answer": "Keep it for their records",
+   "quote": "Keep this notice for your records.",
+   "critical": false,
+   "depends_on": []
+  }
+ ],
+ "sentences": [
+  {
+   "i": 0,
+   "start": 0,
+   "text": "Department of the Treasury\nInternal Revenue Service\nExamination Operations\nStop 22B\nPO Box 47-421\nDoraville, GA 30362-0421",
+   "facts": [
+    "F1"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 1,
+   "start": 124,
+   "text": "Notice CP75\nTax year 2016\nNotice date January 28, 2019\nPhone 800-829-1040",
+   "facts": [
+    "F2",
+    "F3"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 2,
+   "start": 199,
+   "text": "Tasha Greene\n418 Lake Street\nMurfreesboro, TN 37130",
+   "facts": [],
+   "none": "reader's name and address block",
+   "override": "numbers are the reader's own street address and ZIP code, not information the letter gives them"
+  },
+  {
+   "i": 3,
+   "start": 252,
+   "text": "## We’re auditing your 2016 Form 1040",
+   "facts": [
+    "F4"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 4,
+   "start": 291,
+   "text": "You need to send supporting documentation",
+   "facts": [
+    "F5"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 5,
+   "start": 334,
+   "text": "We need you to send us information to support items you claimed on your tax return.",
+   "facts": [
+    "F5"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 6,
+   "start": 419,
+   "text": "## What you need to do immediately",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 7,
+   "start": 455,
+   "text": "We’re holding the Earned Income Credit (EIC), and/or the Additional Child Tax Credit (ACTC) portions of your refund pending the results of the audit.",
+   "facts": [
+    "F6"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 8,
+   "start": 605,
+   "text": "If you claimed the Premium Tax Credit (PTC), we may also hold all or part of your refund due to a discrepancy with your PTC.",
+   "facts": [
+    "F7",
+    "F8"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 9,
+   "start": 731,
+   "text": "- Complete the Response form and mail or fax it to us along with your documentation within 30 days from the date of this notice.",
+   "facts": [
+    "F9",
+    "F10"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 10,
+   "start": 860,
+   "text": "- Send copies of information that support the audit items below.",
+   "facts": [
+    "F11"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 11,
+   "start": 925,
+   "text": "- Call us at 1-866-555-0188 if you can’t get your documentation ready in time.",
+   "facts": [
+    "F12",
+    "F13"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 12,
+   "start": 1005,
+   "text": "You must respond within 30 days from the date of this notice or we’ll disallow the items being audited, and you may owe additional tax.",
+   "facts": [
+    "F10",
+    "F14",
+    "F15",
+    "F16"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 13,
+   "start": 1142,
+   "text": "## Audit items that require supporting documentation",
+   "facts": [],
+   "none": "section heading",
+   "override": "heading only; the items it introduces are captured in F18-F23"
+  },
+  {
+   "i": 14,
+   "start": 1196,
+   "text": "The items below need supporting documentation.",
+   "facts": [
+    "F5"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 15,
+   "start": 1243,
+   "text": "Review each item and follow the instructions on what to send.",
+   "facts": [
+    "F17"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 16,
+   "start": 1306,
+   "text": "To qualify for the Earned Income Credit (Form 1040), you should:",
+   "facts": [
+    "F18"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 17,
+   "start": 1372,
+   "text": "- Review the enclosed Form 886-H-EIC, Documents You Need to Send to Claim the Earned Income Credit on the Basis of a Qualifying Child or Children for Tax Year.",
+   "facts": [
+    "F19"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 18,
+   "start": 1532,
+   "text": "- Submit the documentation requested to show your child met the relationship, age and residency tests to qualify you for the Earned Income Credit.",
+   "facts": [
+    "F18"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 19,
+   "start": 1680,
+   "text": "To qualify for the Premium Tax Credit (Form 1040), you should:",
+   "facts": [
+    "F20"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 20,
+   "start": 1744,
+   "text": "- Review the enclosed Form 14950, Premium Tax Credit Verification.",
+   "facts": [
+    "F21"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 21,
+   "start": 1811,
+   "text": "- Submit the documentation requested to show you’re entitled to claim the Premium Tax Credit.",
+   "facts": [
+    "F20"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 22,
+   "start": 1906,
+   "text": "To qualify for your Filing Status (Form 1040), you should:",
+   "facts": [
+    "F22"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 23,
+   "start": 1966,
+   "text": "- Review the enclosed Form 886-H-HOH, Supporting Documents to Prove Head of Household Filing Status.",
+   "facts": [
+    "F23"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 24,
+   "start": 2067,
+   "text": "- Submit the documentation requested to show you’re the head of your household.",
+   "facts": [
+    "F22"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 25,
+   "start": 2148,
+   "text": "## If we don’t hear from you",
+   "facts": [],
+   "none": "section heading",
+   "override": "'if' appears only in the heading; the condition and its consequences are stated in sentence 26 (F14, F15, F24)"
+  },
+  {
+   "i": 26,
+   "start": 2178,
+   "text": "If you don’t mail or fax your supporting documentation within 30 days from the date of this notice, we’ll disallow the items being audited and send you an audit report showing the proposed changes to your tax return.",
+   "facts": [
+    "F10",
+    "F14",
+    "F15",
+    "F24"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 27,
+   "start": 2396,
+   "text": "## Next steps",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 28,
+   "start": 2411,
+   "text": "- We’ll review the information you provide (please allow us at least 30 days).",
+   "facts": [
+    "F25"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 29,
+   "start": 2490,
+   "text": "- If the information supports your tax return, we’ll send your refund and a letter letting you know your audit is closed.",
+   "facts": [
+    "F26",
+    "F27"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 30,
+   "start": 2612,
+   "text": "- If the information doesn’t fully support your tax return, we’ll send you an audit report that explains the proposed changes, including any additional tax you may owe plus any penalties and interest that may apply.",
+   "facts": [
+    "F28",
+    "F29",
+    "F30"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 31,
+   "start": 2829,
+   "text": "## Additional information",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 32,
+   "start": 2856,
+   "text": "- Visit www.irs.gov/cp75",
+   "facts": [
+    "F31"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 33,
+   "start": 2881,
+   "text": "- Review the enclosed documents and The Examination Process (Publication 3498-A) which describes your appeal rights.",
+   "facts": [
+    "F32"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 34,
+   "start": 2998,
+   "text": "- For tax forms, instructions, and publications, visit www.irs.gov/forms-pubs or call 800-TAX-FORM (800-829-3676).",
+   "facts": [
+    "F33"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 35,
+   "start": 3113,
+   "text": "- Review the enclosed Publication 1, Your Rights as a Taxpayer.",
+   "facts": [
+    "F34"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 36,
+   "start": 3177,
+   "text": "- Keep this notice for your records.",
+   "facts": [
+    "F35"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 37,
+   "start": 3215,
+   "text": "If you need assistance, please don’t hesitate to contact us.",
+   "facts": [],
+   "none": "closing courtesy line",
+   "override": "'if' introduces a general offer of help with no specific method; contact details are captured in F1, F3 and F12"
+  }
+ ],
+ "reviewer": "Claude (in session), November 10, 2026"
+}

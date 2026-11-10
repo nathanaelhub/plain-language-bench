@@ -1,0 +1,110 @@
+{
+ "frozen": "2026-11-10",
+ "note": "Fact lists and sources frozen before any test-notice rewrite was generated. Corrections go in corpus/facts_errata.json; results are reported with and without them.",
+ "rules_sha256": "08fe93ab70647fd4",
+ "split": {
+  "dev": [
+   "va-claim-info",
+   "irs-cp21b",
+   "cms-nomnc"
+  ],
+  "why": "The judge prompt was tuned on these three in the smoke run (November 10), one per agency, so they can't measure the judge. Every other notice is test: the gate and all reported results use test notices, with dev shown separately."
+ },
+ "notices": {
+  "cms-abn": {
+   "hash": "3f463a0ddf87a79b",
+   "facts": 42,
+   "critical": 35
+  },
+  "cms-denc": {
+   "hash": "b1027dcd62247826",
+   "facts": 19,
+   "critical": 11
+  },
+  "cms-hhccn": {
+   "hash": "aefee0ba07c4bcfd",
+   "facts": 22,
+   "critical": 17
+  },
+  "cms-im": {
+   "hash": "b917cc3ee1071927",
+   "facts": 37,
+   "critical": 27
+  },
+  "cms-moon": {
+   "hash": "34590fcd583fb5db",
+   "facts": 15,
+   "critical": 9
+  },
+  "cms-nomnc": {
+   "hash": "601f90666750faf4",
+   "facts": 34,
+   "critical": 28
+  },
+  "irs-cp05": {
+   "hash": "9fa3ec3a3b340a7b",
+   "facts": 45,
+   "critical": 35
+  },
+  "irs-cp12": {
+   "hash": "cae6397777bd2049",
+   "facts": 31,
+   "critical": 26
+  },
+  "irs-cp14": {
+   "hash": "21bd6294bd23bede",
+   "facts": 55,
+   "critical": 36
+  },
+  "irs-cp21b": {
+   "hash": "55aaa43545305d57",
+   "facts": 28,
+   "critical": 19
+  },
+  "irs-cp503": {
+   "hash": "2681364dfb847edd",
+   "facts": 35,
+   "critical": 32
+  },
+  "irs-cp59": {
+   "hash": "3062c7a3afce6492",
+   "facts": 43,
+   "critical": 34
+  },
+  "irs-cp75": {
+   "hash": "2f52bc152987a0e3",
+   "facts": 35,
+   "critical": 29
+  },
+  "irs-cp88": {
+   "hash": "8a178576181146a4",
+   "facts": 24,
+   "critical": 19
+  },
+  "irs-lt11": {
+   "hash": "c42b93514942dc37",
+   "facts": 47,
+   "critical": 42
+  },
+  "va-claim-info": {
+   "hash": "6620b5ea7a312dd9",
+   "facts": 13,
+   "critical": 11
+  },
+  "va-enrollment": {
+   "hash": "ec864ad20a8bc54a",
+   "facts": 29,
+   "critical": 26
+  },
+  "va-pension": {
+   "hash": "9d5ba63a0dc26dc1",
+   "facts": 17,
+   "critical": 12
+  }
+ },
+ "totals": {
+  "notices": 18,
+  "facts": 571,
+  "critical": 448
+ }
+}

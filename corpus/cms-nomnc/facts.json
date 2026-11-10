@@ -9,6 +9,20 @@
    "from": true,
    "to": false,
    "why": "signing to acknowledge receipt; not critical under the clarified rule"
+  },
+  {
+   "fact": "F32",
+   "field": "critical",
+   "from": true,
+   "to": false,
+   "why": "contact given only in the accessibility/nondiscrimination paragraph; not critical"
+  },
+  {
+   "fact": "F33",
+   "field": "critical",
+   "from": true,
+   "to": false,
+   "why": "contact given only in the accessibility/nondiscrimination paragraph; not critical"
   }
  ],
  "facts": [
@@ -339,7 +353,7 @@
    "question": "What website gives more information on accessible formats and complaints?",
    "answer": "Medicare.gov/about-us/accessibility-nondiscrimination-notice",
    "quote": "Visit Medicare.gov/about-us/accessibility-nondiscrimination-notice",
-   "critical": true,
+   "critical": false,
    "depends_on": []
   },
   {
@@ -349,7 +363,7 @@
    "question": "What number can you call for more information on accessible formats and complaints?",
    "answer": "1-800-MEDICARE (1-800-633-4227)",
    "quote": "call 1-800-MEDICARE (1-800-633-4227)",
-   "critical": true,
+   "critical": false,
    "depends_on": []
   },
   {

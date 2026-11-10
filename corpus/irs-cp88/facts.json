@@ -1,0 +1,513 @@
+{
+ "notice": "irs-cp88",
+ "drafted_by": "claude-opus-5-5",
+ "reviewed": true,
+ "review_notes": [
+  {
+   "note": "read in full"
+  }
+ ],
+ "facts": [
+  {
+   "id": "F1",
+   "type": "subject",
+   "statement": "The notice is CP88, dated February 2, 2009.",
+   "question": "What is the date of the notice?",
+   "answer": "February 2, 2009",
+   "quote": "Notice date February 2, 2009",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F2",
+   "type": "contact",
+   "statement": "The reader can call the IRS at 1-800-829-1040 for help with this notice.",
+   "question": "What phone number can you call about this notice?",
+   "answer": "1-800-829-1040",
+   "quote": "Phone 1-800-829-1040",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F3",
+   "type": "subject",
+   "statement": "IRS records show the reader has not filed a 2006 Form 1040.",
+   "question": "Which tax return does the IRS say it has not received?",
+   "answer": "The 2006 Form 1040",
+   "quote": "We still haven’t received your 2006 Form 1040",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F4",
+   "type": "consequence",
+   "statement": "The IRS is holding the reader's 2007 tax refund.",
+   "question": "What is the IRS doing with your 2007 tax refund?",
+   "answer": "Holding it",
+   "quote": "We’re holding your 2007 tax refund",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F5",
+   "type": "condition",
+   "statement": "The refund is held until the IRS determines whether the reader owes additional taxes for 2006.",
+   "question": "Until when will the IRS hold your 2007 refund?",
+   "answer": "Until the IRS determines whether you owe additional taxes for 2006",
+   "quote": "until we can determine whether you owe additional taxes for 2006",
+   "critical": true,
+   "depends_on": [
+    "F4"
+   ]
+  },
+  {
+   "id": "F6",
+   "type": "action",
+   "statement": "The reader should file their 2006 tax return.",
+   "question": "What does the IRS ask you to do?",
+   "answer": "File your 2006 tax return",
+   "quote": "Please file your 2006 tax return",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F7",
+   "type": "consequence",
+   "statement": "If the reader does not file, the IRS will determine their tax for them.",
+   "question": "What will the IRS do if you don't file your 2006 return?",
+   "answer": "Determine your tax for you",
+   "quote": "or we’ll determine your tax for you",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F8",
+   "type": "deadline",
+   "statement": "The 2006 tax return must be filed by March 04, 2009.",
+   "question": "By what date must you file your 2006 tax return?",
+   "answer": "March 04, 2009",
+   "quote": "by March 04, 2009.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F9",
+   "type": "action",
+   "statement": "The reader should send any supporting documents along with the 2006 return.",
+   "question": "What should you send along with your 2006 return?",
+   "answer": "Any supporting documents",
+   "quote": "along with any supporting documents",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F10",
+   "type": "contact",
+   "statement": "The return should be mailed to Internal Revenue Service, Philadelphia PA 19154.",
+   "question": "Where do you mail your 2006 return?",
+   "answer": "Internal Revenue Service, Philadelphia PA 19154",
+   "quote": "Philadelphia PA 19154",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F11",
+   "type": "condition",
+   "statement": "The IRS will determine the reader's taxes itself only if it doesn't receive the return or a valid reason for not filing by March 04, 2009.",
+   "question": "What triggers the IRS determining your taxes for you?",
+   "answer": "Not receiving your return or a valid reason for not filing by March 04, 2009",
+   "quote": "If we don’t receive your return or a valid reason for not filing by March 04, 2009",
+   "critical": true,
+   "depends_on": [
+    "F7",
+    "F13"
+   ]
+  },
+  {
+   "id": "F12",
+   "type": "action",
+   "statement": "Instead of a return, the reader can send a valid reason for not filing.",
+   "question": "Besides your return, what else can you send to keep the IRS from determining your tax for you?",
+   "answer": "A valid reason for not filing",
+   "quote": "a valid reason for not filing",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F13",
+   "type": "consequence",
+   "statement": "If the IRS determines the reader's taxes, it will use information it received from third parties.",
+   "question": "What information would the IRS use to determine your taxes?",
+   "answer": "Information it has received from third parties",
+   "quote": "based on information we’ve received from third parties",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F14",
+   "type": "consequence",
+   "statement": "The reader may lose exemptions, deductions or credits they would get by filing their own return.",
+   "question": "What might you miss out on if the IRS determines your tax?",
+   "answer": "Certain exemptions, deductions, or credits you would otherwise get by filing your own return",
+   "quote": "you may not receive certain exemptions, deductions, or credits",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F15",
+   "type": "consequence",
+   "statement": "Once the reader files the 2006 return, the IRS will determine if they owe additional taxes.",
+   "question": "What will the IRS do after you file your 2006 return?",
+   "answer": "Determine whether you owe additional taxes",
+   "quote": "we’ll determine if you owe additional taxes",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F16",
+   "type": "deadline",
+   "statement": "The IRS's determination may take up to 12 weeks.",
+   "question": "How long may it take the IRS to determine whether you owe more tax?",
+   "answer": "Up to 12 weeks",
+   "quote": "This may take up to 12 weeks.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F17",
+   "type": "condition",
+   "statement": "The refund may be applied only if the reader owes tax or other debts the IRS is required to collect.",
+   "question": "When may the IRS apply your refund to an amount you owe?",
+   "answer": "If you owe tax or other debts the IRS is required to collect",
+   "quote": "If you owe tax or other debts we’re required to collect",
+   "critical": true,
+   "depends_on": [
+    "F18"
+   ]
+  },
+  {
+   "id": "F18",
+   "type": "consequence",
+   "statement": "The IRS may apply all or part of the refund to the amount the reader owes.",
+   "question": "What may the IRS do with your refund if you owe tax or other debts?",
+   "answer": "Apply all or part of it to the amount you owe",
+   "quote": "we may apply all or part of your refund to the amount you owe",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F19",
+   "type": "consequence",
+   "statement": "The reader will receive a notice explaining how the IRS applied the money.",
+   "question": "What will you receive explaining how your refund was used?",
+   "answer": "A notice explaining how the IRS applied the money",
+   "quote": "You’ll receive a notice explaining how we applied the money",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F20",
+   "type": "consequence",
+   "statement": "The reader will receive a check for any remaining refund balance.",
+   "question": "What will you receive for any refund left over?",
+   "answer": "A check for the remaining balance",
+   "quote": "a check for the remaining balance",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F21",
+   "type": "condition",
+   "statement": "The check is sent only if there is a remaining balance.",
+   "question": "When will you receive a check for the remaining balance?",
+   "answer": "Only if there is a remaining balance",
+   "quote": "if there is one",
+   "critical": true,
+   "depends_on": [
+    "F20"
+   ]
+  },
+  {
+   "id": "F22",
+   "type": "contact",
+   "statement": "More information about this notice is at www.irs.gov/cp88.",
+   "question": "What website has more information about this notice?",
+   "answer": "www.irs.gov/cp88",
+   "quote": "Visit www.irs.gov/cp88",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F23",
+   "type": "contact",
+   "statement": "Tax forms, instructions and publications are available at www.irs.gov or by calling 1-800-TAX-FORM (1-800-829-3676).",
+   "question": "How can you get tax forms, instructions, and publications?",
+   "answer": "www.irs.gov or 1-800-TAX-FORM (1-800-829-3676)",
+   "quote": "visit www.irs.gov or call 1-800-TAX-FORM (1-800-829-3676)",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F24",
+   "type": "action",
+   "statement": "The reader should keep the notice for their records.",
+   "question": "What should you do with this notice?",
+   "answer": "Keep it for your records",
+   "quote": "Keep this notice for your records.",
+   "critical": false,
+   "depends_on": []
+  }
+ ],
+ "sentences": [
+  {
+   "i": 0,
+   "start": 0,
+   "text": "Department of Treasury\nInternal Revenue Service",
+   "facts": [],
+   "none": "agency letterhead",
+   "override": null
+  },
+  {
+   "i": 1,
+   "start": 49,
+   "text": "Notice CP88\nNotice date February 2, 2009\nPhone 1-800-829-1040",
+   "facts": [
+    "F1",
+    "F2"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 2,
+   "start": 112,
+   "text": "Anthony Russo\n302 Birch Lane\nLewisburg, TN 37091",
+   "facts": [],
+   "none": "recipient name and address block",
+   "override": "numbers are the recipient's street address and ZIP code, not facts the letter tells the reader"
+  },
+  {
+   "i": 3,
+   "start": 162,
+   "text": "## We still haven’t received your 2006 Form 1040",
+   "facts": [
+    "F3"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 4,
+   "start": 212,
+   "text": "We’re holding your 2007 tax refund",
+   "facts": [
+    "F4"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 5,
+   "start": 248,
+   "text": "Our records show that you didn’t file your 2006 Form 1040.",
+   "facts": [
+    "F3"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 6,
+   "start": 307,
+   "text": "As a result, we’re holding your 2007 tax refund until we can determine whether you owe additional taxes for 2006.",
+   "facts": [
+    "F4",
+    "F5"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 7,
+   "start": 422,
+   "text": "## What you need to do",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 8,
+   "start": 446,
+   "text": "Please file your 2006 tax return, or we’ll determine your tax for you.",
+   "facts": [
+    "F6",
+    "F7"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 9,
+   "start": 518,
+   "text": "File your 2006 tax return, along with any supporting documents, by March 04, 2009.",
+   "facts": [
+    "F6",
+    "F8",
+    "F9"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 10,
+   "start": 601,
+   "text": "Mail your return to:",
+   "facts": [
+    "F10"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 11,
+   "start": 623,
+   "text": "Internal Revenue Service\nPhiladelphia PA 19154",
+   "facts": [
+    "F10"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 12,
+   "start": 671,
+   "text": "## If we don’t hear from you",
+   "facts": [],
+   "none": "section heading",
+   "override": "'if' belongs to a heading that introduces the condition stated in full in sentence 13 (F11)"
+  },
+  {
+   "i": 13,
+   "start": 701,
+   "text": "If we don’t receive your return or a valid reason for not filing by March 04, 2009, we’ll determine taxes for you based on information we’ve received from third parties.",
+   "facts": [
+    "F11",
+    "F12",
+    "F7",
+    "F13"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 14,
+   "start": 871,
+   "text": "This means you may not receive certain exemptions, deductions, or credits that you would otherwise receive if you filed your own return.",
+   "facts": [
+    "F14"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 15,
+   "start": 1009,
+   "text": "## Next steps",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 16,
+   "start": 1024,
+   "text": "Once you file your 2006 tax return, we’ll determine if you owe additional taxes.",
+   "facts": [
+    "F15"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 17,
+   "start": 1105,
+   "text": "This may take up to 12 weeks.",
+   "facts": [
+    "F16"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 18,
+   "start": 1136,
+   "text": "If you owe tax or other debts we’re required to collect, we may apply all or part of your refund to the amount you owe.",
+   "facts": [
+    "F17",
+    "F18"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 19,
+   "start": 1256,
+   "text": "You’ll receive a notice explaining how we applied the money and a check for the remaining balance, if there is one.",
+   "facts": [
+    "F19",
+    "F20",
+    "F21"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 20,
+   "start": 1373,
+   "text": "## Additional information",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 21,
+   "start": 1400,
+   "text": "- Visit www.irs.gov/cp88",
+   "facts": [
+    "F22"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 22,
+   "start": 1425,
+   "text": "- For tax forms, instructions, and publications, visit www.irs.gov or call 1-800-TAX-FORM (1-800-829-3676)",
+   "facts": [
+    "F23"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 23,
+   "start": 1532,
+   "text": "- Keep this notice for your records.",
+   "facts": [
+    "F24"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 24,
+   "start": 1570,
+   "text": "If you need assistance, please don’t hesitate to contact us.",
+   "facts": [
+    "F2"
+   ],
+   "none": null,
+   "override": null
+  }
+ ],
+ "reviewer": "Claude (in session), November 10, 2026"
+}

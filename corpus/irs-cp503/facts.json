@@ -1,0 +1,774 @@
+{
+ "notice": "irs-cp503",
+ "drafted_by": "claude-opus-5-5",
+ "reviewed": true,
+ "review_notes": [
+  {
+   "note": "read in full"
+  }
+ ],
+ "facts": [
+  {
+   "id": "F1",
+   "type": "contact",
+   "statement": "The IRS can be reached at 1-800-829-1040.",
+   "question": "What phone number can you call to contact the IRS about this notice?",
+   "answer": "1-800-829-1040",
+   "quote": "To contact us: 1-800-829-1040",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F2",
+   "type": "subject",
+   "statement": "This is a second reminder that you have unpaid taxes for tax year 2016.",
+   "question": "What is this letter about, and for which tax year?",
+   "answer": "It is a second reminder that you have unpaid taxes for tax year 2016.",
+   "quote": "Second reminder: You have unpaid taxes for 2016",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F3",
+   "type": "amount",
+   "statement": "The amount due is $9,533.53.",
+   "question": "How much is due?",
+   "answer": "$9,533.53",
+   "quote": "Amount due: $9,533.53",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F4",
+   "type": "deadline",
+   "statement": "You must pay the amount due by January 29, 2018.",
+   "question": "By what date must the amount due be paid?",
+   "answer": "January 29, 2018",
+   "quote": "If you don’t pay $9,533.53 by January 29, 2018",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F5",
+   "type": "consequence",
+   "statement": "If you do not pay by the deadline, interest will increase and more penalties may apply.",
+   "question": "What happens if you don't pay by the deadline?",
+   "answer": "Interest will increase and additional penalties may apply.",
+   "quote": "the amount of interest will increase and additional penalties may apply",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F6",
+   "type": "amount",
+   "statement": "The tax you owed was $9,444.07.",
+   "question": "How much tax did you owe before penalties and interest?",
+   "answer": "$9,444.07",
+   "quote": "Amount you owed: $9,444.07",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F7",
+   "type": "amount",
+   "statement": "A failure-to-pay penalty of $34.98 has been charged.",
+   "question": "How much is the failure-to-pay penalty?",
+   "answer": "$34.98",
+   "quote": "Failure-to-pay penalty: 34.98",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F8",
+   "type": "amount",
+   "statement": "Interest charges of $54.48 have been added.",
+   "question": "How much interest has been charged?",
+   "answer": "$54.48",
+   "quote": "Interest charges: 54.48",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F9",
+   "type": "condition",
+   "statement": "This applies only if you already have an installment or payment agreement for tax year 2016.",
+   "question": "When should you keep going with an existing agreement instead of following this notice?",
+   "answer": "If you already have an installment or payment agreement in place for this tax year.",
+   "quote": "If you already have an installment or payment agreement in place for this tax year",
+   "critical": true,
+   "depends_on": [
+    "F10"
+   ]
+  },
+  {
+   "id": "F10",
+   "type": "action",
+   "statement": "Continue with your existing installment or payment agreement.",
+   "question": "What should you do if you already have a payment agreement for this tax year?",
+   "answer": "Continue with that agreement.",
+   "quote": "then continue with that agreement",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F11",
+   "type": "condition",
+   "statement": "These payment steps apply if you agree with the amount due and are not working with an IRS representative.",
+   "question": "Who should follow the payment instructions in this notice?",
+   "answer": "People who agree with the amount due and are not working with an IRS representative.",
+   "quote": "If you agree with the amount due and you’re not working with an IRS representative",
+   "critical": true,
+   "depends_on": [
+    "F12",
+    "F13",
+    "F14",
+    "F15",
+    "F16"
+   ]
+  },
+  {
+   "id": "F12",
+   "type": "action",
+   "statement": "You can pay online or mail a check or money order with the attached payment stub.",
+   "question": "What are the ways you can pay?",
+   "answer": "Pay online, or mail a check or money order with the attached payment stub.",
+   "quote": "Pay online or mail a check or money order with the attached payment stub",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F13",
+   "type": "contact",
+   "statement": "You can pay online at www.irs.gov/payments.",
+   "question": "What website can you use to pay online?",
+   "answer": "www.irs.gov/payments",
+   "quote": "You can pay online now at www.irs.gov/payments",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F14",
+   "type": "action",
+   "statement": "Make a check or money order payable to the United States Treasury.",
+   "question": "Who should a check or money order be made payable to?",
+   "answer": "The United States Treasury.",
+   "quote": "Make your check or money order payable to the United States Treasury",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F15",
+   "type": "action",
+   "statement": "Write your Social Security number, the tax year (2016), and the form number (1040A) on your payment.",
+   "question": "What must you write on your payment?",
+   "answer": "Your Social Security number, the tax year (2016), and the form number (1040A).",
+   "quote": "Write your social security number (NNN-NN-NNNN), the tax year (2016), and form number (1040A) on your payment",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F16",
+   "type": "contact",
+   "statement": "Mail your payment to the Internal Revenue Service in Cincinnati, Ohio.",
+   "question": "Where do you mail your payment?",
+   "answer": "Internal Revenue Service, Cincinnati, OH 4599-0149",
+   "quote": "Mail to Internal Revenue Service, Cincinnati, OH 4599-0149",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F17",
+   "type": "condition",
+   "statement": "This applies if the IRS told you it suspended enforced collection because collecting would cause you financial hardship.",
+   "question": "What earlier IRS notice means you may not need to act on this one?",
+   "answer": "A notice that the IRS suspended enforced collection on your account because it would cause you financial hardship (you couldn't pay basic reasonable living expenses if they levied).",
+   "quote": "If we notified you that we suspended enforced collection on your account because it would create a financial hardship",
+   "critical": true,
+   "depends_on": [
+    "F19"
+   ]
+  },
+  {
+   "id": "F18",
+   "type": "condition",
+   "statement": "This also requires that your financial condition has not changed since then.",
+   "question": "Besides the hardship suspension, what else must be true for you to need to do nothing?",
+   "answer": "Your financial condition has not changed.",
+   "quote": "your financial condition has not changed",
+   "critical": true,
+   "depends_on": [
+    "F19"
+   ]
+  },
+  {
+   "id": "F19",
+   "type": "action",
+   "statement": "You do not need to do anything.",
+   "question": "What do you need to do if collection was suspended for hardship and your finances haven't changed?",
+   "answer": "Nothing.",
+   "quote": "you don’t need to do anything",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F20",
+   "type": "condition",
+   "statement": "This applies if you disagree with the amount due or think the IRS made a mistake.",
+   "question": "When should you call to review your account?",
+   "answer": "If you disagree with the amount due or think the IRS made a mistake.",
+   "quote": "If you disagree with the amount due",
+   "critical": true,
+   "depends_on": [
+    "F21"
+   ]
+  },
+  {
+   "id": "F21",
+   "type": "action",
+   "statement": "Call 1-800-829-1040 to review your account with a representative.",
+   "question": "What should you do if you disagree with the amount due?",
+   "answer": "Call 1-800-829-1040 to review your account with a representative.",
+   "quote": "Call us at 1-800-829-1040 to review your account with a representative",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F22",
+   "type": "action",
+   "statement": "Have your account information ready when you call.",
+   "question": "What should you have ready when you call?",
+   "answer": "Your account information.",
+   "quote": "Be sure to have your account information available when you call",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F23",
+   "type": "consequence",
+   "statement": "The IRS will assume you agree with the notice.",
+   "question": "What will the IRS assume if you don't contact them?",
+   "answer": "That you agree with the information in the notice.",
+   "quote": "We’ll assume you agree with the information in this notice",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F24",
+   "type": "condition",
+   "statement": "These consequences apply if the IRS does not hear from you.",
+   "question": "What triggers the IRS assuming you agree and possibly filing a tax lien?",
+   "answer": "Not hearing from you.",
+   "quote": "if we don’t hear from you",
+   "critical": true,
+   "depends_on": [
+    "F23",
+    "F32"
+   ]
+  },
+  {
+   "id": "F25",
+   "type": "condition",
+   "statement": "This applies if you can't pay the full amount you owe.",
+   "question": "When should you pay part now and arrange to pay the rest?",
+   "answer": "If you can't pay the full amount you owe.",
+   "quote": "If you can’t pay the full amount you owe",
+   "critical": true,
+   "depends_on": [
+    "F26",
+    "F27"
+   ]
+  },
+  {
+   "id": "F26",
+   "type": "action",
+   "statement": "Pay as much as you can now.",
+   "question": "If you can't pay in full, what should you pay now?",
+   "answer": "As much as you can.",
+   "quote": "pay as much as you can now",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F27",
+   "type": "action",
+   "statement": "Arrange a payment plan for the remaining balance.",
+   "question": "What can you do about the balance you can't pay right away?",
+   "answer": "Make arrangements (such as a payment plan) to pay the remaining balance.",
+   "quote": "make arrangements to pay your remaining balance",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F28",
+   "type": "contact",
+   "statement": "More information about installment and online payment agreements is at www.irs.gov/paymentplan.",
+   "question": "Where can you read more about payment plans?",
+   "answer": "www.irs.gov/paymentplan",
+   "quote": "Visit www.irs.gov/paymentplan for more information on installment agreements and online payment agreements",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F29",
+   "type": "contact",
+   "statement": "You can call 1-800-829-1040 to discuss your payment options.",
+   "question": "What number can you call to discuss payment options?",
+   "answer": "1-800-829-1040",
+   "quote": "You can also call us at 1-800-829-1040 to discuss your options",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F30",
+   "type": "condition",
+   "statement": "This applies if you already paid in full in the past 21 days or already made payment arrangements.",
+   "question": "When can you ignore this notice?",
+   "answer": "If you already paid your balance in full within the past 21 days or made payment arrangements.",
+   "quote": "If you already paid your balance in full within the past 21 days or made payment arrangements",
+   "critical": true,
+   "depends_on": [
+    "F31"
+   ]
+  },
+  {
+   "id": "F31",
+   "type": "action",
+   "statement": "You can disregard this notice.",
+   "question": "What can you do with this notice if you already paid in full recently or made payment arrangements?",
+   "answer": "Disregard it.",
+   "quote": "please disregard this notice",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F32",
+   "type": "consequence",
+   "statement": "The IRS may file a Notice of Federal Tax Lien against you.",
+   "question": "What legal action may the IRS take if it doesn't hear from you?",
+   "answer": "File a Notice of Federal Tax Lien against you.",
+   "quote": "We may file a Notice of Federal Tax Lien against you",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F33",
+   "type": "consequence",
+   "statement": "A tax lien generally attaches to all property you own now and any you get in the future.",
+   "question": "What property does a tax lien attach to?",
+   "answer": "Generally all property you currently own and all property you acquire in the future.",
+   "quote": "A tax lien generally attaches to all property you currently own and will attach to all property you acquire in the future",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F34",
+   "type": "consequence",
+   "statement": "The Notice of Federal Tax Lien is a public record.",
+   "question": "Is a Notice of Federal Tax Lien public?",
+   "answer": "Yes, it is a public record.",
+   "quote": "The Notice of Federal Tax Lien is a public record",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F35",
+   "type": "consequence",
+   "statement": "A tax lien can damage your credit or make it harder to get credit such as a loan or credit card.",
+   "question": "How can a tax lien affect your credit?",
+   "answer": "It can damage your credit or make it difficult to get credit, such as a loan or credit card.",
+   "quote": "it can damage your credit or make it difficult for you to get credit (such as a loan or credit card)",
+   "critical": true,
+   "depends_on": []
+  }
+ ],
+ "sentences": [
+  {
+   "i": 0,
+   "start": 0,
+   "text": "Department of the Treasury\nInternal Revenue Service\nHoltsville, NY 11742-0480",
+   "facts": [],
+   "none": "agency return address block",
+   "override": "address block; the ZIP code is not a fact for the reader"
+  },
+  {
+   "i": 1,
+   "start": 79,
+   "text": "Notice CP503\nTax year 2016\nNotice date January 8, 2018\nSocial security number NNN-NN-NNNN\nTo contact us: 1-800-829-1040",
+   "facts": [
+    "F1",
+    "F2"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 2,
+   "start": 200,
+   "text": "James & Karen Q.",
+   "facts": [],
+   "none": "recipient name (address block)",
+   "override": null
+  },
+  {
+   "i": 3,
+   "start": 217,
+   "text": "Hinds\n22 Boulder Street\nHanson, CT 00000-7253",
+   "facts": [],
+   "none": "recipient address block",
+   "override": "address block; street number and ZIP code are not facts for the reader"
+  },
+  {
+   "i": 4,
+   "start": 264,
+   "text": "## Second reminder: You have unpaid taxes for 2016",
+   "facts": [
+    "F2"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 5,
+   "start": 316,
+   "text": "Amount due: $9,533.53",
+   "facts": [
+    "F3"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 6,
+   "start": 339,
+   "text": "As we notified you before, our records show you have unpaid taxes for the tax year ended December 31, 2016 (Form 1040A).",
+   "facts": [
+    "F2"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 7,
+   "start": 460,
+   "text": "If you don’t pay $9,533.53 by January 29, 2018, the amount of interest will increase and additional penalties may apply.",
+   "facts": [
+    "F3",
+    "F4",
+    "F5"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 8,
+   "start": 582,
+   "text": "Billing Summary",
+   "facts": [],
+   "none": "table heading",
+   "override": null
+  },
+  {
+   "i": 9,
+   "start": 598,
+   "text": "- Amount you owed: $9,444.07",
+   "facts": [
+    "F6"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 10,
+   "start": 627,
+   "text": "- Failure-to-pay penalty: 34.98",
+   "facts": [
+    "F7"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 11,
+   "start": 659,
+   "text": "- Interest charges: 54.48",
+   "facts": [
+    "F8"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 12,
+   "start": 685,
+   "text": "- Amount due by January 29, 2018: $9,533.53",
+   "facts": [
+    "F3",
+    "F4"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 13,
+   "start": 730,
+   "text": "If you already have an installment or payment agreement in place for this tax year, then continue with that agreement.",
+   "facts": [
+    "F9",
+    "F10"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 14,
+   "start": 850,
+   "text": "## What you need to do immediately",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 15,
+   "start": 886,
+   "text": "If you agree with the amount due and you’re not working with an IRS representative",
+   "facts": [
+    "F11"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 16,
+   "start": 970,
+   "text": "- Pay the amount due of $9,533.53 by January 29, 2018, to avoid additional interest and applicable penalty charges.",
+   "facts": [
+    "F3",
+    "F4",
+    "F5"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 17,
+   "start": 1086,
+   "text": "- Pay online or mail a check or money order with the attached payment stub. You can pay online now at www.irs.gov/payments.",
+   "facts": [
+    "F12",
+    "F13"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 18,
+   "start": 1210,
+   "text": "- Make your check or money order payable to the United States Treasury.",
+   "facts": [
+    "F14"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 19,
+   "start": 1282,
+   "text": "- Write your social security number (NNN-NN-NNNN), the tax year (2016), and form number (1040A) on your payment.",
+   "facts": [
+    "F15"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 20,
+   "start": 1396,
+   "text": "Payment stub: Amount due by January 29, 2018: $9,533.53.",
+   "facts": [
+    "F3",
+    "F4"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 21,
+   "start": 1453,
+   "text": "Mail to Internal Revenue Service, Cincinnati, OH 4599-0149.",
+   "facts": [
+    "F16"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 22,
+   "start": 1514,
+   "text": "If we notified you that we suspended enforced collection on your account because it would create a financial hardship (meaning you would be unable to pay basic reasonable living expenses if we levied) and your financial condition has not changed, you don’t need to do anything.",
+   "facts": [
+    "F17",
+    "F18",
+    "F19"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 23,
+   "start": 1793,
+   "text": "If you disagree with the amount due",
+   "facts": [
+    "F20"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 24,
+   "start": 1830,
+   "text": "Call us at 1-800-829-1040 to review your account with a representative.",
+   "facts": [
+    "F21"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 25,
+   "start": 1902,
+   "text": "Be sure to have your account information available when you call.",
+   "facts": [
+    "F22"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 26,
+   "start": 1969,
+   "text": "We’ll assume you agree with the information in this notice if we don’t hear from you.",
+   "facts": [
+    "F23",
+    "F24"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 27,
+   "start": 2056,
+   "text": "## Payment options",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 28,
+   "start": 2076,
+   "text": "Payment plans: If you can’t pay the full amount you owe, pay as much as you can now and make arrangements to pay your remaining balance.",
+   "facts": [
+    "F25",
+    "F26",
+    "F27"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 29,
+   "start": 2213,
+   "text": "Visit www.irs.gov/paymentplan for more information on installment agreements and online payment agreements.",
+   "facts": [
+    "F28"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 30,
+   "start": 2321,
+   "text": "You can also call us at 1-800-829-1040 to discuss your options.",
+   "facts": [
+    "F29"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 31,
+   "start": 2386,
+   "text": "If you already paid your balance in full within the past 21 days or made payment arrangements, please disregard this notice.",
+   "facts": [
+    "F30",
+    "F31"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 32,
+   "start": 2512,
+   "text": "If you think we made a mistake, call 1-800-829-1040 to review your account.",
+   "facts": [
+    "F20",
+    "F21"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 33,
+   "start": 2589,
+   "text": "## If we don’t hear from you",
+   "facts": [
+    "F24"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 34,
+   "start": 2619,
+   "text": "Pay $9,533.53 by January 29, 2018, to avoid additional interest and applicable penalty charges.",
+   "facts": [
+    "F3",
+    "F4",
+    "F5"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 35,
+   "start": 2716,
+   "text": "We may file a Notice of Federal Tax Lien against you.",
+   "facts": [
+    "F32"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 36,
+   "start": 2770,
+   "text": "A tax lien generally attaches to all property you currently own and will attach to all property you acquire in the future.",
+   "facts": [
+    "F33"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 37,
+   "start": 2893,
+   "text": "The Notice of Federal Tax Lien is a public record, and it can damage your credit or make it difficult for you to get credit (such as a loan or credit card).",
+   "facts": [
+    "F34",
+    "F35"
+   ],
+   "none": null,
+   "override": null
+  }
+ ],
+ "reviewer": "Claude (in session), November 10, 2026"
+}

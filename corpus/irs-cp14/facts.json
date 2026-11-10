@@ -107,6 +107,13 @@
    "from": true,
    "to": false,
    "why": "general information website; not critical under the clarified rule"
+  },
+  {
+   "fact": "F45",
+   "field": "critical",
+   "from": true,
+   "to": false,
+   "why": "a 'read more' page (payment plans); not critical, as in irs-cp503 F28 and irs-lt11 F24"
   }
  ],
  "facts": [
@@ -586,7 +593,7 @@
    "question": "What website has information on installment and online payment agreements?",
    "answer": "www.irs.gov/paymentplan",
    "quote": "Visit www.irs.gov/paymentplan for more information on installment agreements and online payment agreements.",
-   "critical": true,
+   "critical": false,
    "depends_on": []
   },
   {

@@ -1,0 +1,801 @@
+{
+ "notice": "irs-cp59",
+ "drafted_by": "claude-opus-5-5",
+ "reviewed": true,
+ "review_notes": [
+  {
+   "note": "read in full"
+  }
+ ],
+ "facts": [
+  {
+   "id": "F1",
+   "type": "subject",
+   "statement": "The notice is IRS Notice CP59.",
+   "question": "What is the IRS notice number?",
+   "answer": "CP59",
+   "quote": "Notice CP59",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F2",
+   "type": "subject",
+   "statement": "IRS records show you have not filed your Form 1040 tax return for the tax year ending December 31, 2017.",
+   "question": "What does the IRS say you have not done, and for which tax year?",
+   "answer": "You have not filed your Form 1040 tax return for the tax year ending December 31, 2017.",
+   "quote": "you haven’t filed your tax return for the tax year ending on December 31, 2017",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F3",
+   "type": "subject",
+   "statement": "The notice is dated January 28, 2019.",
+   "question": "What is the date of the notice?",
+   "answer": "January 28, 2019",
+   "quote": "Notice date January 28, 2019",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F4",
+   "type": "contact",
+   "statement": "You can call the IRS at 1-800-555-0137 to review your account.",
+   "question": "What phone number can you call to review your account?",
+   "answer": "1-800-555-0137",
+   "quote": "call 1-800-555-0137 to review your account",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F5",
+   "type": "condition",
+   "statement": "The instruction to file applies if you are required to file a 2017 tax return.",
+   "question": "When does the instruction to file your 2017 return immediately apply?",
+   "answer": "If you are required to file a tax return for 2017.",
+   "quote": "If you’re required to file a tax return for 2017",
+   "critical": true,
+   "depends_on": [
+    "F6"
+   ]
+  },
+  {
+   "id": "F6",
+   "type": "action",
+   "statement": "File your 2017 tax return immediately.",
+   "question": "When should you file your 2017 tax return?",
+   "answer": "Immediately.",
+   "quote": "please do so immediately",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F7",
+   "type": "action",
+   "statement": "Use your current address on the return.",
+   "question": "Which address should you use on the return?",
+   "answer": "Your current address.",
+   "quote": "Using your current address",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F8",
+   "type": "action",
+   "statement": "Complete and sign your return.",
+   "question": "What must you do to the return before mailing it?",
+   "answer": "Complete it and sign it.",
+   "quote": "complete and sign your return",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F9",
+   "type": "action",
+   "statement": "Include a payment for any taxes due with your return.",
+   "question": "What should you send along with your mailed return?",
+   "answer": "A payment for any taxes due.",
+   "quote": "include a payment for any taxes due",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F10",
+   "type": "action",
+   "statement": "Mail the return to the IRS in the envelope provided.",
+   "question": "How should you mail the return?",
+   "answer": "Mail it to the IRS in the envelope provided.",
+   "quote": "mail to us using the envelope provided",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F11",
+   "type": "action",
+   "statement": "You can file electronically through an e-file provider.",
+   "question": "Besides mailing, how else can you file the return?",
+   "answer": "Electronically, through an e-file provider.",
+   "quote": "File electronically through an e-file provider",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F12",
+   "type": "condition",
+   "statement": "You can e-file only if it is within 2 years from the original due date of the return.",
+   "question": "When is e-filing the return available?",
+   "answer": "Only within 2 years from the original due date of the return.",
+   "quote": "if it’s within 2 years from the original due date of the return",
+   "critical": true,
+   "depends_on": [
+    "F11"
+   ]
+  },
+  {
+   "id": "F13",
+   "type": "action",
+   "statement": "You can pay online at www.irs.gov/payments.",
+   "question": "Where can you pay online?",
+   "answer": "www.irs.gov/payments",
+   "quote": "Pay online now at www.irs.gov/payments",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F14",
+   "type": "condition",
+   "statement": "The Form 15103 instructions apply if you don't think you had to file a 2017 return.",
+   "question": "When should you complete Form 15103 instead of filing a return?",
+   "answer": "If you don't think you had to file a tax return for 2017.",
+   "quote": "If you don’t think you had to file a tax return for 2017",
+   "critical": true,
+   "depends_on": [
+    "F15",
+    "F16",
+    "F17"
+   ]
+  },
+  {
+   "id": "F15",
+   "type": "action",
+   "statement": "Complete the enclosed Form 15103 (Form 1040 Return Delinquency) to show whether any of its circumstances apply to you.",
+   "question": "Which form should you complete if you don't think you had to file?",
+   "answer": "The enclosed Form 15103, Form 1040 Return Delinquency.",
+   "quote": "Complete the enclosed Form 15103, Form 1040 Return Delinquency",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F16",
+   "type": "action",
+   "statement": "Send Form 15103 with the stub in the enclosed envelope.",
+   "question": "How can you send Form 15103 by mail?",
+   "answer": "Send it with the stub in the enclosed envelope.",
+   "quote": "Send us the form with the stub below in the enclosed envelope",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F17",
+   "type": "contact",
+   "statement": "You can fax Form 15103 to 1-855-555-0161.",
+   "question": "What fax number can you send Form 15103 to?",
+   "answer": "1-855-555-0161",
+   "quote": "fax it to 1-855-555-0161",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F18",
+   "type": "condition",
+   "statement": "The instruction to send a copy of your return applies if you already filed a 2017 return.",
+   "question": "When must you send a copy of your return with Form 15103?",
+   "answer": "If you already filed a tax return for 2017.",
+   "quote": "You already filed a tax return for 2017",
+   "critical": true,
+   "depends_on": [
+    "F19"
+   ]
+  },
+  {
+   "id": "F19",
+   "type": "action",
+   "statement": "Send a signed and dated copy of the return you filed along with Form 15103.",
+   "question": "What must you send with Form 15103 if you already filed?",
+   "answer": "A signed and dated copy of the return.",
+   "quote": "send us a signed and dated copy of the return along with your Form 15103",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F20",
+   "type": "action",
+   "statement": "On Form 15103 you can indicate that you don't think you have to file for one of the reasons listed on the form.",
+   "question": "Besides saying you already filed, what else can you indicate on Form 15103?",
+   "answer": "That you don't think you are required to file for one of the reasons listed on Form 15103.",
+   "quote": "You don’t think you are required to file for one of the reasons listed on the Form 15103",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F21",
+   "type": "condition",
+   "statement": "Penalties and interest apply if you don't file a return or dispute the notice if you believe it was sent in error.",
+   "question": "What would lead to penalty and interest charges?",
+   "answer": "Not filing a tax return, or not disputing the notice if you think you received it in error.",
+   "quote": "If you don’t file a tax return, or dispute this notice if you feel you’ve received it in error",
+   "critical": true,
+   "depends_on": [
+    "F22",
+    "F23"
+   ]
+  },
+  {
+   "id": "F22",
+   "type": "consequence",
+   "statement": "You may owe penalty and interest charges on the amount of tax due.",
+   "question": "What may you owe if you don't respond?",
+   "answer": "Penalty and interest charges on the amount of tax due.",
+   "quote": "you may owe penalty and interest charges on the amount of tax due",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F23",
+   "type": "consequence",
+   "statement": "Penalties and interest may keep accruing on the amount of tax due.",
+   "question": "Can penalties and interest keep growing?",
+   "answer": "Yes, they may continue to accrue on the amount of tax due.",
+   "quote": "You may continue to accrue penalties and interest charges on the amount of tax due.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F24",
+   "type": "consequence",
+   "statement": "If you don't file, you risk losing your refund.",
+   "question": "What do you risk losing if you don't file?",
+   "answer": "Your refund.",
+   "quote": "You risk losing your refund if you don’t file your return.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F25",
+   "type": "condition",
+   "statement": "The refund deadline applies if you are due a refund for withholding or estimated taxes.",
+   "question": "When does the refund filing deadline apply to you?",
+   "answer": "If you are due a refund for withholding or estimated taxes.",
+   "quote": "If you’re due a refund for withholding or estimated taxes",
+   "critical": true,
+   "depends_on": [
+    "F26"
+   ]
+  },
+  {
+   "id": "F26",
+   "type": "deadline",
+   "statement": "To claim a refund you must file your return by April 15, 2021.",
+   "question": "By what date must you file to claim your refund?",
+   "answer": "April 15, 2021",
+   "quote": "you must file your return to claim it by April 15, 2021",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F27",
+   "type": "condition",
+   "statement": "The April 15, 2021 deadline is extended by any extension of time to file you have.",
+   "question": "Can the April 15, 2021 refund deadline be later?",
+   "answer": "Yes, it is extended by any extension of time to file.",
+   "quote": "plus any extension of time to file",
+   "critical": true,
+   "depends_on": [
+    "F26",
+    "F28"
+   ]
+  },
+  {
+   "id": "F28",
+   "type": "deadline",
+   "statement": "The same April 15, 2021 deadline applies to claiming refundable tax credits such as the Earned Income Credit.",
+   "question": "What deadline applies to claiming refundable credits like the Earned Income Credit?",
+   "answer": "April 15, 2021 (the same rule as for refunds).",
+   "quote": "The same rule applies to a right to claim refundable tax credits such as the Earned Income Credit.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F29",
+   "type": "condition",
+   "statement": "Backup withholding can apply if you received interest or dividend income and don't file your return or pay all taxes due.",
+   "question": "When could you become subject to backup withholding?",
+   "answer": "If you received interest or dividend income and you don't file your return or pay all taxes due.",
+   "quote": "If you received interest or dividend income and you don’t file your return or pay all taxes due",
+   "critical": true,
+   "depends_on": [
+    "F30"
+   ]
+  },
+  {
+   "id": "F30",
+   "type": "consequence",
+   "statement": "You could become subject to backup withholding.",
+   "question": "What could you become subject to if you had interest or dividend income and don't file or pay?",
+   "answer": "Backup withholding.",
+   "quote": "you could become subject to backup withholding",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F31",
+   "type": "consequence",
+   "statement": "The IRS will tell your payers, such as banks, to withhold a percentage of your dividend and interest payments.",
+   "question": "What does backup withholding mean for your dividend and interest payments?",
+   "answer": "The IRS will tell your payers (banks, etc.) to withhold a percentage of the dividend and interest payments you receive.",
+   "quote": "IRS will notify your payers (banks, etc.) to withhold a percentage of the payments you receive for dividends and interest",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F32",
+   "type": "consequence",
+   "statement": "The payers send the withheld money to the IRS.",
+   "question": "Where does the money withheld by your payers go?",
+   "answer": "To the IRS.",
+   "quote": "The payers will send the money to the IRS",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F33",
+   "type": "right",
+   "statement": "You can claim the backup-withheld money as a withholding credit on your federal income tax return.",
+   "question": "Can you get credit for money taken through backup withholding?",
+   "answer": "Yes, you may claim it as a withholding credit on your federal income tax return.",
+   "quote": "you may claim it as a withholding credit on your federal income tax return",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F34",
+   "type": "consequence",
+   "statement": "The IRS will contact you again in certain cases.",
+   "question": "Will the IRS contact you again?",
+   "answer": "Yes, in certain cases.",
+   "quote": "We’ll contact you again if:",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F35",
+   "type": "condition",
+   "statement": "The IRS will contact you again if it needs more information or clarification about your return.",
+   "question": "What is one reason the IRS will contact you again?",
+   "answer": "If it needs additional information or clarification about your tax return.",
+   "quote": "We need additional information or clarification about your tax return",
+   "critical": true,
+   "depends_on": [
+    "F34"
+   ]
+  },
+  {
+   "id": "F36",
+   "type": "condition",
+   "statement": "The IRS will contact you again if it determines you do need to file a 2017 return.",
+   "question": "What is another reason the IRS will contact you again?",
+   "answer": "If it determines that you do need to file a tax return for 2017.",
+   "quote": "We determine that you do need to file a tax return for 2017",
+   "critical": true,
+   "depends_on": [
+    "F34"
+   ]
+  },
+  {
+   "id": "F37",
+   "type": "condition",
+   "statement": "Call to review your account if you think the IRS made a mistake.",
+   "question": "When should you call 1-800-555-0137?",
+   "answer": "If you think the IRS made a mistake.",
+   "quote": "If you think we made a mistake",
+   "critical": true,
+   "depends_on": [
+    "F4"
+   ]
+  },
+  {
+   "id": "F38",
+   "type": "contact",
+   "statement": "More information is at www.irs.gov/cp59.",
+   "question": "What website has more information about this notice?",
+   "answer": "www.irs.gov/cp59",
+   "quote": "Visit www.irs.gov/cp59.",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F39",
+   "type": "contact",
+   "statement": "Tax forms, instructions and publications are available at www.irs.gov.",
+   "question": "What website has tax forms, instructions and publications?",
+   "answer": "www.irs.gov",
+   "quote": "For tax forms, instructions and publications, visit www.irs.gov",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F40",
+   "type": "contact",
+   "statement": "You can call 800-TAX-FORM (800-829-3676) for tax forms, instructions and publications.",
+   "question": "What number can you call for tax forms?",
+   "answer": "800-TAX-FORM (800-829-3676)",
+   "quote": "call 800-TAX-FORM (800-829-3676)",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F41",
+   "type": "condition",
+   "statement": "The transcript is for when you need wage and income information.",
+   "question": "When would you request a transcript?",
+   "answer": "If you need wage and income information.",
+   "quote": "If you need wage and income information",
+   "critical": false,
+   "depends_on": [
+    "F42"
+   ]
+  },
+  {
+   "id": "F42",
+   "type": "contact",
+   "statement": "You can request a transcript at www.irs.gov/transcript.",
+   "question": "Where can you request a transcript?",
+   "answer": "www.irs.gov/transcript",
+   "quote": "you can request a transcript by visiting www.irs.gov/transcript",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F43",
+   "type": "action",
+   "statement": "Keep this notice for your records.",
+   "question": "What should you do with this notice?",
+   "answer": "Keep it for your records.",
+   "quote": "Keep this notice for your records.",
+   "critical": false,
+   "depends_on": []
+  }
+ ],
+ "sentences": [
+  {
+   "i": 0,
+   "start": 0,
+   "text": "Department of the Treasury\nInternal Revenue Service\nFresno, CA 93888-0025",
+   "facts": [],
+   "none": "sender address block",
+   "override": "agency return address; the notice tells the reader to mail using the enclosed envelope, so this address is not given as the way to act"
+  },
+  {
+   "i": 1,
+   "start": 75,
+   "text": "Notice CP59\nTax year December 31, 2017\nNotice date January 28, 2019\nPhone 1-800-555-0137",
+   "facts": [
+    "F1",
+    "F2",
+    "F3",
+    "F4"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 2,
+   "start": 165,
+   "text": "Carla Jimenez\n9 Mill Street\nShelbyville, TN 37160",
+   "facts": [],
+   "none": "recipient address block",
+   "override": "numbers are the reader's street address and ZIP code; no fact"
+  },
+  {
+   "i": 3,
+   "start": 216,
+   "text": "## Message about your 2017 Form 1040",
+   "facts": [
+    "F2"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 4,
+   "start": 254,
+   "text": "You didn’t file a Form 1040 tax return",
+   "facts": [
+    "F2"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 5,
+   "start": 294,
+   "text": "Our records show that you haven’t filed your tax return for the tax year ending on December 31, 2017.",
+   "facts": [
+    "F2"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 6,
+   "start": 397,
+   "text": "## What you need to do immediately",
+   "facts": [],
+   "none": "section heading; the urgency is carried by F6",
+   "override": null
+  },
+  {
+   "i": 7,
+   "start": 433,
+   "text": "If you’re required to file a tax return for 2017, please do so immediately.",
+   "facts": [
+    "F5",
+    "F6"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 8,
+   "start": 510,
+   "text": "- Using your current address, complete and sign your return, include a payment for any taxes due, and mail to us using the envelope provided.",
+   "facts": [
+    "F7",
+    "F8",
+    "F9",
+    "F10"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 9,
+   "start": 652,
+   "text": "- File electronically through an e-file provider if it’s within 2 years from the original due date of the return.",
+   "facts": [
+    "F11",
+    "F12"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 10,
+   "start": 766,
+   "text": "- Pay online now at www.irs.gov/payments or mail a payment with your return.",
+   "facts": [
+    "F13",
+    "F9"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 11,
+   "start": 844,
+   "text": "If you don’t think you had to file a tax return for 2017",
+   "facts": [
+    "F14"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 12,
+   "start": 902,
+   "text": "Complete the enclosed Form 15103, Form 1040 Return Delinquency, to indicate whether any of the circumstances apply to you.",
+   "facts": [
+    "F15"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 13,
+   "start": 1025,
+   "text": "Send us the form with the stub below in the enclosed envelope or fax it to 1-855-555-0161.",
+   "facts": [
+    "F16",
+    "F17"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 14,
+   "start": 1116,
+   "text": "Indicate whether:",
+   "facts": [],
+   "none": "lead-in to list; content carried by sentences 15-16",
+   "override": null
+  },
+  {
+   "i": 15,
+   "start": 1135,
+   "text": "- You already filed a tax return for 2017 (if so, send us a signed and dated copy of the return along with your Form 15103)",
+   "facts": [
+    "F18",
+    "F19"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 16,
+   "start": 1259,
+   "text": "- You don’t think you are required to file for one of the reasons listed on the Form 15103",
+   "facts": [
+    "F20"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 17,
+   "start": 1351,
+   "text": "## If we don’t hear from you",
+   "facts": [],
+   "none": "section heading",
+   "override": "the 'if' in the heading is restated as a condition in each bullet (F21, F24, F29)"
+  },
+  {
+   "i": 18,
+   "start": 1381,
+   "text": "- If you don’t file a tax return, or dispute this notice if you feel you’ve received it in error, you may owe penalty and interest charges on the amount of tax due. You may continue to accrue penalties and interest charges on the amount of tax due.",
+   "facts": [
+    "F21",
+    "F22",
+    "F23"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 19,
+   "start": 1630,
+   "text": "- You risk losing your refund if you don’t file your return. If you’re due a refund for withholding or estimated taxes, you must file your return to claim it by April 15, 2021, plus any extension of time to file. The same rule applies to a right to claim refundable tax credits such as the Earned Income Credit.",
+   "facts": [
+    "F24",
+    "F25",
+    "F26",
+    "F27",
+    "F28"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 20,
+   "start": 1942,
+   "text": "- If you received interest or dividend income and you don’t file your return or pay all taxes due, you could become subject to backup withholding. This means IRS will notify your payers (banks, etc.) to withhold a percentage of the payments you receive for dividends and interest. The payers will send the money to the IRS and you may claim it as a withholding credit on your federal income tax return.",
+   "facts": [
+    "F29",
+    "F30",
+    "F31",
+    "F32",
+    "F33"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 21,
+   "start": 2346,
+   "text": "## Next steps",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 22,
+   "start": 2361,
+   "text": "We’ll contact you again if:",
+   "facts": [
+    "F34"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 23,
+   "start": 2390,
+   "text": "- We need additional information or clarification about your tax return",
+   "facts": [
+    "F35"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 24,
+   "start": 2462,
+   "text": "- We determine that you do need to file a tax return for 2017",
+   "facts": [
+    "F36"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 25,
+   "start": 2525,
+   "text": "If you think we made a mistake, call 1-800-555-0137 to review your account.",
+   "facts": [
+    "F37",
+    "F4"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 26,
+   "start": 2602,
+   "text": "## Additional information",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 27,
+   "start": 2629,
+   "text": "- Visit www.irs.gov/cp59.",
+   "facts": [
+    "F38"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 28,
+   "start": 2655,
+   "text": "- For tax forms, instructions and publications, visit www.irs.gov or call 800-TAX-FORM (800-829-3676).",
+   "facts": [
+    "F39",
+    "F40"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 29,
+   "start": 2758,
+   "text": "- If you need wage and income information, you can request a transcript by visiting www.irs.gov/transcript.",
+   "facts": [
+    "F41",
+    "F42"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 30,
+   "start": 2866,
+   "text": "- Keep this notice for your records.",
+   "facts": [
+    "F43"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 31,
+   "start": 2904,
+   "text": "If you need assistance, please don’t hesitate to contact us.",
+   "facts": [],
+   "none": "sign-off",
+   "override": "generic closing; the 'if' introduces an offer of help with no contact method beyond those already recorded (F4)"
+  }
+ ],
+ "reviewer": "Claude (in session), November 10, 2026"
+}

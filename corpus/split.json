@@ -1,0 +1,8 @@
+{
+ "dev": [
+  "va-claim-info",
+  "irs-cp21b",
+  "cms-nomnc"
+ ],
+ "why": "The judge prompt was tuned on these three in the smoke run (November 10), one per agency, so they can't measure the judge. Every other notice is test: the gate and all reported results use test notices, with dev shown separately."
+}

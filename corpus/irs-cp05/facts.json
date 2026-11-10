@@ -1,0 +1,927 @@
+{
+ "notice": "irs-cp05",
+ "drafted_by": "claude-opus-5-5",
+ "reviewed": true,
+ "review_notes": [
+  {
+   "note": "read in full"
+  }
+ ],
+ "facts": [
+  {
+   "id": "F1",
+   "type": "contact",
+   "statement": "The IRS mailing address for this notice is 4800 Buford Hwy, Stop 46B – ATSC, Chamblee, GA 30341.",
+   "question": "What address can you write to about this notice?",
+   "answer": "Internal Revenue Service, 4800 Buford Hwy, Stop 46B – ATSC, Chamblee, GA 30341",
+   "quote": "4800 Buford Hwy\nStop 46B – ATSC\nChamblee, GA 30341",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F2",
+   "type": "subject",
+   "statement": "The notice is IRS Notice CP05.",
+   "question": "What is the notice number?",
+   "answer": "CP05",
+   "quote": "Notice CP05",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F3",
+   "type": "subject",
+   "statement": "The notice is about the reader's 2018 tax return.",
+   "question": "Which tax year's return is this about?",
+   "answer": "Tax year 2018",
+   "quote": "Tax year 2018",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F4",
+   "type": "deadline",
+   "statement": "The notice is dated April 30, 2019. The 60-day waiting period counts from this date.",
+   "question": "What is the date of the notice?",
+   "answer": "April 30, 2019",
+   "quote": "Notice date April 30, 2019",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F5",
+   "type": "contact",
+   "statement": "The IRS phone number for this notice is 800-829-1040.",
+   "question": "What phone number does the notice give for the IRS?",
+   "answer": "800-829-1040",
+   "quote": "Phone 800-829-1040",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F6",
+   "type": "subject",
+   "statement": "The IRS is holding the reader's refund until it finishes reviewing the tax return.",
+   "question": "What is happening to your refund?",
+   "answer": "The IRS is holding it until it finishes reviewing (verifying the accuracy of) your tax return.",
+   "quote": "We're holding your refund until we finish reviewing your tax return",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F7",
+   "type": "subject",
+   "statement": "The return was selected to verify one or more of these: income, income tax withholding, tax credits, or business income.",
+   "question": "What items might the IRS be verifying on your return?",
+   "answer": "One or more of: income, income tax withholding, tax credits, business income.",
+   "quote": "We selected your return to verify one or more of the following you may have reported",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F8",
+   "type": "consequence",
+   "statement": "The IRS will contact the reader or their authorized representative if it has questions.",
+   "question": "Who will the IRS contact if it has questions?",
+   "answer": "You or your authorized representative.",
+   "quote": "We’ll contact you or your authorized representative if we have questions.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F9",
+   "type": "consequence",
+   "statement": "The IRS may also contact third parties to verify information during the review.",
+   "question": "Might the IRS contact anyone besides you during the review?",
+   "answer": "Yes. It may contact third parties if it needs to verify information.",
+   "quote": "We may also contact third parties if we need to verify information",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F10",
+   "type": "condition",
+   "statement": "When it contacts third parties, the IRS may disclose only the information necessary to verify what it needs.",
+   "question": "How much of your information can the IRS share with third parties it contacts?",
+   "answer": "No more than is necessary to verify what it needs.",
+   "quote": "we’re prohibited from disclosing any more information than is necessary to verify what we need",
+   "critical": true,
+   "depends_on": [
+    "F9"
+   ]
+  },
+  {
+   "id": "F11",
+   "type": "consequence",
+   "statement": "The IRS is required to keep a record of the third parties it contacts.",
+   "question": "Does the IRS keep a record of third parties it contacts?",
+   "answer": "Yes. It is required to keep a record of third-party contacts.",
+   "quote": "We’re required to keep a record of third-party contacts we’ve made.",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F12",
+   "type": "right",
+   "statement": "The reader has the right to request a copy of the list of third parties the IRS contacted.",
+   "question": "Can you get a list of the third parties the IRS contacted?",
+   "answer": "Yes. You have the right to request a copy of that list.",
+   "quote": "You have the right to request a copy of the list of those contacted",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F13",
+   "type": "action",
+   "statement": "To request the list, call the IRS or write to the address at the top of the notice.",
+   "question": "How do you request the list of third parties contacted?",
+   "answer": "By calling the IRS or writing to the address at the top of the notice (4800 Buford Hwy, Stop 46B – ATSC, Chamblee, GA 30341).",
+   "quote": "by calling the number below or writing to the address at the top of this notice",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F14",
+   "type": "condition",
+   "statement": "The instructions that follow apply if the reader did file the tax return.",
+   "question": "Which readers do the 'nothing to do now / wait 60 days' instructions apply to?",
+   "answer": "Readers who filed the tax return.",
+   "quote": "If you filed the tax return",
+   "critical": true,
+   "depends_on": [
+    "F15",
+    "F18",
+    "F19",
+    "F26"
+   ]
+  },
+  {
+   "id": "F15",
+   "type": "action",
+   "statement": "A reader who filed the return does not need to do anything right now.",
+   "question": "If you filed the return, do you need to do anything now?",
+   "answer": "No, nothing at this time.",
+   "quote": "You don’t need to do anything at this time.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F16",
+   "type": "consequence",
+   "statement": "The IRS says it will work to finish the review as quickly as possible.",
+   "question": "How quickly will the IRS try to finish the review?",
+   "answer": "As quickly as possible.",
+   "quote": "we’ll work to complete our review as quickly as possible",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F17",
+   "type": "deadline",
+   "statement": "The review could take up to 60 days.",
+   "question": "How long could the review take?",
+   "answer": "Up to 60 days.",
+   "quote": "We could take up to 60 days to complete this review.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F18",
+   "type": "deadline",
+   "statement": "Do not contact the IRS before 60 days from the notice date, because the IRS will not have any more information before then.",
+   "question": "How long should you wait before contacting the IRS about the review?",
+   "answer": "60 days from the notice date of April 30, 2019 (until June 29, 2019).",
+   "quote": "Please don’t contact us prior to 60 days from the date of this notice",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F19",
+   "type": "contact",
+   "statement": "The reader can check refund status at www.irs.gov/refunds or on the IRS2Go mobile app.",
+   "question": "Where can you check the status of your refund?",
+   "answer": "www.irs.gov/refunds or the IRS2Go mobile app",
+   "quote": "You can check your refund status at www.irs.gov/refunds or the IRS2Go mobile app for smart phones.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F20",
+   "type": "consequence",
+   "statement": "After the review, the IRS may send the refund.",
+   "question": "Is sending the refund one possible result of the review?",
+   "answer": "Yes. The IRS may send your refund.",
+   "quote": "we may send your refund",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F21",
+   "type": "consequence",
+   "statement": "After the review, the IRS may ask for additional information.",
+   "question": "Might the IRS ask you for more information after the review?",
+   "answer": "Yes. It may ask for additional information.",
+   "quote": "ask for additional information",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F22",
+   "type": "consequence",
+   "statement": "After the review, the IRS may deny all or part of the refund.",
+   "question": "Could the IRS deny your refund?",
+   "answer": "Yes. It may deny all or part of your refund.",
+   "quote": "deny all or part of your refund",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F23",
+   "type": "condition",
+   "statement": "The appeal is available if the reader disagrees with a denial.",
+   "question": "When can you appeal?",
+   "answer": "If the IRS denies all or part of your refund and you don't agree with the denial.",
+   "quote": "If you don’t agree with the denial",
+   "critical": true,
+   "depends_on": [
+    "F24"
+   ]
+  },
+  {
+   "id": "F24",
+   "type": "right",
+   "statement": "The reader will have an opportunity to appeal a denial.",
+   "question": "What can you do if your refund is denied and you disagree?",
+   "answer": "Appeal the denial.",
+   "quote": "you’ll have an opportunity to appeal",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F25",
+   "type": "condition",
+   "statement": "Calling applies if, after 60 days, the reader has not received the refund or heard from the IRS.",
+   "question": "When should you call the IRS about your refund?",
+   "answer": "If you haven't received your refund or heard from the IRS after 60 days.",
+   "quote": "If you haven’t received your refund or heard from us after 60 days",
+   "critical": true,
+   "depends_on": [
+    "F26"
+   ]
+  },
+  {
+   "id": "F26",
+   "type": "contact",
+   "statement": "The reader can call the IRS at the number listed at the top of the notice.",
+   "question": "What number can you call if you haven't heard anything after 60 days?",
+   "answer": "800-829-1040",
+   "quote": "you can call us at the number listed above",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F27",
+   "type": "condition",
+   "statement": "The identity theft steps apply if the reader did not file the tax return.",
+   "question": "Who should follow the identity theft steps?",
+   "answer": "Readers who did not file the 2018 tax return.",
+   "quote": "If you didn't file the tax return",
+   "critical": true,
+   "depends_on": [
+    "F28",
+    "F29",
+    "F30",
+    "F31",
+    "F32",
+    "F37",
+    "F38"
+   ]
+  },
+  {
+   "id": "F28",
+   "type": "subject",
+   "statement": "If the reader did not file the return, someone may have used their personal information to try to get a tax refund.",
+   "question": "What might it mean if you didn't file this return?",
+   "answer": "Someone may have tried to use your personal information to get a tax refund.",
+   "quote": "Someone may have attempted to use your personal information to obtain a tax refund.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F29",
+   "type": "action",
+   "statement": "Send Form 14039, Identity Theft Affidavit, to the address given in the Form 14039 instructions.",
+   "question": "What form should you send if you didn't file the return, and where do you send it?",
+   "answer": "Form 14039, Identity Theft Affidavit, to the address in the Form 14039 instructions.",
+   "quote": "Send Form 14039, Identity Theft Affidavit, to the address in the Form 14039 instructions",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F30",
+   "type": "action",
+   "statement": "Include a copy of this notice with Form 14039.",
+   "question": "What should you send along with Form 14039?",
+   "answer": "A copy of this notice.",
+   "quote": "along with a copy of this notice",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F31",
+   "type": "action",
+   "statement": "Notify your financial institutions.",
+   "question": "Should you tell your bank or other financial institutions?",
+   "answer": "Yes. Notify your financial institutions.",
+   "quote": "Notify your financial institutions.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F32",
+   "type": "action",
+   "statement": "Contact the fraud department of one of the three major credit bureaus.",
+   "question": "Which credit bureaus should you contact, and which department?",
+   "answer": "The fraud department of one of the three major credit bureaus (Equifax, Experian, or TransUnion).",
+   "quote": "Contact the fraud department in one of the three major credit bureaus below.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F33",
+   "type": "consequence",
+   "statement": "The credit bureau you contact will notify the other two, so you only need to contact one.",
+   "question": "Do you need to contact all three credit bureaus?",
+   "answer": "No. The one you contact will notify the others.",
+   "quote": "The one you contact will notify the others.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F34",
+   "type": "contact",
+   "statement": "Equifax: 800-525-6285, www.equifax.com.",
+   "question": "How do you reach Equifax?",
+   "answer": "800-525-6285, www.equifax.com",
+   "quote": "Equifax 800-525-6285 www.equifax.com",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F35",
+   "type": "contact",
+   "statement": "Experian: 888-397-3742, www.experian.com.",
+   "question": "How do you reach Experian?",
+   "answer": "888-397-3742, www.experian.com",
+   "quote": "Experian 888-397-3742 www.experian.com",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F36",
+   "type": "contact",
+   "statement": "TransUnion: 800-680-7289, www.transunion.com.",
+   "question": "How do you reach TransUnion?",
+   "answer": "800-680-7289, www.transunion.com",
+   "quote": "TransUnion 800-680-7289 www.transunion.com",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F37",
+   "type": "action",
+   "statement": "Report the fraudulent activity to your local police or sheriff's department.",
+   "question": "Should you report this to local law enforcement?",
+   "answer": "Yes. Report it to your local police or sheriff's department.",
+   "quote": "Report fraudulent activity to your local police or sheriff’s department.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F38",
+   "type": "action",
+   "statement": "File a complaint with the Federal Trade Commission.",
+   "question": "Which federal agency should you file a complaint with?",
+   "answer": "The Federal Trade Commission (FTC).",
+   "quote": "File a complaint with the Federal Trade Commission",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F39",
+   "type": "contact",
+   "statement": "File the FTC complaint at www.identitytheft.gov or by calling 877-438-4338.",
+   "question": "How do you file the FTC complaint?",
+   "answer": "www.identitytheft.gov or 877-438-4338",
+   "quote": "www.identitytheft.gov, or by calling 877-438-4338",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F40",
+   "type": "contact",
+   "statement": "For information on identity theft involving Social Security numbers, go to www.ssa.gov/pubs/10064.html or call the Social Security Administration at 800-772-1213.",
+   "question": "How can you get information from Social Security about identity theft involving your SSN?",
+   "answer": "www.ssa.gov/pubs/10064.html or 800-772-1213",
+   "quote": "Contact the Social Security Administration’s website, www.ssa.gov/pubs/10064.html, or call them at 800-772-1213",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F41",
+   "type": "contact",
+   "statement": "More information on identity theft is at www.irs.gov/ID.",
+   "question": "Where can you find more IRS information on identity theft?",
+   "answer": "www.irs.gov/ID",
+   "quote": "Visit www.irs.gov/ID for additional information.",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F42",
+   "type": "contact",
+   "statement": "More information about this notice is at www.irs.gov/cp05.",
+   "question": "What website has more information about this notice?",
+   "answer": "www.irs.gov/cp05",
+   "quote": "Visit www.irs.gov/cp05",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F43",
+   "type": "contact",
+   "statement": "Tax forms, instructions, and publications are at www.irs.gov/forms-pubs or 800-TAX-FORM (800-829-3676).",
+   "question": "Where can you get IRS tax forms and publications?",
+   "answer": "www.irs.gov/forms-pubs or 800-TAX-FORM (800-829-3676)",
+   "quote": "For tax forms, instructions, and publications, visit www.irs.gov/forms-pubs or call 800-TAX-FORM (800-829-3676).",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F44",
+   "type": "action",
+   "statement": "When writing to the IRS, include your Social Security number, the tax year, and the form number you are writing about.",
+   "question": "What must you include when you write to the IRS?",
+   "answer": "Your Social Security number, the tax year, and the form number you are writing about.",
+   "quote": "Be sure to include your Social Security number and the tax year and form number you are writing about.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F45",
+   "type": "action",
+   "statement": "Keep this notice for your records.",
+   "question": "What should you do with this notice?",
+   "answer": "Keep it for your records.",
+   "quote": "Keep this notice for your records.",
+   "critical": false,
+   "depends_on": []
+  }
+ ],
+ "sentences": [
+  {
+   "i": 0,
+   "start": 0,
+   "text": "Department of the Treasury\nInternal Revenue Service\n4800 Buford Hwy\nStop 46B – ATSC\nChamblee, GA 30341",
+   "facts": [
+    "F1"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 1,
+   "start": 104,
+   "text": "Notice CP05\nTax year 2018\nNotice date April 30, 2019\nSocial Security number XXX-XX-NNNN\nPhone 800-829-1040",
+   "facts": [
+    "F2",
+    "F3",
+    "F4",
+    "F5"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 2,
+   "start": 212,
+   "text": "Denise Holloway\n87 Elm Court\nSpring Hill, TN 37174",
+   "facts": [],
+   "none": "recipient name and address block",
+   "override": "Numbers are the recipient's street address and ZIP code, not facts about the case."
+  },
+  {
+   "i": 3,
+   "start": 264,
+   "text": "## Message about your 2018 tax return",
+   "facts": [
+    "F3"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 4,
+   "start": 303,
+   "text": "We're holding your refund until we finish reviewing your tax return",
+   "facts": [
+    "F6"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 5,
+   "start": 372,
+   "text": "We’ve received your 2018 tax return.",
+   "facts": [
+    "F3"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 6,
+   "start": 409,
+   "text": "We’re holding your refund until we finish verifying the accuracy of your return.",
+   "facts": [
+    "F6"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 7,
+   "start": 491,
+   "text": "We selected your return to verify one or more of the following you may have reported:",
+   "facts": [
+    "F7"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 8,
+   "start": 578,
+   "text": "- Income",
+   "facts": [
+    "F7"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 9,
+   "start": 587,
+   "text": "- Income tax withholding",
+   "facts": [
+    "F7"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 10,
+   "start": 612,
+   "text": "- Tax credits",
+   "facts": [
+    "F7"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 11,
+   "start": 626,
+   "text": "- Business income",
+   "facts": [
+    "F7"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 12,
+   "start": 645,
+   "text": "## What you need to know",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 13,
+   "start": 671,
+   "text": "We’ll contact you or your authorized representative if we have questions.",
+   "facts": [
+    "F8"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 14,
+   "start": 745,
+   "text": "We may also contact third parties if we need to verify information while we’re reviewing your return.",
+   "facts": [
+    "F9"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 15,
+   "start": 847,
+   "text": "When we contact third parties, we’re prohibited from disclosing any more information than is necessary to verify what we need.",
+   "facts": [
+    "F10"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 16,
+   "start": 975,
+   "text": "We’re required to keep a record of third-party contacts we’ve made.",
+   "facts": [
+    "F11"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 17,
+   "start": 1043,
+   "text": "You have the right to request a copy of the list of those contacted by calling the number below or writing to the address at the top of this notice.",
+   "facts": [
+    "F12",
+    "F13"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 18,
+   "start": 1193,
+   "text": "## What you need to do",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 19,
+   "start": 1217,
+   "text": "If you filed the tax return",
+   "facts": [
+    "F14"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 20,
+   "start": 1246,
+   "text": "You don’t need to do anything at this time.",
+   "facts": [
+    "F15"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 21,
+   "start": 1290,
+   "text": "We understand your tax refund is very important to you and we’ll work to complete our review as quickly as possible.",
+   "facts": [
+    "F16"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 22,
+   "start": 1408,
+   "text": "We could take up to 60 days to complete this review.",
+   "facts": [
+    "F17"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 23,
+   "start": 1461,
+   "text": "Please don’t contact us prior to 60 days from the date of this notice since we won’t be able to provide you any additional information.",
+   "facts": [
+    "F18"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 24,
+   "start": 1598,
+   "text": "You can check your refund status at www.irs.gov/refunds or the IRS2Go mobile app for smart phones.",
+   "facts": [
+    "F19"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 25,
+   "start": 1698,
+   "text": "Once we finish our review, we may send your refund, ask for additional information, or deny all or part of your refund.",
+   "facts": [
+    "F20",
+    "F21",
+    "F22"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 26,
+   "start": 1818,
+   "text": "If you don’t agree with the denial, you’ll have an opportunity to appeal.",
+   "facts": [
+    "F23",
+    "F24"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 27,
+   "start": 1893,
+   "text": "If you haven’t received your refund or heard from us after 60 days, you can call us at the number listed above.",
+   "facts": [
+    "F25",
+    "F26"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 28,
+   "start": 2006,
+   "text": "If you didn't file the tax return",
+   "facts": [
+    "F27"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 29,
+   "start": 2041,
+   "text": "Someone may have attempted to use your personal information to obtain a tax refund.",
+   "facts": [
+    "F28"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 30,
+   "start": 2125,
+   "text": "You should do the following:",
+   "facts": [],
+   "none": "lead-in to the list of steps",
+   "override": null
+  },
+  {
+   "i": 31,
+   "start": 2155,
+   "text": "- Send Form 14039, Identity Theft Affidavit, to the address in the Form 14039 instructions, along with a copy of this notice.",
+   "facts": [
+    "F29",
+    "F30"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 32,
+   "start": 2281,
+   "text": "- Notify your financial institutions.",
+   "facts": [
+    "F31"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 33,
+   "start": 2319,
+   "text": "- Contact the fraud department in one of the three major credit bureaus below. The one you contact will notify the others. Equifax 800-525-6285 www.equifax.com; Experian 888-397-3742 www.experian.com; TransUnion 800-680-7289 www.transunion.com",
+   "facts": [
+    "F32",
+    "F33",
+    "F34",
+    "F35",
+    "F36"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 34,
+   "start": 2563,
+   "text": "- Report fraudulent activity to your local police or sheriff’s department.",
+   "facts": [
+    "F37"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 35,
+   "start": 2638,
+   "text": "- File a complaint with the Federal Trade Commission on their Website, www.identitytheft.gov, or by calling 877-438-4338.",
+   "facts": [
+    "F38",
+    "F39"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 36,
+   "start": 2760,
+   "text": "- Contact the Social Security Administration’s website, www.ssa.gov/pubs/10064.html, or call them at 800-772-1213 to get information on identity theft involving Social Security numbers.",
+   "facts": [
+    "F40"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 37,
+   "start": 2946,
+   "text": "- Visit www.irs.gov/ID for additional information.",
+   "facts": [
+    "F41"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 38,
+   "start": 2998,
+   "text": "## Additional information",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 39,
+   "start": 3025,
+   "text": "- Visit www.irs.gov/cp05",
+   "facts": [
+    "F42"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 40,
+   "start": 3050,
+   "text": "- For tax forms, instructions, and publications, visit www.irs.gov/forms-pubs or call 800-TAX-FORM (800-829-3676).",
+   "facts": [
+    "F43"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 41,
+   "start": 3165,
+   "text": "- You can contact us by mail at the address at the top of the first page of this notice. Be sure to include your Social Security number and the tax year and form number you are writing about.",
+   "facts": [
+    "F1",
+    "F44"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 42,
+   "start": 3357,
+   "text": "- Keep this notice for your records.",
+   "facts": [
+    "F45"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 43,
+   "start": 3395,
+   "text": "If you need assistance, please don’t hesitate to contact us.",
+   "facts": [],
+   "none": "closing courtesy",
+   "override": "The 'if' is a polite closing offer of help. It sets no condition on any fact; how to contact the IRS is covered by F1, F5 and F26."
+  }
+ ],
+ "reviewer": "Claude (in session), November 10, 2026"
+}

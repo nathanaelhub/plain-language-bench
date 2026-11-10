@@ -1,0 +1,920 @@
+{
+ "notice": "irs-lt11",
+ "drafted_by": "claude-opus-5-5",
+ "reviewed": true,
+ "review_notes": [
+  {
+   "note": "read in full"
+  }
+ ],
+ "facts": [
+  {
+   "id": "F1",
+   "type": "contact",
+   "statement": "The IRS address at the top of the letter is Internal Revenue Service, Philadelphia, PA 19255-0010.",
+   "question": "What IRS mailing address is printed at the top of the letter?",
+   "answer": "Internal Revenue Service, Philadelphia, PA 19255-0010",
+   "quote": "Philadelphia, PA 19255-0010",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F2",
+   "type": "subject",
+   "statement": "The letter is IRS Notice LT11.",
+   "question": "What is the notice number?",
+   "answer": "LT11",
+   "quote": "Notice LT11",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F3",
+   "type": "subject",
+   "statement": "The notice is dated March 2, 2020.",
+   "question": "What date is on the notice?",
+   "answer": "March 2, 2020",
+   "quote": "Notice date March 2, 2020",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F4",
+   "type": "contact",
+   "statement": "The IRS phone number for this notice is 1-800-555-0153.",
+   "question": "What phone number does the notice give for the IRS?",
+   "answer": "1-800-555-0153",
+   "quote": "Phone 1-800-555-0153",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F5",
+   "type": "subject",
+   "statement": "The letter tells you that the IRS intends to levy (seize) your property and that you have a right to a hearing.",
+   "question": "What is this letter about?",
+   "answer": "The IRS intends to levy (seize) your property, and you have a right to a hearing.",
+   "quote": "Notice of Intent to Levy and Notice of Your Right to a Hearing",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F6",
+   "type": "amount",
+   "statement": "You owe $4,823.12, and it is due immediately.",
+   "question": "How much is due, and when?",
+   "answer": "$4,823.12, due immediately",
+   "quote": "Amount due immediately: $4,823.12",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F7",
+   "type": "subject",
+   "statement": "The IRS has not received a payment even though it sent you several notices about your overdue taxes.",
+   "question": "Why is the IRS sending this letter?",
+   "answer": "It has not received a payment despite sending several notices about your overdue taxes.",
+   "quote": "We haven’t received a payment despite sending you several notices about your overdue taxes",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F8",
+   "type": "consequence",
+   "statement": "The IRS may seize (levy) your property or your rights to property.",
+   "question": "What may the IRS do to your property?",
+   "answer": "Seize (levy) your property or your rights to property.",
+   "quote": "The IRS may seize (levy) your property or your rights to property",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F9",
+   "type": "deadline",
+   "statement": "The IRS may levy on or after April 1, 2020.",
+   "question": "From what date may the IRS seize your property?",
+   "answer": "On or after April 1, 2020",
+   "quote": "on or after April 1, 2020",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F10",
+   "type": "consequence",
+   "statement": "Your wages and other income can be seized.",
+   "question": "Can the IRS take your wages and other income?",
+   "answer": "Yes",
+   "quote": "Wages and other income",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F11",
+   "type": "consequence",
+   "statement": "Your bank accounts can be seized.",
+   "question": "Can the IRS take money in your bank accounts?",
+   "answer": "Yes",
+   "quote": "Bank accounts",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F12",
+   "type": "consequence",
+   "statement": "Your business assets can be seized.",
+   "question": "Can the IRS take your business assets?",
+   "answer": "Yes",
+   "quote": "Business assets",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F13",
+   "type": "consequence",
+   "statement": "Your personal assets, including your car and home, can be seized.",
+   "question": "Can the IRS take your car or home?",
+   "answer": "Yes, personal assets including your car and home",
+   "quote": "Personal assets (including your car and home)",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F14",
+   "type": "consequence",
+   "statement": "Your Alaska Permanent Fund Dividend and state tax refund can be seized.",
+   "question": "Can the IRS take your state tax refund or Alaska Permanent Fund Dividend?",
+   "answer": "Yes",
+   "quote": "Alaska Permanent Fund Dividend and state tax refund",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F15",
+   "type": "consequence",
+   "statement": "Your Social Security benefits can be seized.",
+   "question": "Can the IRS take your Social Security benefits?",
+   "answer": "Yes",
+   "quote": "Social Security benefits",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F16",
+   "type": "amount",
+   "statement": "The tax you originally owed was $4,309.00.",
+   "question": "How much tax did you originally owe, before penalties and interest?",
+   "answer": "$4,309.00",
+   "quote": "Amount you owed: $4,309.00",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F17",
+   "type": "amount",
+   "statement": "Additional penalty charges are $399.96.",
+   "question": "How much are the additional penalty charges?",
+   "answer": "$399.96",
+   "quote": "Additional penalty charges: 399.96",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F18",
+   "type": "amount",
+   "statement": "Additional interest charges are $114.16.",
+   "question": "How much are the additional interest charges?",
+   "answer": "$114.16",
+   "quote": "Additional interest charges: 114.16",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F19",
+   "type": "action",
+   "statement": "Make your check or money order payable to the United States Treasury.",
+   "question": "Who should your check or money order be made payable to?",
+   "answer": "The United States Treasury",
+   "quote": "Make your check or money order payable to the United States Treasury",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F20",
+   "type": "action",
+   "statement": "Write your Social Security number on your payment and on any correspondence.",
+   "question": "What should you write on your payment and any letters you send?",
+   "answer": "Your Social Security number",
+   "quote": "Write your Social Security number (nnn-nn-nnnn) on your payment and any correspondence",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F21",
+   "type": "condition",
+   "statement": "The partial-payment and payment-arrangement options are for when you can't pay the full amount due.",
+   "question": "When should you pay part now and set up payment arrangements?",
+   "answer": "If you can't pay the full amount due",
+   "quote": "If you can’t pay the amount due",
+   "critical": true,
+   "depends_on": [
+    "F22",
+    "F23",
+    "F25"
+   ]
+  },
+  {
+   "id": "F22",
+   "type": "action",
+   "statement": "Pay as much as you can now.",
+   "question": "If you can't pay in full, how much should you pay now?",
+   "answer": "As much as you can",
+   "quote": "pay as much as you can now",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F23",
+   "type": "action",
+   "statement": "You can make payment arrangements to pay off the rest over time.",
+   "question": "How can you handle the balance you can't pay now?",
+   "answer": "Make payment arrangements to pay off the rest over time",
+   "quote": "make payment arrangements that allow you to pay off the rest over time",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F24",
+   "type": "contact",
+   "statement": "www.irs.gov/payments has more information about installment and payment agreements, automatic bank deductions, payroll deductions and credit card payments.",
+   "question": "Where can you read more about payment agreements and ways to pay?",
+   "answer": "www.irs.gov/payments",
+   "quote": "Visit www.irs.gov/payments for more information",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F25",
+   "type": "action",
+   "statement": "You can call the IRS at 1-800-555-0153 to discuss your payment options.",
+   "question": "What number can you call to discuss your options?",
+   "answer": "1-800-555-0153",
+   "quote": "call us at 1-800-555-0153 to discuss your options",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F26",
+   "type": "condition",
+   "statement": "Sending proof of payment applies if you already paid in full or think a payment wasn't credited to your account.",
+   "question": "When should you send proof of payment?",
+   "answer": "If you already paid your balance in full or think a payment wasn't credited to your account",
+   "quote": "If you've already paid your balance in full or think we haven't credited a payment to your account",
+   "critical": true,
+   "depends_on": [
+    "F27"
+   ]
+  },
+  {
+   "id": "F27",
+   "type": "action",
+   "statement": "Send proof of the payment.",
+   "question": "What should you send if you believe you already paid?",
+   "answer": "Proof of that payment",
+   "quote": "please send proof of that payment",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F28",
+   "type": "right",
+   "statement": "You have the right to request a Collection Due Process hearing to appeal the proposed levy.",
+   "question": "What hearing can you request to challenge the levy?",
+   "answer": "A Collection Due Process hearing",
+   "quote": "Right to request a Collection Due Process hearing",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F29",
+   "type": "action",
+   "statement": "To appeal, complete and mail the enclosed Form 12153, Request for a Collection Due Process or Equivalent Hearing.",
+   "question": "What form do you send to appeal the levy?",
+   "answer": "Form 12153, Request for a Collection Due Process or Equivalent Hearing (enclosed)",
+   "quote": "complete and mail the enclosed Form 12153, Request for a Collection Due Process or Equivalent Hearing",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F30",
+   "type": "deadline",
+   "statement": "Form 12153 must be mailed by April 1, 2020.",
+   "question": "By what date must you mail Form 12153?",
+   "answer": "April 1, 2020",
+   "quote": "by April 1, 2020",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F31",
+   "type": "action",
+   "statement": "Send Form 12153 to the address at the top of page 1 of the notice.",
+   "question": "Where do you send Form 12153?",
+   "answer": "To the IRS address listed at the top of page 1 of the notice",
+   "quote": "Send the form to us at the address listed at the top of page 1",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F32",
+   "type": "action",
+   "statement": "Include the reason you are requesting a hearing.",
+   "question": "What must you be sure to include on your hearing request?",
+   "answer": "The reason you are requesting a hearing (and other information the form asks for)",
+   "quote": "Be sure to include the reason you are requesting a hearing",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F33",
+   "type": "action",
+   "statement": "Section 8 of Form 12153 and its instructions cover giving the reason for the hearing.",
+   "question": "Which part of Form 12153 deals with the reason for the hearing?",
+   "answer": "Section 8 and the form's instructions",
+   "quote": "see section 8 of, and the instructions to, Form 12153",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F34",
+   "type": "condition",
+   "statement": "The loss of Tax Court review applies if you don't file Form 12153 by April 1, 2020.",
+   "question": "What causes you to lose the ability to contest Appeals' decision in Tax Court?",
+   "answer": "Not filing Form 12153 by April 1, 2020",
+   "quote": "If you don't file Form 12153 by April 1, 2020",
+   "critical": true,
+   "depends_on": [
+    "F35"
+   ]
+  },
+  {
+   "id": "F35",
+   "type": "consequence",
+   "statement": "You will lose the ability to contest Appeals' decision in the U.S. Tax Court.",
+   "question": "What do you lose if you file Form 12153 late?",
+   "answer": "The ability to contest Appeals' decision in the U.S. Tax Court",
+   "quote": "you will lose the ability to contest Appeals' decision in the U.S. Tax Court",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F36",
+   "type": "condition",
+   "statement": "The lien filing applies if you don't pay the amount due or call to make payment arrangements.",
+   "question": "What would lead the IRS to file a Notice of Federal Tax Lien?",
+   "answer": "Not paying the amount due or not calling to make payment arrangements",
+   "quote": "If you don’t pay the amount due or call us to make payment arrangements",
+   "critical": true,
+   "depends_on": [
+    "F37"
+   ]
+  },
+  {
+   "id": "F37",
+   "type": "consequence",
+   "statement": "The IRS can file a Notice of Federal Tax Lien at any time.",
+   "question": "When can the IRS file a Notice of Federal Tax Lien?",
+   "answer": "At any time",
+   "quote": "we can file a Notice of Federal Tax Lien at any time",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F38",
+   "type": "condition",
+   "statement": "The IRS may already have filed a Notice of Federal Tax Lien.",
+   "question": "Might a Notice of Federal Tax Lien already have been filed?",
+   "answer": "Yes; the IRS will file one if it hasn't already done so",
+   "quote": "if we haven’t already done so",
+   "critical": true,
+   "depends_on": [
+    "F37"
+   ]
+  },
+  {
+   "id": "F39",
+   "type": "consequence",
+   "statement": "The IRS can file a Notice of Federal Tax Lien even if you request a hearing.",
+   "question": "Does requesting a hearing stop the IRS from filing a lien notice?",
+   "answer": "No; it can file one even if you request a hearing",
+   "quote": "we can file a Notice of Federal Tax Lien even if you request a hearing",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F40",
+   "type": "consequence",
+   "statement": "The Notice of Federal Tax Lien publicly tells your creditors that the IRS has a lien (claim) against all your property.",
+   "question": "What does a Notice of Federal Tax Lien tell your creditors?",
+   "answer": "Publicly, that the IRS has a lien (claim) against all your property",
+   "quote": "The Notice of Federal Tax Lien publicly notifies your creditors that the IRS has a lien (or claim) against all your property",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F41",
+   "type": "consequence",
+   "statement": "The lien also covers property you acquire after the lien notice is filed.",
+   "question": "Does the lien cover property you get after the notice is filed?",
+   "answer": "Yes",
+   "quote": "including property acquired by you after the Notice of Federal Tax Lien is filed",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F42",
+   "type": "consequence",
+   "statement": "Once filed, the lien notice may appear on your credit report and harm your credit rating.",
+   "question": "How can a filed lien notice affect your credit?",
+   "answer": "It may appear on your credit report and harm your credit rating",
+   "quote": "it may appear on your credit report and may harm your credit rating",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F43",
+   "type": "consequence",
+   "statement": "The lien itself exists as soon as you have not paid your bill.",
+   "question": "When does the lien itself arise?",
+   "answer": "Once you have not paid your bill",
+   "quote": "The lien itself arises once you have not paid your bill",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F44",
+   "type": "consequence",
+   "statement": "The lien can't be released until your bill, including interest, penalties and fees, is paid in full.",
+   "question": "What must happen for the lien to be released?",
+   "answer": "Your bill, including interest, penalties and fees, must be paid in full",
+   "quote": "It cannot be released until your bill, including interest, penalties, and fees, is paid in full",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F45",
+   "type": "condition",
+   "statement": "The lien can also be released once the IRS can no longer legally collect the debt.",
+   "question": "Other than full payment, when can the lien be released?",
+   "answer": "When the IRS may no longer legally collect the debt",
+   "quote": "until we may no longer legally collect your debt",
+   "critical": true,
+   "depends_on": [
+    "F44"
+   ]
+  },
+  {
+   "id": "F46",
+   "type": "right",
+   "statement": "The lien's notice to creditors may be withdrawn.",
+   "question": "Can the lien's notice to creditors be withdrawn?",
+   "answer": "Yes, it may be withdrawn",
+   "quote": "The lien’s notice to creditors may be withdrawn",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F47",
+   "type": "condition",
+   "statement": "Withdrawal of the lien notice is possible only under certain circumstances.",
+   "question": "When can the lien's notice to creditors be withdrawn?",
+   "answer": "Only under certain circumstances",
+   "quote": "under certain circumstances",
+   "critical": true,
+   "depends_on": [
+    "F46"
+   ]
+  }
+ ],
+ "sentences": [
+  {
+   "i": 0,
+   "start": 0,
+   "text": "Department of the Treasury\nInternal Revenue Service\nPhiladelphia, PA 19255-0010",
+   "facts": [
+    "F1"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 1,
+   "start": 81,
+   "text": "Notice LT11\nNotice date March 2, 2020\nTaxpayer ID number Nnn-nn-nnnn\nPhone 1-800-555-0153",
+   "facts": [
+    "F2",
+    "F3",
+    "F4"
+   ],
+   "none": null,
+   "override": "Taxpayer ID 'Nnn-nn-nnnn' is a redacted identifier left as published, so it is not recorded as a fact."
+  },
+  {
+   "i": 2,
+   "start": 172,
+   "text": "Gary Whitlock\n55 Ridge Road\nPulaski, TN 38478",
+   "facts": [],
+   "none": "recipient name and address block",
+   "override": "Numbers are the reader's street address and ZIP code, not facts the letter tells the reader."
+  },
+  {
+   "i": 3,
+   "start": 219,
+   "text": "## Notice of Intent to Levy and Notice of Your Right to a Hearing",
+   "facts": [
+    "F5"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 4,
+   "start": 286,
+   "text": "Intent to seize your property or rights to property",
+   "facts": [
+    "F5"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 5,
+   "start": 339,
+   "text": "Amount due immediately: $4,823.12",
+   "facts": [
+    "F6"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 6,
+   "start": 374,
+   "text": "We haven’t received a payment despite sending you several notices about your overdue taxes.",
+   "facts": [
+    "F7"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 7,
+   "start": 466,
+   "text": "The IRS may seize (levy) your property or your rights to property on or after April 1, 2020.",
+   "facts": [
+    "F8",
+    "F9"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 8,
+   "start": 559,
+   "text": "Property includes:",
+   "facts": [],
+   "none": "list lead-in; the list items carry the facts",
+   "override": null
+  },
+  {
+   "i": 9,
+   "start": 579,
+   "text": "- Wages and other income",
+   "facts": [
+    "F10"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 10,
+   "start": 604,
+   "text": "- Bank accounts",
+   "facts": [
+    "F11"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 11,
+   "start": 620,
+   "text": "- Business assets",
+   "facts": [
+    "F12"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 12,
+   "start": 638,
+   "text": "- Personal assets (including your car and home)",
+   "facts": [
+    "F13"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 13,
+   "start": 686,
+   "text": "- Alaska Permanent Fund Dividend and state tax refund",
+   "facts": [
+    "F14"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 14,
+   "start": 740,
+   "text": "- Social Security benefits",
+   "facts": [
+    "F15"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 15,
+   "start": 768,
+   "text": "Billing Summary",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 16,
+   "start": 784,
+   "text": "- Amount you owed: $4,309.00",
+   "facts": [
+    "F16"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 17,
+   "start": 813,
+   "text": "- Additional penalty charges: 399.96",
+   "facts": [
+    "F17"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 18,
+   "start": 850,
+   "text": "- Additional interest charges: 114.16",
+   "facts": [
+    "F18"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 19,
+   "start": 888,
+   "text": "- Amount due immediately: $4,823.12",
+   "facts": [
+    "F6"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 20,
+   "start": 925,
+   "text": "Payment",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 21,
+   "start": 933,
+   "text": "- Make your check or money order payable to the United States Treasury.",
+   "facts": [
+    "F19"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 22,
+   "start": 1005,
+   "text": "- Write your Social Security number (nnn-nn-nnnn) on your payment and any correspondence.",
+   "facts": [
+    "F20"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 23,
+   "start": 1096,
+   "text": "## What you need to do immediately",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 24,
+   "start": 1132,
+   "text": "Pay immediately",
+   "facts": [
+    "F6"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 25,
+   "start": 1149,
+   "text": "- Send us the amount due of $4,823.12, or we may seize (levy) your property on or after April 1, 2020.",
+   "facts": [
+    "F6",
+    "F8",
+    "F9"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 26,
+   "start": 1252,
+   "text": "- If you can’t pay the amount due, pay as much as you can now and make payment arrangements that allow you to pay off the rest over time. Visit www.irs.gov/payments for more information about installment and payment agreements, automatic deductions from your bank account, payroll deductions and credit card payments. Or, call us at 1-800-555-0153 to discuss your options.",
+   "facts": [
+    "F21",
+    "F22",
+    "F23",
+    "F24",
+    "F25",
+    "F4"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 27,
+   "start": 1625,
+   "text": "- If you've already paid your balance in full or think we haven't credited a payment to your account, please send proof of that payment.",
+   "facts": [
+    "F26",
+    "F27"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 28,
+   "start": 1763,
+   "text": "Right to request a Collection Due Process hearing",
+   "facts": [
+    "F28"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 29,
+   "start": 1814,
+   "text": "If you wish to appeal this proposed levy action, complete and mail the enclosed Form 12153, Request for a Collection Due Process or Equivalent Hearing, by April 1, 2020.",
+   "facts": [
+    "F28",
+    "F29",
+    "F30"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 30,
+   "start": 1984,
+   "text": "Send the form to us at the address listed at the top of page 1.",
+   "facts": [
+    "F31",
+    "F1"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 31,
+   "start": 2048,
+   "text": "Be sure to include the reason you are requesting a hearing (see section 8 of, and the instructions to, Form 12153) as well as other information requested by the form.",
+   "facts": [
+    "F32",
+    "F33"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 32,
+   "start": 2215,
+   "text": "If you don't file Form 12153 by April 1, 2020, you will lose the ability to contest Appeals' decision in the U.S. Tax Court.",
+   "facts": [
+    "F34",
+    "F35"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 33,
+   "start": 2341,
+   "text": "## About Federal Tax Liens",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 34,
+   "start": 2369,
+   "text": "If you don’t pay the amount due or call us to make payment arrangements, we can file a Notice of Federal Tax Lien at any time, if we haven’t already done so.",
+   "facts": [
+    "F36",
+    "F37",
+    "F38"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 35,
+   "start": 2527,
+   "text": "Please note that we can file a Notice of Federal Tax Lien even if you request a hearing.",
+   "facts": [
+    "F39"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 36,
+   "start": 2616,
+   "text": "The Notice of Federal Tax Lien publicly notifies your creditors that the IRS has a lien (or claim) against all your property, including property acquired by you after the Notice of Federal Tax Lien is filed.",
+   "facts": [
+    "F40",
+    "F41"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 37,
+   "start": 2824,
+   "text": "Once the lien’s notice to creditors has been filed, it may appear on your credit report and may harm your credit rating.",
+   "facts": [
+    "F42"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 38,
+   "start": 2945,
+   "text": "The lien itself arises once you have not paid your bill.",
+   "facts": [
+    "F43"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 39,
+   "start": 3002,
+   "text": "It cannot be released until your bill, including interest, penalties, and fees, is paid in full or until we may no longer legally collect your debt.",
+   "facts": [
+    "F44",
+    "F45"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 40,
+   "start": 3151,
+   "text": "The lien’s notice to creditors may be withdrawn under certain circumstances.",
+   "facts": [
+    "F46",
+    "F47"
+   ],
+   "none": null,
+   "override": null
+  }
+ ],
+ "reviewer": "Claude (in session), November 10, 2026"
+}
