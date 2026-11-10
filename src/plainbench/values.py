@@ -154,8 +154,13 @@ def _value(kind: str, m: re.Match) -> str | None:
     return None
 
 
+def unmark(text: str) -> str:
+    """Markdown emphasis out, same length, so "**www.irs.gov/cp21**." reads as the address."""
+    return re.sub(r"[*_`]", " ", text)
+
+
 def values(text: str) -> set[tuple[str, str]]:
-    return {(v.kind, v.value) for v in extract(text)}
+    return {(v.kind, v.value) for v in extract(unmark(text))}
 
 
 def _matches(kind: str, value: str, pool: set[tuple[str, str]]) -> bool:
@@ -181,7 +186,7 @@ def not_in_source(rewrite: str, source: str, ignore: tuple[str, ...] = ("number"
     """Values in the rewrite that the source doesn't have. Bare numbers are ignored by
     default: a rewrite numbers its steps ("1.", "2.") and lists items ("3 things")."""
     pool = values(source)
-    return [v for v in extract(rewrite) if v.kind not in ignore and not _matches(v.kind, v.value, pool)]
+    return [v for v in extract(unmark(rewrite)) if v.kind not in ignore and not _matches(v.kind, v.value, pool)]
 
 
 def same_text(a: str, b: str) -> bool:

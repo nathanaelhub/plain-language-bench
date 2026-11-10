@@ -186,3 +186,8 @@ def test_a_blank_line_ends_a_paragraph():
 def test_zip_codes_and_signed_amounts():
     assert values("Columbia, TN 38401") == {("zip", "38401")}
     assert values("Decrease in tax: $-1,076.63") == {("money", "1076.63")}
+
+
+def test_markdown_around_a_value_doesnt_hide_it():
+    assert missing_from("Go to **www.irs.gov/cp21**. Call **1-800-829-1040**.",
+                        {("url", "irs.gov/cp21"), ("phone", "8008291040")}) == []
