@@ -16,7 +16,10 @@ import argparse
 import asyncio
 from collections import defaultdict
 
+from dataclasses import asdict
+
 from plainbench import judge as J
+from plainbench import pipeline as P
 from plainbench import log
 from plainbench import rewrite as R
 from plainbench.facts import ROOT, ids, load
@@ -25,7 +28,13 @@ REWRITES = ROOT / "runs" / "rewrites.jsonl"
 JUDGED = ROOT / "runs" / "judge.jsonl"
 
 
-def rewrite_key(setup: R.Setup, nid: str, sample: int, letter: str) -> str:
+PIPELINE = "sonnet-g6-pipeline"
+
+
+def rewrite_key(setup, nid: str, sample: int, letter: str) -> str:
+    if setup == PIPELINE:
+        return log.key(stage="rewrite", setup=PIPELINE, notice=nid, sample=sample,
+                       prompt=log.phash(P.EXTRACT, P.REWRITE, P.LOCATE, P.REVISE, P.SYSTEM, P.EFFORT, letter))
     return log.key(stage="rewrite", setup=setup.name, notice=nid, sample=sample,
                    prompt=log.phash(R.SYSTEM, setup.prompt(letter), setup.model, R.EFFORT))
 
@@ -41,7 +50,7 @@ def rewrites(notices: list[str], setups: list[str], samples: int) -> list[dict]:
                 out.append({"setup": "original", "notice": nid, "sample": 0, "text": n.text})
                 continue
             for k in range(samples):
-                row = done.get(rewrite_key(R.SETUPS[s], nid, k, n.text))
+                row = done.get(rewrite_key(s if s == PIPELINE else R.SETUPS[s], nid, k, n.text))
                 if row:
                     out.append(row)
     return out
@@ -60,6 +69,15 @@ def cmd_rewrites(a) -> None:
         n = load(nid)
         for s in a.setups:
             if s == "original":
+                continue
+            if s == PIPELINE:
+                for k in range(a.samples):
+                    async def go_p(n=n, k=k):
+                        res = await P.run(n.text, model="sonnet", grade=6)
+                        return {"setup": PIPELINE, "notice": n.id, "sample": k, "text": res.rewrite, "model": "sonnet",
+                                "cost_usd": res.cost_usd, "error": res.error, "revised": res.revised,
+                                "items": [asdict(i) for i in res.items], "dropped": res.dropped}
+                    tasks.append(log.Task(rewrite_key(PIPELINE, nid, k, n.text), go_p))
                 continue
             setup = R.SETUPS[s]
             for k in range(a.samples):
@@ -109,7 +127,7 @@ def main(argv=None):
     ap.add_argument("--max-usd", type=float, default=40.0)
     a = ap.parse_args(argv)
     a.notices = a.notices or ids()
-    a.setups = a.setups or [*R.SETUPS, "original"]
+    a.setups = a.setups or [*R.SETUPS, PIPELINE, "original"]
     {"rewrites": cmd_rewrites, "judge": cmd_judge, "costs": cmd_costs}[a.cmd](a)
 
 
