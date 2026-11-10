@@ -1,41 +1,454 @@
 {
  "test": {
-  "caught": {},
-  "exact_label": {},
+  "caught": {
+   "DELETE": {
+    "k": 9,
+    "n": 9,
+    "rate": 1.0,
+    "ci": [
+     0.7008472464490407,
+     1.0
+    ]
+   },
+   "VALUE": {
+    "k": 5,
+    "n": 5,
+    "rate": 1.0,
+    "ci": [
+     0.5655085052479191,
+     1.0
+    ]
+   },
+   "CONDITION": {
+    "k": 5,
+    "n": 6,
+    "rate": 0.8333333333333334,
+    "ci": [
+     0.43649056343635395,
+     0.9699474141282697
+    ]
+   },
+   "ALTERNATIVE": {
+    "k": 3,
+    "n": 4,
+    "rate": 0.75,
+    "ci": [
+     0.3006360524426366,
+     0.9544139373553637
+    ]
+   },
+   "MODAL": {
+    "k": 6,
+    "n": 9,
+    "rate": 0.6666666666666666,
+    "ci": [
+     0.35419734749908977,
+     0.879418401317257
+    ]
+   },
+   "VAGUE": {
+    "k": 2,
+    "n": 2,
+    "rate": 1.0,
+    "ci": [
+     0.34237195288961925,
+     1.0
+    ]
+   }
+  },
+  "exact_label": {
+   "DELETE": {
+    "k": 7,
+    "n": 9,
+    "rate": 0.7777777777777778,
+    "ci": [
+     0.4525833436728054,
+     0.9367762376877727
+    ]
+   },
+   "VALUE": {
+    "k": 5,
+    "n": 5,
+    "rate": 1.0,
+    "ci": [
+     0.5655085052479191,
+     1.0
+    ]
+   },
+   "CONDITION": {
+    "k": 4,
+    "n": 6,
+    "rate": 0.6666666666666666,
+    "ci": [
+     0.29998832134152864,
+     0.9032306674407831
+    ]
+   },
+   "ALTERNATIVE": {
+    "k": 3,
+    "n": 4,
+    "rate": 0.75,
+    "ci": [
+     0.3006360524426366,
+     0.9544139373553637
+    ]
+   },
+   "MODAL": {
+    "k": 6,
+    "n": 9,
+    "rate": 0.6666666666666666,
+    "ci": [
+     0.35419734749908977,
+     0.879418401317257
+    ]
+   },
+   "VAGUE": {
+    "k": 2,
+    "n": 2,
+    "rate": 1.0,
+    "ci": [
+     0.34237195288961925,
+     1.0
+    ]
+   }
+  },
   "false_alarm": {
-   "k": 0,
-   "n": 0,
-   "rate": null,
+   "k": 30,
+   "n": 891,
+   "rate": 0.03367003367003367,
    "ci": [
-    0.0,
-    1.0
+    0.023685012183259704,
+    0.04765901116120706
    ]
   },
   "false_alarm_null": {
    "k": 0,
-   "n": 0,
-   "rate": null,
+   "n": 152,
+   "rate": 0.0,
    "ci": [
     0.0,
-    1.0
+    0.024650670937670042
    ]
   },
   "false_alarm_all_facts": {
-   "k": 0,
-   "n": 0,
-   "rate": null,
+   "k": 33,
+   "n": 1283,
+   "rate": 0.025720966484801246,
    "ci": [
-    0.0,
-    1.0
+    0.018372450328180877,
+    0.03590120697354141
    ]
   },
-  "false_alarm_distinct_facts": 0,
-  "agreement_on_unedited_rewrites": {},
-  "misses": [],
-  "false_alarms": [],
+  "false_alarm_distinct_facts": 15,
+  "agreement_on_unedited_rewrites": {
+   "kept": {
+    "k": 90,
+    "n": 92,
+    "rate": 0.9782608695652174,
+    "ci": [
+     0.9241635822539244,
+     0.9940180841623291
+    ]
+   },
+   "changed": {
+    "k": 1,
+    "n": 5,
+    "rate": 0.2,
+    "ci": [
+     0.03622316096978745,
+     0.6244717358814613
+    ]
+   }
+  },
+  "misses": [
+   {
+    "variant": "cms-im/ALTERNATIVE/F28",
+    "edit": "dropped alternative ', or if the answer is **no**'",
+    "evidence": [
+     "you may have to pay for any care you get after your discharge date"
+    ]
+   },
+   {
+    "variant": "cms-im/MODAL/F13",
+    "edit": "['can'] -> ['cannot']",
+    "evidence": [
+     "If you think the hospital wants you to leave too soon"
+    ]
+   },
+   {
+    "variant": "cms-im/MODAL/F17",
+    "edit": "['will'] -> ['may']",
+    "evidence": [
+     "Be sure to call **before you leave the hospital**. If you appeal before you leave, Medicare may keep paying for your stay while you wait to hear the answer."
+    ]
+   },
+   {
+    "variant": "irs-cp12/CONDITION/F19",
+    "edit": "cut the condition",
+    "evidence": [
+     "Please contact us within 60 days of the date on this letter (February 9, 2011). If you do, we will undo our change.",
+     "After that, if you can't show us new facts to support your view, and we still think undoing the change is wrong, we will send your case to our audit team."
+    ]
+   },
+   {
+    "variant": "va-enrollment/MODAL/F24",
+    "edit": "['will'] -> ['may']",
+    "evidence": [
+     "You can still send us information after the 30 days. We may look at anything you send us within one year of the date on this letter."
+    ]
+   }
+  ],
+  "false_alarms": [
+   {
+    "variant": "cms-im/DELETE/F24",
+    "fact": "F5",
+    "said": "changed",
+    "evidence": [
+     "This includes hospital care that you need for your health."
+    ]
+   },
+   {
+    "variant": "cms-im/DELETE/F24",
+    "fact": "F30",
+    "said": "changed",
+    "evidence": [
+     "if the answer is **no**, you may have to pay for any care you get after your discharge date."
+    ]
+   },
+   {
+    "variant": "cms-im/DELETE/F24",
+    "fact": "F32",
+    "said": "changed",
+    "evidence": [
+     "You can ask for Medicare information in another form. Choices include large print, braille, or audio."
+    ]
+   },
+   {
+    "variant": "cms-im/DELETE/F18",
+    "fact": "F4",
+    "said": "changed",
+    "evidence": [
+     "**Medicare helps pay for your care.**"
+    ]
+   },
+   {
+    "variant": "cms-im/DELETE/F30",
+    "fact": "F27",
+    "said": "changed",
+    "evidence": [
+     "If the answer is **yes** (they agree with you), Medicare will keep paying for your hospital care."
+    ]
+   },
+   {
+    "variant": "cms-im/CONDITION/F23",
+    "fact": "F4",
+    "said": "changed",
+    "evidence": [
+     "**Medicare helps pay for your care.** This includes hospital care that you need for your health."
+    ]
+   },
+   {
+    "variant": "cms-im/ALTERNATIVE/F32",
+    "fact": "F5",
+    "said": "changed",
+    "evidence": [
+     "This includes hospital care that you need for your health."
+    ]
+   },
+   {
+    "variant": "cms-im/MODAL/F19",
+    "fact": "F30",
+    "said": "changed",
+    "evidence": [
+     "If you **do not appeal**, or if the answer is **no**, you may have to pay for any care you get after your discharge date."
+    ]
+   },
+   {
+    "variant": "cms-im/MODAL/F19",
+    "fact": "F32",
+    "said": "changed",
+    "evidence": [
+     "You can ask for Medicare information in another form. Choices include large print, braille, or audio."
+    ]
+   },
+   {
+    "variant": "cms-im/MODAL/F13",
+    "fact": "F32",
+    "said": "changed",
+    "evidence": [
+     "You can ask for Medicare information in another form. Choices include large print, braille, or audio."
+    ]
+   },
+   {
+    "variant": "irs-cp12/DELETE/F18",
+    "fact": "F19",
+    "said": "changed",
+    "evidence": [
+     "If you wait longer than 60 days, you lose the right to appeal before you pay."
+    ]
+   },
+   {
+    "variant": "irs-cp12/DELETE/F22",
+    "fact": "F16",
+    "said": "changed",
+    "evidence": [
+     "we will send your case to our audit team."
+    ]
+   },
+   {
+    "variant": "irs-cp12/DELETE/F22",
+    "fact": "F17",
+    "said": "changed",
+    "evidence": [
+     "This gives you the right to appeal. You can even go to court before you have to pay any extra tax."
+    ]
+   },
+   {
+    "variant": "irs-cp12/VALUE/F24",
+    "fact": "F16",
+    "said": "changed",
+    "evidence": [
+     "we will send your case to our audit team."
+    ]
+   },
+   {
+    "variant": "irs-cp12/ALTERNATIVE/F8",
+    "fact": "F16",
+    "said": "changed",
+    "evidence": [
+     "we still think undoing the change is wrong, we will send your case to our audit team."
+    ]
+   },
+   {
+    "variant": "irs-cp12/MODAL/F18",
+    "fact": "F16",
+    "said": "changed",
+    "evidence": [
+     "we will send your case to our audit team"
+    ]
+   },
+   {
+    "variant": "va-enrollment/BASE",
+    "fact": "F18",
+    "said": "changed",
+    "evidence": [
+     "*If we do not accept your reason:*"
+    ]
+   },
+   {
+    "variant": "va-enrollment/BASE",
+    "fact": "F25",
+    "said": "changed",
+    "evidence": [
+     "If you have a good reason you could not answer in that time, we may give you more time."
+    ]
+   },
+   {
+    "variant": "va-enrollment/DELETE/F5",
+    "fact": "F7",
+    "said": "changed",
+    "evidence": [
+     "Please write to us and tell us why you lowered your credit hours."
+    ]
+   },
+   {
+    "variant": "va-enrollment/DELETE/F5",
+    "fact": "F15",
+    "said": "changed",
+    "evidence": [
+     "If you already owe us money, you will still have to pay it back."
+    ]
+   },
+   {
+    "variant": "va-enrollment/DELETE/F5",
+    "fact": "F18",
+    "said": "changed",
+    "evidence": [
+     "*If we do not accept your reason:*"
+    ]
+   },
+   {
+    "variant": "va-enrollment/DELETE/F5",
+    "fact": "F25",
+    "said": "changed",
+    "evidence": [
+     "If you have a good reason you could not answer in that time, we may give you more time."
+    ]
+   },
+   {
+    "variant": "va-enrollment/VALUE/F4",
+    "fact": "F1",
+    "said": "changed",
+    "evidence": [
+     "We are writing to you about a change in your school schedule. Your term started on September 1, 1996."
+    ]
+   },
+   {
+    "variant": "va-enrollment/VALUE/F4",
+    "fact": "F25",
+    "said": "changed",
+    "evidence": [
+     "If you have a good reason you could not answer in that time, we may give you more time."
+    ]
+   },
+   {
+    "variant": "va-enrollment/VALUE/F24",
+    "fact": "F26",
+    "said": "changed",
+    "evidence": [
+     "If you have a good reason you could not answer in that time, we may give you more time."
+    ]
+   },
+   {
+    "variant": "va-enrollment/CONDITION/F18",
+    "fact": "F26",
+    "said": "changed",
+    "evidence": [
+     "If you have a good reason you could not answer in that time, we may give you more time."
+    ]
+   },
+   {
+    "variant": "va-enrollment/CONDITION/F9",
+    "fact": "F18",
+    "said": "changed",
+    "evidence": [
+     "*If we do not accept your reason:*"
+    ]
+   },
+   {
+    "variant": "va-enrollment/MODAL/F24",
+    "fact": "F3",
+    "said": "changed",
+    "evidence": [
+     "On November 5, 1996, you went from 12 credit hours to 6 credit hours."
+    ]
+   },
+   {
+    "variant": "va-enrollment/MODAL/F24",
+    "fact": "F25",
+    "said": "changed",
+    "evidence": [
+     "If you have a good reason you could not answer in that time, we may give you more time."
+    ]
+   },
+   {
+    "variant": "va-enrollment/VAGUE/F4",
+    "fact": "F18",
+    "said": "changed",
+    "evidence": [
+     "*If we do not accept your reason:*"
+    ]
+   }
+  ],
   "passed": {
-   "false_alarm": false,
-   "false_alarm_null": false
+   "DELETE": true,
+   "VALUE": true,
+   "CONDITION": true,
+   "ALTERNATIVE": true,
+   "MODAL": false,
+   "VAGUE": true,
+   "false_alarm": true,
+   "false_alarm_null": true
   }
  },
  "dev": {
@@ -493,5 +906,5 @@
   }
  },
  "judge": "sonnet",
- "cost_usd": 4.265
+ "cost_usd": 5.956
 }
