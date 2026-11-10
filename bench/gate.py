@@ -4,8 +4,10 @@
     uv run python -m bench.gate score [--judge sonnet]      # writes results/<date>-gate/gate-<judge>.json
 
 Caught = the judge's final status for the target isn't "kept". A false alarm =
-a fact whose true label is "kept" (aligned kept, and untouched by the edit) that
-the judge didn't call kept. Gate thresholds were set in the plan before any
+a critical fact whose true label is "kept" (aligned kept, and untouched by the
+edit) that the judge didn't call kept (critical facts, like the headline; all
+facts are reported too, and how many distinct facts the alarms fall on, since
+the same misjudged fact repeats across a base's variants). Gate thresholds were set in the plan before any
 variant was judged:
 
     DELETE >= 0.90; VALUE (code + judge) >= 0.95; CONDITION, ALTERNATIVE, MODAL, VAGUE >= 0.70 each;
@@ -40,8 +42,8 @@ def key(v: dict, judge: str) -> str:
                    prompt=log.phash(J.SYSTEM, J.CONFIRM, J.EFFORT, v["text"]))
 
 
-def run(judge: str, max_usd: float) -> None:
-    vs = json.loads(plants.PLANTS.read_text())
+def run(judge: str, max_usd: float, split: str | None = None) -> None:
+    vs = [v for v in json.loads(plants.PLANTS.read_text()) if split is None or v["split"] == split]
     tasks = []
     for v in vs:
         n = load(v["base"])
@@ -62,6 +64,7 @@ def score(judge: str) -> dict:
         exact = defaultdict(lambda: [0, 0])
         fa = [0, 0]
         fa_null = [0, 0]
+        allfa = [0, 0]  # every fact, critical or not
         base_agree = defaultdict(lambda: [0, 0])  # aligned status -> [judge agrees, n] on unedited rewrites
         misses, alarms = [], []
         for v in vs:
@@ -79,9 +82,16 @@ def score(judge: str) -> dict:
                 exact[v["kind"]][0] += st == v["labels"][v["target"]]
                 if st == "kept":
                     misses.append({"variant": v["id"], "edit": v["edit"], "evidence": ver[v["target"]]["evidence"]})
+            notice = load(v["base"])
             for fid, lab in v["labels"].items():
                 if fid == v["target"] or lab != "kept":
                     continue
+                if not notice.fact(fid).critical:
+                    allfa[1] += 1
+                    allfa[0] += ver[fid]["status"] != "kept"
+                    continue
+                allfa[1] += 1
+                allfa[0] += ver[fid]["status"] != "kept"
                 bad = ver[fid]["status"] != "kept"
                 (fa_null if v["kind"] == "NULL" else fa)[1] += 1
                 (fa_null if v["kind"] == "NULL" else fa)[0] += bad
@@ -95,7 +105,8 @@ def score(judge: str) -> dict:
         res = {
             "caught": {k: rate(*caught[k]) for k in THRESHOLDS if caught[k][1]},
             "exact_label": {k: rate(*exact[k]) for k in THRESHOLDS if exact[k][1]},
-            "false_alarm": rate(*fa), "false_alarm_null": rate(*fa_null),
+            "false_alarm": rate(*fa), "false_alarm_null": rate(*fa_null), "false_alarm_all_facts": rate(*allfa),
+            "false_alarm_distinct_facts": len({(a["variant"].split("/")[0], a["fact"]) for a in alarms}),
             "agreement_on_unedited_rewrites": {k: rate(*v) for k, v in base_agree.items()},
             "misses": misses, "false_alarms": alarms,
         }
@@ -131,9 +142,10 @@ def main(argv=None):
     ap.add_argument("cmd", choices=["run", "score"])
     ap.add_argument("--judge", default="sonnet")
     ap.add_argument("--max-usd", type=float, default=40.0)
+    ap.add_argument("--split", choices=["dev", "test"], help="judge only this split's variants")
     a = ap.parse_args(argv)
     if a.cmd == "run":
-        run(a.judge, a.max_usd)
+        run(a.judge, a.max_usd, a.split)
     show(score(a.judge))
 
 

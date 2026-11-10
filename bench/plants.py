@@ -41,7 +41,7 @@ MODAL = [(r"\bmust\b", "may"), (r"\bwill not\b", "will"), (r"\bwon't\b", "will")
 NULL = [(r"\bdo not\b", "don't"), (r"\bwill not\b", "won't"), (r"\byou will\b", "you'll"), (r"\bwe will\b", "we'll"),
         (r"\bdoes not\b", "doesn't"), (r"\bcannot\b", "can't"), (r"\b30 days\b", "thirty days"),
         (r"\b60 days\b", "sixty days"), (r"\b2 days\b", "two days")]
-COUNTS = {"DELETE": 3, "VALUE": 3, "CONDITION": 2, "ALTERNATIVE": 1, "MODAL": 2, "VAGUE": 2, "NULL": 2}
+COUNTS = {"DELETE": 3, "VALUE": 5, "CONDITION": 2, "ALTERNATIVE": 2, "MODAL": 3, "VAGUE": 4, "NULL": 2}
 
 
 @dataclass
@@ -135,19 +135,30 @@ def delete(rw, al, fid):
 
 
 def value(rw, al, fid, notice):
-    f = notice.fact(fid)
-    need = f.needed_values()
+    """Change the fact's value in EVERY place the fact is stated; skip if the old value
+    would still appear anywhere in the rewrite (then the fact isn't really changed)."""
+    need = notice.fact(fid).needed_values()
+    edits = []
     for a, b in spans_of(rw, al, fid):
+        hit = None
         for v in extract(rw[a:b]):
-            if (v.kind, v.value) not in need and not (v.kind == "number" and ("number", v.value) in need):
-                if not any(k in ("money", "number") and x == v.value for k, x in need):
-                    continue
-            s, e = a + v.start, a + v.end
-            old = rw[s:e]
-            new = _plausible(v.kind, old)
-            if new and new != old:
-                return rw[:s] + new + rw[e:], [(s, e)], f"value {old!r} -> {new!r}"
-    return None
+            ok = (v.kind, v.value) in need or any(k in ("money", "number") and x == v.value for k, x in need)
+            if ok:
+                new = _plausible(v.kind, rw[a + v.start:a + v.end])
+                if new and new != rw[a + v.start:a + v.end]:
+                    hit = (a + v.start, a + v.end, new)
+                    break
+        if not hit:
+            return None
+        edits.append(hit)
+    if not edits:
+        return None
+    edits = sorted(set(edits))
+    out = apply(rw, [(s_, e_) for s_, e_, _ in edits], [n_ for _, _, n_ in edits])
+    olds = {rw[s_:e_] for s_, e_, _ in edits}
+    if any(o in out for o in olds):
+        return None
+    return out, [(s_, e_) for s_, e_, _ in edits], f"value {sorted(olds)} -> {[n_ for *_, n_ in edits]}"
 
 
 def _plausible(kind: str, old: str) -> str | None:
@@ -205,45 +216,77 @@ def alternative(rw, al, fid):
     return None
 
 
-def modal(rw, al, fid):
+MODAL_TYPES = {"action", "right", "consequence", "deadline", "condition"}
+
+
+def modal(rw, al, fid, notice):
+    """Flip a modal in every span of the fact; only facts whose spans are single sentences,
+    so the flipped word belongs to this fact and not a neighbour."""
+    if notice.fact(fid).type not in MODAL_TYPES:
+        return None
+    units = sentences(rw)
+    edits = []
     for a, b in spans_of(rw, al, fid):
-        seg = rw[a:b]
+        if sum(1 for x, y in units if a < y and x < b) != 1:
+            return None
+        seg, hit = rw[a:b], None
         for pat, rep in MODAL:
             m = re.search(pat, seg, re.I)
             if m:
-                s, e = a + m.start(), a + m.end()
-                return rw[:s] + rep + rw[e:], [(s, e)], f"{rw[s:e]!r} -> {rep!r}"
+                hit = (a + m.start(), a + m.end(), rep)
+                break
+        if not hit:
+            return None
+        edits.append(hit)
+    if not edits:
+        return None
+    edits = sorted(set(edits))
+    return (apply(rw, [(s_, e_) for s_, e_, _ in edits], [r for *_, r in edits]), [(s_, e_) for s_, e_, _ in edits],
+            f"{[rw[s_:e_] for s_, e_, _ in edits]} -> {[r for *_, r in edits]}")
+
+
+def _vague_one(rw, a, b, need):
+    for v in extract(rw[a:b]):
+        if (v.kind, v.value) not in need and not any(v.value.endswith(x[-5:]) for k, x in need if k == v.kind == "date"):
+            continue  # only a value this fact itself needs
+        s, e = a + v.start, a + v.end
+        if v.kind in ("date", "duration"):
+            if rw[e:e + 4] == " of " or rw[e:e + 6] == " from ":
+                continue  # "within 3 years of the day ..." has no natural vague form
+            pre = re.search(r"\b(by|before|within|in|on|than)\s+$", rw[max(a, s - 9):s], re.I)
+            if not pre or pre.group(1).lower() == "than":
+                continue
+            s -= len(pre.group())
+            word = "recently" if pre.group(1).lower() == "on" else "soon"
+            return s, e, word.capitalize() if rw[s:s + 1].isupper() else word
+        if v.kind == "phone":
+            pre = re.search(r"\s*(at|on)?\s*$", rw[max(a, s - 4):s])
+            return s - (len(pre.group()) if pre else 0), e, ""
     return None
 
 
 def vague(rw, al, fid, notice):
     need = notice.fact(fid).needed_values()
+    edits = []
     for a, b in spans_of(rw, al, fid):
-        for v in extract(rw[a:b]):
-            if (v.kind, v.value) not in need and not any(v.value.endswith(x[-5:]) for k, x in need if k == v.kind == "date"):
-                continue  # only a value this fact itself needs
-            if v.kind in ("date", "duration"):
-                s, e = a + v.start, a + v.end
-                if rw[e:e + 4] == " of " or rw[e:e + 6] == " from ":
-                    continue  # "within 3 years of the day ..." has no natural vague form
-                pre = re.search(r"\b(by|before|within|in|on|than)\s+$", rw[max(a, s - 9):s], re.I)
-                if not pre or pre.group(1).lower() == "than":
-                    continue  # no natural vague wording ("longer than soon")
-                s -= len(pre.group())
-                word = "recently" if pre.group(1).lower() == "on" else "soon"
-                if rw[s:s + 1].isupper():
-                    word = word.capitalize()
-                return rw[:s] + word + rw[e:], [(s, e)], f"{rw[s:e]!r} -> {word!r}"
-            if v.kind == "phone":
-                s, e = a + v.start, a + v.end
-                pre = re.search(r"\s*(at|on)?\s*$", rw[max(a, s - 4):s])
-                s -= len(pre.group()) if pre else 0
-                out = rw[:s] + rw[e:]
-                line = out[out.rfind("\n", 0, s) + 1: out.find("\n", s) if out.find("\n", s) >= 0 else len(out)]
-                if re.search(r"\*\*\s*\*\*|(phone|number|tty)\W*(is)?\W*$|\bcall\s+or\b|\bcall\W*$", line, re.I):
-                    continue  # the hole would show ("Their phone number is ****."): try another target
-                return out, [(s, e)], f"removed the phone number {rw[s:e]!r}"
-    return None
+        hit = _vague_one(rw, a, b, need)
+        if not hit:
+            return None
+        edits.append(hit)
+    if not edits:
+        return None
+    edits = sorted(set(edits))
+    out = apply(rw, [(s_, e_) for s_, e_, _ in edits], [r for *_, r in edits])
+    removed = [rw[s_:e_].strip() for s_, e_, _ in edits]
+    if any(re.sub(r"^(at|on|by|before|within|in)\s+", "", r, flags=re.I) in out for r in removed):
+        return None  # the value is still stated elsewhere
+    for s_, e_, r in edits:
+        line_start = out.rfind("\n", 0, s_) + 1
+        line_end = out.find("\n", s_)
+        line = out[line_start: line_end if line_end >= 0 else len(out)]
+        if re.search(r"\*\*\s*\*\*|(phone|number|tty)\W*(is)?\W*$|\bcall\s+or\b|\bcall\W*$", line, re.I):
+            return None  # the hole would show ("Their phone number is ****.")
+    return out, [(s_, e_) for s_, e_, _ in edits], f"{removed} -> {[r or '(removed)' for *_, r in edits]}"
 
 
 def null(rw, rng):
@@ -292,7 +335,7 @@ def build(seed: int = 20261110) -> list[Variant]:
                     break
                 fn = {"DELETE": lambda: delete(rw, al, fid), "VALUE": lambda: value(rw, al, fid, n),
                       "CONDITION": lambda: condition(rw, al, fid), "ALTERNATIVE": lambda: alternative(rw, al, fid),
-                      "MODAL": lambda: modal(rw, al, fid), "VAGUE": lambda: vague(rw, al, fid, n)}[kind]
+                      "MODAL": lambda: modal(rw, al, fid, n), "VAGUE": lambda: vague(rw, al, fid, n)}[kind]
                 r = fn()
                 if not r:
                     continue

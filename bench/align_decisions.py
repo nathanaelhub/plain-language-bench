@@ -41,7 +41,8 @@ DECISIONS = {
     },
     "irs-cp21b": {
         "F1": (K, [0]), "F2": (K, [6]), "F3": (K, ["**Date of notice:** January 30, 2019"]),
-        "F4": (K, ["**Phone:** 1-800-829-1040"]), "F5": (K, [4, 11]), "F6": (K, [(5, 6)]), "F7": (K, [(5, 6)]),
+        # F4's second span was added after the first gate run showed my alignment had missed it.
+        "F4": (K, ["**Phone:** 1-800-829-1040", "Call us at 1-800-829-1040."]), "F5": (K, [4, 11]), "F6": (K, [(5, 6)]), "F7": (K, [(5, 6)]),
         "F8": (K, [8]), "F9": (K, [9]), "F10": (K, [10]), "F11": (K, [(13, 14)]),
         "F12": (K, ["if you have not already gotten it"]), "F13": (K, [14]), "F14": (K, [15]),
         "F15": (K, [16]), "F16": (K, [(16, 17)]), "F17": (K, [18]), "F18": (K, [19]), "F19": (K, [19]),

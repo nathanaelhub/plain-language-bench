@@ -1,0 +1,497 @@
+{
+ "test": {
+  "caught": {},
+  "exact_label": {},
+  "false_alarm": {
+   "k": 0,
+   "n": 0,
+   "rate": null,
+   "ci": [
+    0.0,
+    1.0
+   ]
+  },
+  "false_alarm_null": {
+   "k": 0,
+   "n": 0,
+   "rate": null,
+   "ci": [
+    0.0,
+    1.0
+   ]
+  },
+  "false_alarm_all_facts": {
+   "k": 0,
+   "n": 0,
+   "rate": null,
+   "ci": [
+    0.0,
+    1.0
+   ]
+  },
+  "false_alarm_distinct_facts": 0,
+  "agreement_on_unedited_rewrites": {},
+  "misses": [],
+  "false_alarms": [],
+  "passed": {
+   "false_alarm": false,
+   "false_alarm_null": false
+  }
+ },
+ "dev": {
+  "caught": {
+   "DELETE": {
+    "k": 9,
+    "n": 9,
+    "rate": 1.0,
+    "ci": [
+     0.7008472464490407,
+     1.0
+    ]
+   },
+   "VALUE": {
+    "k": 10,
+    "n": 10,
+    "rate": 1.0,
+    "ci": [
+     0.7224598312333834,
+     1.0
+    ]
+   },
+   "CONDITION": {
+    "k": 6,
+    "n": 6,
+    "rate": 1.0,
+    "ci": [
+     0.6096569663469354,
+     0.9999999999999999
+    ]
+   },
+   "ALTERNATIVE": {
+    "k": 3,
+    "n": 3,
+    "rate": 1.0,
+    "ci": [
+     0.43849391955098227,
+     1.0
+    ]
+   },
+   "MODAL": {
+    "k": 6,
+    "n": 8,
+    "rate": 0.75,
+    "ci": [
+     0.40926987910258916,
+     0.9285223111419724
+    ]
+   },
+   "VAGUE": {
+    "k": 2,
+    "n": 2,
+    "rate": 1.0,
+    "ci": [
+     0.34237195288961925,
+     1.0
+    ]
+   }
+  },
+  "exact_label": {
+   "DELETE": {
+    "k": 7,
+    "n": 9,
+    "rate": 0.7777777777777778,
+    "ci": [
+     0.4525833436728054,
+     0.9367762376877727
+    ]
+   },
+   "VALUE": {
+    "k": 10,
+    "n": 10,
+    "rate": 1.0,
+    "ci": [
+     0.7224598312333834,
+     1.0
+    ]
+   },
+   "CONDITION": {
+    "k": 4,
+    "n": 6,
+    "rate": 0.6666666666666666,
+    "ci": [
+     0.29998832134152864,
+     0.9032306674407831
+    ]
+   },
+   "ALTERNATIVE": {
+    "k": 3,
+    "n": 3,
+    "rate": 1.0,
+    "ci": [
+     0.43849391955098227,
+     1.0
+    ]
+   },
+   "MODAL": {
+    "k": 6,
+    "n": 8,
+    "rate": 0.75,
+    "ci": [
+     0.40926987910258916,
+     0.9285223111419724
+    ]
+   },
+   "VAGUE": {
+    "k": 2,
+    "n": 2,
+    "rate": 1.0,
+    "ci": [
+     0.34237195288961925,
+     1.0
+    ]
+   }
+  },
+  "false_alarm": {
+   "k": 31,
+   "n": 756,
+   "rate": 0.041005291005291,
+   "ci": [
+    0.029036075666694486,
+    0.0576156685915825
+   ]
+  },
+  "false_alarm_null": {
+   "k": 2,
+   "n": 112,
+   "rate": 0.017857142857142856,
+   "ci": [
+    0.004910708625338288,
+    0.062781726562021
+   ]
+  },
+  "false_alarm_all_facts": {
+   "k": 79,
+   "n": 1152,
+   "rate": 0.0685763888888889,
+   "ci": [
+    0.05536962055638536,
+    0.08465094973629145
+   ]
+  },
+  "false_alarm_distinct_facts": 10,
+  "agreement_on_unedited_rewrites": {
+   "kept": {
+    "k": 65,
+    "n": 73,
+    "rate": 0.8904109589041096,
+    "ci": [
+     0.7983717410229372,
+     0.9434139583898808
+    ]
+   },
+   "changed": {
+    "k": 2,
+    "n": 2,
+    "rate": 1.0,
+    "ci": [
+     0.34237195288961925,
+     1.0
+    ]
+   }
+  },
+  "misses": [
+   {
+    "variant": "irs-cp21b/MODAL/F18",
+    "edit": "['will'] -> ['may']",
+    "evidence": [
+     "If we do not hear from you, we may think you agree with this letter."
+    ]
+   },
+   {
+    "variant": "va-claim-info/MODAL/F6",
+    "edit": "['can'] -> ['cannot']",
+    "evidence": [
+     "You can send it at any time."
+    ]
+   }
+  ],
+  "false_alarms": [
+   {
+    "variant": "cms-nomnc/BASE",
+    "fact": "F6",
+    "said": "changed",
+    "evidence": [
+     "If you keep getting care after this date, you may have to pay for it yourself."
+    ]
+   },
+   {
+    "variant": "cms-nomnc/BASE",
+    "fact": "F13",
+    "said": "changed",
+    "evidence": [
+     "After you ask for an appeal, you will get a letter. It will explain in detail why your care should end."
+    ]
+   },
+   {
+    "variant": "cms-nomnc/BASE",
+    "fact": "F23",
+    "said": "changed",
+    "evidence": [
+     "you may still be able to appeal"
+    ]
+   },
+   {
+    "variant": "cms-nomnc/BASE",
+    "fact": "F25",
+    "said": "changed",
+    "evidence": [
+     "The QIO will tell you its decision as soon as it can. This is usually within two days after March 14, 2025."
+    ]
+   },
+   {
+    "variant": "cms-nomnc/DELETE/F13",
+    "fact": "F10",
+    "said": "changed",
+    "evidence": [
+     "The reviewer will want to hear what you think."
+    ]
+   },
+   {
+    "variant": "cms-nomnc/DELETE/F13",
+    "fact": "F17",
+    "said": "changed",
+    "evidence": [
+     "If you stop your care by March 14, 2025, you will not owe money for it."
+    ]
+   },
+   {
+    "variant": "cms-nomnc/DELETE/F13",
+    "fact": "F25",
+    "said": "changed",
+    "evidence": [
+     "The QIO will tell you its decision as soon as it can. This is usually within two days after March 14, 2025."
+    ]
+   },
+   {
+    "variant": "cms-nomnc/VALUE/F24",
+    "fact": "F25",
+    "said": "changed",
+    "evidence": [
+     "The QIO will tell you its decision as soon as it can. This is usually within two days after March 14, 2025."
+    ]
+   },
+   {
+    "variant": "cms-nomnc/VALUE/F1",
+    "fact": "F25",
+    "said": "changed",
+    "evidence": [
+     "The QIO will tell you its decision as soon as it can. This is usually within two days after March 14, 2025."
+    ]
+   },
+   {
+    "variant": "cms-nomnc/CONDITION/F22",
+    "fact": "F25",
+    "said": "changed",
+    "evidence": [
+     "The QIO will tell you its decision as soon as it can. This is usually within two days after March 14, 2025."
+    ]
+   },
+   {
+    "variant": "cms-nomnc/ALTERNATIVE/F29",
+    "fact": "F25",
+    "said": "changed",
+    "evidence": [
+     "The QIO will tell you its decision as soon as it can. This is usually within two days after March 14, 2025."
+    ]
+   },
+   {
+    "variant": "cms-nomnc/ALTERNATIVE/F5",
+    "fact": "F8",
+    "said": "changed",
+    "evidence": [
+     "An outside doctor or expert will review your case right away. This person does not work for your provider or plan."
+    ]
+   },
+   {
+    "variant": "cms-nomnc/ALTERNATIVE/F5",
+    "fact": "F13",
+    "said": "changed",
+    "evidence": [
+     "After you ask for an appeal, you will get a letter. It will explain in detail why your care should end."
+    ]
+   },
+   {
+    "variant": "cms-nomnc/MODAL/F9",
+    "fact": "F25",
+    "said": "changed",
+    "evidence": [
+     "The QIO will tell you its decision as soon as it can. This is usually within two days after March 14, 2025."
+    ]
+   },
+   {
+    "variant": "irs-cp21b/BASE",
+    "fact": "F14",
+    "said": "changed",
+    "evidence": [
+     "You should get your refund in 2 to 3 weeks if you have not already gotten it. We may keep some or all of it if you owe other taxes or certain other debts that we must collect."
+    ]
+   },
+   {
+    "variant": "irs-cp21b/DELETE/F28",
+    "fact": "F14",
+    "said": "changed",
+    "evidence": [
+     "You should get your refund in 2 to 3 weeks if you have not already gotten it. We may keep some or all of it if you owe other taxes or certain other debts that we must collect."
+    ]
+   },
+   {
+    "variant": "irs-cp21b/DELETE/F1",
+    "fact": "F14",
+    "said": "changed",
+    "evidence": [
+     "We may keep some or all of it if you owe other taxes or certain other debts that we must collect."
+    ]
+   },
+   {
+    "variant": "irs-cp21b/DELETE/F10",
+    "fact": "F14",
+    "said": "changed",
+    "evidence": [
+     "You should get your refund in 2 to 3 weeks if you have not already gotten it. We may keep some or all of it if you owe other taxes or certain other debts that we must collect."
+    ]
+   },
+   {
+    "variant": "irs-cp21b/VALUE/F8",
+    "fact": "F14",
+    "said": "changed",
+    "evidence": [
+     "We may keep some or all of it if you owe other taxes or certain other debts that we must collect."
+    ]
+   },
+   {
+    "variant": "irs-cp21b/VALUE/F5",
+    "fact": "F14",
+    "said": "changed",
+    "evidence": [
+     "We may keep some or all of it if you owe other taxes or certain other debts that we must collect."
+    ]
+   },
+   {
+    "variant": "irs-cp21b/VALUE/F9",
+    "fact": "F14",
+    "said": "changed",
+    "evidence": [
+     "You should get your refund in 2 to 3 weeks if you have not already gotten it. We may keep some or all of it if you owe other taxes or certain other debts that we must collect."
+    ]
+   },
+   {
+    "variant": "irs-cp21b/CONDITION/F18",
+    "fact": "F14",
+    "said": "changed",
+    "evidence": [
+     "We may keep some or all of it if you owe other taxes or certain other debts that we must collect."
+    ]
+   },
+   {
+    "variant": "irs-cp21b/MODAL/F19",
+    "fact": "F14",
+    "said": "changed",
+    "evidence": [
+     "You should get your refund in 2 to 3 weeks if you have not already gotten it. We may keep some or all of it if you owe other taxes or certain other debts that we must collect."
+    ]
+   },
+   {
+    "variant": "irs-cp21b/MODAL/F18",
+    "fact": "F14",
+    "said": "changed",
+    "evidence": [
+     "We may keep some or all of it if you owe other taxes or certain other debts that we must collect."
+    ]
+   },
+   {
+    "variant": "irs-cp21b/NULL0",
+    "fact": "F14",
+    "said": "changed",
+    "evidence": [
+     "We may keep some or all of it if you owe other taxes or certain other debts that we must collect."
+    ]
+   },
+   {
+    "variant": "irs-cp21b/NULL1",
+    "fact": "F14",
+    "said": "changed",
+    "evidence": [
+     "You should get your refund in 2 to 3 weeks if you have not already gotten it. We may keep some or all of it if you owe other taxes or certain other debts that we must collect."
+    ]
+   },
+   {
+    "variant": "va-claim-info/BASE",
+    "fact": "F8",
+    "said": "changed",
+    "evidence": [
+     "But please try to send it by June 3, 2025. That is one year after our first letter. If we get it after that date, and you qualify for benefits, we can only pay you from the day we get the paper. We cannot pay you for the time before that."
+    ]
+   },
+   {
+    "variant": "va-claim-info/DELETE/F8",
+    "fact": "F5",
+    "said": "changed",
+    "evidence": [
+     "Because of this, we have denied your claim for now."
+    ]
+   },
+   {
+    "variant": "va-claim-info/DELETE/F2",
+    "fact": "F5",
+    "said": "changed",
+    "evidence": [
+     "Because of this, we have denied your claim for now."
+    ]
+   },
+   {
+    "variant": "va-claim-info/DELETE/F2",
+    "fact": "F8",
+    "said": "changed",
+    "evidence": [
+     "But please try to send it by June 3, 2025. That is one year after our first letter."
+    ]
+   },
+   {
+    "variant": "va-claim-info/CONDITION/F10",
+    "fact": "F8",
+    "said": "changed",
+    "evidence": [
+     "But please try to send it by June 3, 2025. That is one year after our first letter. If we get it after that date, we can only pay you from the day we get the paper."
+    ]
+   },
+   {
+    "variant": "va-claim-info/MODAL/F7",
+    "fact": "F8",
+    "said": "changed",
+    "evidence": [
+     "But please try to send it by June 3, 2025. That is one year after our first letter. If we get it after that date, and you qualify for benefits, we can only pay you from the day we get the paper."
+    ]
+   },
+   {
+    "variant": "va-claim-info/MODAL/F6",
+    "fact": "F8",
+    "said": "changed",
+    "evidence": [
+     "But please try to send it by June 3, 2025. That is one year after our first letter. If we get it after that date, and you qualify for benefits, we can only pay you from the day we get the paper."
+    ]
+   }
+  ],
+  "passed": {
+   "DELETE": true,
+   "VALUE": true,
+   "CONDITION": true,
+   "ALTERNATIVE": true,
+   "MODAL": true,
+   "VAGUE": true,
+   "false_alarm": true,
+   "false_alarm_null": true
+  }
+ },
+ "judge": "sonnet",
+ "cost_usd": 4.265
+}

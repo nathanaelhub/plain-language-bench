@@ -191,3 +191,12 @@ def test_zip_codes_and_signed_amounts():
 def test_markdown_around_a_value_doesnt_hide_it():
     assert missing_from("Go to **www.irs.gov/cp21**. Call **1-800-829-1040**.",
                         {("url", "irs.gov/cp21"), ("phone", "8008291040")}) == []
+
+
+def test_judge_prompt_is_the_frozen_one():
+    """Results were gated with this exact prompt; changing it means re-running the gate."""
+    import json
+    from plainbench import judge as J
+    from plainbench.facts import ROOT
+    frozen = json.loads((ROOT / "results" / "JUDGE_FROZEN.json").read_text())
+    assert log.phash(J.SYSTEM, J.CONFIRM, J.EFFORT) == frozen["prompt_hash"]

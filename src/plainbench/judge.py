@@ -42,8 +42,8 @@ For each fact, decide from the REWRITE ALONE:
 - "changed": the rewrite says something about it, but the reader would now know less or something
   different: a different value; a vaguer one ("soon" for a date, "call us" without the number); a
   dropped condition, exception or qualifier ("only if", "unless", "right away", "certified"); a
-  "must" that became a "may" or a "can" that became "can't"; a broader or narrower group or
-  choice (one option of several dropped).
+  "must" that became a "may", a "will" that became a "may" (certain became possible), or a "can"
+  that became "can't"; a broader or narrower group or choice (one option of several dropped).
 - "missing": the rewrite doesn't say it at all.
 
 A fact counts only if the rewrite states it; a reader can't be expected to infer it. Don't judge

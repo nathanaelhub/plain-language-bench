@@ -1,0 +1,7 @@
+{
+ "frozen": "2026-11-10",
+ "judge_model": "sonnet",
+ "effort": "medium",
+ "prompt_hash": "6b4a5d6ab31a",
+ "note": "Tuned on the three dev notices only (smoke run, then the dev planted variants). The question-answering judge design from the plan was not tried: the plan adopts it only if it beats this judge by 10 points, and this judge already caught 75-100% of each dev plant type."
+}
