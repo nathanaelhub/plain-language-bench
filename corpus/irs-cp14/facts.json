@@ -1,0 +1,1248 @@
+{
+ "notice": "irs-cp14",
+ "drafted_by": "claude-opus-5-5",
+ "reviewed": true,
+ "review_notes": [
+  {
+   "fact": "F3",
+   "field": "critical",
+   "from": true,
+   "to": false,
+   "why": "the notice's own date; not critical under the clarified rule"
+  },
+  {
+   "fact": "F31",
+   "field": "critical",
+   "from": true,
+   "to": false,
+   "why": "advice about calling; not critical under the clarified rule"
+  },
+  {
+   "fact": "F34",
+   "field": "critical",
+   "from": true,
+   "to": false,
+   "why": "a feature of paying electronically; not critical under the clarified rule"
+  },
+  {
+   "fact": "F35",
+   "field": "critical",
+   "from": true,
+   "to": false,
+   "why": "a feature of paying electronically; not critical under the clarified rule"
+  },
+  {
+   "fact": "F36",
+   "field": "critical",
+   "from": true,
+   "to": false,
+   "why": "a feature of paying electronically; not critical under the clarified rule"
+  },
+  {
+   "fact": "F37",
+   "field": "critical",
+   "from": true,
+   "to": false,
+   "why": "a feature of paying electronically; not critical under the clarified rule"
+  },
+  {
+   "fact": "F38",
+   "field": "critical",
+   "from": true,
+   "to": false,
+   "why": "a feature of paying electronically; not critical under the clarified rule"
+  },
+  {
+   "fact": "F39",
+   "field": "critical",
+   "from": true,
+   "to": false,
+   "why": "a feature of paying electronically; not critical under the clarified rule"
+  },
+  {
+   "fact": "F40",
+   "field": "critical",
+   "from": true,
+   "to": false,
+   "why": "a convenience (paying by card); not critical under the clarified rule"
+  },
+  {
+   "fact": "F41",
+   "field": "critical",
+   "from": true,
+   "to": false,
+   "why": "the fee for the card convenience; not critical under the clarified rule"
+  },
+  {
+   "fact": "F48",
+   "field": "critical",
+   "from": true,
+   "to": false,
+   "why": "how to pay an accepted offer; not critical under the clarified rule"
+  },
+  {
+   "fact": "F49",
+   "field": "critical",
+   "from": true,
+   "to": false,
+   "why": "condition on a non-critical fact"
+  },
+  {
+   "fact": "F51",
+   "field": "critical",
+   "from": true,
+   "to": false,
+   "why": "where to check eligibility; not critical under the clarified rule"
+  },
+  {
+   "fact": "F52",
+   "field": "critical",
+   "from": true,
+   "to": false,
+   "why": "general information website; not critical under the clarified rule"
+  },
+  {
+   "fact": "F53",
+   "field": "critical",
+   "from": true,
+   "to": false,
+   "why": "general information website; not critical under the clarified rule"
+  }
+ ],
+ "facts": [
+  {
+   "id": "F1",
+   "type": "subject",
+   "statement": "The letter is IRS Notice CP14.",
+   "question": "What is the notice number of this letter?",
+   "answer": "CP14",
+   "quote": "Notice CP14",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F2",
+   "type": "subject",
+   "statement": "You owe a balance for tax year 2017.",
+   "question": "What tax year is the balance due for?",
+   "answer": "2017",
+   "quote": "You have a balance due for 2017",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F3",
+   "type": "subject",
+   "statement": "The notice is dated January 30, 2018.",
+   "question": "What is the date of the notice?",
+   "answer": "January 30, 2018",
+   "quote": "Notice date January 30, 2018",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F4",
+   "type": "contact",
+   "statement": "You can reach the IRS by phone at 1-800-829-1040.",
+   "question": "What phone number can you call to contact the IRS about this notice?",
+   "answer": "1-800-829-1040",
+   "quote": "To contact us: Phone 1-800-829-1040",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F5",
+   "type": "amount",
+   "statement": "The amount due is $1,075.21.",
+   "question": "How much do you owe?",
+   "answer": "$1,075.21",
+   "quote": "Amount due: $1,075.21",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F6",
+   "type": "subject",
+   "statement": "IRS records show unpaid taxes and/or penalties and interest on your 2017 Form 1040.",
+   "question": "What does the IRS say is unpaid?",
+   "answer": "Taxes and/or penalties and interest on your 2017 Form 1040.",
+   "quote": "you have unpaid taxes and/or penalties and interest on your 2017 Form 1040",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F7",
+   "type": "action",
+   "statement": "You can disregard this notice.",
+   "question": "In what situation can you ignore this notice?",
+   "answer": "If you already paid in full within the last 21 days or made payment arrangements.",
+   "quote": "please disregard this notice",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F8",
+   "type": "condition",
+   "statement": "This applies only if you already paid the balance in full within the last 21 days or made payment arrangements.",
+   "question": "Within how many days must a full payment have been made for you to disregard the notice?",
+   "answer": "Within the last 21 days (or if you made payment arrangements).",
+   "quote": "If you already paid your balance in full within the last 21 days or made payment arrangements",
+   "critical": true,
+   "depends_on": [
+    "F7"
+   ]
+  },
+  {
+   "id": "F9",
+   "type": "action",
+   "statement": "Continue with your existing installment or payment agreement.",
+   "question": "What should you do if you already have a payment agreement for this tax year?",
+   "answer": "Continue with that agreement.",
+   "quote": "then continue with that agreement",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F10",
+   "type": "condition",
+   "statement": "This applies if you already have an installment or payment agreement in place for this tax year.",
+   "question": "When should you simply keep following your existing agreement?",
+   "answer": "If you already have an installment or payment agreement in place for this tax year.",
+   "quote": "If you already have an installment or payment agreement in place for this tax year",
+   "critical": true,
+   "depends_on": [
+    "F9"
+   ]
+  },
+  {
+   "id": "F11",
+   "type": "amount",
+   "statement": "The tax you owed was $3,183.00.",
+   "question": "How much tax did you owe according to the billing summary?",
+   "answer": "$3,183.00",
+   "quote": "Tax you owed: $3,183.00",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F12",
+   "type": "amount",
+   "statement": "Payments and credits totaled 3,328.00, shown as a deduction.",
+   "question": "How much in payments and credits was applied?",
+   "answer": "-3,328.00 ($3,328.00)",
+   "quote": "Payments and credits: -3,328.00",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F13",
+   "type": "amount",
+   "statement": "The failure-to-file penalty is 318.30.",
+   "question": "How much is the failure-to-file penalty?",
+   "answer": "318.30 ($318.30)",
+   "quote": "Failure-to-file penalty: 318.30",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F14",
+   "type": "amount",
+   "statement": "The failure-to-pay penalty is 633.30.",
+   "question": "How much is the failure-to-pay penalty?",
+   "answer": "633.30 ($633.30)",
+   "quote": "Failure-to-pay penalty: 633.30",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F15",
+   "type": "amount",
+   "statement": "Interest charges are 145.00.",
+   "question": "How much are the interest charges?",
+   "answer": "145.00 ($145.00)",
+   "quote": "Interest charges: 145.00",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F16",
+   "type": "amount",
+   "statement": "The failure-to-pay estimated tax penalty is 123.61.",
+   "question": "How much is the failure-to-pay estimated tax penalty?",
+   "answer": "123.61 ($123.61)",
+   "quote": "Failure-to-pay estimated tax penalty: 123.61",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F17",
+   "type": "deadline",
+   "statement": "The amount is due by February 20, 2018.",
+   "question": "By what date must the amount due be paid?",
+   "answer": "February 20, 2018",
+   "quote": "Amount due by February 20, 2018",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F18",
+   "type": "consequence",
+   "statement": "The notice is for information only and does not seek payment, outside the bankruptcy process, of taxes due before the bankruptcy petition was filed.",
+   "question": "What does this notice mean for someone in a bankruptcy case?",
+   "answer": "It is for information only and does not seek payment, outside the bankruptcy process, of taxes due before the petition was filed.",
+   "quote": "this notice is for your information only and is not intended to seek payment outside of the bankruptcy process of taxes due before you filed your petition",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F19",
+   "type": "condition",
+   "statement": "The bankruptcy provisions apply only if you are a debtor in a bankruptcy case.",
+   "question": "Who do the bankruptcy statements in the notice apply to?",
+   "answer": "People who are debtors in a bankruptcy case.",
+   "quote": "If you are a debtor in a bankruptcy case",
+   "critical": true,
+   "depends_on": [
+    "F18",
+    "F20"
+   ]
+  },
+  {
+   "id": "F20",
+   "type": "consequence",
+   "statement": "You will not receive another notice of the balance due.",
+   "question": "Will a debtor in bankruptcy receive another balance-due notice?",
+   "answer": "No, not while the automatic stay remains in effect.",
+   "quote": "You will not receive another notice of the balance due",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F21",
+   "type": "condition",
+   "statement": "No further notice is sent only while the automatic stay remains in effect.",
+   "question": "For how long will no further balance-due notice be sent?",
+   "answer": "While the automatic stay remains in effect.",
+   "quote": "while the automatic stay remains in effect",
+   "critical": true,
+   "depends_on": [
+    "F20"
+   ]
+  },
+  {
+   "id": "F22",
+   "type": "condition",
+   "statement": "The payment instructions apply if you agree with the amount due and are not working with an IRS representative.",
+   "question": "Who should follow the immediate payment instructions?",
+   "answer": "People who agree with the amount due and are not working with an IRS representative.",
+   "quote": "If you agree with the amount due and you’re not working with an IRS representative",
+   "critical": true,
+   "depends_on": [
+    "F17",
+    "F24",
+    "F26",
+    "F27"
+   ]
+  },
+  {
+   "id": "F23",
+   "type": "consequence",
+   "statement": "Paying the full amount by the due date avoids further penalty and interest charges.",
+   "question": "What do you avoid by paying the amount due by the deadline?",
+   "answer": "Penalty and interest charges.",
+   "quote": "to avoid penalty and interest charges",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F24",
+   "type": "action",
+   "statement": "Pay online, or mail a check or money order with the attached payment stub.",
+   "question": "What are the ways to pay listed in the instructions?",
+   "answer": "Pay online, or mail a check or money order with the attached payment stub.",
+   "quote": "Pay online or mail a check or money order with the attached payment stub.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F25",
+   "type": "contact",
+   "statement": "You can pay online and see all payment options at www.irs.gov/payments.",
+   "question": "At what website can you pay online?",
+   "answer": "www.irs.gov/payments",
+   "quote": "You can pay online now at www.irs.gov/payments.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F26",
+   "type": "action",
+   "statement": "Make your check or money order payable to the United States Treasury.",
+   "question": "Who should the check or money order be made payable to?",
+   "answer": "The United States Treasury.",
+   "quote": "Make your check or money order payable to the United States Treasury.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F27",
+   "type": "action",
+   "statement": "Write your social security number, the tax year (2017), and the form number (1040) on your payment.",
+   "question": "What must you write on your payment?",
+   "answer": "Your social security number, the tax year (2017), and the form number (1040).",
+   "quote": "Write your social security number (nnn-nn-nnnn), the tax year (2017), and the form number (1040) on your payment.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F28",
+   "type": "contact",
+   "statement": "Mail your payment to Internal Revenue Service, Cincinnati, OH 45999-0149.",
+   "question": "Where do you mail your payment?",
+   "answer": "Internal Revenue Service, Cincinnati, OH 45999-0149",
+   "quote": "Mail to Internal Revenue Service, Cincinnati, OH 45999-0149.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F29",
+   "type": "condition",
+   "statement": "The instruction to call applies if you disagree with the amount due.",
+   "question": "When should you call to review your account with a representative?",
+   "answer": "If you disagree with the amount due.",
+   "quote": "If you disagree with the amount due",
+   "critical": true,
+   "depends_on": [
+    "F30"
+   ]
+  },
+  {
+   "id": "F30",
+   "type": "action",
+   "statement": "Call 1-800-829-1040 to review your account with a representative.",
+   "question": "What number should you call to review your account with a representative if you disagree?",
+   "answer": "1-800-829-1040",
+   "quote": "Call us at 1-800-829-1040 to review your account with a representative.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F31",
+   "type": "action",
+   "statement": "Have your account information available when you call.",
+   "question": "What should you have ready when you call?",
+   "answer": "Your account information.",
+   "quote": "Be sure to have your account information available when you call.",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F32",
+   "type": "consequence",
+   "statement": "The IRS will assume you agree with the information in the notice.",
+   "question": "What will the IRS assume if you don't contact them?",
+   "answer": "That you agree with the information in the notice.",
+   "quote": "We’ll assume you agree with the information in this notice",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F33",
+   "type": "condition",
+   "statement": "The IRS assumes agreement only if it doesn't hear from you.",
+   "question": "In what case will the IRS assume you agree with the notice?",
+   "answer": "If it doesn't hear from you.",
+   "quote": "if we don’t hear from you",
+   "critical": true,
+   "depends_on": [
+    "F32"
+   ]
+  },
+  {
+   "id": "F34",
+   "type": "action",
+   "statement": "You can pay your tax bill for free, securely, directly from your checking or savings account.",
+   "question": "Is there a free way to pay, and from what accounts?",
+   "answer": "Yes, directly from your checking or savings account.",
+   "quote": "We offer free payment options to securely pay your tax bill directly from your checking or savings account.",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F35",
+   "type": "condition",
+   "statement": "The following features apply when you pay online or with your mobile device.",
+   "question": "When can you get the electronic payment features such as scheduling and instant confirmation?",
+   "answer": "When you pay online or with your mobile device.",
+   "quote": "When you pay online or with your mobile device",
+   "critical": false,
+   "depends_on": [
+    "F36",
+    "F37",
+    "F38"
+   ]
+  },
+  {
+   "id": "F36",
+   "type": "action",
+   "statement": "You can receive instant confirmation of your payment.",
+   "question": "Can you get confirmation when you pay electronically?",
+   "answer": "Yes, instant confirmation of your payment.",
+   "quote": "Receive instant confirmation of your payment",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F37",
+   "type": "action",
+   "statement": "You can schedule payments in advance.",
+   "question": "Can you schedule electronic payments in advance?",
+   "answer": "Yes.",
+   "quote": "Schedule payments in advance",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F38",
+   "type": "action",
+   "statement": "You can reschedule or cancel a payment.",
+   "question": "Can you reschedule or cancel an electronic payment?",
+   "answer": "Yes, before the due date.",
+   "quote": "Reschedule or cancel a payment",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F39",
+   "type": "condition",
+   "statement": "Rescheduling or canceling is possible only before the due date.",
+   "question": "Until when can you reschedule or cancel an electronic payment?",
+   "answer": "Before the due date.",
+   "quote": "before the due date",
+   "critical": false,
+   "depends_on": [
+    "F38"
+   ]
+  },
+  {
+   "id": "F40",
+   "type": "action",
+   "statement": "You can also pay by debit or credit card.",
+   "question": "Can you pay by card?",
+   "answer": "Yes, by debit or credit card (for a small fee).",
+   "quote": "You can also pay by debit or credit card",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F41",
+   "type": "condition",
+   "statement": "Paying by card costs a small fee.",
+   "question": "Is there a cost to pay by debit or credit card?",
+   "answer": "Yes, a small fee.",
+   "quote": "for a small fee",
+   "critical": false,
+   "depends_on": [
+    "F40"
+   ]
+  },
+  {
+   "id": "F42",
+   "type": "action",
+   "statement": "Pay as much as you can now.",
+   "question": "If you can't pay in full, what should you pay now?",
+   "answer": "As much as you can.",
+   "quote": "pay as much as you can now",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F43",
+   "type": "action",
+   "statement": "Make arrangements to pay your remaining balance.",
+   "question": "If you can't pay in full, what should you do about the rest?",
+   "answer": "Make arrangements to pay the remaining balance.",
+   "quote": "make arrangements to pay your remaining balance",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F44",
+   "type": "condition",
+   "statement": "The partial-payment instructions apply if you can't pay the full amount you owe.",
+   "question": "When should you pay part now and arrange to pay the rest?",
+   "answer": "If you can't pay the full amount you owe.",
+   "quote": "If you can’t pay the full amount you owe",
+   "critical": true,
+   "depends_on": [
+    "F42",
+    "F43"
+   ]
+  },
+  {
+   "id": "F45",
+   "type": "contact",
+   "statement": "Information on installment agreements and online payment agreements is at www.irs.gov/paymentplan.",
+   "question": "What website has information on installment and online payment agreements?",
+   "answer": "www.irs.gov/paymentplan",
+   "quote": "Visit www.irs.gov/paymentplan for more information on installment agreements and online payment agreements.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F46",
+   "type": "action",
+   "statement": "You can call 1-800-829-1040 to discuss your payment options.",
+   "question": "What number can you call to discuss payment options?",
+   "answer": "1-800-829-1040",
+   "quote": "You can also call us at 1-800-829-1040 to discuss your options.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F47",
+   "type": "right",
+   "statement": "An offer in compromise lets you settle your tax debt for less than the full amount you owe.",
+   "question": "What does an offer in compromise let you do?",
+   "answer": "Settle your tax debt for less than the full amount you owe.",
+   "quote": "An offer in compromise allows you to settle your tax debt for less than the full amount you owe.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F48",
+   "type": "action",
+   "statement": "You can pay an accepted offer with either a lump sum cash payment plan or a periodic payment plan.",
+   "question": "How can you pay an accepted offer in compromise?",
+   "answer": "With either a lump sum cash payment plan or a periodic payment plan.",
+   "quote": "you can pay with either a lump sum cash payment plan or periodic payment plan",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F49",
+   "type": "condition",
+   "statement": "These payment choices apply only if the IRS accepts your offer.",
+   "question": "When do the offer-in-compromise payment options apply?",
+   "answer": "If the IRS accepts your offer.",
+   "quote": "If we accept your offer",
+   "critical": false,
+   "depends_on": [
+    "F48"
+   ]
+  },
+  {
+   "id": "F50",
+   "type": "condition",
+   "statement": "An offer in compromise is available only if you qualify.",
+   "question": "Can everyone get an offer in compromise?",
+   "answer": "No, you have to qualify.",
+   "quote": "To see if you qualify",
+   "critical": true,
+   "depends_on": [
+    "F47"
+   ]
+  },
+  {
+   "id": "F51",
+   "type": "action",
+   "statement": "Use the Offer in Compromise Pre-Qualifier tool on the IRS website to see if you qualify.",
+   "question": "How can you check whether you qualify for an offer in compromise?",
+   "answer": "Use the Offer in Compromise Pre-Qualifier tool on the IRS website.",
+   "quote": "use the Offer in Compromise Pre-Qualifier tool on our website",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F52",
+   "type": "contact",
+   "statement": "More information on offers in compromise is at www.irs.gov/offers.",
+   "question": "What website has more information on offers in compromise?",
+   "answer": "www.irs.gov/offers",
+   "quote": "For more information, visit www.irs.gov/offers.",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F53",
+   "type": "contact",
+   "statement": "You can find how to get your current account balance or payment history at www.irs.gov/balancedue.",
+   "question": "Where can you find out how to get your current balance or payment history?",
+   "answer": "www.irs.gov/balancedue",
+   "quote": "go to www.irs.gov/balancedue",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F54",
+   "type": "action",
+   "statement": "Call 1-800-829-1040 to review your account.",
+   "question": "What number should you call if you think the IRS made a mistake?",
+   "answer": "1-800-829-1040",
+   "quote": "call 1-800-829-1040 to review your account",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F55",
+   "type": "condition",
+   "statement": "This call applies if you think the IRS made a mistake.",
+   "question": "When should you call to review your account because of an error?",
+   "answer": "If you think the IRS made a mistake.",
+   "quote": "If you think we made a mistake",
+   "critical": true,
+   "depends_on": [
+    "F54"
+   ]
+  }
+ ],
+ "sentences": [
+  {
+   "i": 0,
+   "start": 0,
+   "text": "Department of the Treasury\nInternal Revenue Service\nP.O. Box 9019\nHoltsville, NY 11742-9019",
+   "facts": [],
+   "none": "sender address block",
+   "override": "agency return address in the letterhead; it is not given as a place to write or send payment (payments go to Cincinnati, F28)"
+  },
+  {
+   "i": 1,
+   "start": 93,
+   "text": "Notice CP14\nTax year 2017\nNotice date January 30, 2018\nSocial security number nnn-nn-nnnn\nTo contact us: Phone 1-800-829-1040",
+   "facts": [
+    "F1",
+    "F2",
+    "F3",
+    "F4"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 2,
+   "start": 220,
+   "text": "John and Mary Smith\n123 N Harris St\nHarvard, TX 12345",
+   "facts": [],
+   "none": "recipient address block",
+   "override": "numbers are the recipient's street address and ZIP code; no fact for the reader"
+  },
+  {
+   "i": 3,
+   "start": 275,
+   "text": "## You have a balance due for 2017",
+   "facts": [
+    "F2"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 4,
+   "start": 311,
+   "text": "Amount due: $1,075.21",
+   "facts": [
+    "F5"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 5,
+   "start": 334,
+   "text": "Our records show you have unpaid taxes and/or penalties and interest on your 2017 Form 1040.",
+   "facts": [
+    "F6"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 6,
+   "start": 428,
+   "text": "If you already paid your balance in full within the last 21 days or made payment arrangements, please disregard this notice.",
+   "facts": [
+    "F7",
+    "F8"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 7,
+   "start": 554,
+   "text": "If you already have an installment or payment agreement in place for this tax year, then continue with that agreement.",
+   "facts": [
+    "F9",
+    "F10"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 8,
+   "start": 674,
+   "text": "Billing Summary",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 9,
+   "start": 690,
+   "text": "- Tax you owed: $3,183.00",
+   "facts": [
+    "F11"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 10,
+   "start": 716,
+   "text": "- Payments and credits: -3,328.00",
+   "facts": [
+    "F12"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 11,
+   "start": 750,
+   "text": "- Failure-to-file penalty: 318.30",
+   "facts": [
+    "F13"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 12,
+   "start": 784,
+   "text": "- Failure-to-pay penalty: 633.30",
+   "facts": [
+    "F14"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 13,
+   "start": 817,
+   "text": "- Interest charges: 145.00",
+   "facts": [
+    "F15"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 14,
+   "start": 844,
+   "text": "- Failure-to-pay estimated tax penalty: 123.61",
+   "facts": [
+    "F16"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 15,
+   "start": 891,
+   "text": "- Amount due by February 20, 2018: $1,075.21",
+   "facts": [
+    "F5",
+    "F17"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 16,
+   "start": 937,
+   "text": "If you are a debtor in a bankruptcy case, this notice is for your information only and is not intended to seek payment outside of the bankruptcy process of taxes due before you filed your petition.",
+   "facts": [
+    "F18",
+    "F19"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 17,
+   "start": 1135,
+   "text": "You will not receive another notice of the balance due while the automatic stay remains in effect.",
+   "facts": [
+    "F20",
+    "F21"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 18,
+   "start": 1235,
+   "text": "## What you need to do immediately",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 19,
+   "start": 1271,
+   "text": "If you agree with the amount due and you’re not working with an IRS representative",
+   "facts": [
+    "F22"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 20,
+   "start": 1355,
+   "text": "- Pay the amount due of $1,075.21 by February 20, 2018, to avoid penalty and interest charges.",
+   "facts": [
+    "F5",
+    "F17",
+    "F23"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 21,
+   "start": 1450,
+   "text": "- Pay online or mail a check or money order with the attached payment stub. You can pay online now at www.irs.gov/payments.",
+   "facts": [
+    "F24",
+    "F25"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 22,
+   "start": 1574,
+   "text": "- Make your check or money order payable to the United States Treasury.",
+   "facts": [
+    "F26"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 23,
+   "start": 1646,
+   "text": "- Write your social security number (nnn-nn-nnnn), the tax year (2017), and the form number (1040) on your payment.",
+   "facts": [
+    "F27"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 24,
+   "start": 1763,
+   "text": "Payment stub: Amount due by February 20, 2018: $1,075.21.",
+   "facts": [
+    "F5",
+    "F17"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 25,
+   "start": 1821,
+   "text": "Mail to Internal Revenue Service, Cincinnati, OH 45999-0149.",
+   "facts": [
+    "F28"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 26,
+   "start": 1883,
+   "text": "If you disagree with the amount due",
+   "facts": [
+    "F29"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 27,
+   "start": 1920,
+   "text": "Call us at 1-800-829-1040 to review your account with a representative.",
+   "facts": [
+    "F30",
+    "F4"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 28,
+   "start": 1992,
+   "text": "Be sure to have your account information available when you call.",
+   "facts": [
+    "F31"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 29,
+   "start": 2059,
+   "text": "We’ll assume you agree with the information in this notice if we don’t hear from you.",
+   "facts": [
+    "F32",
+    "F33"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 30,
+   "start": 2146,
+   "text": "## Payment options",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 31,
+   "start": 2166,
+   "text": "Pay now electronically",
+   "facts": [],
+   "none": "subsection heading",
+   "override": null
+  },
+  {
+   "i": 32,
+   "start": 2190,
+   "text": "We offer free payment options to securely pay your tax bill directly from your checking or savings account.",
+   "facts": [
+    "F34"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 33,
+   "start": 2298,
+   "text": "When you pay online or with your mobile device, you can:",
+   "facts": [
+    "F35"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 34,
+   "start": 2356,
+   "text": "- Receive instant confirmation of your payment",
+   "facts": [
+    "F36"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 35,
+   "start": 2403,
+   "text": "- Schedule payments in advance",
+   "facts": [
+    "F37"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 36,
+   "start": 2434,
+   "text": "- Reschedule or cancel a payment before the due date",
+   "facts": [
+    "F38",
+    "F39"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 37,
+   "start": 2488,
+   "text": "You can also pay by debit or credit card for a small fee.",
+   "facts": [
+    "F40",
+    "F41"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 38,
+   "start": 2546,
+   "text": "To see all of our payment options, visit www.irs.gov/payments.",
+   "facts": [
+    "F25"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 39,
+   "start": 2610,
+   "text": "Payment plans",
+   "facts": [],
+   "none": "subsection heading",
+   "override": null
+  },
+  {
+   "i": 40,
+   "start": 2625,
+   "text": "If you can’t pay the full amount you owe, pay as much as you can now and make arrangements to pay your remaining balance.",
+   "facts": [
+    "F42",
+    "F43",
+    "F44"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 41,
+   "start": 2747,
+   "text": "Visit www.irs.gov/paymentplan for more information on installment agreements and online payment agreements.",
+   "facts": [
+    "F45"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 42,
+   "start": 2855,
+   "text": "You can also call us at 1-800-829-1040 to discuss your options.",
+   "facts": [
+    "F46",
+    "F4"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 43,
+   "start": 2920,
+   "text": "Offer in Compromise",
+   "facts": [],
+   "none": "subsection heading",
+   "override": null
+  },
+  {
+   "i": 44,
+   "start": 2941,
+   "text": "An offer in compromise allows you to settle your tax debt for less than the full amount you owe.",
+   "facts": [
+    "F47"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 45,
+   "start": 3038,
+   "text": "If we accept your offer, you can pay with either a lump sum cash payment plan or periodic payment plan.",
+   "facts": [
+    "F48",
+    "F49"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 46,
+   "start": 3142,
+   "text": "To see if you qualify, use the Offer in Compromise Pre-Qualifier tool on our website.",
+   "facts": [
+    "F50",
+    "F51"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 47,
+   "start": 3228,
+   "text": "For more information, visit www.irs.gov/offers.",
+   "facts": [
+    "F52"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 48,
+   "start": 3277,
+   "text": "Account balance and payment history",
+   "facts": [],
+   "none": "subsection heading",
+   "override": null
+  },
+  {
+   "i": 49,
+   "start": 3314,
+   "text": "For information on how to obtain your current account balance or payment history, go to www.irs.gov/balancedue.",
+   "facts": [
+    "F53"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 50,
+   "start": 3427,
+   "text": "If you already paid your balance in full within the past 21 days or made payment arrangements, please disregard this notice.",
+   "facts": [
+    "F7",
+    "F8"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 51,
+   "start": 3553,
+   "text": "If you think we made a mistake, call 1-800-829-1040 to review your account.",
+   "facts": [
+    "F54",
+    "F55",
+    "F4"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 52,
+   "start": 3630,
+   "text": "## If we don’t hear from you",
+   "facts": [],
+   "none": "section heading",
+   "override": "'if' is part of a section heading that introduces the repeated payment reminder in sentence 53; it states no fact of its own (the no-response consequence is F32/F33)"
+  },
+  {
+   "i": 53,
+   "start": 3660,
+   "text": "Pay $1,075.21 by February 20, 2017, to avoid penalty and interest charges.",
+   "facts": [
+    "F5",
+    "F17",
+    "F23"
+   ],
+   "none": null,
+   "override": "source_error: this sentence gives the due date as February 20, 2017, but sentences 15, 20 and 24 give February 20, 2018 (after the January 30, 2018 notice date). It is an agency typo, kept as published, and should be recorded under source_error: in the frontmatter. The key answer for F17 stays February 20, 2018."
+  }
+ ],
+ "reviewer": "Claude (in session), November 10, 2026"
+}

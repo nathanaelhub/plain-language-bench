@@ -1,0 +1,645 @@
+{
+ "notice": "cms-nomnc",
+ "drafted_by": "claude-opus-5-5",
+ "reviewed": true,
+ "review_notes": [
+  {
+   "fact": "F28",
+   "field": "critical",
+   "from": true,
+   "to": false,
+   "why": "signing to acknowledge receipt; not critical under the clarified rule"
+  }
+ ],
+ "facts": [
+  {
+   "id": "F1",
+   "type": "contact",
+   "statement": "The notice comes from Riverbend Home Health, 220 Hatcher Lane, Columbia, TN 38401, phone 931-555-0163.",
+   "question": "Who sent this notice, and how can you reach them?",
+   "answer": "Riverbend Home Health, 220 Hatcher Lane, Columbia, TN 38401, 931-555-0163",
+   "quote": "Riverbend Home Health\n220 Hatcher Lane, Columbia, TN 38401\n931-555-0163",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F2",
+   "type": "subject",
+   "statement": "Medicare coverage of the reader's current home health services is ending.",
+   "question": "What is ending, according to this notice?",
+   "answer": "Medicare coverage of your current home health services",
+   "quote": "Medicare Coverage of Your Current Home Health Services Will End",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F3",
+   "type": "deadline",
+   "statement": "Coverage ends on Friday, March 14, 2025.",
+   "question": "On what date does Medicare coverage of the home health services end?",
+   "answer": "Friday, March 14, 2025",
+   "quote": "Will End on Friday, March 14, 2025",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F4",
+   "type": "subject",
+   "statement": "The reader's provider and/or health plan made this determination.",
+   "question": "Who decided that Medicare probably won't pay for the services?",
+   "answer": "Your provider and/or health plan",
+   "quote": "Your provider and/or health plan determined",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F5",
+   "type": "consequence",
+   "statement": "Medicare probably won't pay for the reader's home health services after March 14, 2025.",
+   "question": "What will Medicare probably not do after the end date?",
+   "answer": "Pay for your home health services after March 14, 2025",
+   "quote": "Medicare probably won’t pay for your home health services after the above date",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F6",
+   "type": "consequence",
+   "statement": "The reader may have to pay for any services received after March 14, 2025.",
+   "question": "Who may have to pay for services received after the end date?",
+   "answer": "You may have to pay for any services you get after March 14, 2025",
+   "quote": "You may have to pay for any services you get after this date.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F7",
+   "type": "right",
+   "statement": "The reader has the right to appeal the decision to end Medicare coverage of the services.",
+   "question": "Can you challenge the decision to end coverage?",
+   "answer": "Yes, you have the right to appeal it",
+   "quote": "You have the right to appeal the decision to end Medicare coverage of your services.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F8",
+   "type": "consequence",
+   "statement": "Appealing means the reader gets an independent medical review right away.",
+   "question": "What do you get if you appeal?",
+   "answer": "An independent medical review right away",
+   "quote": "you’ll get an independent medical review right away",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F9",
+   "type": "consequence",
+   "statement": "The reader's services continue while the appeal is under way.",
+   "question": "What happens to your services while the appeal is going on?",
+   "answer": "They continue during the appeal",
+   "quote": "Your services will continue during the appeal.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F10",
+   "type": "consequence",
+   "statement": "If the reader appeals, the independent reviewer will ask for the reader's opinion.",
+   "question": "If you appeal, what will the independent reviewer ask you for?",
+   "answer": "Your opinion",
+   "quote": "If you choose to appeal, the independent reviewer will ask for your opinion.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F11",
+   "type": "right",
+   "statement": "The reader does not have to prepare anything in writing but has the right to.",
+   "question": "Do you have to prepare a written statement for the appeal?",
+   "answer": "No, but you have the right to do so",
+   "quote": "You don’t have to prepare anything in writing, but you have the right to do so.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F12",
+   "type": "subject",
+   "statement": "The reviewer will also look at the reader's medical records and/or other relevant information.",
+   "question": "Besides your opinion, what will the reviewer look at?",
+   "answer": "Your medical records and/or other relevant information",
+   "quote": "The reviewer also will look at your medical records and/or other relevant information.",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F13",
+   "type": "right",
+   "statement": "After asking for an appeal, the reader will get a notice with a detailed explanation of why coverage should end.",
+   "question": "What will you receive once you ask for an appeal?",
+   "answer": "A notice with a detailed explanation of why your service coverage should end",
+   "quote": "Once you ask for an appeal, you’ll get a notice with a detailed explanation about why your service coverage should end.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F14",
+   "type": "condition",
+   "statement": "The following applies if the independent reviewer agrees that coverage should end.",
+   "question": "Under what circumstance will neither Medicare nor your plan pay after the end date?",
+   "answer": "If the independent reviewer agrees coverage should end",
+   "quote": "If the independent reviewer agrees Medicare coverage for your services should end",
+   "critical": true,
+   "depends_on": [
+    "F15"
+   ]
+  },
+  {
+   "id": "F15",
+   "type": "consequence",
+   "statement": "Neither Medicare nor the reader's plan will pay for the services after March 14, 2025.",
+   "question": "If the reviewer agrees coverage should end, who will pay for services after the end date?",
+   "answer": "Neither Medicare nor your plan will pay for services after March 14, 2025",
+   "quote": "neither Medicare nor your plan will pay for these services after the above date",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F16",
+   "type": "condition",
+   "statement": "The following applies if the reader stops services by March 14, 2025.",
+   "question": "What must you do by the end date to avoid financial liability?",
+   "answer": "Stop services by March 14, 2025",
+   "quote": "If you stop services by the above date",
+   "critical": true,
+   "depends_on": [
+    "F17"
+   ]
+  },
+  {
+   "id": "F17",
+   "type": "consequence",
+   "statement": "The reader avoids financial liability.",
+   "question": "What do you avoid by stopping services by the end date?",
+   "answer": "Financial liability",
+   "quote": "you’ll avoid financial liability",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F18",
+   "type": "action",
+   "statement": "The reader should ask for the appeal as soon as possible.",
+   "question": "How soon should you ask for the appeal?",
+   "answer": "As soon as possible",
+   "quote": "Ask for the appeal as soon as possible.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F19",
+   "type": "deadline",
+   "statement": "A timely appeal must be requested no later than noon of the day before March 14, 2025.",
+   "question": "What is the deadline to ask for a timely appeal?",
+   "answer": "No later than noon on Thursday, March 13, 2025 (noon the day before coverage ends)",
+   "quote": "You must ask for a timely appeal no later than noon of the day before the above date.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F20",
+   "type": "action",
+   "statement": "The reader makes the appeal request to the Quality Improvement Organization (QIO).",
+   "question": "To whom do you make your appeal request?",
+   "answer": "Your Quality Improvement Organization (QIO)",
+   "quote": "Make your request to your Quality Improvement Organization (QIO).",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F21",
+   "type": "subject",
+   "statement": "A QIO is the independent reviewer authorized by Medicare.",
+   "question": "What is a QIO?",
+   "answer": "The independent reviewer authorized by Medicare",
+   "quote": "A QIO is the independent reviewer authorized by Medicare.",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F22",
+   "type": "condition",
+   "statement": "The following applies if the reader misses the deadline for an immediate appeal.",
+   "question": "In what situation does the notice say you may still have appeal rights?",
+   "answer": "If you miss the deadline to ask for an immediate appeal",
+   "quote": "If you miss the deadline to ask for an immediate appeal",
+   "critical": true,
+   "depends_on": [
+    "F23"
+   ]
+  },
+  {
+   "id": "F23",
+   "type": "right",
+   "statement": "The reader may still have appeal rights.",
+   "question": "If you miss the immediate-appeal deadline, can you still appeal?",
+   "answer": "You may still have appeal rights",
+   "quote": "you may still have appeal rights",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F24",
+   "type": "contact",
+   "statement": "Call the QIO, Midsouth Quality Review, at 1-888-555-0142 to appeal, with questions, or to learn more.",
+   "question": "What is the name and phone number of the QIO you call to appeal?",
+   "answer": "Midsouth Quality Review, 1-888-555-0142",
+   "quote": "Call your QIO at Midsouth Quality Review, 1-888-555-0142, to appeal, or if you have questions.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F25",
+   "type": "deadline",
+   "statement": "The QIO will give its decision as soon as possible, generally no later than two days after March 14, 2025.",
+   "question": "When will the QIO generally tell you its decision?",
+   "answer": "As soon as possible, generally no later than two days after March 14, 2025 (by March 16, 2025)",
+   "quote": "The QIO will let you know its decision as soon as possible, generally no later than two days after the effective date above.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F26",
+   "type": "condition",
+   "statement": "The following applies if the reader is in a Medicare health plan.",
+   "question": "For whom does the QIO generally decide by the effective date itself?",
+   "answer": "People in a Medicare health plan",
+   "quote": "If you’re in a Medicare health plan",
+   "critical": true,
+   "depends_on": [
+    "F27"
+   ]
+  },
+  {
+   "id": "F27",
+   "type": "deadline",
+   "statement": "The QIO generally will give its decision by March 14, 2025.",
+   "question": "If you're in a Medicare health plan, when will the QIO generally tell you its decision?",
+   "answer": "By the effective date, March 14, 2025",
+   "quote": "the QIO generally will let you know its decision by the effective date above",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F28",
+   "type": "action",
+   "statement": "The reader is asked to sign to show they received and understand the notice.",
+   "question": "What are you asked to sign, and what does the signature show?",
+   "answer": "Sign the notice to show you received and understand it",
+   "quote": "Sign below to show you received and understand this notice.",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F29",
+   "type": "right",
+   "statement": "The reader has the right to get information in an accessible format such as large print, Braille, or audio.",
+   "question": "Can you get this information in a format like large print, Braille, or audio?",
+   "answer": "Yes, you have the right to an accessible format such as large print, Braille, or audio",
+   "quote": "You have the right to get your information in an accessible format, like large print, Braille, or audio.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F30",
+   "type": "right",
+   "statement": "The reader has the right to file a complaint.",
+   "question": "What right do you have related to discrimination?",
+   "answer": "The right to file a complaint",
+   "quote": "You also have the right to file a complaint",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F31",
+   "type": "condition",
+   "statement": "The complaint right applies if the reader feels they've been discriminated against.",
+   "question": "When can you file a complaint?",
+   "answer": "If you feel you've been discriminated against",
+   "quote": "if you feel you’ve been discriminated against",
+   "critical": true,
+   "depends_on": [
+    "F30"
+   ]
+  },
+  {
+   "id": "F32",
+   "type": "contact",
+   "statement": "More information on accessibility and nondiscrimination is at Medicare.gov/about-us/accessibility-nondiscrimination-notice.",
+   "question": "What website gives more information on accessible formats and complaints?",
+   "answer": "Medicare.gov/about-us/accessibility-nondiscrimination-notice",
+   "quote": "Visit Medicare.gov/about-us/accessibility-nondiscrimination-notice",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F33",
+   "type": "contact",
+   "statement": "The reader can call 1-800-MEDICARE (1-800-633-4227) for more information.",
+   "question": "What number can you call for more information on accessible formats and complaints?",
+   "answer": "1-800-MEDICARE (1-800-633-4227)",
+   "quote": "call 1-800-MEDICARE (1-800-633-4227)",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F34",
+   "type": "contact",
+   "statement": "TTY users can call 1-877-486-2048.",
+   "question": "What number should TTY users call?",
+   "answer": "1-877-486-2048",
+   "quote": "TTY users can call 1-877-486-2048.",
+   "critical": true,
+   "depends_on": []
+  }
+ ],
+ "sentences": [
+  {
+   "i": 0,
+   "start": 0,
+   "text": "Riverbend Home Health\n220 Hatcher Lane, Columbia, TN 38401\n931-555-0163",
+   "facts": [
+    "F1"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 1,
+   "start": 73,
+   "text": "## Notice of Medicare Non-Coverage",
+   "facts": [],
+   "none": "document title heading",
+   "override": null
+  },
+  {
+   "i": 2,
+   "start": 109,
+   "text": "Patient name: Walter Pruitt",
+   "facts": [],
+   "none": "addressee name line",
+   "override": null
+  },
+  {
+   "i": 3,
+   "start": 138,
+   "text": "## Medicare Coverage of Your Current Home Health Services Will End on Friday, March 14, 2025",
+   "facts": [
+    "F2",
+    "F3"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 4,
+   "start": 232,
+   "text": "Your provider and/or health plan determined that Medicare probably won’t pay for your home health services after the above date.",
+   "facts": [
+    "F4",
+    "F5"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 5,
+   "start": 361,
+   "text": "You may have to pay for any services you get after this date.",
+   "facts": [
+    "F6"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 6,
+   "start": 424,
+   "text": "## Your right to appeal this decision",
+   "facts": [],
+   "none": "section heading",
+   "override": "Section heading only; the appeal right it names is captured from sentence 7 as F7."
+  },
+  {
+   "i": 7,
+   "start": 463,
+   "text": "- You have the right to appeal the decision to end Medicare coverage of your services. This means you’ll get an independent medical review right away. Your services will continue during the appeal.",
+   "facts": [
+    "F7",
+    "F8",
+    "F9"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 8,
+   "start": 661,
+   "text": "- If you choose to appeal, the independent reviewer will ask for your opinion. You don’t have to prepare anything in writing, but you have the right to do so. The reviewer also will look at your medical records and/or other relevant information.",
+   "facts": [
+    "F10",
+    "F11",
+    "F12"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 9,
+   "start": 907,
+   "text": "- Once you ask for an appeal, you’ll get a notice with a detailed explanation about why your service coverage should end.",
+   "facts": [
+    "F13"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 10,
+   "start": 1029,
+   "text": "- If the independent reviewer agrees Medicare coverage for your services should end, neither Medicare nor your plan will pay for these services after the above date.",
+   "facts": [
+    "F14",
+    "F15"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 11,
+   "start": 1195,
+   "text": "- If you stop services by the above date, you’ll avoid financial liability.",
+   "facts": [
+    "F16",
+    "F17"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 12,
+   "start": 1272,
+   "text": "## How to ask for an immediate appeal",
+   "facts": [],
+   "none": "section heading",
+   "override": "Section heading only; how to appeal is captured from sentences 13-16 as F18-F24."
+  },
+  {
+   "i": 13,
+   "start": 1311,
+   "text": "- Ask for the appeal as soon as possible. You must ask for a timely appeal no later than noon of the day before the above date.",
+   "facts": [
+    "F18",
+    "F19"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 14,
+   "start": 1439,
+   "text": "- Make your request to your Quality Improvement Organization (QIO). A QIO is the independent reviewer authorized by Medicare.",
+   "facts": [
+    "F20",
+    "F21"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 15,
+   "start": 1565,
+   "text": "- If you miss the deadline to ask for an immediate appeal, you may still have appeal rights.",
+   "facts": [
+    "F22",
+    "F23"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 16,
+   "start": 1658,
+   "text": "- Call your QIO at Midsouth Quality Review, 1-888-555-0142, to appeal, or if you have questions.",
+   "facts": [
+    "F24"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 17,
+   "start": 1756,
+   "text": "## What happens next",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 18,
+   "start": 1778,
+   "text": "- The QIO will let you know its decision as soon as possible, generally no later than two days after the effective date above. If you’re in a Medicare health plan, the QIO generally will let you know its decision by the effective date above.",
+   "facts": [
+    "F25",
+    "F26",
+    "F27"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 19,
+   "start": 2020,
+   "text": "- Call your QIO at Midsouth Quality Review, 1-888-555-0142, to learn more.",
+   "facts": [
+    "F24"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 20,
+   "start": 2096,
+   "text": "Sign below to show you received and understand this notice.",
+   "facts": [
+    "F28"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 21,
+   "start": 2157,
+   "text": "I’ve been notified that coverage of my services will end on the date on this notice, and that I can appeal this decision by contacting my QIO.",
+   "facts": [
+    "F2",
+    "F3",
+    "F7",
+    "F20"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 22,
+   "start": 2301,
+   "text": "Signature of Patient or Representative: ____________  Date: ____________",
+   "facts": [],
+   "none": "signature line",
+   "override": null
+  },
+  {
+   "i": 23,
+   "start": 2375,
+   "text": "You have the right to get your information in an accessible format, like large print, Braille, or audio.",
+   "facts": [
+    "F29"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 24,
+   "start": 2480,
+   "text": "You also have the right to file a complaint if you feel you’ve been discriminated against.",
+   "facts": [
+    "F30",
+    "F31"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 25,
+   "start": 2571,
+   "text": "Visit Medicare.gov/about-us/accessibility-nondiscrimination-notice, or call 1-800-MEDICARE (1-800-633-4227) for more information.",
+   "facts": [
+    "F32",
+    "F33"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 26,
+   "start": 2701,
+   "text": "TTY users can call 1-877-486-2048.",
+   "facts": [
+    "F34"
+   ],
+   "none": null,
+   "override": null
+  }
+ ],
+ "reviewer": "Claude (in session), November 10, 2026"
+}

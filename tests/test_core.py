@@ -176,3 +176,13 @@ def test_log_resumes_retries_errors_and_respects_the_cap(tmp_path):
     res = asyncio.run(log.run([task(str(i), cost=0.5) for i in range(10)], path, max_usd=1.0, est_usd=0.5,
                               concurrency=1, progress=lambda m: None))
     assert res["skipped_budget"] >= 8 and log.spent(log.read(path)) <= 1.03
+
+
+def test_a_blank_line_ends_a_paragraph():
+    t = "Amount due: $5.00\n\nOur records show a balance."
+    assert [t[a:b] for a, b in sentences(t)] == ["Amount due: $5.00", "Our records show a balance."]
+
+
+def test_zip_codes_and_signed_amounts():
+    assert values("Columbia, TN 38401") == {("zip", "38401")}
+    assert values("Decrease in tax: $-1,076.63") == {("money", "1076.63")}

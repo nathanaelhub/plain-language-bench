@@ -1,0 +1,775 @@
+{
+ "notice": "cms-abn",
+ "drafted_by": "claude-opus-5-5",
+ "reviewed": true,
+ "review_notes": [
+  {
+   "fact": "F10",
+   "field": "critical",
+   "from": true,
+   "to": false,
+   "why": "advice about reading the notice; not critical under the clarified rule"
+  },
+  {
+   "fact": "F11",
+   "field": "critical",
+   "from": true,
+   "to": false,
+   "why": "advice to ask questions; not critical under the clarified rule"
+  },
+  {
+   "fact": "F13",
+   "field": "critical",
+   "from": true,
+   "to": false,
+   "why": "restates F12 (choose one option)"
+  },
+  {
+   "fact": "F37",
+   "field": "critical",
+   "from": true,
+   "to": false,
+   "why": "signing to acknowledge receipt; not critical under the clarified rule"
+  }
+ ],
+ "facts": [
+  {
+   "id": "F1",
+   "type": "contact",
+   "statement": "The clinic that sent the notice, Riverbend Family Clinic, is at 410 Main Street, Columbia, TN 38401.",
+   "question": "What is the address of the clinic that sent this notice?",
+   "answer": "Riverbend Family Clinic, 410 Main Street, Columbia, TN 38401",
+   "quote": "410 Main Street, Columbia, TN 38401",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F2",
+   "type": "contact",
+   "statement": "The clinic's phone number is 931-555-0147. TTY users can use 711.",
+   "question": "What phone number can you call to reach the clinic, and what is the TTY option?",
+   "answer": "931-555-0147 (TTY 711)",
+   "quote": "Phone 931-555-0147 (TTY 711)",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F3",
+   "type": "subject",
+   "statement": "Medicare does not pay for everything, even some care that you or your provider think you need.",
+   "question": "Does Medicare pay for all care that you or your provider think you need?",
+   "answer": "No. Medicare doesn't pay for everything, even some care you or your provider think you need.",
+   "quote": "Medicare doesn’t pay for everything, even some care you or your health care provider think you need.",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F4",
+   "type": "subject",
+   "statement": "The clinic expects that Medicare may not pay for the listed item, test, service or care.",
+   "question": "What does the clinic expect about Medicare paying for the listed care?",
+   "answer": "The clinic expects Medicare may not pay for it.",
+   "quote": "We expect Medicare may not pay for the item, test, service or care listed below.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F5",
+   "type": "condition",
+   "statement": "You may have to pay only if Medicare does not pay.",
+   "question": "In what case might you have to pay?",
+   "answer": "If Medicare doesn't pay.",
+   "quote": "If Medicare doesn’t pay",
+   "critical": true,
+   "depends_on": [
+    "F6"
+   ]
+  },
+  {
+   "id": "F6",
+   "type": "consequence",
+   "statement": "You may have to pay for the care yourself.",
+   "question": "What may happen to you if Medicare doesn't pay?",
+   "answer": "You may have to pay.",
+   "quote": "you may have to pay",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F7",
+   "type": "subject",
+   "statement": "The care that Medicare may not pay for is a Vitamin D blood test.",
+   "question": "Which item, test, service or care may Medicare not pay for?",
+   "answer": "A Vitamin D blood test.",
+   "quote": "Item, test, service or care: Vitamin D blood test",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F8",
+   "type": "condition",
+   "statement": "Medicare usually pays for this test only once every 12 months. That is why it may not pay this time.",
+   "question": "Why might Medicare not pay for the test?",
+   "answer": "Medicare usually pays for this test only once every 12 months.",
+   "quote": "Medicare usually pays for this test only once every 12 months",
+   "critical": true,
+   "depends_on": [
+    "F4"
+   ]
+  },
+  {
+   "id": "F9",
+   "type": "amount",
+   "statement": "The estimated cost of the test is $187.50.",
+   "question": "What is the estimated cost of the test?",
+   "answer": "$187.50",
+   "quote": "Estimated cost: $187.50",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F10",
+   "type": "action",
+   "statement": "Read the notice so you can make an informed decision about your care.",
+   "question": "What should you do with this notice before deciding?",
+   "answer": "Read it to make an informed decision about your care.",
+   "quote": "Read this notice to make an informed decision about your care.",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F11",
+   "type": "action",
+   "statement": "You can ask any questions you have.",
+   "question": "What can you do if you have questions?",
+   "answer": "Ask any questions you have.",
+   "quote": "Ask any questions you have.",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F12",
+   "type": "action",
+   "statement": "Choose one option, and only one, to tell the clinic whether you still want the test.",
+   "question": "How do you tell the clinic whether you still want the test, and how many options may you choose?",
+   "answer": "Choose one option (only one) from the list.",
+   "quote": "Choose one option below to let us know if you still want to get the item, test, service or care.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F13",
+   "type": "action",
+   "statement": "The clinic cannot make the choice for you. You must choose yourself.",
+   "question": "Can the clinic choose an option for you?",
+   "answer": "No. You must choose yourself.",
+   "quote": "We can’t choose for you.",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F14",
+   "type": "condition",
+   "statement": "The possible help with other insurance applies only if you choose Option 1 or Option 2.",
+   "question": "Which options make you eligible for possible help with other insurance?",
+   "answer": "Option 1 or Option 2.",
+   "quote": "If you choose Option 1 or 2",
+   "critical": true,
+   "depends_on": [
+    "F15"
+   ]
+  },
+  {
+   "id": "F15",
+   "type": "consequence",
+   "statement": "The clinic may help you use any other insurance you have.",
+   "question": "What may the clinic help you with regarding other insurance?",
+   "answer": "It may help you use any other insurance you might have.",
+   "quote": "we may help you use any other insurance you might have",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F16",
+   "type": "condition",
+   "statement": "Medicare cannot require the clinic to help with other insurance, so the help is not guaranteed.",
+   "question": "Is the clinic required to help you use other insurance?",
+   "answer": "No. Medicare can't require the clinic to do this.",
+   "quote": "Medicare can’t require us to do this",
+   "critical": true,
+   "depends_on": [
+    "F15"
+   ]
+  },
+  {
+   "id": "F17",
+   "type": "action",
+   "statement": "Option 1: You get the test, and Medicare is billed so it can make an official decision on payment.",
+   "question": "What does Option 1 mean?",
+   "answer": "You get the test, and Medicare is billed for an official decision on payment.",
+   "quote": "Option 1: I want the item, test, service or care listed above, and I want Medicare to be billed for an official decision on payment",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F18",
+   "type": "consequence",
+   "statement": "Under Option 1, you will get Medicare's official decision on a Medicare Summary Notice (MSN).",
+   "question": "Under Option 1, how will you receive Medicare's official payment decision?",
+   "answer": "On a Medicare Summary Notice (MSN).",
+   "quote": "which I’ll get on a Medicare Summary Notice (MSN)",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F19",
+   "type": "consequence",
+   "statement": "Under Option 1, the clinic can ask you to pay now.",
+   "question": "Under Option 1, can the clinic ask you to pay right away?",
+   "answer": "Yes. The clinic can ask to be paid now.",
+   "quote": "You can ask to be paid now.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F20",
+   "type": "condition",
+   "statement": "Under Option 1, you are responsible to pay only if Medicare does not pay.",
+   "question": "Under Option 1, in what case are you responsible to pay?",
+   "answer": "If Medicare doesn't pay.",
+   "quote": "I understand that if Medicare doesn’t pay",
+   "critical": true,
+   "depends_on": [
+    "F21"
+   ]
+  },
+  {
+   "id": "F21",
+   "type": "consequence",
+   "statement": "Under Option 1, you are responsible to pay.",
+   "question": "Under Option 1, who must pay if Medicare doesn't pay?",
+   "answer": "You are responsible to pay.",
+   "quote": "if Medicare doesn’t pay, I’m responsible to pay",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F22",
+   "type": "right",
+   "statement": "Under Option 1, you can appeal to Medicare.",
+   "question": "Under Option 1, can you appeal to Medicare?",
+   "answer": "Yes, you can appeal to Medicare.",
+   "quote": "I can appeal to Medicare",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F23",
+   "type": "action",
+   "statement": "To appeal, follow the directions on the Medicare Summary Notice (MSN).",
+   "question": "How do you appeal to Medicare under Option 1?",
+   "answer": "Follow the directions on the Medicare Summary Notice (MSN).",
+   "quote": "by following the directions on the MSN",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F24",
+   "type": "condition",
+   "statement": "The refund applies only if Medicare does pay.",
+   "question": "Under Option 1, when will the clinic refund your payments?",
+   "answer": "If Medicare does pay.",
+   "quote": "If Medicare does pay",
+   "critical": true,
+   "depends_on": [
+    "F25"
+   ]
+  },
+  {
+   "id": "F25",
+   "type": "consequence",
+   "statement": "Under Option 1, the clinic will refund any payments you made to it.",
+   "question": "Under Option 1, what will the clinic do with payments you made if Medicare pays?",
+   "answer": "Refund them.",
+   "quote": "you’ll refund any payments I made to you",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F26",
+   "type": "condition",
+   "statement": "The refund does not include co-pays or deductibles.",
+   "question": "What is not included in the refund?",
+   "answer": "Co-pays or deductibles.",
+   "quote": "minus co-pays or deductibles",
+   "critical": true,
+   "depends_on": [
+    "F25"
+   ]
+  },
+  {
+   "id": "F27",
+   "type": "action",
+   "statement": "Option 2: You get the test, but Medicare is not billed.",
+   "question": "What does Option 2 mean?",
+   "answer": "You get the test, but Medicare is not billed.",
+   "quote": "Option 2: I want the item, test, service or care listed above, but don’t bill Medicare.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F28",
+   "type": "consequence",
+   "statement": "Under Option 2, the clinic can ask you to pay now.",
+   "question": "Under Option 2, can the clinic ask you to pay right away?",
+   "answer": "Yes. The clinic can ask to be paid now.",
+   "quote": "You can ask to be paid now and I’m responsible to pay",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F29",
+   "type": "consequence",
+   "statement": "Under Option 2, you are responsible to pay.",
+   "question": "Under Option 2, who is responsible to pay?",
+   "answer": "You are.",
+   "quote": "and I’m responsible to pay.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F30",
+   "type": "consequence",
+   "statement": "Under Option 2, you cannot appeal, because Medicare is not billed.",
+   "question": "Under Option 2, can you appeal?",
+   "answer": "No. Medicare isn't billed, so you can't appeal.",
+   "quote": "I can’t appeal, since Medicare isn’t billed",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F31",
+   "type": "action",
+   "statement": "Option 3: You do not get the test.",
+   "question": "What does Option 3 mean?",
+   "answer": "You don't get the test.",
+   "quote": "Option 3: I don’t want the item, test, service or care listed above.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F32",
+   "type": "consequence",
+   "statement": "Under Option 3, you are not responsible for payment.",
+   "question": "Under Option 3, do you have to pay?",
+   "answer": "No. You're not responsible for payment.",
+   "quote": "I’m not responsible for payment",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F33",
+   "type": "consequence",
+   "statement": "Under Option 3, you cannot appeal to see if Medicare would pay.",
+   "question": "Under Option 3, can you appeal to see if Medicare would pay?",
+   "answer": "No.",
+   "quote": "I can’t appeal to see if Medicare would pay",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F34",
+   "type": "subject",
+   "statement": "This notice gives the clinic's opinion. It is not an official Medicare decision.",
+   "question": "Is this notice an official Medicare decision?",
+   "answer": "No. It is the clinic's opinion.",
+   "quote": "This notice gives our opinion, not an official Medicare decision.",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F35",
+   "type": "contact",
+   "statement": "For other questions about this notice or Medicare billing, call 1-800-MEDICARE (1-800-633-4227).",
+   "question": "What number can you call with other questions about this notice or Medicare billing?",
+   "answer": "1-800-MEDICARE (1-800-633-4227)",
+   "quote": "call 1-800-MEDICARE (1-800-633-4227)",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F36",
+   "type": "contact",
+   "statement": "TTY users can call 1-877-486-2048.",
+   "question": "What number can TTY users call?",
+   "answer": "1-877-486-2048",
+   "quote": "TTY users can call 1-877-486-2048.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F37",
+   "type": "consequence",
+   "statement": "Signing the notice means you confirm that you received and understand it.",
+   "question": "What does signing the notice mean?",
+   "answer": "That you received and understand the notice.",
+   "quote": "Signing below means you received and understand this notice.",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F38",
+   "type": "right",
+   "statement": "You can ask for a copy of the notice.",
+   "question": "Can you get a copy of this notice?",
+   "answer": "Yes, you can ask for a copy.",
+   "quote": "You can ask to get a copy.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F39",
+   "type": "right",
+   "statement": "You have the right to get Medicare information in an accessible format, such as large print, Braille or audio.",
+   "question": "What accessible formats can you get Medicare information in?",
+   "answer": "Accessible formats such as large print, Braille or audio.",
+   "quote": "You have the right to get Medicare information in an accessible format, like large print, Braille, or audio.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F40",
+   "type": "right",
+   "statement": "You have the right to file a complaint.",
+   "question": "What right do you have about discrimination?",
+   "answer": "The right to file a complaint.",
+   "quote": "You also have the right to file a complaint",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F41",
+   "type": "condition",
+   "statement": "You can file the complaint if you feel you have been discriminated against.",
+   "question": "When can you file a complaint?",
+   "answer": "If you feel you've been discriminated against.",
+   "quote": "if you feel you’ve been discriminated against",
+   "critical": true,
+   "depends_on": [
+    "F40"
+   ]
+  },
+  {
+   "id": "F42",
+   "type": "contact",
+   "statement": "For information on accessibility and nondiscrimination, visit Medicare.gov/about-us/accessibility-nondiscrimination-notice.",
+   "question": "What website gives information on accessibility and nondiscrimination?",
+   "answer": "Medicare.gov/about-us/accessibility-nondiscrimination-notice",
+   "quote": "Visit Medicare.gov/about-us/accessibility-nondiscrimination-notice.",
+   "critical": true,
+   "depends_on": []
+  }
+ ],
+ "sentences": [
+  {
+   "i": 0,
+   "start": 0,
+   "text": "Riverbend Family Clinic\n410 Main Street, Columbia, TN 38401\nPhone 931-555-0147 (TTY 711)",
+   "facts": [
+    "F1",
+    "F2"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 1,
+   "start": 90,
+   "text": "Patient name: Dorothy Hale",
+   "facts": [],
+   "none": "patient name field (addressee identification)",
+   "override": null
+  },
+  {
+   "i": 2,
+   "start": 118,
+   "text": "## Advance Beneficiary Notice of Non-coverage (ABN)",
+   "facts": [],
+   "none": "title heading",
+   "override": null
+  },
+  {
+   "i": 3,
+   "start": 171,
+   "text": "Medicare doesn’t pay for everything, even some care you or your health care provider think you need.",
+   "facts": [
+    "F3"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 4,
+   "start": 272,
+   "text": "We expect Medicare may not pay for the item, test, service or care listed below.",
+   "facts": [
+    "F4"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 5,
+   "start": 353,
+   "text": "If Medicare doesn’t pay, you may have to pay.",
+   "facts": [
+    "F5",
+    "F6"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 6,
+   "start": 400,
+   "text": "- Item, test, service or care: Vitamin D blood test",
+   "facts": [
+    "F7"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 7,
+   "start": 452,
+   "text": "- Reason Medicare may not pay: Medicare usually pays for this test only once every 12 months",
+   "facts": [
+    "F8"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 8,
+   "start": 545,
+   "text": "- Estimated cost: $187.50",
+   "facts": [
+    "F9"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 9,
+   "start": 572,
+   "text": "## What to do now",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 10,
+   "start": 591,
+   "text": "- Read this notice to make an informed decision about your care.",
+   "facts": [
+    "F10"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 11,
+   "start": 656,
+   "text": "- Ask any questions you have.",
+   "facts": [
+    "F11"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 12,
+   "start": 686,
+   "text": "- Choose one option below to let us know if you still want to get the item, test, service or care.",
+   "facts": [
+    "F12"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 13,
+   "start": 786,
+   "text": "Choose ONE option below.",
+   "facts": [
+    "F12"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 14,
+   "start": 811,
+   "text": "We can’t choose for you.",
+   "facts": [
+    "F13"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 15,
+   "start": 837,
+   "text": "If you choose Option 1 or 2, we may help you use any other insurance you might have, but Medicare can’t require us to do this.",
+   "facts": [
+    "F14",
+    "F15",
+    "F16"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 16,
+   "start": 965,
+   "text": "- Option 1: I want the item, test, service or care listed above, and I want Medicare to be billed for an official decision on payment, which I’ll get on a Medicare Summary Notice (MSN). You can ask to be paid now. I understand that if Medicare doesn’t pay, I’m responsible to pay, but I can appeal to Medicare by following the directions on the MSN. If Medicare does pay, you’ll refund any payments I made to you, minus co-pays or deductibles.",
+   "facts": [
+    "F17",
+    "F18",
+    "F19",
+    "F20",
+    "F21",
+    "F22",
+    "F23",
+    "F24",
+    "F25",
+    "F26"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 17,
+   "start": 1409,
+   "text": "- Option 2: I want the item, test, service or care listed above, but don’t bill Medicare. You can ask to be paid now and I’m responsible to pay. I understand that I can’t appeal, since Medicare isn’t billed.",
+   "facts": [
+    "F27",
+    "F28",
+    "F29",
+    "F30"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 18,
+   "start": 1617,
+   "text": "- Option 3: I don’t want the item, test, service or care listed above. I understand I’m not responsible for payment and I can’t appeal to see if Medicare would pay.",
+   "facts": [
+    "F31",
+    "F32",
+    "F33"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 19,
+   "start": 1783,
+   "text": "## Additional information",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 20,
+   "start": 1810,
+   "text": "This notice gives our opinion, not an official Medicare decision.",
+   "facts": [
+    "F34"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 21,
+   "start": 1876,
+   "text": "For other questions about this notice or Medicare billing, call 1-800-MEDICARE (1-800-633-4227).",
+   "facts": [
+    "F35"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 22,
+   "start": 1973,
+   "text": "TTY users can call 1-877-486-2048.",
+   "facts": [
+    "F36"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 23,
+   "start": 2008,
+   "text": "Signing below means you received and understand this notice.",
+   "facts": [
+    "F37"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 24,
+   "start": 2069,
+   "text": "You can ask to get a copy.",
+   "facts": [
+    "F38"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 25,
+   "start": 2097,
+   "text": "Signature: ____________  Date (mm/dd/yyyy): ____________",
+   "facts": [],
+   "none": "blank signature and date line for the patient to complete",
+   "override": "Date (mm/dd/yyyy) is an empty field format for the reader to fill in. It states no date, deadline or amount."
+  },
+  {
+   "i": 26,
+   "start": 2155,
+   "text": "You have the right to get Medicare information in an accessible format, like large print, Braille, or audio.",
+   "facts": [
+    "F39"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 27,
+   "start": 2264,
+   "text": "You also have the right to file a complaint if you feel you’ve been discriminated against.",
+   "facts": [
+    "F40",
+    "F41"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 28,
+   "start": 2355,
+   "text": "Visit Medicare.gov/about-us/accessibility-nondiscrimination-notice.",
+   "facts": [
+    "F42"
+   ],
+   "none": null,
+   "override": null
+  }
+ ],
+ "reviewer": "Claude (in session), November 10, 2026"
+}

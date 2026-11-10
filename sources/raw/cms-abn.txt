@@ -1,0 +1,69 @@
+Patient name:
+Identification number: (optional)
+
+Notifier name
+Notifier address
+Notifier phone (including TTY)
+
+Advance Beneficiary Notice of Non-coverage (ABN)
+Medicare doesn’t pay for everything, even some care you or your health care provider think you
+need. We expect Medicare may not pay for the item, test, service or care listed below. If
+Medicare doesn’t pay, you may have to pay.
+Item, test, service or care
+
+Reason Medicare may not pay
+
+Estimated cost
+
+What to do now
+Read this notice to make an informed decision about your care.
+Ask any questions you have.
+Choose one option below to let us know if you still want to get the item, test, service or care.
+
+•
+•
+•
+
+Choose ONE option below. We can’t choose for you.
+If you choose Option 1 or 2, we may help you use any other insurance you might have, but
+Medicare can’t require us to do this.
+0B
+
+o Option 1: I want the item, test, service or care listed above, and I want Medicare to be
+
+billed for an official decision on payment, which I’ll get on a Medicare Summary Notice
+(MSN). You can ask to be paid now. I understand that if Medicare doesn’t pay, I’m
+responsible to pay, but I can appeal to Medicare by following the directions on the MSN. If
+Medicare does pay, you’ll refund any payments I made to you, minus co-pays or
+deductibles.
+
+o Option 2: I want the item, test, service or care listed above, but don’t bill Medicare.
+You can ask to be paid now and I’m responsible to pay. I understand that I can’t appeal,
+since Medicare isn’t billed.
+
+o Option 3: I don’t want the item, test, service or care listed above. I understand I’m not
+responsible for payment and I can’t appeal to see if Medicare would pay.
+
+Additional information:
+
+This notice gives our opinion, not an official Medicare decision. For other questions about this notice or
+Medicare billing, call 1-800-MEDICARE (1-800-633-4227). TTY users can call 1-877-486-2048. Signing
+below means you received and understand this notice. You can ask to get a copy.
+Signature
+
+Date (mm/dd/yyyy)
+
+You have the right to get Medicare information in an accessible format, like large print, Braille, or audio. You also have the right to file a complaint if
+you feel you’ve been discriminated against. Visit Medicare.gov/about-us/accessibility-nondiscrimination-notice.
+PRA Disclosure Statement: According to the Paperwork Reduction Act of 1995, no persons are required to respond to a collection of information unless it displays a valid OMB control number.
+The valid OMB control number for this information collection is 0938-0566. This information collection is for providers, suppliers, Hospice and Religious Non-medical HealthCare Institutes and
+Home Health Agencies to notify original Medicare beneficiaries of their potential financial liability under specific conditions. The time required to complete this information collection is estimated to
+average less than 7 minutes per response, including the time to review instructions, search existing data resources, gather the data needed, to review and complete the information collection. This
+information collection is mandatory under Section 1879 of the Social Security Act, 42 CFR 411.404(b) and (c) and 411.408(d)(2) and (f). If you have comments concerning the accuracy of the time
+estimate(s) or suggestions for improving this form, please write to: CMS, 7500 Security Boulevard, Attn: PRA Reports Clearance Officer, Mail Stop C4-26-05, Baltimore, Maryland 21244-1850.
+
+Form CMS-R-131 (Exp. 03/31/2029)
+
+Form Approved OMB No. 0938-0566
+
+

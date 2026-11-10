@@ -41,11 +41,12 @@ NUMWORD = r"(?:" + "|".join(sorted(list(TENS) + list(ONES), key=len, reverse=Tru
 
 PATTERNS = [
     ("url", re.compile(r"\b(?:https?://|www\.)[^\s)>\]]+|\b[\w.+-]+@[\w-]+(?:\.[\w-]+)+\b")),
-    ("money", re.compile(r"\$\s?(\d[\d,]*(?:\.\d+)?)(?:\s*(thousand|million|billion)\b)?")),
+    ("money", re.compile(r"\$\s?[-–]?\s?(\d[\d,]*(?:\.\d+)?)(?:\s*(thousand|million|billion)\b)?")),
     ("phone", re.compile(r"(?<![\d-])(?:1[-. ]?)?\(?\d{3}\)?[-. ]\d{3}[-. ]\d{4}(?![\d-])")),
     ("date", re.compile(rf"\b{MON}\s+(\d{{1,2}})(?:st|nd|rd|th)?(?:,?\s+(\d{{4}}))?\b"
                         rf"|\b(\d{{1,2}})\s+{MON}\s+(\d{{4}})\b"
                         r"|\b(\d{1,2})/(\d{1,2})/(\d{2,4})\b|\b(\d{4})-(\d{2})-(\d{2})\b", re.I)),
+    ("zip", re.compile(r"\b(?:A[KLRZ]|C[AOT]|D[CE]|FL|GA|HI|I[ADLN]|K[SY]|LA|M[ADEINOST]|N[CDEHJMVY]|O[HKR]|PA|RI|S[CD]|T[NX]|UT|V[AT]|W[AIVY])\.?,?\s+(\d{5})(?:-\d{4})?\b")),
     ("code", re.compile(r"\b(?:form|publication|pub\.|notice|letter)\s+([A-Z0-9][A-Z0-9-]*\d[A-Z0-9-]*)"
                         r"|\b([A-Z]{2,5}-[A-Z0-9]{1,4}(?:-[A-Z0-9]{1,5})?)\b|\b((?:CP|LT|LTR)\s?\d{1,4}[A-Z]?)\b", re.I)),
     ("duration", re.compile(rf"\b(\d{{1,4}}|{NUMWORD})(?:\s*\(\d{{1,4}}\))?[- ](business days?|calendar days?|days?|weeks?|months?|years?|hours?)\b", re.I)),
@@ -136,6 +137,8 @@ def _value(kind: str, m: re.Match) -> str | None:
         return d[-10:]
     if kind == "date":
         return _date(m)
+    if kind == "zip":
+        return m.group(1)
     if kind == "code":
         c = next(g for g in m.groups() if g)
         return re.sub(r"\s+", "", c).upper()

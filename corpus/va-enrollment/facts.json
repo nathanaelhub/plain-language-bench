@@ -1,0 +1,624 @@
+{
+ "notice": "va-enrollment",
+ "drafted_by": "claude-opus-5-5",
+ "reviewed": true,
+ "review_notes": [
+  {
+   "fact": "F11",
+   "field": "critical",
+   "from": true,
+   "to": false,
+   "why": "points to an enclosure; not critical under the clarified rule"
+  },
+  {
+   "fact": "F28",
+   "field": "critical",
+   "from": true,
+   "to": false,
+   "why": "points to an enclosure; F27 (the right) stays critical"
+  }
+ ],
+ "facts": [
+  {
+   "id": "F1",
+   "type": "subject",
+   "statement": "The letter is about a change in the reader's enrollment during the period that began on September 1, 1996.",
+   "question": "What is the letter about, and when did the enrollment period in question begin?",
+   "answer": "A change in the reader's enrollment during the period that began on September 1, 1996.",
+   "quote": "This letter is about the change in your enrollment during the period that began on September 1, 1996.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F2",
+   "type": "consequence",
+   "statement": "Because of the change, VA may have paid the reader more than they were due.",
+   "question": "What may have happened to the reader's payments because of the enrollment change?",
+   "answer": "VA may have paid them more than they were due (an overpayment).",
+   "quote": "we may have paid you more than you were due",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F3",
+   "type": "subject",
+   "statement": "VA's records show the reader reduced their credit hours from 12 to 6 on November 5, 1996.",
+   "question": "What change do VA's records show, and on what date?",
+   "answer": "The reader reduced their credit hours from 12 to 6 on November 5, 1996.",
+   "quote": "You reduced your credit hours from 12 hours to 6 hours on November 5, 1996.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F4",
+   "type": "amount",
+   "statement": "VA reduced the reader's payments to $202.00 per month on December 1, 1996.",
+   "question": "What were the reader's payments reduced to, and starting when?",
+   "answer": "$202.00 per month, starting December 1, 1996.",
+   "quote": "We reduced your payments on December 1, 1996 to $202.00 per month.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F5",
+   "type": "consequence",
+   "statement": "The reader will receive another letter about this change.",
+   "question": "Will the reader get any further letter about this change?",
+   "answer": "Yes, they will receive another letter about it.",
+   "quote": "You will receive another letter about this change.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F6",
+   "type": "consequence",
+   "statement": "That later letter will show whether the reader has a debt.",
+   "question": "How will the reader find out whether they owe a debt?",
+   "answer": "The later letter will show whether they have a debt.",
+   "quote": "The letter will show if you have a debt.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F7",
+   "type": "action",
+   "statement": "The reader should send VA a statement explaining why they reduced their credit hours.",
+   "question": "What does VA ask the reader to send?",
+   "answer": "A statement explaining why they reduced the number of their credit hours.",
+   "quote": "Please send us a statement explaining why you reduced the number of your credit hours.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F8",
+   "type": "action",
+   "statement": "In most cases, VA requires evidence to support the statement.",
+   "question": "Does the reader need to send anything to back up their statement?",
+   "answer": "Yes, in most cases VA requires evidence to support the statement.",
+   "quote": "In most cases, we require evidence to support your statement.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F9",
+   "type": "condition",
+   "statement": "This applies only if the reader does not have supporting evidence.",
+   "question": "When should the reader explain why they have no evidence?",
+   "answer": "If they do not have supporting evidence.",
+   "quote": "If you do not have supporting evidence",
+   "critical": true,
+   "depends_on": [
+    "F10"
+   ]
+  },
+  {
+   "id": "F10",
+   "type": "action",
+   "statement": "The reader should tell VA why they don't have supporting evidence.",
+   "question": "What should the reader do if they have no supporting evidence?",
+   "answer": "Tell VA why they don't have it.",
+   "quote": "please tell us why",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F11",
+   "type": "action",
+   "statement": "The enclosure 'Changes in Your Enrollment' gives more information about what to send.",
+   "question": "Which enclosure explains more about the statement and evidence?",
+   "answer": "The enclosure 'Changes in Your Enrollment'.",
+   "quote": "(See the enclosure Changes in Your Enrollment.)",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F12",
+   "type": "deadline",
+   "statement": "The reader must send the statement and any supporting evidence within 30 days.",
+   "question": "How long does the reader have to send the statement and evidence?",
+   "answer": "Within 30 days.",
+   "quote": "Send us your statement with any supporting evidence within 30 days.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F13",
+   "type": "condition",
+   "statement": "This applies if VA accepts the reader's statement.",
+   "question": "Under what condition will VA not reduce payments back to the start of the term?",
+   "answer": "If VA accepts the reader's statement.",
+   "quote": "If we accept your statement",
+   "critical": true,
+   "depends_on": [
+    "F14",
+    "F16",
+    "F17"
+   ]
+  },
+  {
+   "id": "F14",
+   "type": "consequence",
+   "statement": "VA will not reduce the reader's payments from the beginning date of the term.",
+   "question": "What will VA not do if it accepts the statement?",
+   "answer": "It will not reduce payments from the beginning date of the term.",
+   "quote": "we will not reduce your payments from the beginning date of the term",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F15",
+   "type": "condition",
+   "statement": "This applies if a debt has already been created.",
+   "question": "When must the reader repay a debt even if VA accepts the statement?",
+   "answer": "If a debt has already been created.",
+   "quote": "If a debt has already been created",
+   "critical": true,
+   "depends_on": [
+    "F16",
+    "F17"
+   ]
+  },
+  {
+   "id": "F16",
+   "type": "consequence",
+   "statement": "Any debt already created must be repaid.",
+   "question": "What happens to a debt already created?",
+   "answer": "It must be repaid.",
+   "quote": "it must be repaid",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F17",
+   "type": "consequence",
+   "statement": "An existing debt will not be increased.",
+   "question": "Will an existing debt grow if VA accepts the statement?",
+   "answer": "No, the debt will not be increased.",
+   "quote": "the debt will not be increased",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F18",
+   "type": "condition",
+   "statement": "This applies if VA does not accept the reader's statement and supporting evidence.",
+   "question": "Under what condition will VA reduce payments back to September 1, 1996?",
+   "answer": "If VA does not accept the statement with supporting evidence.",
+   "quote": "If we do not accept your statement with supporting evidence",
+   "critical": true,
+   "depends_on": [
+    "F19",
+    "F20"
+   ]
+  },
+  {
+   "id": "F19",
+   "type": "consequence",
+   "statement": "VA will reduce the reader's payments from September 1, 1996, the beginning date of the term.",
+   "question": "What will VA do to payments if it does not accept the statement?",
+   "answer": "Reduce payments from September 1, 1996, the beginning date of the term.",
+   "quote": "supporting evidence we will reduce your payments on September 1, 1996",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F20",
+   "type": "consequence",
+   "statement": "That reduction will create a debt the reader must repay.",
+   "question": "What results from the reduction if the statement is not accepted?",
+   "answer": "A debt that the reader must repay.",
+   "quote": "This will create a debt which you must repay.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F21",
+   "type": "condition",
+   "statement": "This applies if the reader does not respond within 30 days.",
+   "question": "What happens if the reader does not respond, and within what time?",
+   "answer": "If they do not respond within 30 days, payments are reduced back to September 1, 1996.",
+   "quote": "If you do not respond within 30 days",
+   "critical": true,
+   "depends_on": [
+    "F22",
+    "F23"
+   ]
+  },
+  {
+   "id": "F22",
+   "type": "consequence",
+   "statement": "VA will reduce the reader's payments from September 1, 1996, the beginning date of the term.",
+   "question": "What will VA do to payments if the reader does not respond in time?",
+   "answer": "Reduce payments from September 1, 1996, the beginning date of the term.",
+   "quote": "within 30 days, we will reduce your payments on September 1, 1996",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F23",
+   "type": "consequence",
+   "statement": "That reduction will create a debt the reader must repay.",
+   "question": "What results from the reduction if the reader does not respond?",
+   "answer": "A debt that the reader must repay.",
+   "quote": "This will create a debt which you must repay.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F24",
+   "type": "deadline",
+   "statement": "Even after acting, VA will consider information from the reader received within one year from the date of the letter.",
+   "question": "Until when will VA still consider information from the reader after reducing payments?",
+   "answer": "Within one year from the date of this letter.",
+   "quote": "we will consider information received from you within one year from the date of this letter",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F25",
+   "type": "condition",
+   "statement": "This applies only if the reader shows a good reason why they could not meet the one-year limit.",
+   "question": "What must the reader show to get the one-year limit extended?",
+   "answer": "A good reason why they could not meet it.",
+   "quote": "if you show a good reason why you could not meet it",
+   "critical": true,
+   "depends_on": [
+    "F26"
+   ]
+  },
+  {
+   "id": "F26",
+   "type": "consequence",
+   "statement": "VA may extend the one-year time limit.",
+   "question": "Can the one-year time limit be extended?",
+   "answer": "Yes, VA may extend it.",
+   "quote": "We may extend this time limit",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F27",
+   "type": "right",
+   "statement": "The reader has basic rights available before VA makes a final decision on the claim.",
+   "question": "Does the reader have rights before VA makes a final decision?",
+   "answer": "Yes, they have basic rights available before the final decision on the claim.",
+   "quote": "You have basic rights that are available to you before we make a final decision on your claim.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F28",
+   "type": "action",
+   "statement": "The enclosure 'Basic Rights' describes those rights.",
+   "question": "Where can the reader find their basic rights described?",
+   "answer": "In the enclosure 'Basic Rights'.",
+   "quote": "(See the enclosure Basic Rights.)",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F29",
+   "type": "subject",
+   "statement": "The letter encloses VA Form 21-4138, 'Changes in Your Enrollment', 'Basic Rights', and 'If You Need Help'.",
+   "question": "What items are enclosed with the letter?",
+   "answer": "VA Form 21-4138, Changes in Your Enrollment, Basic Rights, and If You Need Help.",
+   "quote": "VA Form 21-4138",
+   "critical": false,
+   "depends_on": []
+  }
+ ],
+ "sentences": [
+  {
+   "i": 0,
+   "start": 0,
+   "text": "Dear Mr. Okafor:",
+   "facts": [],
+   "none": "greeting",
+   "override": null
+  },
+  {
+   "i": 1,
+   "start": 18,
+   "text": "This letter is about the change in your enrollment during the period that began on September 1, 1996.",
+   "facts": [
+    "F1"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 2,
+   "start": 120,
+   "text": "Because of this change, we may have paid you more than you were due.",
+   "facts": [
+    "F2"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 3,
+   "start": 190,
+   "text": "### What Our Records Show",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 4,
+   "start": 217,
+   "text": "You reduced your credit hours from 12 hours to 6 hours on November 5, 1996.",
+   "facts": [
+    "F3"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 5,
+   "start": 294,
+   "text": "### What We Did",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 6,
+   "start": 311,
+   "text": "We reduced your payments on December 1, 1996 to $202.00 per month.",
+   "facts": [
+    "F4"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 7,
+   "start": 378,
+   "text": "You will receive another letter about this change.",
+   "facts": [
+    "F5"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 8,
+   "start": 429,
+   "text": "The letter will show if you have a debt.",
+   "facts": [
+    "F6"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 9,
+   "start": 471,
+   "text": "### What We Need",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 10,
+   "start": 489,
+   "text": "Please send us a statement explaining why you reduced the number of your credit hours.",
+   "facts": [
+    "F7"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 11,
+   "start": 576,
+   "text": "In most cases, we require evidence to support your statement.",
+   "facts": [
+    "F8"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 12,
+   "start": 638,
+   "text": "If you do not have supporting evidence, please tell us why.",
+   "facts": [
+    "F9",
+    "F10"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 13,
+   "start": 698,
+   "text": "(See the enclosure Changes in Your Enrollment.)",
+   "facts": [
+    "F11"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 14,
+   "start": 747,
+   "text": "### When We Need It",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 15,
+   "start": 768,
+   "text": "Send us your statement with any supporting evidence within 30 days.",
+   "facts": [
+    "F12"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 16,
+   "start": 837,
+   "text": "### What We Will Do",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 17,
+   "start": 858,
+   "text": "If we accept your statement, we will not reduce your payments from the beginning date of the term.",
+   "facts": [
+    "F13",
+    "F14"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 18,
+   "start": 957,
+   "text": "If a debt has already been created it must be repaid, but the debt will not be increased.",
+   "facts": [
+    "F15",
+    "F16",
+    "F17"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 19,
+   "start": 1048,
+   "text": "If we do not accept your statement with supporting evidence we will reduce your payments on September 1, 1996, the beginning date of the term.",
+   "facts": [
+    "F18",
+    "F19"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 20,
+   "start": 1191,
+   "text": "This will create a debt which you must repay.",
+   "facts": [
+    "F20"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 21,
+   "start": 1238,
+   "text": "If you do not respond within 30 days, we will reduce your payments on September 1, 1996, the beginning date of the term.",
+   "facts": [
+    "F21",
+    "F22"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 22,
+   "start": 1359,
+   "text": "This will create a debt which you must repay.",
+   "facts": [
+    "F23"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 23,
+   "start": 1405,
+   "text": "Although we will take this action, we will consider information received from you within one year from the date of this letter.",
+   "facts": [
+    "F24"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 24,
+   "start": 1533,
+   "text": "(We may extend this time limit if you show a good reason why you could not meet it.)",
+   "facts": [
+    "F25",
+    "F26"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 25,
+   "start": 1619,
+   "text": "### Your Rights",
+   "facts": [],
+   "none": "section heading",
+   "override": "Heading only; the word 'Rights' labels the section, and the right itself is carried by F27 in sentence 26"
+  },
+  {
+   "i": 26,
+   "start": 1636,
+   "text": "You have basic rights that are available to you before we make a final decision on your claim.",
+   "facts": [
+    "F27"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 27,
+   "start": 1731,
+   "text": "(See the enclosure Basic Rights.)",
+   "facts": [
+    "F28"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 28,
+   "start": 1766,
+   "text": "Sincerely,",
+   "facts": [],
+   "none": "sign-off",
+   "override": null
+  },
+  {
+   "i": 29,
+   "start": 1778,
+   "text": "Enclosures:\nVA Form 21-4138\nChanges in Your Enrollment\nBasic Rights\nIf You Need Help",
+   "facts": [
+    "F29"
+   ],
+   "none": null,
+   "override": null
+  }
+ ],
+ "reviewer": "Claude (in session), November 10, 2026"
+}

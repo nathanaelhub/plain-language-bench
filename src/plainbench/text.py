@@ -75,7 +75,10 @@ def sentences(text: str) -> list[tuple[int, int]]:
     units; consecutive ordinary lines form a paragraph, which is split after . ! ? when
     a space and a capital letter or digit follow, except after common abbreviations
     ("Dr.", "U.S.", "e.g.")."""
-    lines = [(m.start(), m.end()) for m in re.finditer(r"[^\n]*", text) if m.end() > m.start()]
+    lines, pos = [], 0
+    for line in text.split("\n"):  # every line, blank ones included: a blank line ends a paragraph
+        lines.append((pos, pos + len(line)))
+        pos += len(line) + 1
     units: list[tuple[int, int]] = []
     para: tuple[int, int] | None = None
     for a, b in lines:

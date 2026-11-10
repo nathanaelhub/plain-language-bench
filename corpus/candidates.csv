@@ -1,0 +1,32 @@
+candidate,source,words_in_source,decision,reason
+gsa failure-to-provide-claim-information,GSA plainlanguage.gov archive,~150 (before),included,va-claim-info; GSA after kept as a worked example
+gsa change-in-enrollment-status,GSA plainlanguage.gov archive,~330,included,va-enrollment; already-plain control (after only)
+gsa pension-medical-evidence,GSA plainlanguage.gov archive,~190,pending,already-plain; second control candidate for M4
+gsa medicare-fraud-letter,GSA plainlanguage.gov archive,~180,worked example,the expert rewrite deliberately cuts most facts; used as an example of a good cut not as a test notice
+gsa medicaid-eligibility,GSA plainlanguage.gov archive,~110,worked example,"training example, not official text, and under 150 words; the expert rewrite drops an eligibility path"
+irs cp14,irs.gov/pub/notices,1797 (6 pages),included,"irs-cp14; pages 1-3 used (647 words)"
+irs cp21b,irs.gov/pub/notices,297,included,irs-cp21b
+irs cp2000,irs.gov/pub/notices,-,excluded,cp2000_english.pdf returned 404
+irs cp2501,irs.gov/pub/notices,-,excluded,returned 404
+irs cp3219a,irs.gov/pub/notices,-,excluded,returned 404
+irs cp504,irs.gov/pub/notices,2248,pending,M4 (needs an excerpt under 900 words)
+irs cp501,irs.gov/pub/notices,1724,pending,M4
+irs cp503,irs.gov/pub/notices,1601,pending,M4
+irs cp11,irs.gov/pub/notices,1922,pending,M4
+irs cp12,irs.gov/pub/notices,676,pending,M4
+irs cp75,irs.gov/pub/notices,989,pending,M4
+irs cp05,irs.gov/pub/notices,818,pending,M4
+irs lt11,irs.gov/pub/notices,1783,pending,M4
+irs cp90,irs.gov/pub/notices,1780,pending,M4
+irs cp22a,irs.gov/pub/notices,746,pending,M4
+irs cp161,irs.gov/pub/notices,1459,pending,M4
+irs cp71c,irs.gov/pub/notices,1792,pending,M4
+irs cp59,irs.gov/pub/notices,1077,pending,M4
+irs cp523,irs.gov/pub/notices,2696,pending,M4
+irs cp88,irs.gov/pub/notices,278,pending,M4
+cms abn (CMS-R-131),cms.gov BNI,563,included,cms-abn; Paperwork Reduction Act statement left out
+cms nomnc (CMS-10123),cms.gov BNI,469,included,cms-nomnc
+cms denc (CMS-10124),cms.gov BNI,206,pending,M4 (mostly blanks for the provider to fill)
+cms hhccn (CMS-10280),cms.gov BNI,-,pending,M4
+dol cobra model notices,dol.gov,-,excluded,dol.gov returns 403 to automated requests; not worked around
+cfpb reg b appendix c model forms,ecfr.gov,-,excluded,the model forms are images in the eCFR text; no recoverable wording

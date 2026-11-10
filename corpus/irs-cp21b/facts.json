@@ -1,0 +1,619 @@
+{
+ "notice": "irs-cp21b",
+ "drafted_by": "claude-opus-5-5",
+ "reviewed": true,
+ "review_notes": [
+  {
+   "fact": "F3",
+   "field": "type",
+   "from": "deadline",
+   "to": "subject",
+   "why": "the notice's own date, not a deadline"
+  },
+  {
+   "fact": "F3",
+   "field": "critical",
+   "from": true,
+   "to": false,
+   "why": "the notice's own date; not critical under the clarified rule"
+  },
+  {
+   "fact": "F17",
+   "field": "critical",
+   "from": true,
+   "to": false,
+   "why": "advice about calling; not critical under the clarified rule"
+  },
+  {
+   "fact": "F25",
+   "field": "critical",
+   "from": true,
+   "to": false,
+   "why": "advice about keeping the letter; not critical under the clarified rule"
+  }
+ ],
+ "facts": [
+  {
+   "id": "F1",
+   "type": "contact",
+   "statement": "The IRS office that sent the notice is at Internal Revenue Service, Kansas City, MO 64999-0010.",
+   "question": "What is the IRS mailing address on this notice?",
+   "answer": "Internal Revenue Service, Kansas City, MO 64999-0010",
+   "quote": "Kansas City, MO 64999-0010",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F2",
+   "type": "subject",
+   "statement": "The IRS made changes to your 2016 Form 1040 (tax year 2016).",
+   "question": "What is this letter about?",
+   "answer": "The IRS changed the reader's 2016 Form 1040 (tax year 2016).",
+   "quote": "Changes to your 2016 Form 1040",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F3",
+   "type": "subject",
+   "statement": "The notice is dated January 30, 2019.",
+   "question": "What is the date of the notice?",
+   "answer": "January 30, 2019",
+   "quote": "Notice date January 30, 2019",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F4",
+   "type": "contact",
+   "statement": "You can contact the IRS by phone at 1-800-829-1040.",
+   "question": "What phone number can the reader call to contact the IRS about this notice?",
+   "answer": "1-800-829-1040",
+   "quote": "To contact us: Phone 1-800-829-1040",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F5",
+   "type": "amount",
+   "statement": "You are due a refund of $2,128.66.",
+   "question": "How much is the reader's refund?",
+   "answer": "$2,128.66",
+   "quote": "you are due a refund of $2,128.66",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F6",
+   "type": "subject",
+   "statement": "The IRS made the changes based on information you provided.",
+   "question": "What did the IRS base the changes on?",
+   "answer": "Information the reader provided.",
+   "quote": "Based on the information you provided",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F7",
+   "type": "subject",
+   "statement": "The change corrected your business income (or loss).",
+   "question": "What item on the return did the IRS correct?",
+   "answer": "Business income (or loss).",
+   "quote": "business income (or loss)",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F8",
+   "type": "amount",
+   "statement": "Your tax decreased by $1,076.63.",
+   "question": "By how much did the reader's tax decrease?",
+   "answer": "$1,076.63 (shown as $-1,076.63)",
+   "quote": "Decrease in tax: $-1,076.63",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F9",
+   "type": "amount",
+   "statement": "Your failure-to-pay penalty decreased by $963.00.",
+   "question": "By how much did the reader's failure-to-pay penalty decrease?",
+   "answer": "$963.00",
+   "quote": "Decrease in failure-to-pay penalty: – 963.00",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F10",
+   "type": "amount",
+   "statement": "Your interest decreased by $89.03.",
+   "question": "By how much did the interest the reader owes decrease?",
+   "answer": "$89.03",
+   "quote": "Decrease in interest: – 89.03",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F11",
+   "type": "condition",
+   "statement": "The refund timing applies if you agree with the changes.",
+   "question": "Under what circumstance does the letter say the reader should simply expect the refund?",
+   "answer": "If the reader agrees with the changes the IRS made.",
+   "quote": "If you agree with the changes we made",
+   "critical": true,
+   "depends_on": [
+    "F13"
+   ]
+  },
+  {
+   "id": "F12",
+   "type": "condition",
+   "statement": "The refund timing applies only if you haven't already received the $2,128.66 refund.",
+   "question": "When does the letter's refund timeline apply, with respect to refunds already received?",
+   "answer": "Only if the reader hasn't already received the $2,128.66 refund.",
+   "quote": "If you haven’t already received a refund for $2,128.66",
+   "critical": true,
+   "depends_on": [
+    "F13"
+   ]
+  },
+  {
+   "id": "F13",
+   "type": "deadline",
+   "statement": "You should receive the refund within 2–3 weeks.",
+   "question": "When should the reader receive the refund?",
+   "answer": "Within 2–3 weeks.",
+   "quote": "you should receive it within 2 – 3 weeks",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F14",
+   "type": "condition",
+   "statement": "You will get the refund in that time only as long as you don't owe other tax or debt the IRS is required to collect.",
+   "question": "What could stop the reader from getting the refund in 2–3 weeks?",
+   "answer": "Owing other tax or debt the IRS is required to collect.",
+   "quote": "as long as you don’t owe other tax or debt we’re required to collect",
+   "critical": true,
+   "depends_on": [
+    "F13"
+   ]
+  },
+  {
+   "id": "F15",
+   "type": "condition",
+   "statement": "The instruction to call applies if you don't agree with the changes.",
+   "question": "When should the reader call the IRS to review the account?",
+   "answer": "If the reader doesn't agree with the changes.",
+   "quote": "If you don’t agree with the changes",
+   "critical": true,
+   "depends_on": [
+    "F16"
+   ]
+  },
+  {
+   "id": "F16",
+   "type": "action",
+   "statement": "Call 1-800-829-1040 to review your account with a representative.",
+   "question": "What should the reader do to review the account with a representative?",
+   "answer": "Call 1-800-829-1040.",
+   "quote": "Call 1-800-829-1040 to review your account with a representative.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F17",
+   "type": "action",
+   "statement": "Have your account information available when you call.",
+   "question": "What should the reader have ready when calling?",
+   "answer": "Their account information.",
+   "quote": "Be sure you have your account information available when you call.",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F18",
+   "type": "condition",
+   "statement": "The assumption of agreement applies if the IRS doesn't hear from you.",
+   "question": "When will the IRS assume the reader agrees?",
+   "answer": "If the IRS doesn't hear from the reader.",
+   "quote": "If we don’t hear from you",
+   "critical": true,
+   "depends_on": [
+    "F19"
+   ]
+  },
+  {
+   "id": "F19",
+   "type": "consequence",
+   "statement": "The IRS will assume you agree with the information in the notice.",
+   "question": "What will the IRS assume if the reader doesn't respond?",
+   "answer": "That the reader agrees with the information in the notice.",
+   "quote": "we’ll assume you agree with the information in this notice",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F20",
+   "type": "contact",
+   "statement": "More information about this notice is at www.irs.gov/cp21.",
+   "question": "What website does the letter give for more information about this notice?",
+   "answer": "www.irs.gov/cp21",
+   "quote": "Visit www.irs.gov/cp21.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F21",
+   "type": "contact",
+   "statement": "Tax forms, instructions and publications are available at www.irs.gov/formspubs.",
+   "question": "What website does the letter give for tax forms, instructions and publications?",
+   "answer": "www.irs.gov/formspubs",
+   "quote": "visit www.irs.gov/formspubs",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F22",
+   "type": "contact",
+   "statement": "You can call 1-800-TAX-FORM (1-800-829-3676) for tax forms, instructions and publications.",
+   "question": "What phone number does the letter give for tax forms and publications?",
+   "answer": "1-800-TAX-FORM (1-800-829-3676)",
+   "quote": "call 1-800-TAX-FORM (1-800-829-3676)",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F23",
+   "type": "action",
+   "statement": "You can contact the IRS by mail at the address at the top of the notice.",
+   "question": "Can the reader contact the IRS by mail, and where?",
+   "answer": "Yes, at the address at the top of the notice: Internal Revenue Service, Kansas City, MO 64999-0010.",
+   "quote": "You can contact us by mail at the address at the top of this notice.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F24",
+   "type": "action",
+   "statement": "When writing, include your Social Security number, the tax year and the form number.",
+   "question": "What must the reader include when writing to the IRS?",
+   "answer": "Their Social Security number, the tax year, and the form number they are writing about.",
+   "quote": "Be sure to include your social security number, the tax year, and the form number you are writing about.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F25",
+   "type": "action",
+   "statement": "Keep this notice for your records.",
+   "question": "What should the reader do with this notice?",
+   "answer": "Keep it for their records.",
+   "quote": "Keep this notice for your records.",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F26",
+   "type": "subject",
+   "statement": "The IRS is required to send a copy of this notice to both you and your spouse.",
+   "question": "Who receives a copy of this notice?",
+   "answer": "Both the reader and their spouse.",
+   "quote": "We’re required to send a copy of this notice to both you and your spouse.",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F27",
+   "type": "subject",
+   "statement": "Each copy contains the same information about your joint account.",
+   "question": "Do the spouses' copies differ?",
+   "answer": "No; each copy contains the same information about the joint account.",
+   "quote": "Each copy contains the same information about your joint account.",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F28",
+   "type": "action",
+   "statement": "Only pay the amount due once.",
+   "question": "How many times should an amount due be paid?",
+   "answer": "Only once.",
+   "quote": "Only pay the amount due once.",
+   "critical": true,
+   "depends_on": []
+  }
+ ],
+ "sentences": [
+  {
+   "i": 0,
+   "start": 0,
+   "text": "Department of the Treasury\nInternal Revenue Service\nKansas City, MO 64999-0010",
+   "facts": [
+    "F1"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 1,
+   "start": 80,
+   "text": "Notice CP21B\nTax year 2016\nNotice date January 30, 2019\nTo contact us: Phone 1-800-829-1040",
+   "facts": [
+    "F2",
+    "F3",
+    "F4"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 2,
+   "start": 173,
+   "text": "James Sparrow\n22 Boulder Street\nHanson, CT 00000-7253",
+   "facts": [],
+   "none": "recipient name and address block",
+   "override": "numbers are the recipient's street number and ZIP code; they are not something the letter tells the reader"
+  },
+  {
+   "i": 3,
+   "start": 228,
+   "text": "## Changes to your 2016 Form 1040",
+   "facts": [
+    "F2"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 4,
+   "start": 263,
+   "text": "Refund due: $2,128.66",
+   "facts": [
+    "F5"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 5,
+   "start": 286,
+   "text": "Based on the information you provided, we changed your 2016 Form 1040 to correct your:",
+   "facts": [
+    "F2",
+    "F6"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 6,
+   "start": 374,
+   "text": "- business income (or loss)",
+   "facts": [
+    "F7"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 7,
+   "start": 403,
+   "text": "Billing Summary",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 8,
+   "start": 419,
+   "text": "- Decrease in tax: $-1,076.63",
+   "facts": [
+    "F8"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 9,
+   "start": 449,
+   "text": "- Decrease in failure-to-pay penalty: – 963.00",
+   "facts": [
+    "F9"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 10,
+   "start": 496,
+   "text": "- Decrease in interest: – 89.03",
+   "facts": [
+    "F10"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 11,
+   "start": 528,
+   "text": "- Refund due: $2,128.66",
+   "facts": [
+    "F5"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 12,
+   "start": 553,
+   "text": "As a result, you are due a refund of $2,128.66.",
+   "facts": [
+    "F5"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 13,
+   "start": 602,
+   "text": "## What you need to do",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 14,
+   "start": 626,
+   "text": "If you agree with the changes we made",
+   "facts": [
+    "F11"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 15,
+   "start": 665,
+   "text": "If you haven’t already received a refund for $2,128.66, you should receive it within 2 – 3 weeks as long as you don’t owe other tax or debt we’re required to collect.",
+   "facts": [
+    "F5",
+    "F12",
+    "F13",
+    "F14"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 16,
+   "start": 833,
+   "text": "If you don’t agree with the changes",
+   "facts": [
+    "F15"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 17,
+   "start": 870,
+   "text": "Call 1-800-829-1040 to review your account with a representative.",
+   "facts": [
+    "F16"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 18,
+   "start": 936,
+   "text": "Be sure you have your account information available when you call.",
+   "facts": [
+    "F17"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 19,
+   "start": 1004,
+   "text": "If we don’t hear from you, we’ll assume you agree with the information in this notice.",
+   "facts": [
+    "F18",
+    "F19"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 20,
+   "start": 1092,
+   "text": "## Additional information",
+   "facts": [],
+   "none": "section heading",
+   "override": null
+  },
+  {
+   "i": 21,
+   "start": 1119,
+   "text": "- Visit www.irs.gov/cp21.",
+   "facts": [
+    "F20"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 22,
+   "start": 1145,
+   "text": "- For tax forms, instructions, and publications, visit www.irs.gov/formspubs or call 1-800-TAX-FORM (1-800-829-3676).",
+   "facts": [
+    "F21",
+    "F22"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 23,
+   "start": 1263,
+   "text": "- You can contact us by mail at the address at the top of this notice. Be sure to include your social security number, the tax year, and the form number you are writing about.",
+   "facts": [
+    "F23",
+    "F24"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 24,
+   "start": 1439,
+   "text": "- Keep this notice for your records.",
+   "facts": [
+    "F25"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 25,
+   "start": 1477,
+   "text": "We’re required to send a copy of this notice to both you and your spouse.",
+   "facts": [
+    "F26"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 26,
+   "start": 1551,
+   "text": "Each copy contains the same information about your joint account.",
+   "facts": [
+    "F27"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 27,
+   "start": 1617,
+   "text": "Please note: Only pay the amount due once.",
+   "facts": [
+    "F28"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 28,
+   "start": 1661,
+   "text": "If you need assistance, please don’t hesitate to contact us.",
+   "facts": [],
+   "none": "generic closing courtesy line",
+   "override": "'if' introduces a general offer of help with no specific contact, condition or action; the contact channels are already captured in F4, F20, F23"
+  }
+ ],
+ "reviewer": "Claude (in session), November 10, 2026"
+}

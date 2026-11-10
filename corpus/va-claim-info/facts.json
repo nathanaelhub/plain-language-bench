@@ -1,0 +1,263 @@
+{
+ "notice": "va-claim-info",
+ "drafted_by": "claude-opus-5-5",
+ "reviewed": true,
+ "review_notes": [
+  {
+   "note": "read in full; no changes"
+  }
+ ],
+ "facts": [
+  {
+   "id": "F1",
+   "type": "subject",
+   "statement": "The letter is about your recent claim for VA benefits.",
+   "question": "What is this letter about?",
+   "answer": "Your recent claim for Department of Veterans Affairs benefits.",
+   "quote": "This letter concerns your recent claim for Department of Veterans Affairs benefits.",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F2",
+   "type": "action",
+   "statement": "The evidence VA needs from you is a certified copy of your marriage license.",
+   "question": "What evidence does VA need from you?",
+   "answer": "A certified copy of your marriage license.",
+   "quote": "we needed a certified copy of your marriage license",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F3",
+   "type": "subject",
+   "statement": "VA asked for this evidence in a letter dated June 3, 2024.",
+   "question": "On what date did VA first ask for the evidence?",
+   "answer": "June 3, 2024.",
+   "quote": "This evidence was requested in our letter dated June 3, 2024.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F4",
+   "type": "subject",
+   "statement": "VA has no record of receiving the evidence.",
+   "question": "Does VA have a record of receiving the evidence?",
+   "answer": "No, VA's records do not show it was received.",
+   "quote": "Our records do not show we have received this evidence",
+   "critical": false,
+   "depends_on": []
+  },
+  {
+   "id": "F5",
+   "type": "subject",
+   "statement": "VA has disallowed (denied) your claim.",
+   "question": "What did VA decide about your claim?",
+   "answer": "VA disallowed the claim.",
+   "quote": "we have disallowed your claim",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F6",
+   "type": "action",
+   "statement": "Even though the claim was disallowed, you can still send the requested evidence.",
+   "question": "Can you still send the requested evidence now that the claim was disallowed?",
+   "answer": "Yes, the disallowance does not stop you from submitting it.",
+   "quote": "This disallowance does not mean that you cannot submit the requested evidence.",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F7",
+   "type": "deadline",
+   "statement": "You can send the evidence at any time; there is no cutoff for submitting it.",
+   "question": "When can you send the evidence?",
+   "answer": "At any time.",
+   "quote": "You can do so at any time.",
+   "critical": true,
+   "depends_on": [
+    "F6"
+   ]
+  },
+  {
+   "id": "F8",
+   "type": "deadline",
+   "statement": "The evidence must be received before June 3, 2025, one year from VA's first letter, to avoid limits on back payments.",
+   "question": "By what date must VA receive the evidence to avoid losing earlier benefits?",
+   "answer": "Before June 3, 2025 (one year from the date of VA's first letter).",
+   "quote": "if the evidence is not received before June 3, 2025, which is one year from the date of our first letter",
+   "critical": true,
+   "depends_on": [
+    "F9"
+   ]
+  },
+  {
+   "id": "F9",
+   "type": "consequence",
+   "statement": "If the evidence arrives late, benefits cannot be paid for any time before the date VA receives it.",
+   "question": "What happens to your benefits if the evidence arrives after the deadline?",
+   "answer": "Benefits cannot be paid for any period before the date VA receives the evidence.",
+   "quote": "cannot be paid before the date of receipt of the evidence",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F10",
+   "type": "condition",
+   "statement": "Benefits are paid only if you are found to be entitled to them.",
+   "question": "Will benefits be paid just because you send the evidence?",
+   "answer": "No, only if entitlement is established.",
+   "quote": "if entitlement is established",
+   "critical": true,
+   "depends_on": [
+    "F9"
+   ]
+  },
+  {
+   "id": "F11",
+   "type": "condition",
+   "statement": "The appeal route applies if you disagree with the disallowance and believe the evidence VA already has is enough to award benefits.",
+   "question": "When should you look at the appeal rights form?",
+   "answer": "If you disagree with the disallowance and believe the evidence VA already has is enough to award you benefits.",
+   "quote": "If you disagree with this disallowance and believe the evidence now of record is sufficient for us to award you benefits",
+   "critical": true,
+   "depends_on": [
+    "F12",
+    "F13"
+   ]
+  },
+  {
+   "id": "F12",
+   "type": "action",
+   "statement": "Read the enclosed VA Form 1-4107, Notice of Procedural and Appellate Rights.",
+   "question": "What document should you read to learn how to appeal?",
+   "answer": "The enclosed VA Form 1-4107, Notice of Procedural and Appellate Rights.",
+   "quote": "please refer to the enclosed VA Form 1-4107, Notice of Procedural and Appellate Rights",
+   "critical": true,
+   "depends_on": []
+  },
+  {
+   "id": "F13",
+   "type": "right",
+   "statement": "You have the right to appeal the disallowance.",
+   "question": "Can you appeal the disallowance?",
+   "answer": "Yes, you have appeal rights, which are explained in the enclosed form.",
+   "quote": "which explains your rights to appeal",
+   "critical": true,
+   "depends_on": []
+  }
+ ],
+ "sentences": [
+  {
+   "i": 0,
+   "start": 0,
+   "text": "Dear Ms. Reyes,",
+   "facts": [],
+   "none": "greeting",
+   "override": null
+  },
+  {
+   "i": 1,
+   "start": 17,
+   "text": "This letter concerns your recent claim for Department of Veterans Affairs benefits.",
+   "facts": [
+    "F1"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 2,
+   "start": 102,
+   "text": "Before final action could be taken on your claim, we needed a certified copy of your marriage license.",
+   "facts": [
+    "F2"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 3,
+   "start": 205,
+   "text": "This evidence was requested in our letter dated June 3, 2024.",
+   "facts": [
+    "F3"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 4,
+   "start": 267,
+   "text": "Our records do not show we have received this evidence, therefore, we have disallowed your claim.",
+   "facts": [
+    "F4",
+    "F5"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 5,
+   "start": 366,
+   "text": "This disallowance does not mean that you cannot submit the requested evidence.",
+   "facts": [
+    "F6"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 6,
+   "start": 445,
+   "text": "You can do so at any time.",
+   "facts": [
+    "F7"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 7,
+   "start": 472,
+   "text": "However, if the evidence is not received before June 3, 2025, which is one year from the date of our first letter, benefits, if entitlement is established, cannot be paid before the date of receipt of the evidence.",
+   "facts": [
+    "F8",
+    "F9",
+    "F10"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 8,
+   "start": 688,
+   "text": "If you disagree with this disallowance and believe the evidence now of record is sufficient for us to award you benefits, please refer to the enclosed VA Form 1-4107, Notice of Procedural and Appellate Rights, which explains your rights to appeal.",
+   "facts": [
+    "F11",
+    "F12",
+    "F13"
+   ],
+   "none": null,
+   "override": null
+  },
+  {
+   "i": 9,
+   "start": 937,
+   "text": "Sincerely yours,",
+   "facts": [],
+   "none": "sign-off",
+   "override": null
+  },
+  {
+   "i": 10,
+   "start": 955,
+   "text": "Enclosure:\nVAF 1-4107",
+   "facts": [],
+   "none": "enclosure line",
+   "override": "The form number 1-4107 repeats the form already captured in F12 from sentence 8; the line adds no new fact."
+  }
+ ],
+ "reviewer": "Claude (in session), November 10, 2026"
+}
