@@ -54,3 +54,17 @@ def test_frozen_fact_lists_havent_changed():
     assert set(now) == set(frozen["notices"])
     changed = [nid for nid, h in now.items() if h != frozen["notices"][nid]["hash"]]
     assert changed == [], f"changed after the freeze: {changed}"
+
+
+def test_readme_findings_match_the_results():
+    """Every figure in the README's findings block is generated from results.json; this fails if
+    someone edits one by hand or the results change without regenerating it."""
+    import json
+    import re
+
+    from bench import readme
+    from plainbench.facts import ROOT
+    res = json.loads(sorted((ROOT / "results").glob("2*/results.json"))[-1].read_text())
+    text = (ROOT / "README.md").read_text()
+    block = re.search(re.escape(readme.START) + r"\n(.*)\n" + re.escape(readme.END), text, re.S).group(1)
+    assert block == readme.findings(res)
