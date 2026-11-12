@@ -200,3 +200,17 @@ def test_judge_prompt_is_the_frozen_one():
     from plainbench.facts import ROOT
     frozen = json.loads((ROOT / "results" / "JUDGE_FROZEN.json").read_text())
     assert log.phash(J.SYSTEM, J.CONFIRM, J.EFFORT) == frozen["prompt_hash"]
+
+
+def test_an_amount_the_letter_gives_without_a_dollar_sign_is_not_new():
+    src = "Billing Summary\n- Payments and credits: -3,328.00\n- Failure-to-pay penalty: 633.30"
+    assert not_in_source("| Payments | -$3,328.00 |\n| Penalty | $633.30 |", src) == []
+    assert [v.value for v in not_in_source("Penalty: $633.31", src)] == ["633.31"]
+
+
+def test_hyphenated_words_are_not_form_numbers():
+    got = lambda s: [(v.kind, v.value) for v in extract(s)]  # noqa: E731
+    for s in ("your co-pay", "the TEAR-OFF stub", "a ONE-YEAR period", "Failure-to-file penalty"):
+        assert not [k for k, _ in got(s) if k == "code"], s
+    assert ("code", "CMS-R-131") in got("Form CMS-R-131") and ("code", "SSA-561-U2") in got("see SSA-561-U2")
+    assert got("go to www.irs.gov/payments: pay") == [("url", "irs.gov/payments")]

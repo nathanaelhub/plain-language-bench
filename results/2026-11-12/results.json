@@ -1,0 +1,8092 @@
+{
+ "generated": "2026-11-12",
+ "notices": {
+  "test": 15,
+  "dev": 3
+ },
+ "false_alarm_rate": 0.03367003367003367,
+ "setups": {
+  "original": {
+   "label": "The original letter",
+   "rewrites": 15,
+   "retention": 0.9964912280701754,
+   "ci": [
+    0.9894736842105263,
+    1.0
+   ],
+   "lost_per_rewrite": 0.06666666666666667,
+   "any_loss": 0.06666666666666667,
+   "false_loss_band": 0.5646572934831174,
+   "grade_median": 8.7,
+   "grade_mean": 8.879999999999999,
+   "words_median": 376,
+   "not_in_source": 0,
+   "by_type": {
+    "action": {
+     "kept": 78,
+     "n": 78,
+     "rate": 1.0
+    },
+    "amount": {
+     "kept": 17,
+     "n": 17,
+     "rate": 1.0
+    },
+    "condition": {
+     "kept": 88,
+     "n": 88,
+     "rate": 1.0
+    },
+    "consequence": {
+     "kept": 95,
+     "n": 95,
+     "rate": 1.0
+    },
+    "contact": {
+     "kept": 40,
+     "n": 41,
+     "rate": 0.975609756097561
+    },
+    "deadline": {
+     "kept": 19,
+     "n": 19,
+     "rate": 1.0
+    },
+    "right": {
+     "kept": 34,
+     "n": 34,
+     "rate": 1.0
+    },
+    "subject": {
+     "kept": 18,
+     "n": 18,
+     "rate": 1.0
+    }
+   }
+  },
+  "haiku-g6": {
+   "label": "Haiku, grade 6",
+   "rewrites": 15,
+   "retention": 0.9447180428316331,
+   "ci": [
+    0.9169342302202342,
+    0.9712027563751702
+   ],
+   "lost_per_rewrite": 1.5333333333333334,
+   "any_loss": 0.6,
+   "false_loss_band": 0.5646572934831174,
+   "grade_median": 6.0,
+   "grade_mean": 6.14,
+   "words_median": 390,
+   "not_in_source": 1,
+   "by_type": {
+    "action": {
+     "kept": 78,
+     "n": 78,
+     "rate": 1.0
+    },
+    "amount": {
+     "kept": 17,
+     "n": 17,
+     "rate": 1.0
+    },
+    "condition": {
+     "kept": 81,
+     "n": 88,
+     "rate": 0.9204545454545454
+    },
+    "consequence": {
+     "kept": 87,
+     "n": 95,
+     "rate": 0.9157894736842105
+    },
+    "contact": {
+     "kept": 37,
+     "n": 41,
+     "rate": 0.9024390243902439
+    },
+    "deadline": {
+     "kept": 19,
+     "n": 19,
+     "rate": 1.0
+    },
+    "right": {
+     "kept": 33,
+     "n": 34,
+     "rate": 0.9705882352941176
+    },
+    "subject": {
+     "kept": 15,
+     "n": 18,
+     "rate": 0.8333333333333334
+    }
+   }
+  },
+  "sonnet-g6": {
+   "label": "Sonnet, grade 6",
+   "rewrites": 15,
+   "retention": 0.9618842323254088,
+   "ci": [
+    0.9354292058703824,
+    0.9823075127486892
+   ],
+   "lost_per_rewrite": 0.8,
+   "any_loss": 0.6,
+   "false_loss_band": 0.5646572934831174,
+   "grade_median": 4.9,
+   "grade_mean": 5.153333333333333,
+   "words_median": 389,
+   "not_in_source": 0,
+   "by_type": {
+    "action": {
+     "kept": 77,
+     "n": 78,
+     "rate": 0.9871794871794872
+    },
+    "amount": {
+     "kept": 17,
+     "n": 17,
+     "rate": 1.0
+    },
+    "condition": {
+     "kept": 83,
+     "n": 88,
+     "rate": 0.9431818181818182
+    },
+    "consequence": {
+     "kept": 92,
+     "n": 95,
+     "rate": 0.968421052631579
+    },
+    "contact": {
+     "kept": 40,
+     "n": 41,
+     "rate": 0.975609756097561
+    },
+    "deadline": {
+     "kept": 18,
+     "n": 19,
+     "rate": 0.9473684210526315
+    },
+    "right": {
+     "kept": 33,
+     "n": 34,
+     "rate": 0.9705882352941176
+    },
+    "subject": {
+     "kept": 18,
+     "n": 18,
+     "rate": 1.0
+    }
+   }
+  },
+  "opus-g6": {
+   "label": "Opus, grade 6",
+   "rewrites": 15,
+   "retention": 0.9486440307867036,
+   "ci": [
+    0.9196131201768457,
+    0.9724282063252652
+   ],
+   "lost_per_rewrite": 1.2,
+   "any_loss": 0.7333333333333333,
+   "false_loss_band": 0.5646572934831174,
+   "grade_median": 4.4,
+   "grade_mean": 4.653333333333333,
+   "words_median": 436,
+   "not_in_source": 2,
+   "by_type": {
+    "action": {
+     "kept": 78,
+     "n": 78,
+     "rate": 1.0
+    },
+    "amount": {
+     "kept": 17,
+     "n": 17,
+     "rate": 1.0
+    },
+    "condition": {
+     "kept": 80,
+     "n": 88,
+     "rate": 0.9090909090909091
+    },
+    "consequence": {
+     "kept": 87,
+     "n": 95,
+     "rate": 0.9157894736842105
+    },
+    "contact": {
+     "kept": 39,
+     "n": 41,
+     "rate": 0.9512195121951219
+    },
+    "deadline": {
+     "kept": 19,
+     "n": 19,
+     "rate": 1.0
+    },
+    "right": {
+     "kept": 34,
+     "n": 34,
+     "rate": 1.0
+    },
+    "subject": {
+     "kept": 18,
+     "n": 18,
+     "rate": 1.0
+    }
+   }
+  },
+  "sonnet-g4": {
+   "label": "Sonnet, grade 4",
+   "rewrites": 15,
+   "retention": 0.9015971360528938,
+   "ci": [
+    0.8658026257368363,
+    0.9346555142388476
+   ],
+   "lost_per_rewrite": 2.4,
+   "any_loss": 0.9333333333333333,
+   "false_loss_band": 0.5646572934831174,
+   "grade_median": 4.2,
+   "grade_mean": 4.1866666666666665,
+   "words_median": 365,
+   "not_in_source": 0,
+   "by_type": {
+    "action": {
+     "kept": 71,
+     "n": 78,
+     "rate": 0.9102564102564102
+    },
+    "amount": {
+     "kept": 17,
+     "n": 17,
+     "rate": 1.0
+    },
+    "condition": {
+     "kept": 75,
+     "n": 88,
+     "rate": 0.8522727272727273
+    },
+    "consequence": {
+     "kept": 87,
+     "n": 95,
+     "rate": 0.9157894736842105
+    },
+    "contact": {
+     "kept": 37,
+     "n": 41,
+     "rate": 0.9024390243902439
+    },
+    "deadline": {
+     "kept": 17,
+     "n": 19,
+     "rate": 0.8947368421052632
+    },
+    "right": {
+     "kept": 32,
+     "n": 34,
+     "rate": 0.9411764705882353
+    },
+    "subject": {
+     "kept": 18,
+     "n": 18,
+     "rate": 1.0
+    }
+   }
+  },
+  "sonnet-g8": {
+   "label": "Sonnet, grade 8",
+   "rewrites": 15,
+   "retention": 0.9599752732680387,
+   "ci": [
+    0.938736903794375,
+    0.9793923723335488
+   ],
+   "lost_per_rewrite": 1.0666666666666667,
+   "any_loss": 0.6,
+   "false_loss_band": 0.5646572934831174,
+   "grade_median": 5.4,
+   "grade_mean": 5.473333333333333,
+   "words_median": 382,
+   "not_in_source": 0,
+   "by_type": {
+    "action": {
+     "kept": 76,
+     "n": 78,
+     "rate": 0.9743589743589743
+    },
+    "amount": {
+     "kept": 17,
+     "n": 17,
+     "rate": 1.0
+    },
+    "condition": {
+     "kept": 83,
+     "n": 88,
+     "rate": 0.9431818181818182
+    },
+    "consequence": {
+     "kept": 90,
+     "n": 95,
+     "rate": 0.9473684210526315
+    },
+    "contact": {
+     "kept": 41,
+     "n": 41,
+     "rate": 1.0
+    },
+    "deadline": {
+     "kept": 18,
+     "n": 19,
+     "rate": 0.9473684210526315
+    },
+    "right": {
+     "kept": 32,
+     "n": 34,
+     "rate": 0.9411764705882353
+    },
+    "subject": {
+     "kept": 17,
+     "n": 18,
+     "rate": 0.9444444444444444
+    }
+   }
+  },
+  "sonnet-g6-keep": {
+   "label": "Sonnet, grade 6, 'keep everything' prompt",
+   "rewrites": 15,
+   "retention": 0.9775536881419234,
+   "ci": [
+    0.9578991596638655,
+    0.994920634920635
+   ],
+   "lost_per_rewrite": 0.6666666666666666,
+   "any_loss": 0.3333333333333333,
+   "false_loss_band": 0.5646572934831174,
+   "grade_median": 5.5,
+   "grade_mean": 5.706666666666666,
+   "words_median": 437,
+   "not_in_source": 0,
+   "by_type": {
+    "action": {
+     "kept": 76,
+     "n": 78,
+     "rate": 0.9743589743589743
+    },
+    "amount": {
+     "kept": 17,
+     "n": 17,
+     "rate": 1.0
+    },
+    "condition": {
+     "kept": 84,
+     "n": 88,
+     "rate": 0.9545454545454546
+    },
+    "consequence": {
+     "kept": 93,
+     "n": 95,
+     "rate": 0.9789473684210527
+    },
+    "contact": {
+     "kept": 39,
+     "n": 41,
+     "rate": 0.9512195121951219
+    },
+    "deadline": {
+     "kept": 19,
+     "n": 19,
+     "rate": 1.0
+    },
+    "right": {
+     "kept": 34,
+     "n": 34,
+     "rate": 1.0
+    },
+    "subject": {
+     "kept": 18,
+     "n": 18,
+     "rate": 1.0
+    }
+   }
+  },
+  "sonnet-g6-pipeline": {
+   "label": "Rewrite tool (Sonnet, grade 6)",
+   "rewrites": 15,
+   "retention": 0.9720034710540387,
+   "ci": [
+    0.9467421276502803,
+    0.9917216117216118
+   ],
+   "lost_per_rewrite": 0.8,
+   "any_loss": 0.4,
+   "false_loss_band": 0.5646572934831174,
+   "grade_median": 5.7,
+   "grade_mean": 5.833333333333333,
+   "words_median": 393,
+   "not_in_source": 0,
+   "by_type": {
+    "action": {
+     "kept": 77,
+     "n": 78,
+     "rate": 0.9871794871794872
+    },
+    "amount": {
+     "kept": 17,
+     "n": 17,
+     "rate": 1.0
+    },
+    "condition": {
+     "kept": 86,
+     "n": 88,
+     "rate": 0.9772727272727273
+    },
+    "consequence": {
+     "kept": 90,
+     "n": 95,
+     "rate": 0.9473684210526315
+    },
+    "contact": {
+     "kept": 39,
+     "n": 41,
+     "rate": 0.9512195121951219
+    },
+    "deadline": {
+     "kept": 18,
+     "n": 19,
+     "rate": 0.9473684210526315
+    },
+    "right": {
+     "kept": 34,
+     "n": 34,
+     "rate": 1.0
+    },
+    "subject": {
+     "kept": 17,
+     "n": 18,
+     "rate": 0.9444444444444444
+    }
+   }
+  }
+ },
+ "dev_setups": {
+  "original": {
+   "label": "The original letter",
+   "rewrites": 3,
+   "retention": 1.0,
+   "ci": [
+    1.0,
+    1.0
+   ],
+   "lost_per_rewrite": 0.0,
+   "any_loss": 0.0,
+   "false_loss_band": 0.46965996554450506,
+   "grade_median": 10.7,
+   "grade_mean": 9.166666666666666,
+   "words_median": 240,
+   "not_in_source": 0,
+   "by_type": {
+    "action": {
+     "kept": 9,
+     "n": 9,
+     "rate": 1.0
+    },
+    "amount": {
+     "kept": 4,
+     "n": 4,
+     "rate": 1.0
+    },
+    "condition": {
+     "kept": 12,
+     "n": 12,
+     "rate": 1.0
+    },
+    "consequence": {
+     "kept": 9,
+     "n": 9,
+     "rate": 1.0
+    },
+    "contact": {
+     "kept": 6,
+     "n": 6,
+     "rate": 1.0
+    },
+    "deadline": {
+     "kept": 7,
+     "n": 7,
+     "rate": 1.0
+    },
+    "right": {
+     "kept": 7,
+     "n": 7,
+     "rate": 1.0
+    },
+    "subject": {
+     "kept": 4,
+     "n": 4,
+     "rate": 1.0
+    }
+   }
+  },
+  "haiku-g6": {
+   "label": "Haiku, grade 6",
+   "rewrites": 3,
+   "retention": 0.9099453178400547,
+   "ci": [
+    0.8181818181818182,
+    0.9642857142857143
+   ],
+   "lost_per_rewrite": 1.3333333333333333,
+   "any_loss": 1.0,
+   "false_loss_band": 0.46965996554450506,
+   "grade_median": 5.9,
+   "grade_mean": 5.7,
+   "words_median": 254,
+   "not_in_source": 0,
+   "by_type": {
+    "action": {
+     "kept": 7,
+     "n": 9,
+     "rate": 0.7777777777777778
+    },
+    "amount": {
+     "kept": 4,
+     "n": 4,
+     "rate": 1.0
+    },
+    "condition": {
+     "kept": 12,
+     "n": 12,
+     "rate": 1.0
+    },
+    "consequence": {
+     "kept": 8,
+     "n": 9,
+     "rate": 0.8888888888888888
+    },
+    "contact": {
+     "kept": 5,
+     "n": 6,
+     "rate": 0.8333333333333334
+    },
+    "deadline": {
+     "kept": 7,
+     "n": 7,
+     "rate": 1.0
+    },
+    "right": {
+     "kept": 7,
+     "n": 7,
+     "rate": 1.0
+    },
+    "subject": {
+     "kept": 4,
+     "n": 4,
+     "rate": 1.0
+    }
+   }
+  },
+  "sonnet-g6": {
+   "label": "Sonnet, grade 6",
+   "rewrites": 3,
+   "retention": 0.928343586238323,
+   "ci": [
+    0.9090909090909091,
+    0.9473684210526315
+   ],
+   "lost_per_rewrite": 1.3333333333333333,
+   "any_loss": 1.0,
+   "false_loss_band": 0.46965996554450506,
+   "grade_median": 4.1,
+   "grade_mean": 4.233333333333333,
+   "words_median": 258,
+   "not_in_source": 1,
+   "by_type": {
+    "action": {
+     "kept": 9,
+     "n": 9,
+     "rate": 1.0
+    },
+    "amount": {
+     "kept": 4,
+     "n": 4,
+     "rate": 1.0
+    },
+    "condition": {
+     "kept": 10,
+     "n": 12,
+     "rate": 0.8333333333333334
+    },
+    "consequence": {
+     "kept": 9,
+     "n": 9,
+     "rate": 1.0
+    },
+    "contact": {
+     "kept": 6,
+     "n": 6,
+     "rate": 1.0
+    },
+    "deadline": {
+     "kept": 6,
+     "n": 7,
+     "rate": 0.8571428571428571
+    },
+    "right": {
+     "kept": 6,
+     "n": 7,
+     "rate": 0.8571428571428571
+    },
+    "subject": {
+     "kept": 4,
+     "n": 4,
+     "rate": 1.0
+    }
+   }
+  },
+  "opus-g6": {
+   "label": "Opus, grade 6",
+   "rewrites": 3,
+   "retention": 0.8869902027796764,
+   "ci": [
+    0.8571428571428571,
+    0.9090909090909091
+   ],
+   "lost_per_rewrite": 2.3333333333333335,
+   "any_loss": 1.0,
+   "false_loss_band": 0.46965996554450506,
+   "grade_median": 5.6,
+   "grade_mean": 4.733333333333333,
+   "words_median": 278,
+   "not_in_source": 1,
+   "by_type": {
+    "action": {
+     "kept": 8,
+     "n": 9,
+     "rate": 0.8888888888888888
+    },
+    "amount": {
+     "kept": 4,
+     "n": 4,
+     "rate": 1.0
+    },
+    "condition": {
+     "kept": 10,
+     "n": 12,
+     "rate": 0.8333333333333334
+    },
+    "consequence": {
+     "kept": 9,
+     "n": 9,
+     "rate": 1.0
+    },
+    "contact": {
+     "kept": 6,
+     "n": 6,
+     "rate": 1.0
+    },
+    "deadline": {
+     "kept": 5,
+     "n": 7,
+     "rate": 0.7142857142857143
+    },
+    "right": {
+     "kept": 5,
+     "n": 7,
+     "rate": 0.7142857142857143
+    },
+    "subject": {
+     "kept": 4,
+     "n": 4,
+     "rate": 1.0
+    }
+   }
+  },
+  "sonnet-g4": {
+   "label": "Sonnet, grade 4",
+   "rewrites": 3,
+   "retention": 0.8549783549783551,
+   "ci": [
+    0.6363636363636364,
+    1.0
+   ],
+   "lost_per_rewrite": 2.0,
+   "any_loss": 0.6666666666666666,
+   "false_loss_band": 0.46965996554450506,
+   "grade_median": 3.0,
+   "grade_mean": 3.4,
+   "words_median": 291,
+   "not_in_source": 1,
+   "by_type": {
+    "action": {
+     "kept": 8,
+     "n": 9,
+     "rate": 0.8888888888888888
+    },
+    "amount": {
+     "kept": 4,
+     "n": 4,
+     "rate": 1.0
+    },
+    "condition": {
+     "kept": 10,
+     "n": 12,
+     "rate": 0.8333333333333334
+    },
+    "consequence": {
+     "kept": 7,
+     "n": 9,
+     "rate": 0.7777777777777778
+    },
+    "contact": {
+     "kept": 6,
+     "n": 6,
+     "rate": 1.0
+    },
+    "deadline": {
+     "kept": 7,
+     "n": 7,
+     "rate": 1.0
+    },
+    "right": {
+     "kept": 7,
+     "n": 7,
+     "rate": 1.0
+    },
+    "subject": {
+     "kept": 3,
+     "n": 4,
+     "rate": 0.75
+    }
+   }
+  },
+  "sonnet-g8": {
+   "label": "Sonnet, grade 8",
+   "rewrites": 3,
+   "retention": 0.9458874458874459,
+   "ci": [
+    0.9090909090909091,
+    1.0
+   ],
+   "lost_per_rewrite": 1.0,
+   "any_loss": 0.6666666666666666,
+   "false_loss_band": 0.46965996554450506,
+   "grade_median": 5.2,
+   "grade_mean": 5.566666666666666,
+   "words_median": 258,
+   "not_in_source": 1,
+   "by_type": {
+    "action": {
+     "kept": 9,
+     "n": 9,
+     "rate": 1.0
+    },
+    "amount": {
+     "kept": 4,
+     "n": 4,
+     "rate": 1.0
+    },
+    "condition": {
+     "kept": 11,
+     "n": 12,
+     "rate": 0.9166666666666666
+    },
+    "consequence": {
+     "kept": 8,
+     "n": 9,
+     "rate": 0.8888888888888888
+    },
+    "contact": {
+     "kept": 6,
+     "n": 6,
+     "rate": 1.0
+    },
+    "deadline": {
+     "kept": 6,
+     "n": 7,
+     "rate": 0.8571428571428571
+    },
+    "right": {
+     "kept": 7,
+     "n": 7,
+     "rate": 1.0
+    },
+    "subject": {
+     "kept": 4,
+     "n": 4,
+     "rate": 1.0
+    }
+   }
+  },
+  "sonnet-g6-keep": {
+   "label": "Sonnet, grade 6, 'keep everything' prompt",
+   "rewrites": 3,
+   "retention": 1.0,
+   "ci": [
+    1.0,
+    1.0
+   ],
+   "lost_per_rewrite": 0.0,
+   "any_loss": 0.0,
+   "false_loss_band": 0.46965996554450506,
+   "grade_median": 4.8,
+   "grade_mean": 5.033333333333333,
+   "words_median": 284,
+   "not_in_source": 1,
+   "by_type": {
+    "action": {
+     "kept": 9,
+     "n": 9,
+     "rate": 1.0
+    },
+    "amount": {
+     "kept": 4,
+     "n": 4,
+     "rate": 1.0
+    },
+    "condition": {
+     "kept": 12,
+     "n": 12,
+     "rate": 1.0
+    },
+    "consequence": {
+     "kept": 9,
+     "n": 9,
+     "rate": 1.0
+    },
+    "contact": {
+     "kept": 6,
+     "n": 6,
+     "rate": 1.0
+    },
+    "deadline": {
+     "kept": 7,
+     "n": 7,
+     "rate": 1.0
+    },
+    "right": {
+     "kept": 7,
+     "n": 7,
+     "rate": 1.0
+    },
+    "subject": {
+     "kept": 4,
+     "n": 4,
+     "rate": 1.0
+    }
+   }
+  },
+  "sonnet-g6-pipeline": {
+   "label": "Rewrite tool (Sonnet, grade 6)",
+   "rewrites": 3,
+   "retention": 0.9649122807017544,
+   "ci": [
+    0.8947368421052632,
+    1.0
+   ],
+   "lost_per_rewrite": 0.6666666666666666,
+   "any_loss": 0.3333333333333333,
+   "false_loss_band": 0.46965996554450506,
+   "grade_median": 6.4,
+   "grade_mean": 6.166666666666667,
+   "words_median": 272,
+   "not_in_source": 1,
+   "by_type": {
+    "action": {
+     "kept": 7,
+     "n": 9,
+     "rate": 0.7777777777777778
+    },
+    "amount": {
+     "kept": 4,
+     "n": 4,
+     "rate": 1.0
+    },
+    "condition": {
+     "kept": 12,
+     "n": 12,
+     "rate": 1.0
+    },
+    "consequence": {
+     "kept": 9,
+     "n": 9,
+     "rate": 1.0
+    },
+    "contact": {
+     "kept": 6,
+     "n": 6,
+     "rate": 1.0
+    },
+    "deadline": {
+     "kept": 7,
+     "n": 7,
+     "rate": 1.0
+    },
+    "right": {
+     "kept": 7,
+     "n": 7,
+     "rate": 1.0
+    },
+    "subject": {
+     "kept": 4,
+     "n": 4,
+     "rate": 1.0
+    }
+   }
+  }
+ },
+ "noise": {
+  "n": 15,
+  "diff": -0.030297988704006285,
+  "ci": [
+   -0.05540650344571914,
+   -0.0055380694106184295
+  ],
+  "mean_abs_diff": 0.04625036965638724
+ },
+ "preregistered": [
+  {
+   "question": "Critical facts kept vs the reading grade each rewrite reached",
+   "spearman_grade_vs_retention": 0.14624511218533298,
+   "n": 105,
+   "grade_sweep": {
+    "sonnet-g4": 0.9015971360528938,
+    "sonnet-g6": 0.9618842323254088,
+    "sonnet-g8": 0.9599752732680387
+   },
+   "pairs": {
+    "sonnet-g8 - sonnet-g6": {
+     "n": 15,
+     "diff": -0.001908959057370141,
+     "ci": [
+      -0.034583834828932875,
+      0.03533940985766544
+     ]
+    },
+    "sonnet-g6 - sonnet-g4": {
+     "n": 15,
+     "diff": 0.060287096272514946,
+     "ci": [
+      0.021092398886516536,
+      0.10114529680950805
+     ]
+    },
+    "sonnet-g8 - sonnet-g4": {
+     "n": 15,
+     "diff": 0.05837813721514481,
+     "ci": [
+      0.014256060219549067,
+      0.1032964425939765
+     ]
+    }
+   }
+  },
+  {
+   "question": "Plain prompt vs 'keep everything' prompt vs the rewrite tool",
+   "pairs": {
+    "sonnet-g6-keep - sonnet-g6": {
+     "n": 15,
+     "diff": 0.015669455816514636,
+     "ci": [
+      -0.010007182360123545,
+      0.0407449304508128
+     ]
+    },
+    "sonnet-g6-pipeline - sonnet-g6": {
+     "n": 15,
+     "diff": 0.010119238728629854,
+     "ci": [
+      -0.024961750782184225,
+      0.04643220251063388
+     ]
+    },
+    "sonnet-g6-pipeline - sonnet-g6-keep": {
+     "n": 15,
+     "diff": -0.0055502170878847824,
+     "ci": [
+      -0.03880870266835179,
+      0.025365374219863394
+     ]
+    }
+   }
+  },
+  {
+   "question": "Model size at the same prompt",
+   "pairs": {
+    "opus-g6 - sonnet-g6": {
+     "n": 15,
+     "diff": -0.013240201538705153,
+     "ci": [
+      -0.034931118646288915,
+      0.01048021060275961
+     ]
+    },
+    "sonnet-g6 - haiku-g6": {
+     "n": 15,
+     "diff": 0.0171661894937757,
+     "ci": [
+      -0.013749610955493303,
+      0.04961722973893359
+     ]
+    },
+    "opus-g6 - haiku-g6": {
+     "n": 15,
+     "diff": 0.003925987955070546,
+     "ci": [
+      -0.02908328146073243,
+      0.038491424553130524
+     ]
+    }
+   }
+  }
+ ],
+ "judge_agreement": {
+  "sonnet-g6": {
+   "kappa": 0.49880668257756505,
+   "facts": 448,
+   "agree": 0.9665178571428571,
+   "lost_sonnet_judge": 16,
+   "lost_opus_judge": 15
+  },
+  "sonnet-g6-pipeline": {
+   "kappa": 0.3043478260869569,
+   "facts": 448,
+   "agree": 0.9709821428571429,
+   "lost_sonnet_judge": 14,
+   "lost_opus_judge": 5
+  }
+ },
+ "sentence_level_retention": {
+  "original": 0.9929078014184397,
+  "haiku-g6": 0.9184397163120568,
+  "sonnet-g6": 0.950354609929078,
+  "opus-g6": 0.9290780141843972,
+  "sonnet-g4": 0.8687943262411347,
+  "sonnet-g8": 0.9468085106382979,
+  "sonnet-g6-keep": 0.9645390070921985,
+  "sonnet-g6-pipeline": 0.950354609929078
+ },
+ "already_plain_vs_dense": {
+  "haiku-g6": {
+   "already_plain": 0.9675925925925926,
+   "dense": 0.9294683429909933
+  },
+  "sonnet-g6": {
+   "already_plain": 0.9391378773731714,
+   "dense": 0.9770484689602337
+  },
+  "opus-g6": {
+   "already_plain": 0.9333774250440917,
+   "dense": 0.958821767948445
+  },
+  "sonnet-g4": {
+   "already_plain": 0.9120530703864037,
+   "dense": 0.8946265131638873
+  },
+  "sonnet-g8": {
+   "already_plain": 0.957936979505607,
+   "dense": 0.9613341357763265
+  },
+  "sonnet-g6-keep": {
+   "already_plain": 0.9813492063492063,
+   "dense": 0.9750233426704015
+  },
+  "sonnet-g6-pipeline": {
+   "already_plain": 0.9938271604938271,
+   "dense": 0.9574543447608463
+  }
+ },
+ "gate": {
+  "caught": {
+   "DELETE": {
+    "k": 9,
+    "n": 9,
+    "rate": 1.0,
+    "ci": [
+     0.7008472464490407,
+     1.0
+    ]
+   },
+   "VALUE": {
+    "k": 5,
+    "n": 5,
+    "rate": 1.0,
+    "ci": [
+     0.5655085052479191,
+     1.0
+    ]
+   },
+   "CONDITION": {
+    "k": 5,
+    "n": 6,
+    "rate": 0.8333333333333334,
+    "ci": [
+     0.43649056343635395,
+     0.9699474141282697
+    ]
+   },
+   "ALTERNATIVE": {
+    "k": 3,
+    "n": 4,
+    "rate": 0.75,
+    "ci": [
+     0.3006360524426366,
+     0.9544139373553637
+    ]
+   },
+   "MODAL": {
+    "k": 6,
+    "n": 9,
+    "rate": 0.6666666666666666,
+    "ci": [
+     0.35419734749908977,
+     0.879418401317257
+    ]
+   },
+   "VAGUE": {
+    "k": 2,
+    "n": 2,
+    "rate": 1.0,
+    "ci": [
+     0.34237195288961925,
+     1.0
+    ]
+   }
+  },
+  "false_alarm": {
+   "k": 30,
+   "n": 891,
+   "rate": 0.03367003367003367,
+   "ci": [
+    0.023685012183259704,
+    0.04765901116120706
+   ]
+  },
+  "false_alarm_null": {
+   "k": 0,
+   "n": 152,
+   "rate": 0.0,
+   "ci": [
+    0.0,
+    0.024650670937670042
+   ]
+  },
+  "agreement_on_unedited_rewrites": {
+   "kept": {
+    "k": 90,
+    "n": 92,
+    "rate": 0.9782608695652174,
+    "ci": [
+     0.9241635822539244,
+     0.9940180841623291
+    ]
+   },
+   "changed": {
+    "k": 1,
+    "n": 5,
+    "rate": 0.2,
+    "ci": [
+     0.03622316096978745,
+     0.6244717358814613
+    ]
+   }
+  },
+  "passed": {
+   "DELETE": true,
+   "VALUE": true,
+   "CONDITION": true,
+   "ALTERNATIVE": true,
+   "MODAL": false,
+   "VAGUE": true,
+   "false_alarm": true,
+   "false_alarm_null": true
+  }
+ },
+ "tool_checker": {
+  "DELETE": {
+   "k": 9,
+   "n": 9,
+   "rate": 1.0,
+   "ci": [
+    0.7008472464490407,
+    1.0
+   ],
+   "not_listed": 0
+  },
+  "VALUE": {
+   "k": 5,
+   "n": 5,
+   "rate": 1.0,
+   "ci": [
+    0.5655085052479191,
+    1.0
+   ],
+   "not_listed": 0
+  },
+  "CONDITION": {
+   "k": 6,
+   "n": 6,
+   "rate": 1.0,
+   "ci": [
+    0.6096569663469354,
+    0.9999999999999999
+   ],
+   "not_listed": 0
+  },
+  "ALTERNATIVE": {
+   "k": 4,
+   "n": 4,
+   "rate": 1.0,
+   "ci": [
+    0.5100999795960008,
+    1.0
+   ],
+   "not_listed": 0
+  },
+  "MODAL": {
+   "k": 5,
+   "n": 9,
+   "rate": 0.5555555555555556,
+   "ci": [
+    0.2666473457440297,
+    0.811224570528086
+   ],
+   "not_listed": 0
+  },
+  "VAGUE": {
+   "k": 2,
+   "n": 2,
+   "rate": 1.0,
+   "ci": [
+    0.34237195288961925,
+    1.0
+   ],
+   "not_listed": 0
+  },
+  "ALL": {
+   "k": 31,
+   "n": 35,
+   "rate": 0.8857142857142857,
+   "ci": [
+    0.7404820521187976,
+    0.9546489414551025
+   ],
+   "not_listed": 0
+  }
+ },
+ "rows": [
+  {
+   "notice": "cms-abn",
+   "setup": "original",
+   "sample": 0,
+   "critical": 35,
+   "kept": 35,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 8.4,
+   "words": 376,
+   "not_in_source": [],
+   "by_type": {
+    "right": [
+     4,
+     4
+    ],
+    "action": [
+     5,
+     5
+    ],
+    "condition": [
+     8,
+     8
+    ],
+    "subject": [
+     2,
+     2
+    ],
+    "amount": [
+     1,
+     1
+    ],
+    "consequence": [
+     11,
+     11
+    ],
+    "contact": [
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "notice": "cms-abn",
+   "setup": "haiku-g6",
+   "sample": 0,
+   "critical": 35,
+   "kept": 35,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 7.0,
+   "words": 390,
+   "not_in_source": [],
+   "by_type": {
+    "right": [
+     4,
+     4
+    ],
+    "action": [
+     5,
+     5
+    ],
+    "condition": [
+     8,
+     8
+    ],
+    "subject": [
+     2,
+     2
+    ],
+    "amount": [
+     1,
+     1
+    ],
+    "consequence": [
+     11,
+     11
+    ],
+    "contact": [
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "notice": "cms-abn",
+   "setup": "sonnet-g6",
+   "sample": 0,
+   "critical": 35,
+   "kept": 34,
+   "lost": [
+    "F26"
+   ],
+   "retention": 0.9714285714285714,
+   "grade": 5.6,
+   "words": 389,
+   "not_in_source": [],
+   "by_type": {
+    "right": [
+     4,
+     4
+    ],
+    "action": [
+     5,
+     5
+    ],
+    "condition": [
+     7,
+     8
+    ],
+    "subject": [
+     2,
+     2
+    ],
+    "amount": [
+     1,
+     1
+    ],
+    "consequence": [
+     11,
+     11
+    ],
+    "contact": [
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "notice": "cms-abn",
+   "setup": "sonnet-g6",
+   "sample": 1,
+   "critical": 35,
+   "kept": 35,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 4.9,
+   "words": 390,
+   "not_in_source": [],
+   "by_type": {
+    "right": [
+     4,
+     4
+    ],
+    "action": [
+     5,
+     5
+    ],
+    "condition": [
+     8,
+     8
+    ],
+    "subject": [
+     2,
+     2
+    ],
+    "amount": [
+     1,
+     1
+    ],
+    "consequence": [
+     11,
+     11
+    ],
+    "contact": [
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "notice": "cms-abn",
+   "setup": "opus-g6",
+   "sample": 0,
+   "critical": 35,
+   "kept": 33,
+   "lost": [
+    "F19",
+    "F41"
+   ],
+   "retention": 0.9428571428571428,
+   "grade": 4.4,
+   "words": 436,
+   "not_in_source": [],
+   "by_type": {
+    "right": [
+     4,
+     4
+    ],
+    "action": [
+     5,
+     5
+    ],
+    "condition": [
+     7,
+     8
+    ],
+    "subject": [
+     2,
+     2
+    ],
+    "amount": [
+     1,
+     1
+    ],
+    "consequence": [
+     10,
+     11
+    ],
+    "contact": [
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "notice": "cms-abn",
+   "setup": "sonnet-g4",
+   "sample": 0,
+   "critical": 35,
+   "kept": 33,
+   "lost": [
+    "F26",
+    "F39"
+   ],
+   "retention": 0.9428571428571428,
+   "grade": 4.7,
+   "words": 354,
+   "not_in_source": [],
+   "by_type": {
+    "right": [
+     3,
+     4
+    ],
+    "action": [
+     5,
+     5
+    ],
+    "condition": [
+     7,
+     8
+    ],
+    "subject": [
+     2,
+     2
+    ],
+    "amount": [
+     1,
+     1
+    ],
+    "consequence": [
+     11,
+     11
+    ],
+    "contact": [
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "notice": "cms-abn",
+   "setup": "sonnet-g8",
+   "sample": 0,
+   "critical": 35,
+   "kept": 34,
+   "lost": [
+    "F41"
+   ],
+   "retention": 0.9714285714285714,
+   "grade": 6.0,
+   "words": 382,
+   "not_in_source": [],
+   "by_type": {
+    "right": [
+     4,
+     4
+    ],
+    "action": [
+     5,
+     5
+    ],
+    "condition": [
+     7,
+     8
+    ],
+    "subject": [
+     2,
+     2
+    ],
+    "amount": [
+     1,
+     1
+    ],
+    "consequence": [
+     11,
+     11
+    ],
+    "contact": [
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "notice": "cms-abn",
+   "setup": "sonnet-g6-keep",
+   "sample": 0,
+   "critical": 35,
+   "kept": 34,
+   "lost": [
+    "F41"
+   ],
+   "retention": 0.9714285714285714,
+   "grade": 5.6,
+   "words": 466,
+   "not_in_source": [],
+   "by_type": {
+    "right": [
+     4,
+     4
+    ],
+    "action": [
+     5,
+     5
+    ],
+    "condition": [
+     7,
+     8
+    ],
+    "subject": [
+     2,
+     2
+    ],
+    "amount": [
+     1,
+     1
+    ],
+    "consequence": [
+     11,
+     11
+    ],
+    "contact": [
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "notice": "cms-abn",
+   "setup": "sonnet-g6-pipeline",
+   "sample": 0,
+   "critical": 35,
+   "kept": 35,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 5.7,
+   "words": 393,
+   "not_in_source": [],
+   "by_type": {
+    "right": [
+     4,
+     4
+    ],
+    "action": [
+     5,
+     5
+    ],
+    "condition": [
+     8,
+     8
+    ],
+    "subject": [
+     2,
+     2
+    ],
+    "amount": [
+     1,
+     1
+    ],
+    "consequence": [
+     11,
+     11
+    ],
+    "contact": [
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "notice": "cms-denc",
+   "setup": "original",
+   "sample": 0,
+   "critical": 11,
+   "kept": 11,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 11.8,
+   "words": 251,
+   "not_in_source": [],
+   "by_type": {
+    "right": [
+     4,
+     4
+    ],
+    "condition": [
+     1,
+     1
+    ],
+    "subject": [
+     3,
+     3
+    ],
+    "consequence": [
+     1,
+     1
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "cms-denc",
+   "setup": "haiku-g6",
+   "sample": 0,
+   "critical": 11,
+   "kept": 11,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 9.4,
+   "words": 262,
+   "not_in_source": [],
+   "by_type": {
+    "right": [
+     4,
+     4
+    ],
+    "condition": [
+     1,
+     1
+    ],
+    "subject": [
+     3,
+     3
+    ],
+    "consequence": [
+     1,
+     1
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "cms-denc",
+   "setup": "sonnet-g6",
+   "sample": 0,
+   "critical": 11,
+   "kept": 11,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 6.0,
+   "words": 240,
+   "not_in_source": [],
+   "by_type": {
+    "right": [
+     4,
+     4
+    ],
+    "condition": [
+     1,
+     1
+    ],
+    "subject": [
+     3,
+     3
+    ],
+    "consequence": [
+     1,
+     1
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "cms-denc",
+   "setup": "sonnet-g6",
+   "sample": 1,
+   "critical": 11,
+   "kept": 10,
+   "lost": [
+    "F4"
+   ],
+   "retention": 0.9090909090909091,
+   "grade": 5.5,
+   "words": 265,
+   "not_in_source": [],
+   "by_type": {
+    "right": [
+     4,
+     4
+    ],
+    "condition": [
+     1,
+     1
+    ],
+    "subject": [
+     3,
+     3
+    ],
+    "consequence": [
+     0,
+     1
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "cms-denc",
+   "setup": "opus-g6",
+   "sample": 0,
+   "critical": 11,
+   "kept": 11,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 5.0,
+   "words": 303,
+   "not_in_source": [],
+   "by_type": {
+    "right": [
+     4,
+     4
+    ],
+    "condition": [
+     1,
+     1
+    ],
+    "subject": [
+     3,
+     3
+    ],
+    "consequence": [
+     1,
+     1
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "cms-denc",
+   "setup": "sonnet-g4",
+   "sample": 0,
+   "critical": 11,
+   "kept": 10,
+   "lost": [
+    "F16"
+   ],
+   "retention": 0.9090909090909091,
+   "grade": 4.9,
+   "words": 254,
+   "not_in_source": [],
+   "by_type": {
+    "right": [
+     4,
+     4
+    ],
+    "condition": [
+     0,
+     1
+    ],
+    "subject": [
+     3,
+     3
+    ],
+    "consequence": [
+     1,
+     1
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "cms-denc",
+   "setup": "sonnet-g8",
+   "sample": 0,
+   "critical": 11,
+   "kept": 10,
+   "lost": [
+    "F16"
+   ],
+   "retention": 0.9090909090909091,
+   "grade": 5.9,
+   "words": 253,
+   "not_in_source": [],
+   "by_type": {
+    "right": [
+     4,
+     4
+    ],
+    "condition": [
+     0,
+     1
+    ],
+    "subject": [
+     3,
+     3
+    ],
+    "consequence": [
+     1,
+     1
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "cms-denc",
+   "setup": "sonnet-g6-keep",
+   "sample": 0,
+   "critical": 11,
+   "kept": 11,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 5.9,
+   "words": 300,
+   "not_in_source": [],
+   "by_type": {
+    "right": [
+     4,
+     4
+    ],
+    "condition": [
+     1,
+     1
+    ],
+    "subject": [
+     3,
+     3
+    ],
+    "consequence": [
+     1,
+     1
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "cms-denc",
+   "setup": "sonnet-g6-pipeline",
+   "sample": 0,
+   "critical": 11,
+   "kept": 11,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 7.5,
+   "words": 249,
+   "not_in_source": [],
+   "by_type": {
+    "right": [
+     4,
+     4
+    ],
+    "condition": [
+     1,
+     1
+    ],
+    "subject": [
+     3,
+     3
+    ],
+    "consequence": [
+     1,
+     1
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "cms-hhccn",
+   "setup": "original",
+   "sample": 0,
+   "critical": 17,
+   "kept": 17,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 9.2,
+   "words": 277,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     3,
+     3
+    ],
+    "action": [
+     4,
+     4
+    ],
+    "condition": [
+     4,
+     4
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "consequence": [
+     1,
+     1
+    ],
+    "contact": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "notice": "cms-hhccn",
+   "setup": "haiku-g6",
+   "sample": 0,
+   "critical": 17,
+   "kept": 17,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 6.4,
+   "words": 289,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     3,
+     3
+    ],
+    "action": [
+     4,
+     4
+    ],
+    "condition": [
+     4,
+     4
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "consequence": [
+     1,
+     1
+    ],
+    "contact": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "notice": "cms-hhccn",
+   "setup": "sonnet-g6",
+   "sample": 0,
+   "critical": 17,
+   "kept": 16,
+   "lost": [
+    "F13"
+   ],
+   "retention": 0.9411764705882353,
+   "grade": 5.5,
+   "words": 296,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     2,
+     3
+    ],
+    "action": [
+     4,
+     4
+    ],
+    "condition": [
+     4,
+     4
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "consequence": [
+     1,
+     1
+    ],
+    "contact": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "notice": "cms-hhccn",
+   "setup": "sonnet-g6",
+   "sample": 1,
+   "critical": 17,
+   "kept": 15,
+   "lost": [
+    "F13",
+    "F19"
+   ],
+   "retention": 0.8823529411764706,
+   "grade": 6.0,
+   "words": 331,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     1,
+     3
+    ],
+    "action": [
+     4,
+     4
+    ],
+    "condition": [
+     4,
+     4
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "consequence": [
+     1,
+     1
+    ],
+    "contact": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "notice": "cms-hhccn",
+   "setup": "opus-g6",
+   "sample": 0,
+   "critical": 17,
+   "kept": 17,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 5.1,
+   "words": 309,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     3,
+     3
+    ],
+    "action": [
+     4,
+     4
+    ],
+    "condition": [
+     4,
+     4
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "consequence": [
+     1,
+     1
+    ],
+    "contact": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "notice": "cms-hhccn",
+   "setup": "sonnet-g4",
+   "sample": 0,
+   "critical": 17,
+   "kept": 17,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 4.8,
+   "words": 324,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     3,
+     3
+    ],
+    "action": [
+     4,
+     4
+    ],
+    "condition": [
+     4,
+     4
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "consequence": [
+     1,
+     1
+    ],
+    "contact": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "notice": "cms-hhccn",
+   "setup": "sonnet-g8",
+   "sample": 0,
+   "critical": 17,
+   "kept": 16,
+   "lost": [
+    "F13"
+   ],
+   "retention": 0.9411764705882353,
+   "grade": 5.6,
+   "words": 322,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     2,
+     3
+    ],
+    "action": [
+     4,
+     4
+    ],
+    "condition": [
+     4,
+     4
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "consequence": [
+     1,
+     1
+    ],
+    "contact": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "notice": "cms-hhccn",
+   "setup": "sonnet-g6-keep",
+   "sample": 0,
+   "critical": 17,
+   "kept": 17,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 7.8,
+   "words": 330,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     3,
+     3
+    ],
+    "action": [
+     4,
+     4
+    ],
+    "condition": [
+     4,
+     4
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "consequence": [
+     1,
+     1
+    ],
+    "contact": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "notice": "cms-hhccn",
+   "setup": "sonnet-g6-pipeline",
+   "sample": 0,
+   "critical": 17,
+   "kept": 17,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 6.6,
+   "words": 307,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     3,
+     3
+    ],
+    "action": [
+     4,
+     4
+    ],
+    "condition": [
+     4,
+     4
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "consequence": [
+     1,
+     1
+    ],
+    "contact": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "notice": "cms-im",
+   "setup": "original",
+   "sample": 0,
+   "critical": 27,
+   "kept": 27,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 12.8,
+   "words": 361,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     9,
+     9
+    ],
+    "action": [
+     2,
+     2
+    ],
+    "condition": [
+     8,
+     8
+    ],
+    "contact": [
+     2,
+     2
+    ],
+    "consequence": [
+     5,
+     5
+    ]
+   }
+  },
+  {
+   "notice": "cms-im",
+   "setup": "haiku-g6",
+   "sample": 0,
+   "critical": 27,
+   "kept": 27,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 8.9,
+   "words": 416,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     9,
+     9
+    ],
+    "action": [
+     2,
+     2
+    ],
+    "condition": [
+     8,
+     8
+    ],
+    "contact": [
+     2,
+     2
+    ],
+    "consequence": [
+     5,
+     5
+    ]
+   }
+  },
+  {
+   "notice": "cms-im",
+   "setup": "sonnet-g6",
+   "sample": 0,
+   "critical": 27,
+   "kept": 27,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 8.2,
+   "words": 387,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     9,
+     9
+    ],
+    "action": [
+     2,
+     2
+    ],
+    "condition": [
+     8,
+     8
+    ],
+    "contact": [
+     2,
+     2
+    ],
+    "consequence": [
+     5,
+     5
+    ]
+   }
+  },
+  {
+   "notice": "cms-im",
+   "setup": "sonnet-g6",
+   "sample": 1,
+   "critical": 27,
+   "kept": 25,
+   "lost": [
+    "F16",
+    "F34"
+   ],
+   "retention": 0.9259259259259259,
+   "grade": 7.4,
+   "words": 374,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     9,
+     9
+    ],
+    "action": [
+     2,
+     2
+    ],
+    "condition": [
+     7,
+     8
+    ],
+    "contact": [
+     2,
+     2
+    ],
+    "consequence": [
+     4,
+     5
+    ]
+   }
+  },
+  {
+   "notice": "cms-im",
+   "setup": "opus-g6",
+   "sample": 0,
+   "critical": 27,
+   "kept": 26,
+   "lost": [
+    "F34"
+   ],
+   "retention": 0.9629629629629629,
+   "grade": 8.7,
+   "words": 432,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     9,
+     9
+    ],
+    "action": [
+     2,
+     2
+    ],
+    "condition": [
+     7,
+     8
+    ],
+    "contact": [
+     2,
+     2
+    ],
+    "consequence": [
+     5,
+     5
+    ]
+   }
+  },
+  {
+   "notice": "cms-im",
+   "setup": "sonnet-g4",
+   "sample": 0,
+   "critical": 27,
+   "kept": 25,
+   "lost": [
+    "F5",
+    "F34"
+   ],
+   "retention": 0.9259259259259259,
+   "grade": 6.8,
+   "words": 365,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     8,
+     9
+    ],
+    "action": [
+     2,
+     2
+    ],
+    "condition": [
+     7,
+     8
+    ],
+    "contact": [
+     2,
+     2
+    ],
+    "consequence": [
+     5,
+     5
+    ]
+   }
+  },
+  {
+   "notice": "cms-im",
+   "setup": "sonnet-g8",
+   "sample": 0,
+   "critical": 27,
+   "kept": 25,
+   "lost": [
+    "F14",
+    "F24"
+   ],
+   "retention": 0.9259259259259259,
+   "grade": 8.9,
+   "words": 371,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     9,
+     9
+    ],
+    "action": [
+     1,
+     2
+    ],
+    "condition": [
+     8,
+     8
+    ],
+    "contact": [
+     2,
+     2
+    ],
+    "consequence": [
+     4,
+     5
+    ]
+   }
+  },
+  {
+   "notice": "cms-im",
+   "setup": "sonnet-g6-keep",
+   "sample": 0,
+   "critical": 27,
+   "kept": 27,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 9.2,
+   "words": 406,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     9,
+     9
+    ],
+    "action": [
+     2,
+     2
+    ],
+    "condition": [
+     8,
+     8
+    ],
+    "contact": [
+     2,
+     2
+    ],
+    "consequence": [
+     5,
+     5
+    ]
+   }
+  },
+  {
+   "notice": "cms-im",
+   "setup": "sonnet-g6-pipeline",
+   "sample": 0,
+   "critical": 27,
+   "kept": 26,
+   "lost": [
+    "F34"
+   ],
+   "retention": 0.9629629629629629,
+   "grade": 8.2,
+   "words": 409,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     9,
+     9
+    ],
+    "action": [
+     2,
+     2
+    ],
+    "condition": [
+     7,
+     8
+    ],
+    "contact": [
+     2,
+     2
+    ],
+    "consequence": [
+     5,
+     5
+    ]
+   }
+  },
+  {
+   "notice": "cms-moon",
+   "setup": "original",
+   "sample": 0,
+   "critical": 9,
+   "kept": 9,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 10.9,
+   "words": 230,
+   "not_in_source": [],
+   "by_type": {
+    "subject": [
+     1,
+     1
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "consequence": [
+     4,
+     4
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "cms-moon",
+   "setup": "haiku-g6",
+   "sample": 0,
+   "critical": 9,
+   "kept": 8,
+   "lost": [
+    "F4"
+   ],
+   "retention": 0.8888888888888888,
+   "grade": 6.6,
+   "words": 257,
+   "not_in_source": [],
+   "by_type": {
+    "subject": [
+     1,
+     1
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "consequence": [
+     3,
+     4
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "cms-moon",
+   "setup": "sonnet-g6",
+   "sample": 0,
+   "critical": 9,
+   "kept": 8,
+   "lost": [
+    "F3"
+   ],
+   "retention": 0.8888888888888888,
+   "grade": 7.2,
+   "words": 273,
+   "not_in_source": [],
+   "by_type": {
+    "subject": [
+     1,
+     1
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "consequence": [
+     3,
+     4
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "cms-moon",
+   "setup": "sonnet-g6",
+   "sample": 1,
+   "critical": 9,
+   "kept": 8,
+   "lost": [
+    "F3"
+   ],
+   "retention": 0.8888888888888888,
+   "grade": 7.4,
+   "words": 283,
+   "not_in_source": [],
+   "by_type": {
+    "subject": [
+     1,
+     1
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "consequence": [
+     3,
+     4
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "cms-moon",
+   "setup": "opus-g6",
+   "sample": 0,
+   "critical": 9,
+   "kept": 7,
+   "lost": [
+    "F3",
+    "F6"
+   ],
+   "retention": 0.7777777777777778,
+   "grade": 6.6,
+   "words": 284,
+   "not_in_source": [],
+   "by_type": {
+    "subject": [
+     1,
+     1
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "consequence": [
+     2,
+     4
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "cms-moon",
+   "setup": "sonnet-g4",
+   "sample": 0,
+   "critical": 9,
+   "kept": 7,
+   "lost": [
+    "F2",
+    "F9"
+   ],
+   "retention": 0.7777777777777778,
+   "grade": 5.9,
+   "words": 268,
+   "not_in_source": [],
+   "by_type": {
+    "subject": [
+     1,
+     1
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "consequence": [
+     3,
+     4
+    ],
+    "contact": [
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "cms-moon",
+   "setup": "sonnet-g8",
+   "sample": 0,
+   "critical": 9,
+   "kept": 9,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 7.0,
+   "words": 241,
+   "not_in_source": [],
+   "by_type": {
+    "subject": [
+     1,
+     1
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "consequence": [
+     4,
+     4
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "cms-moon",
+   "setup": "sonnet-g6-keep",
+   "sample": 0,
+   "critical": 9,
+   "kept": 9,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 8.2,
+   "words": 252,
+   "not_in_source": [],
+   "by_type": {
+    "subject": [
+     1,
+     1
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "consequence": [
+     4,
+     4
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "cms-moon",
+   "setup": "sonnet-g6-pipeline",
+   "sample": 0,
+   "critical": 9,
+   "kept": 9,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 7.8,
+   "words": 237,
+   "not_in_source": [],
+   "by_type": {
+    "subject": [
+     1,
+     1
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "consequence": [
+     4,
+     4
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "cms-nomnc",
+   "setup": "original",
+   "sample": 0,
+   "critical": 28,
+   "kept": 28,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 10.7,
+   "words": 396,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     4,
+     4
+    ],
+    "right": [
+     6,
+     6
+    ],
+    "action": [
+     2,
+     2
+    ],
+    "condition": [
+     5,
+     5
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "consequence": [
+     7,
+     7
+    ],
+    "contact": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "notice": "cms-nomnc",
+   "setup": "haiku-g6",
+   "sample": 0,
+   "critical": 28,
+   "kept": 27,
+   "lost": [
+    "F8"
+   ],
+   "retention": 0.9642857142857143,
+   "grade": 6.8,
+   "words": 410,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     4,
+     4
+    ],
+    "right": [
+     6,
+     6
+    ],
+    "action": [
+     2,
+     2
+    ],
+    "condition": [
+     5,
+     5
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "consequence": [
+     6,
+     7
+    ],
+    "contact": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "notice": "cms-nomnc",
+   "setup": "sonnet-g6",
+   "sample": 0,
+   "critical": 28,
+   "kept": 26,
+   "lost": [
+    "F25",
+    "F31"
+   ],
+   "retention": 0.9285714285714286,
+   "grade": 5.3,
+   "words": 433,
+   "not_in_source": [
+    "date:2025-03-13"
+   ],
+   "by_type": {
+    "deadline": [
+     3,
+     4
+    ],
+    "right": [
+     6,
+     6
+    ],
+    "action": [
+     2,
+     2
+    ],
+    "condition": [
+     4,
+     5
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "consequence": [
+     7,
+     7
+    ],
+    "contact": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "notice": "cms-nomnc",
+   "setup": "sonnet-g6",
+   "sample": 1,
+   "critical": 28,
+   "kept": 26,
+   "lost": [
+    "F8",
+    "F31"
+   ],
+   "retention": 0.9285714285714286,
+   "grade": 6.5,
+   "words": 417,
+   "not_in_source": [
+    "date:2025-03-13"
+   ],
+   "by_type": {
+    "deadline": [
+     4,
+     4
+    ],
+    "right": [
+     6,
+     6
+    ],
+    "action": [
+     2,
+     2
+    ],
+    "condition": [
+     4,
+     5
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "consequence": [
+     6,
+     7
+    ],
+    "contact": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "notice": "cms-nomnc",
+   "setup": "opus-g6",
+   "sample": 0,
+   "critical": 28,
+   "kept": 24,
+   "lost": [
+    "F13",
+    "F23",
+    "F25",
+    "F31"
+   ],
+   "retention": 0.8571428571428571,
+   "grade": 6.0,
+   "words": 407,
+   "not_in_source": [
+    "date:2025-03-13"
+   ],
+   "by_type": {
+    "deadline": [
+     3,
+     4
+    ],
+    "right": [
+     4,
+     6
+    ],
+    "action": [
+     2,
+     2
+    ],
+    "condition": [
+     4,
+     5
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "consequence": [
+     7,
+     7
+    ],
+    "contact": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "notice": "cms-nomnc",
+   "setup": "sonnet-g4",
+   "sample": 0,
+   "critical": 28,
+   "kept": 26,
+   "lost": [
+    "F8",
+    "F31"
+   ],
+   "retention": 0.9285714285714286,
+   "grade": 4.3,
+   "words": 403,
+   "not_in_source": [
+    "date:2025-03-13"
+   ],
+   "by_type": {
+    "deadline": [
+     4,
+     4
+    ],
+    "right": [
+     6,
+     6
+    ],
+    "action": [
+     2,
+     2
+    ],
+    "condition": [
+     4,
+     5
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "consequence": [
+     6,
+     7
+    ],
+    "contact": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "notice": "cms-nomnc",
+   "setup": "sonnet-g8",
+   "sample": 0,
+   "critical": 28,
+   "kept": 26,
+   "lost": [
+    "F8",
+    "F31"
+   ],
+   "retention": 0.9285714285714286,
+   "grade": 6.8,
+   "words": 392,
+   "not_in_source": [
+    "date:2025-03-13"
+   ],
+   "by_type": {
+    "deadline": [
+     4,
+     4
+    ],
+    "right": [
+     6,
+     6
+    ],
+    "action": [
+     2,
+     2
+    ],
+    "condition": [
+     4,
+     5
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "consequence": [
+     6,
+     7
+    ],
+    "contact": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "notice": "cms-nomnc",
+   "setup": "sonnet-g6-keep",
+   "sample": 0,
+   "critical": 28,
+   "kept": 28,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 6.4,
+   "words": 416,
+   "not_in_source": [
+    "date:2025-03-13"
+   ],
+   "by_type": {
+    "deadline": [
+     4,
+     4
+    ],
+    "right": [
+     6,
+     6
+    ],
+    "action": [
+     2,
+     2
+    ],
+    "condition": [
+     5,
+     5
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "consequence": [
+     7,
+     7
+    ],
+    "contact": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "notice": "cms-nomnc",
+   "setup": "sonnet-g6-pipeline",
+   "sample": 0,
+   "critical": 28,
+   "kept": 28,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 7.2,
+   "words": 399,
+   "not_in_source": [
+    "date:2025-03-13"
+   ],
+   "by_type": {
+    "deadline": [
+     4,
+     4
+    ],
+    "right": [
+     6,
+     6
+    ],
+    "action": [
+     2,
+     2
+    ],
+    "condition": [
+     5,
+     5
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "consequence": [
+     7,
+     7
+    ],
+    "contact": [
+     3,
+     3
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp05",
+   "setup": "original",
+   "sample": 0,
+   "critical": 35,
+   "kept": 35,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 8.3,
+   "words": 530,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     9,
+     9
+    ],
+    "condition": [
+     5,
+     5
+    ],
+    "subject": [
+     3,
+     3
+    ],
+    "contact": [
+     8,
+     8
+    ],
+    "consequence": [
+     6,
+     6
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp05",
+   "setup": "haiku-g6",
+   "sample": 0,
+   "critical": 35,
+   "kept": 34,
+   "lost": [
+    "F8"
+   ],
+   "retention": 0.9714285714285714,
+   "grade": 5.2,
+   "words": 534,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     9,
+     9
+    ],
+    "condition": [
+     5,
+     5
+    ],
+    "subject": [
+     3,
+     3
+    ],
+    "contact": [
+     8,
+     8
+    ],
+    "consequence": [
+     5,
+     6
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp05",
+   "setup": "sonnet-g6",
+   "sample": 0,
+   "critical": 35,
+   "kept": 34,
+   "lost": [
+    "F32"
+   ],
+   "retention": 0.9714285714285714,
+   "grade": 4.3,
+   "words": 555,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     8,
+     9
+    ],
+    "condition": [
+     5,
+     5
+    ],
+    "subject": [
+     3,
+     3
+    ],
+    "contact": [
+     8,
+     8
+    ],
+    "consequence": [
+     6,
+     6
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp05",
+   "setup": "sonnet-g6",
+   "sample": 1,
+   "critical": 35,
+   "kept": 35,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 4.3,
+   "words": 548,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     9,
+     9
+    ],
+    "condition": [
+     5,
+     5
+    ],
+    "subject": [
+     3,
+     3
+    ],
+    "contact": [
+     8,
+     8
+    ],
+    "consequence": [
+     6,
+     6
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp05",
+   "setup": "opus-g6",
+   "sample": 0,
+   "critical": 35,
+   "kept": 33,
+   "lost": [
+    "F20",
+    "F26"
+   ],
+   "retention": 0.9428571428571428,
+   "grade": 4.2,
+   "words": 585,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     9,
+     9
+    ],
+    "condition": [
+     5,
+     5
+    ],
+    "subject": [
+     3,
+     3
+    ],
+    "contact": [
+     7,
+     8
+    ],
+    "consequence": [
+     5,
+     6
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp05",
+   "setup": "sonnet-g4",
+   "sample": 0,
+   "critical": 35,
+   "kept": 33,
+   "lost": [
+    "F18",
+    "F32"
+   ],
+   "retention": 0.9428571428571428,
+   "grade": 3.9,
+   "words": 553,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     2
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     8,
+     9
+    ],
+    "condition": [
+     5,
+     5
+    ],
+    "subject": [
+     3,
+     3
+    ],
+    "contact": [
+     8,
+     8
+    ],
+    "consequence": [
+     6,
+     6
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp05",
+   "setup": "sonnet-g8",
+   "sample": 0,
+   "critical": 35,
+   "kept": 35,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 4.6,
+   "words": 545,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     9,
+     9
+    ],
+    "condition": [
+     5,
+     5
+    ],
+    "subject": [
+     3,
+     3
+    ],
+    "contact": [
+     8,
+     8
+    ],
+    "consequence": [
+     6,
+     6
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp05",
+   "setup": "sonnet-g6-keep",
+   "sample": 0,
+   "critical": 35,
+   "kept": 35,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 4.8,
+   "words": 594,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     9,
+     9
+    ],
+    "condition": [
+     5,
+     5
+    ],
+    "subject": [
+     3,
+     3
+    ],
+    "contact": [
+     8,
+     8
+    ],
+    "consequence": [
+     6,
+     6
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp05",
+   "setup": "sonnet-g6-pipeline",
+   "sample": 0,
+   "critical": 35,
+   "kept": 32,
+   "lost": [
+    "F6",
+    "F8",
+    "F26"
+   ],
+   "retention": 0.9142857142857143,
+   "grade": 5.2,
+   "words": 483,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     9,
+     9
+    ],
+    "condition": [
+     5,
+     5
+    ],
+    "subject": [
+     2,
+     3
+    ],
+    "contact": [
+     7,
+     8
+    ],
+    "consequence": [
+     5,
+     6
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp12",
+   "setup": "original",
+   "sample": 0,
+   "critical": 26,
+   "kept": 26,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 10.4,
+   "words": 384,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     3,
+     3
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     2,
+     2
+    ],
+    "condition": [
+     7,
+     7
+    ],
+    "subject": [
+     2,
+     2
+    ],
+    "amount": [
+     1,
+     1
+    ],
+    "contact": [
+     2,
+     2
+    ],
+    "consequence": [
+     7,
+     7
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp12",
+   "setup": "haiku-g6",
+   "sample": 0,
+   "critical": 26,
+   "kept": 24,
+   "lost": [
+    "F16",
+    "F21"
+   ],
+   "retention": 0.9230769230769231,
+   "grade": 7.5,
+   "words": 411,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     3,
+     3
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     2,
+     2
+    ],
+    "condition": [
+     7,
+     7
+    ],
+    "subject": [
+     2,
+     2
+    ],
+    "amount": [
+     1,
+     1
+    ],
+    "contact": [
+     2,
+     2
+    ],
+    "consequence": [
+     5,
+     7
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp12",
+   "setup": "sonnet-g6",
+   "sample": 0,
+   "critical": 26,
+   "kept": 25,
+   "lost": [
+    "F13"
+   ],
+   "retention": 0.9615384615384616,
+   "grade": 5.9,
+   "words": 408,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     3
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     2,
+     2
+    ],
+    "condition": [
+     7,
+     7
+    ],
+    "subject": [
+     2,
+     2
+    ],
+    "amount": [
+     1,
+     1
+    ],
+    "contact": [
+     2,
+     2
+    ],
+    "consequence": [
+     7,
+     7
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp12",
+   "setup": "sonnet-g6",
+   "sample": 1,
+   "critical": 26,
+   "kept": 24,
+   "lost": [
+    "F13",
+    "F14"
+   ],
+   "retention": 0.9230769230769231,
+   "grade": 5.1,
+   "words": 436,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     3
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     2,
+     2
+    ],
+    "condition": [
+     7,
+     7
+    ],
+    "subject": [
+     2,
+     2
+    ],
+    "amount": [
+     1,
+     1
+    ],
+    "contact": [
+     2,
+     2
+    ],
+    "consequence": [
+     6,
+     7
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp12",
+   "setup": "opus-g6",
+   "sample": 0,
+   "critical": 26,
+   "kept": 26,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 4.0,
+   "words": 438,
+   "not_in_source": [
+    "date:2011-04-10"
+   ],
+   "by_type": {
+    "deadline": [
+     3,
+     3
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     2,
+     2
+    ],
+    "condition": [
+     7,
+     7
+    ],
+    "subject": [
+     2,
+     2
+    ],
+    "amount": [
+     1,
+     1
+    ],
+    "contact": [
+     2,
+     2
+    ],
+    "consequence": [
+     7,
+     7
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp12",
+   "setup": "sonnet-g4",
+   "sample": 0,
+   "critical": 26,
+   "kept": 25,
+   "lost": [
+    "F13"
+   ],
+   "retention": 0.9615384615384616,
+   "grade": 4.6,
+   "words": 441,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     3
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     2,
+     2
+    ],
+    "condition": [
+     7,
+     7
+    ],
+    "subject": [
+     2,
+     2
+    ],
+    "amount": [
+     1,
+     1
+    ],
+    "contact": [
+     2,
+     2
+    ],
+    "consequence": [
+     7,
+     7
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp12",
+   "setup": "sonnet-g8",
+   "sample": 0,
+   "critical": 26,
+   "kept": 23,
+   "lost": [
+    "F3",
+    "F8",
+    "F13"
+   ],
+   "retention": 0.8846153846153846,
+   "grade": 5.3,
+   "words": 429,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     3
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     2,
+     2
+    ],
+    "condition": [
+     6,
+     7
+    ],
+    "subject": [
+     1,
+     2
+    ],
+    "amount": [
+     1,
+     1
+    ],
+    "contact": [
+     2,
+     2
+    ],
+    "consequence": [
+     7,
+     7
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp12",
+   "setup": "sonnet-g6-keep",
+   "sample": 0,
+   "critical": 26,
+   "kept": 26,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 5.5,
+   "words": 437,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     3,
+     3
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     2,
+     2
+    ],
+    "condition": [
+     7,
+     7
+    ],
+    "subject": [
+     2,
+     2
+    ],
+    "amount": [
+     1,
+     1
+    ],
+    "contact": [
+     2,
+     2
+    ],
+    "consequence": [
+     7,
+     7
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp12",
+   "setup": "sonnet-g6-pipeline",
+   "sample": 0,
+   "critical": 26,
+   "kept": 25,
+   "lost": [
+    "F16"
+   ],
+   "retention": 0.9615384615384616,
+   "grade": 5.5,
+   "words": 379,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     3,
+     3
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     2,
+     2
+    ],
+    "condition": [
+     7,
+     7
+    ],
+    "subject": [
+     2,
+     2
+    ],
+    "amount": [
+     1,
+     1
+    ],
+    "contact": [
+     2,
+     2
+    ],
+    "consequence": [
+     6,
+     7
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp14",
+   "setup": "original",
+   "sample": 0,
+   "critical": 36,
+   "kept": 36,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 7.7,
+   "words": 545,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     10,
+     10
+    ],
+    "condition": [
+     10,
+     10
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "amount": [
+     6,
+     6
+    ],
+    "contact": [
+     3,
+     3
+    ],
+    "consequence": [
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp14",
+   "setup": "haiku-g6",
+   "sample": 0,
+   "critical": 36,
+   "kept": 34,
+   "lost": [
+    "F22",
+    "F25"
+   ],
+   "retention": 0.9444444444444444,
+   "grade": 7.0,
+   "words": 364,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     10,
+     10
+    ],
+    "condition": [
+     9,
+     10
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "amount": [
+     6,
+     6
+    ],
+    "contact": [
+     2,
+     3
+    ],
+    "consequence": [
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp14",
+   "setup": "sonnet-g6",
+   "sample": 0,
+   "critical": 36,
+   "kept": 36,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 4.9,
+   "words": 538,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     10,
+     10
+    ],
+    "condition": [
+     10,
+     10
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "amount": [
+     6,
+     6
+    ],
+    "contact": [
+     3,
+     3
+    ],
+    "consequence": [
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp14",
+   "setup": "sonnet-g6",
+   "sample": 1,
+   "critical": 36,
+   "kept": 35,
+   "lost": [
+    "F22"
+   ],
+   "retention": 0.9722222222222222,
+   "grade": 5.0,
+   "words": 537,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     10,
+     10
+    ],
+    "condition": [
+     9,
+     10
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "amount": [
+     6,
+     6
+    ],
+    "contact": [
+     3,
+     3
+    ],
+    "consequence": [
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp14",
+   "setup": "opus-g6",
+   "sample": 0,
+   "critical": 36,
+   "kept": 35,
+   "lost": [
+    "F22"
+   ],
+   "retention": 0.9722222222222222,
+   "grade": 3.9,
+   "words": 581,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     10,
+     10
+    ],
+    "condition": [
+     9,
+     10
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "amount": [
+     6,
+     6
+    ],
+    "contact": [
+     3,
+     3
+    ],
+    "consequence": [
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp14",
+   "setup": "sonnet-g4",
+   "sample": 0,
+   "critical": 36,
+   "kept": 32,
+   "lost": [
+    "F8",
+    "F10",
+    "F18",
+    "F22"
+   ],
+   "retention": 0.8888888888888888,
+   "grade": 3.2,
+   "words": 477,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     10,
+     10
+    ],
+    "condition": [
+     7,
+     10
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "amount": [
+     6,
+     6
+    ],
+    "contact": [
+     3,
+     3
+    ],
+    "consequence": [
+     3,
+     4
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp14",
+   "setup": "sonnet-g8",
+   "sample": 0,
+   "critical": 36,
+   "kept": 36,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 6.1,
+   "words": 511,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     10,
+     10
+    ],
+    "condition": [
+     10,
+     10
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "amount": [
+     6,
+     6
+    ],
+    "contact": [
+     3,
+     3
+    ],
+    "consequence": [
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp14",
+   "setup": "sonnet-g6-keep",
+   "sample": 0,
+   "critical": 36,
+   "kept": 33,
+   "lost": [
+    "F7",
+    "F8",
+    "F20"
+   ],
+   "retention": 0.9166666666666666,
+   "grade": 5.5,
+   "words": 534,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     9,
+     10
+    ],
+    "condition": [
+     9,
+     10
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "amount": [
+     6,
+     6
+    ],
+    "contact": [
+     3,
+     3
+    ],
+    "consequence": [
+     3,
+     4
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp14",
+   "setup": "sonnet-g6-pipeline",
+   "sample": 0,
+   "critical": 36,
+   "kept": 36,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 6.7,
+   "words": 581,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     10,
+     10
+    ],
+    "condition": [
+     10,
+     10
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "amount": [
+     6,
+     6
+    ],
+    "contact": [
+     3,
+     3
+    ],
+    "consequence": [
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp21b",
+   "setup": "original",
+   "sample": 0,
+   "critical": 19,
+   "kept": 19,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 6.0,
+   "words": 240,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "action": [
+     4,
+     4
+    ],
+    "condition": [
+     5,
+     5
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "amount": [
+     4,
+     4
+    ],
+    "contact": [
+     3,
+     3
+    ],
+    "consequence": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp21b",
+   "setup": "haiku-g6",
+   "sample": 0,
+   "critical": 19,
+   "kept": 18,
+   "lost": [
+    "F1"
+   ],
+   "retention": 0.9473684210526315,
+   "grade": 4.4,
+   "words": 254,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "action": [
+     4,
+     4
+    ],
+    "condition": [
+     5,
+     5
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "amount": [
+     4,
+     4
+    ],
+    "contact": [
+     2,
+     3
+    ],
+    "consequence": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp21b",
+   "setup": "sonnet-g6",
+   "sample": 0,
+   "critical": 19,
+   "kept": 18,
+   "lost": [
+    "F14"
+   ],
+   "retention": 0.9473684210526315,
+   "grade": 3.3,
+   "words": 258,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "action": [
+     4,
+     4
+    ],
+    "condition": [
+     4,
+     5
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "amount": [
+     4,
+     4
+    ],
+    "contact": [
+     3,
+     3
+    ],
+    "consequence": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp21b",
+   "setup": "sonnet-g6",
+   "sample": 1,
+   "critical": 19,
+   "kept": 19,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 3.5,
+   "words": 258,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "action": [
+     4,
+     4
+    ],
+    "condition": [
+     5,
+     5
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "amount": [
+     4,
+     4
+    ],
+    "contact": [
+     3,
+     3
+    ],
+    "consequence": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp21b",
+   "setup": "opus-g6",
+   "sample": 0,
+   "critical": 19,
+   "kept": 17,
+   "lost": [
+    "F14",
+    "F16"
+   ],
+   "retention": 0.8947368421052632,
+   "grade": 2.6,
+   "words": 278,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "action": [
+     3,
+     4
+    ],
+    "condition": [
+     4,
+     5
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "amount": [
+     4,
+     4
+    ],
+    "contact": [
+     3,
+     3
+    ],
+    "consequence": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp21b",
+   "setup": "sonnet-g4",
+   "sample": 0,
+   "critical": 19,
+   "kept": 19,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 2.9,
+   "words": 291,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "action": [
+     4,
+     4
+    ],
+    "condition": [
+     5,
+     5
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "amount": [
+     4,
+     4
+    ],
+    "contact": [
+     3,
+     3
+    ],
+    "consequence": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp21b",
+   "setup": "sonnet-g8",
+   "sample": 0,
+   "critical": 19,
+   "kept": 19,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 4.7,
+   "words": 258,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "action": [
+     4,
+     4
+    ],
+    "condition": [
+     5,
+     5
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "amount": [
+     4,
+     4
+    ],
+    "contact": [
+     3,
+     3
+    ],
+    "consequence": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp21b",
+   "setup": "sonnet-g6-keep",
+   "sample": 0,
+   "critical": 19,
+   "kept": 19,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 3.9,
+   "words": 284,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "action": [
+     4,
+     4
+    ],
+    "condition": [
+     5,
+     5
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "amount": [
+     4,
+     4
+    ],
+    "contact": [
+     3,
+     3
+    ],
+    "consequence": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp21b",
+   "setup": "sonnet-g6-pipeline",
+   "sample": 0,
+   "critical": 19,
+   "kept": 17,
+   "lost": [
+    "F23",
+    "F28"
+   ],
+   "retention": 0.8947368421052632,
+   "grade": 4.9,
+   "words": 272,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "action": [
+     2,
+     4
+    ],
+    "condition": [
+     5,
+     5
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "amount": [
+     4,
+     4
+    ],
+    "contact": [
+     3,
+     3
+    ],
+    "consequence": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp503",
+   "setup": "original",
+   "sample": 0,
+   "critical": 32,
+   "kept": 32,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 8.7,
+   "words": 438,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "action": [
+     9,
+     9
+    ],
+    "condition": [
+     8,
+     8
+    ],
+    "amount": [
+     4,
+     4
+    ],
+    "consequence": [
+     6,
+     6
+    ],
+    "contact": [
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp503",
+   "setup": "haiku-g6",
+   "sample": 0,
+   "critical": 32,
+   "kept": 32,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 4.4,
+   "words": 394,
+   "not_in_source": [
+    "zip:45999"
+   ],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "action": [
+     9,
+     9
+    ],
+    "condition": [
+     8,
+     8
+    ],
+    "amount": [
+     4,
+     4
+    ],
+    "consequence": [
+     6,
+     6
+    ],
+    "contact": [
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp503",
+   "setup": "sonnet-g6",
+   "sample": 0,
+   "critical": 32,
+   "kept": 30,
+   "lost": [
+    "F24",
+    "F30"
+   ],
+   "retention": 0.9375,
+   "grade": 4.8,
+   "words": 440,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "action": [
+     9,
+     9
+    ],
+    "condition": [
+     6,
+     8
+    ],
+    "amount": [
+     4,
+     4
+    ],
+    "consequence": [
+     6,
+     6
+    ],
+    "contact": [
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp503",
+   "setup": "sonnet-g6",
+   "sample": 1,
+   "critical": 32,
+   "kept": 32,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 5.0,
+   "words": 439,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "action": [
+     9,
+     9
+    ],
+    "condition": [
+     8,
+     8
+    ],
+    "amount": [
+     4,
+     4
+    ],
+    "consequence": [
+     6,
+     6
+    ],
+    "contact": [
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp503",
+   "setup": "opus-g6",
+   "sample": 0,
+   "critical": 32,
+   "kept": 29,
+   "lost": [
+    "F5",
+    "F11",
+    "F32"
+   ],
+   "retention": 0.90625,
+   "grade": 3.1,
+   "words": 436,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "action": [
+     9,
+     9
+    ],
+    "condition": [
+     7,
+     8
+    ],
+    "amount": [
+     4,
+     4
+    ],
+    "consequence": [
+     4,
+     6
+    ],
+    "contact": [
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp503",
+   "setup": "sonnet-g4",
+   "sample": 0,
+   "critical": 32,
+   "kept": 29,
+   "lost": [
+    "F23",
+    "F30",
+    "F31"
+   ],
+   "retention": 0.90625,
+   "grade": 4.2,
+   "words": 434,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "action": [
+     8,
+     9
+    ],
+    "condition": [
+     7,
+     8
+    ],
+    "amount": [
+     4,
+     4
+    ],
+    "consequence": [
+     5,
+     6
+    ],
+    "contact": [
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp503",
+   "setup": "sonnet-g8",
+   "sample": 0,
+   "critical": 32,
+   "kept": 32,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 5.4,
+   "words": 412,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "action": [
+     9,
+     9
+    ],
+    "condition": [
+     8,
+     8
+    ],
+    "amount": [
+     4,
+     4
+    ],
+    "consequence": [
+     6,
+     6
+    ],
+    "contact": [
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp503",
+   "setup": "sonnet-g6-keep",
+   "sample": 0,
+   "critical": 32,
+   "kept": 32,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 5.8,
+   "words": 455,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "action": [
+     9,
+     9
+    ],
+    "condition": [
+     8,
+     8
+    ],
+    "amount": [
+     4,
+     4
+    ],
+    "consequence": [
+     6,
+     6
+    ],
+    "contact": [
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp503",
+   "setup": "sonnet-g6-pipeline",
+   "sample": 0,
+   "critical": 32,
+   "kept": 32,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 5.7,
+   "words": 429,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "action": [
+     9,
+     9
+    ],
+    "condition": [
+     8,
+     8
+    ],
+    "amount": [
+     4,
+     4
+    ],
+    "consequence": [
+     6,
+     6
+    ],
+    "contact": [
+     4,
+     4
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp59",
+   "setup": "original",
+   "sample": 0,
+   "critical": 34,
+   "kept": 34,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 9.0,
+   "words": 464,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     11,
+     11
+    ],
+    "condition": [
+     11,
+     11
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "consequence": [
+     6,
+     6
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp59",
+   "setup": "haiku-g6",
+   "sample": 0,
+   "critical": 34,
+   "kept": 31,
+   "lost": [
+    "F30",
+    "F31",
+    "F33"
+   ],
+   "retention": 0.9117647058823529,
+   "grade": 6.0,
+   "words": 404,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     0,
+     1
+    ],
+    "action": [
+     11,
+     11
+    ],
+    "condition": [
+     11,
+     11
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "consequence": [
+     4,
+     6
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp59",
+   "setup": "sonnet-g6",
+   "sample": 0,
+   "critical": 34,
+   "kept": 33,
+   "lost": [
+    "F31"
+   ],
+   "retention": 0.9705882352941176,
+   "grade": 6.3,
+   "words": 527,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     11,
+     11
+    ],
+    "condition": [
+     11,
+     11
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "consequence": [
+     5,
+     6
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp59",
+   "setup": "sonnet-g6",
+   "sample": 1,
+   "critical": 34,
+   "kept": 31,
+   "lost": [
+    "F6",
+    "F25",
+    "F31"
+   ],
+   "retention": 0.9117647058823529,
+   "grade": 5.6,
+   "words": 462,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     10,
+     11
+    ],
+    "condition": [
+     10,
+     11
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "consequence": [
+     5,
+     6
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp59",
+   "setup": "opus-g6",
+   "sample": 0,
+   "critical": 34,
+   "kept": 33,
+   "lost": [
+    "F31"
+   ],
+   "retention": 0.9705882352941176,
+   "grade": 5.9,
+   "words": 504,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     11,
+     11
+    ],
+    "condition": [
+     11,
+     11
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "consequence": [
+     5,
+     6
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp59",
+   "setup": "sonnet-g4",
+   "sample": 0,
+   "critical": 34,
+   "kept": 27,
+   "lost": [
+    "F6",
+    "F15",
+    "F25",
+    "F27",
+    "F30",
+    "F31",
+    "F35"
+   ],
+   "retention": 0.7941176470588235,
+   "grade": 4.8,
+   "words": 509,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     9,
+     11
+    ],
+    "condition": [
+     8,
+     11
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "consequence": [
+     4,
+     6
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp59",
+   "setup": "sonnet-g8",
+   "sample": 0,
+   "critical": 34,
+   "kept": 31,
+   "lost": [
+    "F6",
+    "F31",
+    "F33"
+   ],
+   "retention": 0.9117647058823529,
+   "grade": 6.6,
+   "words": 470,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     0,
+     1
+    ],
+    "action": [
+     10,
+     11
+    ],
+    "condition": [
+     11,
+     11
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "consequence": [
+     5,
+     6
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp59",
+   "setup": "sonnet-g6-keep",
+   "sample": 0,
+   "critical": 34,
+   "kept": 30,
+   "lost": [
+    "F4",
+    "F6",
+    "F31",
+    "F37"
+   ],
+   "retention": 0.8823529411764706,
+   "grade": 6.8,
+   "words": 519,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     10,
+     11
+    ],
+    "condition": [
+     10,
+     11
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "consequence": [
+     5,
+     6
+    ],
+    "contact": [
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp59",
+   "setup": "sonnet-g6-pipeline",
+   "sample": 0,
+   "critical": 34,
+   "kept": 33,
+   "lost": [
+    "F21"
+   ],
+   "retention": 0.9705882352941176,
+   "grade": 5.7,
+   "words": 487,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     11,
+     11
+    ],
+    "condition": [
+     10,
+     11
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "consequence": [
+     6,
+     6
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp75",
+   "setup": "original",
+   "sample": 0,
+   "critical": 29,
+   "kept": 29,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 9.3,
+   "words": 467,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     9,
+     9
+    ],
+    "condition": [
+     5,
+     5
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "contact": [
+     3,
+     3
+    ],
+    "consequence": [
+     9,
+     9
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp75",
+   "setup": "haiku-g6",
+   "sample": 0,
+   "critical": 29,
+   "kept": 26,
+   "lost": [
+    "F4",
+    "F6",
+    "F7"
+   ],
+   "retention": 0.896551724137931,
+   "grade": 5.1,
+   "words": 437,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     9,
+     9
+    ],
+    "condition": [
+     4,
+     5
+    ],
+    "subject": [
+     0,
+     1
+    ],
+    "contact": [
+     3,
+     3
+    ],
+    "consequence": [
+     8,
+     9
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp75",
+   "setup": "sonnet-g6",
+   "sample": 0,
+   "critical": 29,
+   "kept": 29,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 4.8,
+   "words": 515,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     9,
+     9
+    ],
+    "condition": [
+     5,
+     5
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "contact": [
+     3,
+     3
+    ],
+    "consequence": [
+     9,
+     9
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp75",
+   "setup": "sonnet-g6",
+   "sample": 1,
+   "critical": 29,
+   "kept": 26,
+   "lost": [
+    "F6",
+    "F19",
+    "F21"
+   ],
+   "retention": 0.896551724137931,
+   "grade": 5.2,
+   "words": 482,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     7,
+     9
+    ],
+    "condition": [
+     5,
+     5
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "contact": [
+     3,
+     3
+    ],
+    "consequence": [
+     8,
+     9
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp75",
+   "setup": "opus-g6",
+   "sample": 0,
+   "critical": 29,
+   "kept": 29,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 4.7,
+   "words": 550,
+   "not_in_source": [
+    "date:2019-02-27"
+   ],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     9,
+     9
+    ],
+    "condition": [
+     5,
+     5
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "contact": [
+     3,
+     3
+    ],
+    "consequence": [
+     9,
+     9
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp75",
+   "setup": "sonnet-g4",
+   "sample": 0,
+   "critical": 29,
+   "kept": 27,
+   "lost": [
+    "F21",
+    "F23"
+   ],
+   "retention": 0.9310344827586207,
+   "grade": 3.8,
+   "words": 503,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     7,
+     9
+    ],
+    "condition": [
+     5,
+     5
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "contact": [
+     3,
+     3
+    ],
+    "consequence": [
+     9,
+     9
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp75",
+   "setup": "sonnet-g8",
+   "sample": 0,
+   "critical": 29,
+   "kept": 28,
+   "lost": [
+    "F6"
+   ],
+   "retention": 0.9655172413793104,
+   "grade": 4.9,
+   "words": 442,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     9,
+     9
+    ],
+    "condition": [
+     5,
+     5
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "contact": [
+     3,
+     3
+    ],
+    "consequence": [
+     8,
+     9
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp75",
+   "setup": "sonnet-g6-keep",
+   "sample": 0,
+   "critical": 29,
+   "kept": 29,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 5.3,
+   "words": 571,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     9,
+     9
+    ],
+    "condition": [
+     5,
+     5
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "contact": [
+     3,
+     3
+    ],
+    "consequence": [
+     9,
+     9
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp75",
+   "setup": "sonnet-g6-pipeline",
+   "sample": 0,
+   "critical": 29,
+   "kept": 29,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 5.4,
+   "words": 529,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     9,
+     9
+    ],
+    "condition": [
+     5,
+     5
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "contact": [
+     3,
+     3
+    ],
+    "consequence": [
+     9,
+     9
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp88",
+   "setup": "original",
+   "sample": 0,
+   "critical": 19,
+   "kept": 18,
+   "lost": [
+    "F2"
+   ],
+   "retention": 0.9473684210526315,
+   "grade": 6.8,
+   "words": 203,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "action": [
+     3,
+     3
+    ],
+    "condition": [
+     4,
+     4
+    ],
+    "contact": [
+     1,
+     2
+    ],
+    "consequence": [
+     8,
+     8
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp88",
+   "setup": "haiku-g6",
+   "sample": 0,
+   "critical": 19,
+   "kept": 19,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 4.2,
+   "words": 280,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "action": [
+     3,
+     3
+    ],
+    "condition": [
+     4,
+     4
+    ],
+    "contact": [
+     2,
+     2
+    ],
+    "consequence": [
+     8,
+     8
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp88",
+   "setup": "sonnet-g6",
+   "sample": 0,
+   "critical": 19,
+   "kept": 19,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 3.4,
+   "words": 277,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "action": [
+     3,
+     3
+    ],
+    "condition": [
+     4,
+     4
+    ],
+    "contact": [
+     2,
+     2
+    ],
+    "consequence": [
+     8,
+     8
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp88",
+   "setup": "sonnet-g6",
+   "sample": 1,
+   "critical": 19,
+   "kept": 19,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 3.2,
+   "words": 286,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "action": [
+     3,
+     3
+    ],
+    "condition": [
+     4,
+     4
+    ],
+    "contact": [
+     2,
+     2
+    ],
+    "consequence": [
+     8,
+     8
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp88",
+   "setup": "opus-g6",
+   "sample": 0,
+   "critical": 19,
+   "kept": 18,
+   "lost": [
+    "F11"
+   ],
+   "retention": 0.9473684210526315,
+   "grade": 2.3,
+   "words": 285,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "action": [
+     3,
+     3
+    ],
+    "condition": [
+     3,
+     4
+    ],
+    "contact": [
+     2,
+     2
+    ],
+    "consequence": [
+     8,
+     8
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp88",
+   "setup": "sonnet-g4",
+   "sample": 0,
+   "critical": 19,
+   "kept": 14,
+   "lost": [
+    "F2",
+    "F10",
+    "F11",
+    "F12",
+    "F14"
+   ],
+   "retention": 0.7368421052631579,
+   "grade": 2.6,
+   "words": 280,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "action": [
+     2,
+     3
+    ],
+    "condition": [
+     3,
+     4
+    ],
+    "contact": [
+     0,
+     2
+    ],
+    "consequence": [
+     7,
+     8
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp88",
+   "setup": "sonnet-g8",
+   "sample": 0,
+   "critical": 19,
+   "kept": 19,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 3.8,
+   "words": 254,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "action": [
+     3,
+     3
+    ],
+    "condition": [
+     4,
+     4
+    ],
+    "contact": [
+     2,
+     2
+    ],
+    "consequence": [
+     8,
+     8
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp88",
+   "setup": "sonnet-g6-keep",
+   "sample": 0,
+   "critical": 19,
+   "kept": 19,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 3.7,
+   "words": 272,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "action": [
+     3,
+     3
+    ],
+    "condition": [
+     4,
+     4
+    ],
+    "contact": [
+     2,
+     2
+    ],
+    "consequence": [
+     8,
+     8
+    ]
+   }
+  },
+  {
+   "notice": "irs-cp88",
+   "setup": "sonnet-g6-pipeline",
+   "sample": 0,
+   "critical": 19,
+   "kept": 16,
+   "lost": [
+    "F10",
+    "F13",
+    "F16"
+   ],
+   "retention": 0.8421052631578947,
+   "grade": 4.2,
+   "words": 292,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     2
+    ],
+    "action": [
+     3,
+     3
+    ],
+    "condition": [
+     4,
+     4
+    ],
+    "contact": [
+     1,
+     2
+    ],
+    "consequence": [
+     7,
+     8
+    ]
+   }
+  },
+  {
+   "notice": "irs-lt11",
+   "setup": "original",
+   "sample": 0,
+   "critical": 42,
+   "kept": 42,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 8.7,
+   "words": 478,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     9,
+     9
+    ],
+    "condition": [
+     7,
+     7
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "amount": [
+     4,
+     4
+    ],
+    "consequence": [
+     15,
+     15
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "irs-lt11",
+   "setup": "haiku-g6",
+   "sample": 0,
+   "critical": 42,
+   "kept": 35,
+   "lost": [
+    "F1",
+    "F4",
+    "F26",
+    "F36",
+    "F38",
+    "F43",
+    "F47"
+   ],
+   "retention": 0.8333333333333334,
+   "grade": 5.7,
+   "words": 434,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     9,
+     9
+    ],
+    "condition": [
+     3,
+     7
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "amount": [
+     4,
+     4
+    ],
+    "consequence": [
+     14,
+     15
+    ],
+    "contact": [
+     0,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "irs-lt11",
+   "setup": "sonnet-g6",
+   "sample": 0,
+   "critical": 42,
+   "kept": 40,
+   "lost": [
+    "F8",
+    "F47"
+   ],
+   "retention": 0.9523809523809523,
+   "grade": 4.3,
+   "words": 565,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     9,
+     9
+    ],
+    "condition": [
+     6,
+     7
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "amount": [
+     4,
+     4
+    ],
+    "consequence": [
+     14,
+     15
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "irs-lt11",
+   "setup": "sonnet-g6",
+   "sample": 1,
+   "critical": 42,
+   "kept": 40,
+   "lost": [
+    "F37",
+    "F47"
+   ],
+   "retention": 0.9523809523809523,
+   "grade": 3.9,
+   "words": 530,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     9,
+     9
+    ],
+    "condition": [
+     6,
+     7
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "amount": [
+     4,
+     4
+    ],
+    "consequence": [
+     14,
+     15
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "irs-lt11",
+   "setup": "opus-g6",
+   "sample": 0,
+   "critical": 42,
+   "kept": 39,
+   "lost": [
+    "F26",
+    "F38",
+    "F42"
+   ],
+   "retention": 0.9285714285714286,
+   "grade": 4.2,
+   "words": 544,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     9,
+     9
+    ],
+    "condition": [
+     5,
+     7
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "amount": [
+     4,
+     4
+    ],
+    "consequence": [
+     14,
+     15
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "irs-lt11",
+   "setup": "sonnet-g4",
+   "sample": 0,
+   "critical": 42,
+   "kept": 39,
+   "lost": [
+    "F8",
+    "F37",
+    "F47"
+   ],
+   "retention": 0.9285714285714286,
+   "grade": 4.0,
+   "words": 549,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     9,
+     9
+    ],
+    "condition": [
+     6,
+     7
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "amount": [
+     4,
+     4
+    ],
+    "consequence": [
+     13,
+     15
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "irs-lt11",
+   "setup": "sonnet-g8",
+   "sample": 0,
+   "critical": 42,
+   "kept": 39,
+   "lost": [
+    "F26",
+    "F35",
+    "F47"
+   ],
+   "retention": 0.9285714285714286,
+   "grade": 5.0,
+   "words": 514,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     9,
+     9
+    ],
+    "condition": [
+     5,
+     7
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "amount": [
+     4,
+     4
+    ],
+    "consequence": [
+     14,
+     15
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "irs-lt11",
+   "setup": "sonnet-g6-keep",
+   "sample": 0,
+   "critical": 42,
+   "kept": 41,
+   "lost": [
+    "F47"
+   ],
+   "retention": 0.9761904761904762,
+   "grade": 4.9,
+   "words": 548,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     9,
+     9
+    ],
+    "condition": [
+     6,
+     7
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "amount": [
+     4,
+     4
+    ],
+    "consequence": [
+     15,
+     15
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "irs-lt11",
+   "setup": "sonnet-g6-pipeline",
+   "sample": 0,
+   "critical": 42,
+   "kept": 39,
+   "lost": [
+    "F31",
+    "F35",
+    "F40"
+   ],
+   "retention": 0.9285714285714286,
+   "grade": 5.8,
+   "words": 527,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     8,
+     9
+    ],
+    "condition": [
+     7,
+     7
+    ],
+    "subject": [
+     1,
+     1
+    ],
+    "amount": [
+     4,
+     4
+    ],
+    "consequence": [
+     13,
+     15
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "va-claim-info",
+   "setup": "original",
+   "sample": 0,
+   "critical": 11,
+   "kept": 11,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 10.8,
+   "words": 150,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     3,
+     3
+    ],
+    "condition": [
+     2,
+     2
+    ],
+    "subject": [
+     2,
+     2
+    ],
+    "consequence": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "notice": "va-claim-info",
+   "setup": "haiku-g6",
+   "sample": 0,
+   "critical": 11,
+   "kept": 9,
+   "lost": [
+    "F2",
+    "F12"
+   ],
+   "retention": 0.8181818181818182,
+   "grade": 5.9,
+   "words": 149,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     1,
+     3
+    ],
+    "condition": [
+     2,
+     2
+    ],
+    "subject": [
+     2,
+     2
+    ],
+    "consequence": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "notice": "va-claim-info",
+   "setup": "sonnet-g6",
+   "sample": 0,
+   "critical": 11,
+   "kept": 10,
+   "lost": [
+    "F13"
+   ],
+   "retention": 0.9090909090909091,
+   "grade": 4.1,
+   "words": 174,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     0,
+     1
+    ],
+    "action": [
+     3,
+     3
+    ],
+    "condition": [
+     2,
+     2
+    ],
+    "subject": [
+     2,
+     2
+    ],
+    "consequence": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "notice": "va-claim-info",
+   "setup": "sonnet-g6",
+   "sample": 1,
+   "critical": 11,
+   "kept": 11,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 4.4,
+   "words": 157,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     3,
+     3
+    ],
+    "condition": [
+     2,
+     2
+    ],
+    "subject": [
+     2,
+     2
+    ],
+    "consequence": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "notice": "va-claim-info",
+   "setup": "opus-g6",
+   "sample": 0,
+   "critical": 11,
+   "kept": 10,
+   "lost": [
+    "F8"
+   ],
+   "retention": 0.9090909090909091,
+   "grade": 5.6,
+   "words": 207,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     2
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     3,
+     3
+    ],
+    "condition": [
+     2,
+     2
+    ],
+    "subject": [
+     2,
+     2
+    ],
+    "consequence": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "notice": "va-claim-info",
+   "setup": "sonnet-g4",
+   "sample": 0,
+   "critical": 11,
+   "kept": 7,
+   "lost": [
+    "F5",
+    "F9",
+    "F10",
+    "F12"
+   ],
+   "retention": 0.6363636363636364,
+   "grade": 3.0,
+   "words": 192,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     2,
+     3
+    ],
+    "condition": [
+     1,
+     2
+    ],
+    "subject": [
+     1,
+     2
+    ],
+    "consequence": [
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "notice": "va-claim-info",
+   "setup": "sonnet-g8",
+   "sample": 0,
+   "critical": 11,
+   "kept": 10,
+   "lost": [
+    "F8"
+   ],
+   "retention": 0.9090909090909091,
+   "grade": 5.2,
+   "words": 163,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     2
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     3,
+     3
+    ],
+    "condition": [
+     2,
+     2
+    ],
+    "subject": [
+     2,
+     2
+    ],
+    "consequence": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "notice": "va-claim-info",
+   "setup": "sonnet-g6-keep",
+   "sample": 0,
+   "critical": 11,
+   "kept": 11,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 4.8,
+   "words": 208,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     3,
+     3
+    ],
+    "condition": [
+     2,
+     2
+    ],
+    "subject": [
+     2,
+     2
+    ],
+    "consequence": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "notice": "va-claim-info",
+   "setup": "sonnet-g6-pipeline",
+   "sample": 0,
+   "critical": 11,
+   "kept": 11,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 6.4,
+   "words": 192,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     3,
+     3
+    ],
+    "condition": [
+     2,
+     2
+    ],
+    "subject": [
+     2,
+     2
+    ],
+    "consequence": [
+     1,
+     1
+    ]
+   }
+  },
+  {
+   "notice": "va-enrollment",
+   "setup": "original",
+   "sample": 0,
+   "critical": 26,
+   "kept": 26,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 6.6,
+   "words": 288,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     3,
+     3
+    ],
+    "condition": [
+     6,
+     6
+    ],
+    "subject": [
+     2,
+     2
+    ],
+    "amount": [
+     1,
+     1
+    ],
+    "consequence": [
+     11,
+     11
+    ]
+   }
+  },
+  {
+   "notice": "va-enrollment",
+   "setup": "haiku-g6",
+   "sample": 0,
+   "critical": 26,
+   "kept": 23,
+   "lost": [
+    "F1",
+    "F3",
+    "F25"
+   ],
+   "retention": 0.8846153846153846,
+   "grade": 4.7,
+   "words": 318,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     3,
+     3
+    ],
+    "condition": [
+     5,
+     6
+    ],
+    "subject": [
+     0,
+     2
+    ],
+    "amount": [
+     1,
+     1
+    ],
+    "consequence": [
+     11,
+     11
+    ]
+   }
+  },
+  {
+   "notice": "va-enrollment",
+   "setup": "sonnet-g6",
+   "sample": 0,
+   "critical": 26,
+   "kept": 26,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 3.6,
+   "words": 316,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     3,
+     3
+    ],
+    "condition": [
+     6,
+     6
+    ],
+    "subject": [
+     2,
+     2
+    ],
+    "amount": [
+     1,
+     1
+    ],
+    "consequence": [
+     11,
+     11
+    ]
+   }
+  },
+  {
+   "notice": "va-enrollment",
+   "setup": "sonnet-g6",
+   "sample": 1,
+   "critical": 26,
+   "kept": 25,
+   "lost": [
+    "F25"
+   ],
+   "retention": 0.9615384615384616,
+   "grade": 3.9,
+   "words": 335,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     3,
+     3
+    ],
+    "condition": [
+     5,
+     6
+    ],
+    "subject": [
+     2,
+     2
+    ],
+    "amount": [
+     1,
+     1
+    ],
+    "consequence": [
+     11,
+     11
+    ]
+   }
+  },
+  {
+   "notice": "va-enrollment",
+   "setup": "opus-g6",
+   "sample": 0,
+   "critical": 26,
+   "kept": 25,
+   "lost": [
+    "F25"
+   ],
+   "retention": 0.9615384615384616,
+   "grade": 5.1,
+   "words": 339,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     3,
+     3
+    ],
+    "condition": [
+     5,
+     6
+    ],
+    "subject": [
+     2,
+     2
+    ],
+    "amount": [
+     1,
+     1
+    ],
+    "consequence": [
+     11,
+     11
+    ]
+   }
+  },
+  {
+   "notice": "va-enrollment",
+   "setup": "sonnet-g4",
+   "sample": 0,
+   "critical": 26,
+   "kept": 25,
+   "lost": [
+    "F25"
+   ],
+   "retention": 0.9615384615384616,
+   "grade": 2.9,
+   "words": 305,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     3,
+     3
+    ],
+    "condition": [
+     5,
+     6
+    ],
+    "subject": [
+     2,
+     2
+    ],
+    "amount": [
+     1,
+     1
+    ],
+    "consequence": [
+     11,
+     11
+    ]
+   }
+  },
+  {
+   "notice": "va-enrollment",
+   "setup": "sonnet-g8",
+   "sample": 0,
+   "critical": 26,
+   "kept": 25,
+   "lost": [
+    "F26"
+   ],
+   "retention": 0.9615384615384616,
+   "grade": 4.1,
+   "words": 292,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     3,
+     3
+    ],
+    "condition": [
+     6,
+     6
+    ],
+    "subject": [
+     2,
+     2
+    ],
+    "amount": [
+     1,
+     1
+    ],
+    "consequence": [
+     10,
+     11
+    ]
+   }
+  },
+  {
+   "notice": "va-enrollment",
+   "setup": "sonnet-g6-keep",
+   "sample": 0,
+   "critical": 26,
+   "kept": 26,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 4.4,
+   "words": 356,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     3,
+     3
+    ],
+    "condition": [
+     6,
+     6
+    ],
+    "subject": [
+     2,
+     2
+    ],
+    "amount": [
+     1,
+     1
+    ],
+    "consequence": [
+     11,
+     11
+    ]
+   }
+  },
+  {
+   "notice": "va-enrollment",
+   "setup": "sonnet-g6-pipeline",
+   "sample": 0,
+   "critical": 26,
+   "kept": 26,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 4.0,
+   "words": 349,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     2,
+     2
+    ],
+    "right": [
+     1,
+     1
+    ],
+    "action": [
+     3,
+     3
+    ],
+    "condition": [
+     6,
+     6
+    ],
+    "subject": [
+     2,
+     2
+    ],
+    "amount": [
+     1,
+     1
+    ],
+    "consequence": [
+     11,
+     11
+    ]
+   }
+  },
+  {
+   "notice": "va-pension",
+   "setup": "original",
+   "sample": 0,
+   "critical": 12,
+   "kept": 12,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 4.6,
+   "words": 164,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     2,
+     2
+    ],
+    "condition": [
+     4,
+     4
+    ],
+    "consequence": [
+     1,
+     1
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "va-pension",
+   "setup": "haiku-g6",
+   "sample": 0,
+   "critical": 12,
+   "kept": 11,
+   "lost": [
+    "F15"
+   ],
+   "retention": 0.9166666666666666,
+   "grade": 4.0,
+   "words": 156,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     2,
+     2
+    ],
+    "condition": [
+     4,
+     4
+    ],
+    "consequence": [
+     1,
+     1
+    ],
+    "contact": [
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "va-pension",
+   "setup": "sonnet-g6",
+   "sample": 0,
+   "critical": 12,
+   "kept": 10,
+   "lost": [
+    "F10",
+    "F15"
+   ],
+   "retention": 0.8333333333333334,
+   "grade": 2.5,
+   "words": 168,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     2,
+     2
+    ],
+    "condition": [
+     3,
+     4
+    ],
+    "consequence": [
+     1,
+     1
+    ],
+    "contact": [
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "va-pension",
+   "setup": "sonnet-g6",
+   "sample": 1,
+   "critical": 12,
+   "kept": 9,
+   "lost": [
+    "F4",
+    "F9",
+    "F15"
+   ],
+   "retention": 0.75,
+   "grade": 3.6,
+   "words": 154,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     1,
+     2
+    ],
+    "condition": [
+     4,
+     4
+    ],
+    "consequence": [
+     0,
+     1
+    ],
+    "contact": [
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "va-pension",
+   "setup": "opus-g6",
+   "sample": 0,
+   "critical": 12,
+   "kept": 11,
+   "lost": [
+    "F15"
+   ],
+   "retention": 0.9166666666666666,
+   "grade": 2.6,
+   "words": 203,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     2,
+     2
+    ],
+    "condition": [
+     4,
+     4
+    ],
+    "consequence": [
+     1,
+     1
+    ],
+    "contact": [
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "va-pension",
+   "setup": "sonnet-g4",
+   "sample": 0,
+   "critical": 12,
+   "kept": 11,
+   "lost": [
+    "F15"
+   ],
+   "retention": 0.9166666666666666,
+   "grade": 1.7,
+   "words": 164,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     2,
+     2
+    ],
+    "condition": [
+     4,
+     4
+    ],
+    "consequence": [
+     1,
+     1
+    ],
+    "contact": [
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "va-pension",
+   "setup": "sonnet-g8",
+   "sample": 0,
+   "critical": 12,
+   "kept": 12,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 2.9,
+   "words": 165,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     2,
+     2
+    ],
+    "condition": [
+     4,
+     4
+    ],
+    "consequence": [
+     1,
+     1
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "va-pension",
+   "setup": "sonnet-g6-keep",
+   "sample": 0,
+   "critical": 12,
+   "kept": 11,
+   "lost": [
+    "F15"
+   ],
+   "retention": 0.9166666666666666,
+   "grade": 2.2,
+   "words": 184,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     2,
+     2
+    ],
+    "condition": [
+     4,
+     4
+    ],
+    "consequence": [
+     1,
+     1
+    ],
+    "contact": [
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "notice": "va-pension",
+   "setup": "sonnet-g6-pipeline",
+   "sample": 0,
+   "critical": 12,
+   "kept": 12,
+   "lost": [],
+   "retention": 1.0,
+   "grade": 3.5,
+   "words": 185,
+   "not_in_source": [],
+   "by_type": {
+    "deadline": [
+     1,
+     1
+    ],
+    "right": [
+     2,
+     2
+    ],
+    "action": [
+     2,
+     2
+    ],
+    "condition": [
+     4,
+     4
+    ],
+    "consequence": [
+     1,
+     1
+    ],
+    "contact": [
+     2,
+     2
+    ]
+   }
+  }
+ ],
+ "cost_usd": {
+  "draft_facts": 5.1721,
+  "rewrites": 3.141,
+  "judge": 9.5691,
+  "plant_judge": 5.9563,
+  "tool_eval": 1.743,
+  "total": 25.58
+ }
+}

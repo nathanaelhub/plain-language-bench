@@ -86,7 +86,7 @@ STATUS = {"found": "kept", "partly": "changed", "not found": "missing"}
 REDACT = [
     ("SSN", re.compile(r"\b\d{3}-\d{2}-\d{4}\b")),
     ("CASE", re.compile(r"\b(?:claim|case|file|account|reference)\s+(?:number|no\.?|#)\s*:?\s*([A-Z0-9-]{5,})", re.I)),
-    ("ADDRESS", re.compile(r"\b\d{1,6}\s+(?:[A-Z][a-z]+\.?\s){1,4}(?:Street|St|Avenue|Ave|Road|Rd|Lane|Ln|Drive|Dr|Court|Ct|Boulevard|Blvd|Way|Pike|Place|Pl|Circle|Cir|Run)\b\.?")),
+    ("ADDRESS", re.compile(r"\b\d{1,6}\s+(?:(?:[NSEW]|NE|NW|SE|SW)\.?\s+)?(?:(?:[A-Z][a-z]+|\d+(?:st|nd|rd|th))\.?\s){1,4}(?:Street|St|Avenue|Ave|Road|Rd|Lane|Ln|Drive|Dr|Court|Ct|Boulevard|Blvd|Way|Pike|Place|Pl|Circle|Cir|Run)\b\.?")),
 ]
 
 
@@ -242,8 +242,9 @@ async def check(letter: str, rewrite: str, model: str = "sonnet", use_redact: bo
 
 # ---- report -----------------------------------------------------------------------
 
-DETECTION_NOTE = ("These checks are measured in the plain-language-bench evaluation; see its README for how "
-                  "many planted losses they catch. A clean checklist means no losses were found, not that "
+CAUGHT = (31, 35)  # planted losses these checks caught on the test notices (results/2026-11-10-gate/tool-checker.json)
+DETECTION_NOTE = (f"In the plain-language-bench evaluation these checks caught {CAUGHT[0]} of {CAUGHT[1]} planted losses "
+                  f"({CAUGHT[0] / CAUGHT[1]:.0%}). A clean checklist means no losses were found, not that "
                   "nothing was lost: read the rewrite against the letter before sending it.")
 
 
@@ -254,7 +255,7 @@ def markdown(res: Result) -> str:
                      f"{i.fact} | {i.where.replace('|', '/')[:120]} |" for i in res.items)
     lost = len(res.lost)
     head = (f"**{lost} item{'s' if lost != 1 else ''} may be lost or changed. Fix them before sending.**" if lost
-            else "**No losses found by these checks.**")
+            else f"**No losses found by these checks** (they caught {CAUGHT[0]} of {CAUGHT[1]} planted losses in testing).")
     extra = ("\n\nIn the rewrite but not in the letter (check these are right): " + ", ".join(res.not_in_source)) if res.not_in_source else ""
     dropped = (f"\n\n{len(res.dropped)} extracted item(s) were set aside because their quote wasn't found in the letter."
                if res.dropped else "")

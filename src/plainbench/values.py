@@ -48,7 +48,7 @@ PATTERNS = [
                         r"|\b(\d{1,2})/(\d{1,2})/(\d{2,4})\b|\b(\d{4})-(\d{2})-(\d{2})\b", re.I)),
     ("zip", re.compile(r"\b(?:A[KLRZ]|C[AOT]|D[CE]|FL|GA|HI|I[ADLN]|K[SY]|LA|M[ADEINOST]|N[CDEHJMVY]|O[HKR]|PA|RI|S[CD]|T[NX]|UT|V[AT]|W[AIVY])\.?,?\s+(\d{5})(?:-\d{4})?\b")),
     ("code", re.compile(r"\b(?:form|publication|pub\.|notice|letter)\s+([A-Z0-9][A-Z0-9-]*\d[A-Z0-9-]*)"
-                        r"|\b([A-Z]{2,5}-[A-Z0-9]{1,4}(?:-[A-Z0-9]{1,5})?)\b|\b((?:CP|LT|LTR)\s?\d{1,4}[A-Z]?)\b", re.I)),
+                        r"|(?-i:\b(?=[A-Z]{2,5}-[A-Z0-9-]*\d)([A-Z]{2,5}-[A-Z0-9]{1,4}(?:-[A-Z0-9]{1,5})?)\b)|\b((?:CP|LT|LTR)\s?\d{1,4}[A-Z]?)\b", re.I)),
     ("duration", re.compile(rf"\b(\d{{1,4}}|{NUMWORD})(?:\s*\(\d{{1,4}}\))?[- ](business days?|calendar days?|days?|weeks?|months?|years?|hours?)\b", re.I)),
     ("percent", re.compile(r"\b(\d+(?:\.\d+)?)\s?(?:%|percent\b)")),
     ("number", re.compile(rf"(?<![\w$.,/-])(\d[\d,]*(?:\.\d+)?)(?![\w/-])|\b({NUMWORD})\b(?!\s*\(\d)", re.I)),
@@ -129,7 +129,7 @@ def extract(text: str) -> list[Value]:
 
 def _value(kind: str, m: re.Match) -> str | None:
     if kind == "url":
-        return m.group(0).lower().rstrip(".,;").removeprefix("https://").removeprefix("http://").removeprefix("www.")
+        return m.group(0).lower().rstrip(".,;:").removeprefix("https://").removeprefix("http://").removeprefix("www.")
     if kind == "money":
         return _fmt(round(float(m.group(1).replace(",", "")) * SCALE.get((m.group(2) or "").lower(), 1), 2))
     if kind == "phone":
@@ -184,9 +184,14 @@ def missing_from(text: str, needed: set[tuple[str, str]]) -> list[tuple[str, str
 
 def not_in_source(rewrite: str, source: str, ignore: tuple[str, ...] = ("number",)) -> list[Value]:
     """Values in the rewrite that the source doesn't have. Bare numbers are ignored by
-    default: a rewrite numbers its steps ("1.", "2.") and lists items ("3 things")."""
+    default: a rewrite numbers its steps ("1.", "2.") and lists items ("3 things"). An
+    amount isn't new because the rewrite adds a "$" the letter left off, as in a billing
+    table ("Penalty: 633.30", "Payments: -3,328.00")."""
     pool = values(source)
-    return [v for v in extract(unmark(rewrite)) if v.kind not in ignore and not _matches(v.kind, v.value, pool)]
+    bare = {_fmt(float(m.group(1).replace(",", "")))
+            for m in re.finditer(r"(?<![\w.])[-–]?(\d[\d,]*(?:\.\d+)?)", unmark(source))}
+    return [v for v in extract(unmark(rewrite)) if v.kind not in ignore and not _matches(v.kind, v.value, pool)
+            and not (v.kind == "money" and v.value in bare)]
 
 
 def same_text(a: str, b: str) -> bool:

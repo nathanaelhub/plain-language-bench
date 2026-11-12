@@ -70,3 +70,18 @@ def test_code_overrides_a_found_without_the_number(monkeypatch):
     assert status == {"1": "changed", "2": "kept", "3": "changed"}
     report = pipeline.markdown(res)
     assert "2 items may be lost or changed" in report and "not that nothing was lost" in report
+
+
+def test_redact_catches_directional_and_numbered_streets():
+    for addr in ("123 N Harris St", "4100 SW Elm Ave", "88 21st Ave", "7 E. Main Street"):
+        red, mapping = pipeline.redact(f"John Smith\n{addr}\nHarvard, TX 12345")
+        assert addr not in red and list(mapping.values()) == [addr], addr
+
+
+def test_clean_report_quotes_the_measured_catch_rate():
+    from plainbench.facts import ROOT
+    measured = json.loads((ROOT / "results" / "2026-11-10-gate" / "tool-checker.json").read_text())["test"]["ALL"]
+    assert pipeline.CAUGHT == (measured["k"], measured["n"])
+    res = pipeline.Result(rewrite="y", items=[], dropped=[], grade_before=8, grade_after=6, revised=False,
+                          not_in_source=[], cost_usd=0.0)
+    assert f"{measured['k']} of {measured['n']}" in pipeline.markdown(res)
